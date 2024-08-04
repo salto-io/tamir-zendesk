@@ -1,0 +1,4 @@
+zendesk.channel X_Corp_Direct_Message@s {
+  name = "X Corp Direct Message"
+  _alias = "X Corp Direct Message"
+}

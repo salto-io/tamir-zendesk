@@ -1,0 +1,19 @@
+zendesk.ticket_field _eshed__test__drop_down_tagger@hihisbu {
+  type = "tagger"
+  raw_title = "[eshed][test] drop-down"
+  raw_description = ""
+  active = true
+  required = true
+  collapsed_for_agents = false
+  raw_title_in_portal = "[eshed][test] drop-down"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  agent_description = "must select from this dropdown"
+  custom_field_options = [
+    zendesk.ticket_field__custom_field_options.instance._eshed__test__drop_down_tagger_hihisbu___eshed_something_1@uuuuuuumuuuuu,
+    zendesk.ticket_field__custom_field_options.instance._eshed__test__drop_down_tagger_hihisbu___eshed_something_2@uuuuuuumuuuuu,
+  ]
+  _alias = "[eshed][test] drop-down"
+}

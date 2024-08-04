@@ -1,0 +1,29 @@
+zendesk.macro SLA__Explain@f {
+  title = "SLA::Explain"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "comment_mode_is_public"
+      value = "true"
+    },
+    {
+      field = "comment_value_html"
+      value = "<blockquote><p>{{${ zendesk.dynamic_content_item.instance.Support_SLAs@s }}}<br></p></blockquote><p><br></p><div class=\"zd-indent\" data-test-id=\"zd-editor-indent-line\" style=\"margin-left: 20px;\"><h2><i><b>Regards</b></i>,</h2><p>{{ticket.assignee.name}}​&nbsp;</p></div>"
+    },
+    {
+      field = "comment_value"
+      value = '''
+{{${ zendesk.dynamic_content_item.instance.Support_SLAs@s }}}
+
+
+Regards,
+
+{{ticket.assignee.name}}​ 
+
+'''
+    },
+  ]
+  raw_title = "SLA::Explain"
+  _alias = "SLA::Explain"
+}

@@ -1,0 +1,14 @@
+zendesk.ticket_field "123456_text" {
+  type = "text"
+  raw_title = "123456"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "123456"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  _alias = "123456"
+}

@@ -1,0 +1,20 @@
+zendesk.ticket_form daniel_s_ticket_form@tss {
+  raw_name = "daniel's ticket form"
+  raw_display_name = "daniels inactive ticket form"
+  end_user_visible = true
+  ticket_field_ids = [
+    zendesk.ticket_field.instance.Statut_status,
+    zendesk.ticket_field.instance.Groupe_group,
+    zendesk.ticket_field.instance.Assign__assignee@_00233u,
+    zendesk.ticket_field.instance.Ticket_status_custom_status@suu,
+    zendesk.ticket_field.instance.Sujet_subject,
+    zendesk.ticket_field.instance.Description_description,
+    zendesk.ticket_field.instance._eshed__List_of_Fruit_tagger@hisssu,
+    zendesk.ticket_field.instance._eshed__test__drop_down_tagger@hihisbu,
+    zendesk.ticket_field.instance.___dasda_text@mmmu,
+  ]
+  active = true
+  default = false
+  in_all_brands = true
+  _alias = "daniel's ticket form"
+}

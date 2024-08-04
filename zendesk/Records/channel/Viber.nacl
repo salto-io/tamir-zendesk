@@ -1,0 +1,4 @@
+zendesk.channel Viber {
+  name = "Viber"
+  _alias = "Viber"
+}

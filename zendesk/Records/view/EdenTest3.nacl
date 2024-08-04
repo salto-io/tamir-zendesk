@@ -1,0 +1,105 @@
+zendesk.view EdenTest3 {
+  active = true
+  default = false
+  description = "check"
+  execution = {
+    group_order = "desc"
+    sort_order = "desc"
+    columns = [
+      {
+        id = "satisfaction_score"
+        title = "Satisfaction"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+    ]
+    fields = [
+      {
+        id = "satisfaction_score"
+        title = "Satisfaction"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+    ]
+  }
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "is_not"
+        value = "new"
+      },
+      {
+        field = "requester_id"
+        operator = "is"
+        value = "eden.hassid@salto.io"
+      },
+      {
+        field = zendesk.ticket_field.instance.eden_check_change_test2_multiselect@sssu
+        operator = "not_present"
+      },
+    ]
+  }
+  restriction = {
+    type = "Group"
+    ids = [
+      zendesk.group.instance.Neta_Dup@s,
+      zendesk.group.instance.Platform,
+      zendesk.group.instance.Security,
+      zendesk.group.instance.Test,
+      zendesk.group.instance.Triage,
+      zendesk.group.instance.audit_test2@s,
+      zendesk.group.instance.edenAudit,
+    ]
+  }
+  raw_title = "EdenTest3"
+  _alias = "EdenTest3"
+}

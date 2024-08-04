@@ -1,0 +1,9 @@
+zendesk.user_field new_for_audit {
+  type = "text"
+  key = "new_for_audit"
+  raw_title = "new for audit"
+  raw_description = ""
+  active = true
+  system = false
+  _alias = "new for audit"
+}

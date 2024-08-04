@@ -1,0 +1,28 @@
+zendesk.trigger NoamTest {
+  title = "NoamTest"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "status"
+      value = "closed"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "is"
+        value = "pending"
+      },
+      {
+        field = "via_id"
+        operator = "is"
+        value = zendesk.channel.instance.Chat
+      },
+    ]
+  }
+  raw_title = "NoamTest"
+  category_id = zendesk.trigger_category.instance.Notifications
+  _alias = "NoamTest"
+}

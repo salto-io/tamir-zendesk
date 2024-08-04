@@ -1,0 +1,91 @@
+zendesk.ticket_form Copy_of_eden_form@s {
+  raw_name = "Copy of eden form"
+  raw_display_name = "this is a title"
+  end_user_visible = true
+  ticket_field_ids = [
+    zendesk.ticket_field.instance.Statut_status,
+    zendesk.ticket_field.instance.Groupe_group,
+    zendesk.ticket_field.instance.Assign__assignee@_00233u,
+    zendesk.ticket_field.instance.Ticket_status_custom_status@suu,
+    zendesk.ticket_field.instance.Sujet_subject,
+    zendesk.ticket_field.instance.Description_description,
+    zendesk.ticket_field.instance.EdenTest2_textarea,
+    zendesk.ticket_field.instance.edenTest78_text,
+    zendesk.ticket_field.instance.dropdown_test_after_deploy_test_tagger@ssssu,
+    zendesk.ticket_field.instance.edenTime___this_is_a_change_tagger@sbssssu,
+    zendesk.ticket_field.instance.EdenTest3_tagger,
+    zendesk.ticket_field.instance.Neta_multiselect_123_multiselect@ssu,
+  ]
+  active = false
+  default = false
+  in_all_brands = true
+  end_user_conditions = [
+    {
+      parent_field_id = zendesk.ticket_field.instance.EdenTest3_tagger
+      parent_field_type = "tagger"
+      value = zendesk.ticket_field__custom_field_options.instance.EdenTest3_tagger__echeck
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance.EdenTest2_textarea
+          is_required = false
+        },
+      ]
+    },
+    {
+      parent_field_id = zendesk.ticket_field.instance.EdenTest3_tagger
+      parent_field_type = "tagger"
+      value = zendesk.ticket_field__custom_field_options.instance.EdenTest3_tagger__form_check
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance.EdenTest2_textarea
+          is_required = false
+        },
+      ]
+    },
+  ]
+  agent_conditions = [
+    {
+      parent_field_id = zendesk.ticket_field.instance.dropdown_test_after_deploy_test_tagger@ssssu
+      parent_field_type = "tagger"
+      value = zendesk.ticket_field__custom_field_options.instance.dropdown_test_after_deploy_test_tagger_ssssu__1@uuuuumuu
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance.EdenTest2_textarea
+          is_required = false
+          required_on_statuses = {
+            type = "NO_STATUSES"
+          }
+        },
+        {
+          id = zendesk.ticket_field.instance.edenTest78_text
+          is_required = false
+          required_on_statuses = {
+            type = "NO_STATUSES"
+          }
+        },
+      ]
+    },
+    {
+      parent_field_id = zendesk.ticket_field.instance.EdenTest3_tagger
+      parent_field_type = "tagger"
+      value = zendesk.ticket_field__custom_field_options.instance.EdenTest3_tagger__echeck
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance.Neta_multiselect_123_multiselect@ssu
+          is_required = false
+          required_on_statuses = {
+            type = "NO_STATUSES"
+          }
+        },
+        {
+          id = zendesk.ticket_field.instance.edenTime___this_is_a_change_tagger@sbssssu
+          is_required = false
+          required_on_statuses = {
+            type = "NO_STATUSES"
+          }
+        },
+      ]
+    },
+  ]
+  _alias = "Copy of eden form"
+}

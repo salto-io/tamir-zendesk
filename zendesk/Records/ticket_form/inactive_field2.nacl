@@ -1,0 +1,35 @@
+zendesk.ticket_form inactive_field2@s {
+  raw_name = "inactive field2"
+  raw_display_name = ""
+  end_user_visible = false
+  ticket_field_ids = [
+    zendesk.ticket_field.instance.Statut_status,
+    zendesk.ticket_field.instance.Groupe_group,
+    zendesk.ticket_field.instance.Assign__assignee@_00233u,
+    zendesk.ticket_field.instance.Ticket_status_custom_status@suu,
+    zendesk.ticket_field.instance.Sujet_subject,
+    zendesk.ticket_field.instance.Description_description,
+    zendesk.ticket_field.instance.to_deactivate_text@su,
+    zendesk.ticket_field.instance.edenTest877_text,
+  ]
+  active = true
+  default = false
+  in_all_brands = true
+  agent_conditions = [
+    {
+      parent_field_id = zendesk.ticket_field.instance.to_deactivate_text@su
+      parent_field_type = "text"
+      value = "a"
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance.edenTest877_text
+          is_required = true
+          required_on_statuses = {
+            type = "ALL_STATUSES"
+          }
+        },
+      ]
+    },
+  ]
+  _alias = "inactive field2"
+}

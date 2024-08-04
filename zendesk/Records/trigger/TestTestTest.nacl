@@ -1,0 +1,23 @@
+zendesk.trigger TestTestTest {
+  title = "TestTestTest"
+  active = true
+  default = false
+  actions = [
+    {
+      field = zendesk.organization_field.instance.another_drop_down
+      value = zendesk.organization_field__custom_field_options.instance.another_drop_down__option3
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "current_via_id"
+        operator = "is"
+        value = zendesk.channel.instance.Chat
+      },
+    ]
+  }
+  raw_title = "TestTestTest"
+  category_id = zendesk.trigger_category.instance.Billing
+  _alias = "TestTestTest"
+}

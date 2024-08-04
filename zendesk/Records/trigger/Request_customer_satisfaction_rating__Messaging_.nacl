@@ -1,0 +1,50 @@
+zendesk.trigger Request_customer_satisfaction_rating__Messaging_@ssssjk {
+  title = "Request customer satisfaction rating (Messaging)"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "notification_messaging_csat"
+      value = "requester_id"
+    },
+    {
+      field = "notification_user"
+      value = [
+        "zendesk-adapter@salto.io",
+        "[{{ticket.account}}] Re: {{ticket.title}}",
+        '''
+This ticket (#{{ticket.id}}) has been reopened.
+
+{{ticket.comments_formatted}}
+''',
+      ]
+    },
+    {
+      field = "assignee_id"
+      value = "requester_id"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "value"
+        value = "solved"
+      },
+      {
+        field = "via_id"
+        operator = "is"
+        value = zendesk.channel.instance.Messaging
+      },
+      {
+        field = "requester_id"
+        operator = "is"
+        value = "zendesk-adapter@salto.io"
+      },
+    ]
+  }
+  description = "Asks customer for a rating after the conversation is over. This trigger is created by the system."
+  raw_title = "Request customer satisfaction rating (Messaging)"
+  category_id = zendesk.trigger_category.instance.Field_Updates@s
+  _alias = "Request customer satisfaction rating (Messaging)"
+}

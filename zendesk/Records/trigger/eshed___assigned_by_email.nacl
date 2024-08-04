@@ -1,0 +1,23 @@
+zendesk.trigger eshed___assigned_by_email@sbsss {
+  title = "eshed - assigned by email"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "assignee_id"
+      value = "neta.marcus@salto.io"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "assignee_id"
+        operator = "is"
+        value = "gil.hoffer@salto.io"
+      },
+    ]
+  }
+  raw_title = "eshed - assigned by email"
+  category_id = zendesk.trigger_category.instance.Notifications
+  _alias = "eshed - assigned by email"
+}

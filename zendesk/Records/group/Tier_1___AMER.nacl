@@ -1,0 +1,8 @@
+zendesk.group Tier_1___AMER@ssbs {
+  is_public = true
+  name = "Tier 1 - AMER"
+  description = "Tier 1 agents in AMER region"
+  default = false
+  deleted = false
+  _alias = "Tier 1 - AMER"
+}

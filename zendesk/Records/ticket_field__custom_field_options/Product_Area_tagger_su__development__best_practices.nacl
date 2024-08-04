@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options Product_Area_tagger_su__development__best_practices@uumuuuuu {
+  raw_name = "Development::Best Practices"
+  value = "development__best_practices"
+  _parent = [
+    zendesk.ticket_field.instance.Product_Area_tagger@su,
+  ]
+  _alias = "Development::Best Practices"
+}

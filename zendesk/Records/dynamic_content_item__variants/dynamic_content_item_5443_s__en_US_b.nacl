@@ -1,0 +1,10 @@
+zendesk.dynamic_content_item__variants dynamic_content_item_5443_s__en_US_b@uuumuuum {
+  content = "abc"
+  locale_id = zendesk.locale.instance.en_US@b
+  active = true
+  default = true
+  _parent = [
+    zendesk.dynamic_content_item.instance.dynamic_content_item_5443@s,
+  ]
+  _alias = "dynamic content item 5443 - en-US"
+}

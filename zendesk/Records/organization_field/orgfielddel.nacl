@@ -1,0 +1,12 @@
+zendesk.organization_field orgfielddel {
+  type = "dropdown"
+  key = "orgfielddel"
+  raw_title = "orgFieldDEL"
+  raw_description = "adsadsadsa"
+  active = true
+  system = false
+  custom_field_options = [
+    zendesk.organization_field__custom_field_options.instance.orgfielddel__value2,
+  ]
+  _alias = "orgFieldDEL"
+}

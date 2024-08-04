@@ -1,0 +1,45 @@
+zendesk.ticket_field noam_lookup_user_lookup {
+  type = "lookup"
+  raw_title = "noam_lookup_user"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "noam_lookup_user"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  agent_description = "noam_lookup_user_description"
+  relationship_target_type = "zen:user"
+  relationship_filter = {
+    all = [
+      {
+        field = "locale_id"
+        operator = "is"
+        value = zendesk.locale.instance.en_US@b
+      },
+      {
+        field = "role"
+        operator = "is"
+        value = "2"
+      },
+      {
+        field = "tags"
+        operator = "present"
+        value = ""
+      },
+      {
+        field = zendesk.user_field.instance.piefield
+        operator = "less_than_equal"
+        value = "2022-08-08"
+      },
+      {
+        field = zendesk.user_field.instance.userfielddropdowntest
+        operator = "is_not"
+        value = zendesk.user_field__custom_field_options.instance.userfielddropdowntest__ufv11
+      },
+    ]
+  }
+  _alias = "noam_lookup_user"
+}

@@ -1,0 +1,26 @@
+zendesk.macro eshed___macro@sbs {
+  title = "eshed - macro"
+  active = true
+  default = false
+  description = "a demo macro"
+  actions = [
+    {
+      field = "priority"
+      value = "high"
+    },
+    {
+      field = "type"
+      value = "incident"
+    },
+    {
+      field = "brand_id"
+      value = zendesk.brand.instance.Eshed_Demo@s
+    },
+    {
+      field = "ticket_form_id"
+      value = zendesk.ticket_form.instance._eshed__Newsletter_Subscription_Details@hisss
+    },
+  ]
+  raw_title = "eshed - macro"
+  _alias = "eshed - macro"
+}

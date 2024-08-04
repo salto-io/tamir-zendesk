@@ -1,0 +1,50 @@
+zendesk.trigger Notifier_l_assign__de_la_mise___jour_des_commentaires@s_08217_00233ssss_00224sss {
+  title = "Notifier l’assigné de la mise à jour des commentaires"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "notification_user"
+      value = [
+        "assignee_id",
+        "[{{ticket.account}}] Sujet : {{ticket.title}}",
+        '''
+Ce ticket (#{{ticket.id}}) a été mis à jour.
+
+{{ticket.comments_formatted}}
+''',
+      ]
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "comment_is_public"
+        operator = "is"
+        value = "not_relevant"
+      },
+      {
+        field = "assignee_id"
+        operator = "is_not"
+        value = "current_user"
+      },
+      {
+        field = "assignee_id"
+        operator = "is_not"
+        value = "requester_id"
+      },
+      {
+        field = "assignee_id"
+        operator = "not_changed"
+      },
+      {
+        field = "status"
+        operator = "not_value_previous"
+        value = "solved"
+      },
+    ]
+  }
+  raw_title = "Notifier l’assigné de la mise à jour des commentaires"
+  category_id = zendesk.trigger_category.instance.Notifications
+  _alias = "Notifier l’assigné de la mise à jour des commentaires"
+}

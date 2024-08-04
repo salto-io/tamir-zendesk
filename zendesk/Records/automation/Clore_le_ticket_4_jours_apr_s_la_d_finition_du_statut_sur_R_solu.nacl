@@ -1,0 +1,27 @@
+zendesk.automation Clore_le_ticket_4_jours_apr_s_la_d_finition_du_statut_sur_R_solu@sss_00160s_00232ss_00233ssss_00233 {
+  title = "Clore le ticket 4 jours après la définition du statut sur Résolu"
+  active = true
+  default = true
+  actions = [
+    {
+      field = "status"
+      value = "closed"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "is"
+        value = "solved"
+      },
+      {
+        field = "SOLVED"
+        operator = "greater_than"
+        value = "480"
+      },
+    ]
+  }
+  raw_title = "Clore le ticket 4 jours après la définition du statut sur Résolu"
+  _alias = "Clore le ticket 4 jours après la définition du statut sur Résolu"
+}

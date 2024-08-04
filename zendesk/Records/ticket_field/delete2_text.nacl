@@ -1,0 +1,14 @@
+zendesk.ticket_field delete2_text {
+  type = "text"
+  raw_title = "delete2"
+  raw_description = "1"
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "delete2"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  _alias = "delete2"
+}

@@ -1,0 +1,27 @@
+zendesk.trigger Neta_order_test_111__copy_@ssssjk {
+  title = "Neta order test 111 (copy)"
+  active = true
+  default = false
+  actions = [
+    {
+      field = zendesk.user_field.instance.userfielddel
+      value = zendesk.user_field__custom_field_options.instance.userfielddel__value4
+    },
+    {
+      field = zendesk.organization_field.instance.13@
+      value = "aaa"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = zendesk.ticket_field.instance.Adam_test_lookup_lookup@ssu
+        operator = "is"
+        value = "1918020728945"
+      },
+    ]
+  }
+  raw_title = "Neta order test 111 (copy)"
+  category_id = zendesk.trigger_category.instance.Neta_order_test_1212@s
+  _alias = "Neta order test 111 (copy)"
+}

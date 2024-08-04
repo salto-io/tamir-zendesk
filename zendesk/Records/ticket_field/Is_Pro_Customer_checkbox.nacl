@@ -1,0 +1,15 @@
+zendesk.ticket_field Is_Pro_Customer_checkbox@ssu {
+  type = "checkbox"
+  raw_title = "Is Pro Customer"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "Is Pro Customer"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  agent_description = "Checked if this is a pro account"
+  _alias = "Is Pro Customer"
+}

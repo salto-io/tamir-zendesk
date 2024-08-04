@@ -1,0 +1,20 @@
+zendesk.ticket_form Eshed_s_Demo_Form@tss {
+  raw_name = "Eshed's Demo Form"
+  raw_display_name = "Fruit & Newsletter Orders Form"
+  end_user_visible = true
+  ticket_field_ids = [
+    zendesk.ticket_field.instance.Statut_status,
+    zendesk.ticket_field.instance.Groupe_group,
+    zendesk.ticket_field.instance.Assign__assignee@_00233u,
+    zendesk.ticket_field.instance.Ticket_status_custom_status@suu,
+    zendesk.ticket_field.instance.Sujet_subject,
+    zendesk.ticket_field.instance.Description_description,
+    zendesk.ticket_field.instance._eshed__test__drop_down_tagger@hihisbu,
+    zendesk.ticket_field.instance._eshed__List_of_Fruit_tagger@hisssu,
+    zendesk.ticket_field.instance._eshed__Categories_of_Newsletter_multiselect@hisssu,
+  ]
+  active = true
+  default = false
+  in_all_brands = true
+  _alias = "Eshed's Demo Form"
+}

@@ -1,0 +1,109 @@
+zendesk.view New_tickets_in_your_groups@s {
+  active = true
+  default = false
+  execution = {
+    group_by = "group"
+    group_order = "desc"
+    sort_by = "created"
+    sort_order = "desc"
+    group = {
+      id = "group"
+      title = "Group"
+      filterable = true
+      sortable = true
+      order = "desc"
+    }
+    sort = {
+      id = "created"
+      title = "Requested"
+      filterable = false
+      sortable = true
+      order = "desc"
+    }
+    columns = [
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "priority"
+        title = "Priority"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+    ]
+    fields = [
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "priority"
+        title = "Priority"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+    ]
+  }
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "less_than"
+        value = "solved"
+      },
+      {
+        field = "assignee_id"
+        operator = "is"
+        value = ""
+      },
+      {
+        field = "group_id"
+        operator = "is"
+        value = "current_groups"
+      },
+    ]
+  }
+  raw_title = "New tickets in your groups"
+  _alias = "New tickets in your groups"
+}

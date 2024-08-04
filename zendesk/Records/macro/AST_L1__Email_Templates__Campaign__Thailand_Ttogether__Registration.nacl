@@ -1,0 +1,20 @@
+zendesk.macro AST_L1__Email_Templates__Campaign__Thailand_Ttogether__Registration@sffsffffsff {
+  title = "AST L1::Email Templates::Campaign::Thailand Ttogether::Registration"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "status"
+      value = "open"
+    },
+    {
+      field = "comment_value_html"
+      value = "<p>Hello world!</p>"
+    },
+  ]
+  attachments = [
+    zendesk.macro_attachment.instance.AST_L1__Email_Templates__Campaign__Thailand_Ttogether__Registration__Templates__Campaign__ThailandTemplates__Campaign__ThailandTemplates__Campaign__ThailandTemplates__Campaign__ThailandTemplates__Campaignpdf_pdf@sffsffffsffuuuuuuuuuuuuuuuuuuuuv,
+  ]
+  raw_title = "AST L1::Email Templates::Campaign::Thailand Ttogether::Registration"
+  _alias = "AST L1::Email Templates::Campaign::Thailand Ttogether::Registration"
+}

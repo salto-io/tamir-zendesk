@@ -1,0 +1,48 @@
+zendesk.trigger Notifier_le_demandeur_du_nouveau_ticket_proactif@s {
+  title = "Notifier le demandeur du nouveau ticket proactif"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "deflection"
+      value = [
+        "requester_id",
+        "test",
+        '''
+{{answer_bot.article_list}}
+{{answer_bot.first_article_body}}
+{{${ zendesk.dynamic_content_item.instance.test }}}
+''',
+        "",
+      ]
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "update_type"
+        operator = "is"
+        value = "Create"
+      },
+      {
+        field = "ticket_is_public"
+        operator = "is"
+        value = "public"
+      },
+      {
+        field = "role"
+        operator = "is"
+        value = "agent"
+      },
+      {
+        field = "group_id"
+        operator = "is"
+        value = ""
+      },
+    ]
+  }
+  description = "Un ticket proactif est un ticket créé par un agent pour le compte du demandeur."
+  raw_title = "Notifier le demandeur du nouveau ticket proactif"
+  category_id = zendesk.trigger_category.instance.Notifications
+  _alias = "Notifier le demandeur du nouveau ticket proactif"
+}

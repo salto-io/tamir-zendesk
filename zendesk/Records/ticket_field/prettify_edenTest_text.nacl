@@ -1,0 +1,14 @@
+zendesk.ticket_field prettify_edenTest_text@su {
+  type = "text"
+  raw_title = "prettify edenTest"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "prettify edenTest"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  _alias = "prettify edenTest"
+}

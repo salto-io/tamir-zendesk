@@ -1,0 +1,34 @@
+zendesk.trigger eden_test_1@s {
+  title = "eden test 1"
+  active = true
+  default = false
+  actions = [
+    {
+      field = zendesk.ticket_field.instance._eshed__Categories_of_Newsletter_multiselect@hisssu
+      value = zendesk.ticket_field__custom_field_options.instance._eshed__Categories_of_Newsletter_multiselect_hisssu__arts___crafts@uuuuuumuuuuu
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "update_type"
+        operator = "is"
+        value = "Change"
+      },
+      {
+        field = "ticket_form_id"
+        operator = "is"
+        value = zendesk.ticket_form.instance.eden___test@sbs
+      },
+      {
+        field = "brand_id"
+        operator = "is"
+        value = zendesk.brand.instance.anotherBrand___Eden_test1@sbss
+      },
+    ]
+  }
+  description = "time"
+  raw_title = "eden test 1"
+  category_id = zendesk.trigger_category.instance.Notifications
+  _alias = "eden test 1"
+}

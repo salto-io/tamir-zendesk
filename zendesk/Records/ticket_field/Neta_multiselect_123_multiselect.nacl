@@ -1,0 +1,20 @@
+zendesk.ticket_field Neta_multiselect_123_multiselect@ssu {
+  type = "multiselect"
+  raw_title = "Neta multiselect 123"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "Neta multiselect 123"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  custom_field_options = [
+    zendesk.ticket_field__custom_field_options.instance.Neta_multiselect_123_multiselect_ssu__aaa@uuumuu,
+    zendesk.ticket_field__custom_field_options.instance.Neta_multiselect_123_multiselect_ssu__bbb@uuumuu,
+    zendesk.ticket_field__custom_field_options.instance.Neta_multiselect_123_multiselect_ssu__ccc_modified4@uuumuuu,
+    zendesk.ticket_field__custom_field_options.instance.Neta_multiselect_123_multiselect_ssu____dc_about_option___late_order___nnn@uuumuuuuvuubuuuuu,
+  ]
+  _alias = "Neta multiselect 123"
+}

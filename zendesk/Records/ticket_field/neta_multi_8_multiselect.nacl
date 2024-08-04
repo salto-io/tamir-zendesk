@@ -1,0 +1,19 @@
+zendesk.ticket_field neta_multi_8_multiselect@ssu {
+  type = "multiselect"
+  raw_title = "neta multi 8"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "neta multi 8"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  custom_field_options = [
+    zendesk.ticket_field__custom_field_options.instance.neta_multi_8_multiselect_ssu__tv1@uuumuu,
+    zendesk.ticket_field__custom_field_options.instance.neta_multi_8_multiselect_ssu__tv2@uuumuu,
+    zendesk.ticket_field__custom_field_options.instance.neta_multi_8_multiselect_ssu__tv5@uuumuu,
+  ]
+  _alias = "neta multi 8"
+}

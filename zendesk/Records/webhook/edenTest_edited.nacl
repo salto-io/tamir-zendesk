@@ -1,0 +1,12 @@
+zendesk.webhook edenTest_edited@s {
+  name = "edenTest edited"
+  description = ""
+  status = "active"
+  subscriptions = [
+    "zen:event-type:organization.created",
+  ]
+  endpoint = "https://www.example.com/none"
+  http_method = "POST"
+  request_format = "json"
+  _alias = "edenTest edited"
+}

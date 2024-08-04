@@ -1,0 +1,21 @@
+zendesk.macro restriction2 {
+  title = "restriction2"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "subject"
+      value = "aegdv"
+    },
+  ]
+  restriction = {
+    type = "Group"
+    ids = [
+      zendesk.group.instance.Assistance,
+      zendesk.group.instance.Test,
+      zendesk.group.instance.edenAudit,
+    ]
+  }
+  raw_title = "restriction2"
+  _alias = "restriction2"
+}

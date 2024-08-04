@@ -1,0 +1,23 @@
+zendesk.custom_object_field stagingtest__relationfield {
+  type = "lookup"
+  key = "relationfield"
+  raw_title = "relationField"
+  raw_description = ""
+  position = 1
+  active = true
+  system = false
+  relationship_target_type = "zen:user"
+  relationship_filter = {
+    all = [
+      {
+        field = "role"
+        operator = "is"
+        value = "4"
+      },
+    ]
+  }
+  _parent = [
+    zendesk.custom_object.instance.stagingtest,
+  ]
+  _alias = "relationfield"
+}

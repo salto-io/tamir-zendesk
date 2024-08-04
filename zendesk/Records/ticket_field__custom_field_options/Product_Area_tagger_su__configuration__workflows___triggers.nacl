@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options Product_Area_tagger_su__configuration__workflows___triggers@uumuuuuuuu {
+  raw_name = "Configuration::Workflows & Triggers"
+  value = "configuration__workflows___triggers"
+  _parent = [
+    zendesk.ticket_field.instance.Product_Area_tagger@su,
+  ]
+  _alias = "Configuration::Workflows & Triggers"
+}

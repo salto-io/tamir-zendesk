@@ -1,0 +1,44 @@
+zendesk.trigger ticket_form_test@s {
+  title = "ticket form test"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "group_id"
+      value = zendesk.group.instance.audit_test2@s
+    },
+    {
+      field = "ticket_form_id"
+      value = ""
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = zendesk.ticket_field.instance.digest_test_text@su
+        operator = "present"
+        value = ""
+      },
+      {
+        field = "group_id"
+        operator = "is"
+        value = ""
+      },
+    ]
+    any = [
+      {
+        field = "recipient"
+        operator = "is"
+        value = "audit@d3v-salto2.zendesk.com"
+      },
+      {
+        field = "recipient"
+        operator = "is"
+        value = "audittest@salto87.zendesk.com"
+      },
+    ]
+  }
+  raw_title = "ticket form test"
+  category_id = zendesk.trigger_category.instance.Notifications
+  _alias = "ticket form test"
+}

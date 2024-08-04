@@ -1,0 +1,4 @@
+zendesk.trigger_category Neta_order_test_1212@s {
+  name = "Neta order test 1212"
+  _alias = "Neta order test 1212"
+}

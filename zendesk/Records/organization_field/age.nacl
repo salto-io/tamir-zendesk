@@ -1,0 +1,9 @@
+zendesk.organization_field age {
+  type = "integer"
+  key = "age"
+  raw_title = "age"
+  raw_description = "age"
+  active = true
+  system = false
+  _alias = "age"
+}

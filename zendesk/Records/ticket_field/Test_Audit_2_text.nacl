@@ -1,0 +1,14 @@
+zendesk.ticket_field Test_Audit_2_text@ssu {
+  type = "text"
+  raw_title = "Test Audit 2"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "Test Audit 2"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  _alias = "Test Audit 2"
+}

@@ -1,0 +1,17 @@
+zendesk.macro Noam__test@f {
+  title = "Noam::test"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "status"
+      value = "pending"
+    },
+    {
+      field = "assignee_id"
+      value = "neta.marcus@salto.io"
+    },
+  ]
+  raw_title = "Noam::test"
+  _alias = "Noam::test"
+}

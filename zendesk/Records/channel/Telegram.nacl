@@ -1,0 +1,4 @@
+zendesk.channel Telegram {
+  name = "Telegram"
+  _alias = "Telegram"
+}

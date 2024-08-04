@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options _eshed__Categories_of_Newsletter_multiselect_hisssu__trips___tours@uuuuuumuuuuu {
+  raw_name = "Trips & Tours"
+  value = "trips___tours"
+  _parent = [
+    zendesk.ticket_field.instance._eshed__Categories_of_Newsletter_multiselect@hisssu,
+  ]
+  _alias = "Trips & Tours"
+}

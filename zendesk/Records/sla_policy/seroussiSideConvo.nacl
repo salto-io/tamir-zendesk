@@ -1,0 +1,27 @@
+zendesk.sla_policy seroussiSideConvo {
+  title = "seroussiSideConvo"
+  filter = {
+    all = [
+      {
+        field = "via_id"
+        operator = "is"
+        value = zendesk.channel.instance.Side_conversation@s
+      },
+      {
+        field = "current_via_id"
+        operator = "is_not"
+        value = zendesk.channel.instance.Side_conversation@s
+      },
+    ]
+  }
+  policy_metrics = [
+    {
+      priority = "urgent"
+      metric = "first_reply_time"
+      target = 60
+      business_hours = false
+      target_in_seconds = 3600
+    },
+  ]
+  _alias = "seroussiSideConvo"
+}

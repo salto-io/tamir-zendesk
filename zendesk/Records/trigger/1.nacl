@@ -1,0 +1,23 @@
+zendesk.trigger "1@" {
+  title = "1"
+  active = true
+  default = false
+  actions = [
+    {
+      field = zendesk.ticket_field.instance.123456_text
+      value = "2fr"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = zendesk.ticket_field.instance.123456_text
+        operator = "present"
+        value = ""
+      },
+    ]
+  }
+  raw_title = "1"
+  category_id = zendesk.trigger_category.instance.audit_test@s
+  _alias = "1"
+}

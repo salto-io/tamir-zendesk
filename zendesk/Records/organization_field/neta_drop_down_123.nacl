@@ -1,0 +1,14 @@
+zendesk.organization_field neta_drop_down_123 {
+  type = "dropdown"
+  key = "neta_drop_down_123"
+  raw_title = "Neta drop down 123 edited"
+  raw_description = "drop menu"
+  active = true
+  system = false
+  custom_field_options = [
+    zendesk.organization_field__custom_field_options.instance.neta_drop_down_123__opt123_11,
+    zendesk.organization_field__custom_field_options.instance.neta_drop_down_123__opt123_2,
+    zendesk.organization_field__custom_field_options.instance.neta_drop_down_123__somethinge_else,
+  ]
+  _alias = "Neta drop down 123 edited"
+}

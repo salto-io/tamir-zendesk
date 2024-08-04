@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options _eshed__test__drop_down_tagger_hihisbu___eshed_something_1@uuuuuuumuuuuu {
+  raw_name = "something_1"
+  value = "_eshed_something_1"
+  _parent = [
+    zendesk.ticket_field.instance._eshed__test__drop_down_tagger@hihisbu,
+  ]
+  _alias = "something_1"
+}

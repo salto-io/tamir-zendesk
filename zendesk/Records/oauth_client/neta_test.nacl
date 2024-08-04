@@ -1,0 +1,11 @@
+zendesk.oauth_client neta_test {
+  name = "neta test"
+  identifier = "neta_test"
+  company = "Salto"
+  description = ""
+  redirect_uri = [
+    "http://localhost:1234",
+  ]
+  global = false
+  _alias = "neta test"
+}

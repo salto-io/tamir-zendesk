@@ -1,0 +1,4 @@
+zendesk.channel Google_s_Business_Messages@tss {
+  name = "Google's Business Messages"
+  _alias = "Google's Business Messages"
+}

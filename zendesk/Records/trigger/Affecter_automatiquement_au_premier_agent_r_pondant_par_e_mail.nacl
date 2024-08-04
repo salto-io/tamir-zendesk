@@ -1,0 +1,48 @@
+zendesk.trigger Affecter_automatiquement_au_premier_agent_r_pondant_par_e_mail@sssss_00233ssb {
+  title = "Affecter automatiquement au premier agent répondant par e-mail"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "assignee_id"
+      value = "current_user"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "update_type"
+        operator = "is"
+        value = "Change"
+      },
+      {
+        field = "current_via_id"
+        operator = "is"
+        value = zendesk.channel.instance.Email
+      },
+      {
+        field = "assignee_id"
+        operator = "is"
+        value = ""
+      },
+      {
+        field = "role"
+        operator = "is_not"
+        value = "la+8@example.org"
+      },
+      {
+        field = "role"
+        operator = "is_not"
+        value = "agent"
+      },
+      {
+        field = "role"
+        operator = "is_not"
+        value = "end_user"
+      },
+    ]
+  }
+  raw_title = "Affecter automatiquement au premier agent répondant par e-mail"
+  category_id = zendesk.trigger_category.instance.Notifications
+  _alias = "Affecter automatiquement au premier agent répondant par e-mail"
+}

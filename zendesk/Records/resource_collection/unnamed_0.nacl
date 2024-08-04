@@ -1,0 +1,16 @@
+zendesk.resource_collection unnamed_0 {
+  resources = [
+    {
+      identifier = "time_last_update_field"
+      resource_id = zendesk.ticket_field.instance.Time_spent_last_update__sec__integer@ssssjku
+      type = "ticket_fields"
+      deleted = false
+    },
+    {
+      identifier = "total_time_field"
+      resource_id = zendesk.ticket_field.instance.Total_time_spent__sec__integer@sssjku
+      type = "ticket_fields"
+      deleted = false
+    },
+  ]
+}

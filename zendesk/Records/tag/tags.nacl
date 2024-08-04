@@ -1,0 +1,76 @@
+zendesk.tag bla {
+  id = "bla"
+  _alias = "bla"
+}
+zendesk.tag customer_notified {
+  id = "customer_notified"
+  _alias = "customer_notified"
+}
+zendesk.tag ddd {
+  id = "ddd"
+  _alias = "ddd"
+}
+zendesk.tag eee {
+  id = "eee"
+  _alias = "eee"
+}
+zendesk.tag escalated {
+  id = "escalated"
+  _alias = "escalated"
+}
+zendesk.tag eshed {
+  id = "eshed"
+  _alias = "eshed"
+}
+zendesk.tag hbkj {
+  id = "hbkj"
+  _alias = "hbkj"
+}
+zendesk.tag option2 {
+  id = "option2"
+  _alias = "option2"
+}
+zendesk.tag overdue {
+  id = "overdue"
+  _alias = "overdue"
+}
+zendesk.tag review_delete {
+  id = "review_delete"
+  _alias = "review_delete"
+}
+zendesk.tag rrree {
+  id = "rrree"
+  _alias = "rrree"
+}
+zendesk.tag tagone {
+  id = "tagone"
+  _alias = "tagone"
+}
+zendesk.tag tagtwo {
+  id = "tagtwo"
+  _alias = "tagtwo"
+}
+zendesk.tag testcheckbox1 {
+  id = "testcheckbox1"
+  _alias = "testcheckbox1"
+}
+zendesk.tag titanium {
+  id = "titanium"
+  _alias = "titanium"
+}
+zendesk.tag value {
+  id = "value"
+  _alias = "value"
+}
+zendesk.tag wwwssee {
+  id = "wwwssee"
+  _alias = "wwwssee"
+}
+zendesk.tag yo {
+  id = "yo"
+  _alias = "yo"
+}
+zendesk.tag zgy_check {
+  id = "zgy_check"
+  _alias = "zgy_check"
+}

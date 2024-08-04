@@ -1,0 +1,29 @@
+zendesk.macro macro_with_restrictions@s {
+  title = "macro with restrictions"
+  active = true
+  default = false
+  description = "blip blap bloop"
+  actions = [
+    {
+      field = "side_conversation_ticket"
+      value = [
+        "asd",
+        "<p>asdasd</p>",
+        "SupportAssignable:support_assignable/group/${ zendesk.group.instance.Assistance }",
+        "text/html",
+      ]
+    },
+  ]
+  restriction = {
+    type = "Group"
+    ids = [
+      zendesk.group.instance.Assistance,
+      zendesk.group.instance.Finance,
+      zendesk.group.instance.Neta_Dup@s,
+      zendesk.group.instance.Platform,
+      zendesk.group.instance.SALTO_4956_Group@b,
+    ]
+  }
+  raw_title = "macro with restrictions"
+  _alias = "macro with restrictions"
+}

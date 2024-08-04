@@ -1,0 +1,8 @@
+zendesk.user_field__custom_field_options edenaudittest__audit {
+  raw_name = "audit"
+  value = "audit"
+  _parent = [
+    zendesk.user_field.instance.edenaudittest,
+  ]
+  _alias = "audit"
+}

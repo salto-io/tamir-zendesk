@@ -1,0 +1,16 @@
+zendesk.ticket_field TestRegex1_regexp {
+  type = "regexp"
+  raw_title = "TestRegex1"
+  raw_description = "sdfsdfsdfsdf"
+  active = true
+  required = false
+  collapsed_for_agents = false
+  regexp_for_validation = ".*@.*"
+  raw_title_in_portal = "TestRegex1"
+  visible_in_portal = true
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  agent_description = "Some regex"
+  _alias = "TestRegex1"
+}

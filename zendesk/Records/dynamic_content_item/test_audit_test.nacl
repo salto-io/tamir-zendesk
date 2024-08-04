@@ -1,0 +1,10 @@
+zendesk.dynamic_content_item test_audit_test@s {
+  name = "test audit test"
+  placeholder = "{{dc.audit_test}}"
+  default_locale_id = zendesk.locale.instance.en_US@b
+  variants = [
+    zendesk.dynamic_content_item__variants.instance.test_audit_test_s__cs@uumuu,
+    zendesk.dynamic_content_item__variants.instance.test_audit_test_s__en_US_b@uumuuum,
+  ]
+  _alias = "test audit test"
+}

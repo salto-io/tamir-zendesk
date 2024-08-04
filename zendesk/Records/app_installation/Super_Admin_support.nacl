@@ -1,0 +1,18 @@
+zendesk.app_installation Super_Admin_support@su {
+  app_id = 259163
+  product = "support"
+  settings = {
+    name = "Super Admin"
+    title = "Super Admin"
+  }
+  enabled = false
+  recurring_payment = false
+  collapsible = true
+  plan_information = {
+    name = "Free"
+  }
+  paid = false
+  has_unpaid_subscription = false
+  has_incomplete_subscription = false
+  _alias = "Super Admin"
+}

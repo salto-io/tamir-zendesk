@@ -1,0 +1,22 @@
+zendesk.ticket_field _eshed__Categories_of_Newsletter_multiselect@hisssu {
+  type = "multiselect"
+  raw_title = "[eshed] Categories of Newsletter"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "[eshed] Categories of Newsletter"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  agent_description = "Multiple categories that interest the customer"
+  custom_field_options = [
+    zendesk.ticket_field__custom_field_options.instance._eshed__Categories_of_Newsletter_multiselect_hisssu__fruit___vegetable@uuuuuumuuuuu,
+    zendesk.ticket_field__custom_field_options.instance._eshed__Categories_of_Newsletter_multiselect_hisssu__pets@uuuuuumuu,
+    zendesk.ticket_field__custom_field_options.instance._eshed__Categories_of_Newsletter_multiselect_hisssu__arts___crafts@uuuuuumuuuuu,
+    zendesk.ticket_field__custom_field_options.instance._eshed__Categories_of_Newsletter_multiselect_hisssu__sports@uuuuuumuu,
+    zendesk.ticket_field__custom_field_options.instance._eshed__Categories_of_Newsletter_multiselect_hisssu__trips___tours@uuuuuumuuuuu,
+  ]
+  _alias = "[eshed] Categories of Newsletter"
+}

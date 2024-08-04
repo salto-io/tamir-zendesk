@@ -1,0 +1,20 @@
+zendesk.support_address test_testzendesk7777_gmail_com@umv {
+  brand_id = zendesk.brand.instance.anotherBrand___Eden_test1@sbss
+  name = "test"
+  email = "testzendesk7777@gmail.com"
+  forwarding_status = "failed"
+  spf_status = "failed"
+  cname_status = "unknown"
+  domain_verification_status = "failed"
+  _alias = "test"
+}
+zendesk.support_address test_testzendesk777_gmail_com@umv {
+  brand_id = zendesk.brand.instance.anotherBrand___Eden_test1@sbss
+  name = "test"
+  email = "testzendesk777@gmail.com"
+  forwarding_status = "verified"
+  spf_status = "failed"
+  cname_status = "unknown"
+  domain_verification_status = "failed"
+  _alias = "test"
+}

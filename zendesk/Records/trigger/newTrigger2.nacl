@@ -1,0 +1,32 @@
+zendesk.trigger newTrigger2 {
+  title = "newTrigger2"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "status"
+      value = "solved"
+    },
+    {
+      field = zendesk.ticket_field.instance.Product_Area_tagger@su
+      value = zendesk.ticket_field__custom_field_options.instance.Product_Area_tagger_su__configuration__workflows___triggers@uumuuuuuuu
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "is_not"
+        value = "new"
+      },
+      {
+        field = "subject_includes_word"
+        operator = "is"
+        value = "spam auto-reply"
+      },
+    ]
+  }
+  raw_title = "newTrigger2"
+  category_id = zendesk.trigger_category.instance.Notifications
+  _alias = "newTrigger2"
+}

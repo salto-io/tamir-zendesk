@@ -1,0 +1,51 @@
+zendesk.trigger Notifier_le_demandeur_et_les_personnes_en_copie__CC__de_la_r_ception_de_la_demande@ssssssssjksss_00233sss {
+  title = "Notifier le demandeur et les personnes en copie (CC) de la réception de la demande"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "notification_user"
+      value = [
+        "requester_and_ccs",
+        "[Demande reçue]",
+        '''
+Votre demande ({{ticket.id}}) a été reçue et est en cours de traitement par notre personnel d’assistance.
+
+Pour ajouter des commentaires supplémentaires, répondez à cet e-mail.
+''',
+      ]
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "update_type"
+        operator = "is"
+        value = "Create"
+      },
+      {
+        field = "status"
+        operator = "is_not"
+        value = "solved"
+      },
+      {
+        field = "ticket_is_public"
+        operator = "is"
+        value = "public"
+      },
+      {
+        field = "comment_is_public"
+        operator = "is"
+        value = true
+      },
+      {
+        field = "role"
+        operator = "is"
+        value = "end_user"
+      },
+    ]
+  }
+  raw_title = "Notifier le demandeur et les personnes en copie (CC) de la réception de la demande"
+  category_id = zendesk.trigger_category.instance.Notifications
+  _alias = "Notifier le demandeur et les personnes en copie (CC) de la réception de la demande"
+}

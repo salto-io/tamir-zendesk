@@ -1,0 +1,18 @@
+zendesk.macro macro_w_attachment@s {
+  title = "macro w attachment"
+  active = true
+  default = false
+  description = "asdasd"
+  actions = [
+    {
+      field = "status"
+      value = "open"
+    },
+    {
+      field = "comment_value_html"
+      value = "<p>asddsaads {{current_user.details}} asd<b>asd</b>asdasd</p>"
+    },
+  ]
+  raw_title = "macro w attachment"
+  _alias = "macro w attachment"
+}

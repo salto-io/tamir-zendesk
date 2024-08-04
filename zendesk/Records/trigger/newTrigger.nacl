@@ -1,0 +1,46 @@
+zendesk.trigger newTrigger {
+  title = "newTrigger"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "status"
+      value = "solved"
+    },
+    {
+      field = "notification_messaging_csat"
+      value = "requester_id"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "is"
+        value = "pending"
+      },
+      {
+        field = zendesk.ticket_field.instance.noam_lookup_user_lookup
+        operator = "present"
+      },
+      {
+        field = zendesk.ticket_field.instance.tagger12_tagger
+        operator = "is"
+        value = zendesk.ticket_field__custom_field_options.instance.tagger12_tagger__v11
+      },
+      {
+        field = zendesk.ticket_field.instance.DEL_text
+        operator = "not_present"
+        value = ""
+      },
+      {
+        field = "status"
+        operator = "is"
+        value = "open"
+      },
+    ]
+  }
+  raw_title = "newTrigger"
+  category_id = zendesk.trigger_category.instance.Notifications
+  _alias = "newTrigger"
+}

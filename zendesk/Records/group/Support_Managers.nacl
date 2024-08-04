@@ -1,0 +1,8 @@
+zendesk.group Support_Managers@s {
+  is_public = true
+  name = "Support Managers"
+  description = ""
+  default = false
+  deleted = false
+  _alias = "Support Managers"
+}

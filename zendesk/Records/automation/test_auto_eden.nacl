@@ -1,0 +1,91 @@
+zendesk.automation test_auto_eden@s {
+  title = "test auto eden"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "notification_user"
+      value = [
+        "neta.marcus@salto.io",
+        "zendesk",
+        '''
+ticket :
+this is me testing bla bla {{ticket.ticket_field_${ zendesk.ticket_field.instance.dropdown_test_after_deploy_test_tagger@ssssu }}}
+testing again
+ticket option ticket:
+{{ticket.ticket_field_option_title_${ zendesk.ticket_field.instance.dropdown_test_after_deploy_test_tagger@ssssu }}}
+
+
+organization: 
+{{ticket.organization.custom_fields.${ zendesk.organization_field.instance.edentest1 }}}
+{{ticket.organization.custom_fields.${ zendesk.organization_field.instance.edentest1 }.title}}
+
+user:
+{{ticket.requester.custom_fields.${ zendesk.user_field.instance.test1 }}}
+{{ticket.requester.custom_fields.${ zendesk.user_field.instance.test1 }.title}}
+
+
+more: {{ticket.organization.name}}
+{{ticket.requester.name}}
+
+editing 8.3.4
+
+
+''',
+      ]
+    },
+    {
+      field = "custom_status_id"
+      value = zendesk.custom_status.instance.solved___zd_status_solved__@u_00123_00123vu_00125_00125
+    },
+    {
+      field = "notification_target"
+      value = [
+        zendesk.target.instance.Default_sandbox_email_target_email_target@sssuu,
+        '''
+hi this is a message I am trying to see what will happen. 
+organization: 
+{{ticket.organization.custom_fields.${ zendesk.organization_field.instance.edentest1 }}}
+{{ticket.organization.custom_fields.${ zendesk.organization_field.instance.edentest1 }.title}}
+
+edited6
+''',
+      ]
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "custom_status_id"
+        operator = "is"
+        value = zendesk.custom_status.instance.new___zd_status_new__@u_00123_00123vu_00125_00125
+      },
+      {
+        field = "assignee_id"
+        operator = "is"
+        value = "neta.marcus@salto.io"
+      },
+      {
+        field = "current_tags"
+        operator = "not_includes"
+        value = [
+          zendesk.tag.instance.bla,
+        ]
+      },
+    ]
+    any = [
+      {
+        field = "organization_id"
+        operator = "is"
+        value = "13358311463059"
+      },
+      {
+        field = zendesk.ticket_field.instance.EdenTest3_tagger
+        operator = "is"
+        value = zendesk.ticket_field__custom_field_options.instance.EdenTest3_tagger__echeck
+      },
+    ]
+  }
+  raw_title = "test auto eden"
+  _alias = "test auto eden"
+}

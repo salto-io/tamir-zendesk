@@ -1,0 +1,4 @@
+zendesk.channel CTI_voicemail@s {
+  name = "CTI voicemail"
+  _alias = "CTI voicemail"
+}

@@ -1,0 +1,14 @@
+zendesk.macro Best_Macro_Ever@s {
+  title = "Best Macro Ever"
+  active = true
+  default = false
+  description = "Literally, or figuratively, the best"
+  actions = [
+    {
+      field = "ticket_form_id"
+      value = zendesk.ticket_form.instance.TicketFormOne
+    },
+  ]
+  raw_title = "Best Macro Ever"
+  _alias = "Best Macro Ever"
+}

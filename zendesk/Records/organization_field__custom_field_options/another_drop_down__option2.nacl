@@ -1,0 +1,8 @@
+zendesk.organization_field__custom_field_options another_drop_down__option2 {
+  raw_name = "option2"
+  value = "option2"
+  _parent = [
+    zendesk.organization_field.instance.another_drop_down,
+  ]
+  _alias = "option2"
+}

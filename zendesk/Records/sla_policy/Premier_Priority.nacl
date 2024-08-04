@@ -1,0 +1,29 @@
+zendesk.sla_policy Premier_Priority@s {
+  title = "Premier Priority"
+  filter = {
+    all = [
+      {
+        field = "ticket_form_id"
+        operator = "is"
+        value = zendesk.ticket_form.instance.Premier_Priority_Ticket@s
+      },
+    ]
+  }
+  policy_metrics = [
+    {
+      priority = "high"
+      metric = "first_reply_time"
+      target = 23
+      business_hours = false
+      target_in_seconds = 1380
+    },
+    {
+      priority = "urgent"
+      metric = "first_reply_time"
+      target = 60
+      business_hours = false
+      target_in_seconds = 3600
+    },
+  ]
+  _alias = "Premier Priority"
+}

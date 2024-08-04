@@ -1,0 +1,17 @@
+zendesk.macro sacsacsac {
+  title = "sacsacsac"
+  active = true
+  default = false
+  description = "sacsacsac!"
+  actions = [
+    {
+      field = "comment_value_html"
+      value = "<p>sacsacsac</p>"
+    },
+  ]
+  attachments = [
+    zendesk.macro_attachment.instance.sacsacsac__Screenshot_2024_03_10_at_15_16_27_png@uuubbuuvvv,
+  ]
+  raw_title = "sacsacsac"
+  _alias = "sacsacsac"
+}

@@ -1,0 +1,28 @@
+zendesk.routing_attribute_value Test__newSkill {
+  name = "newSkill"
+  conditions = {
+    all = [
+      {
+        subject = "requester_id"
+        operator = "is"
+        value = "assignee_id"
+      },
+      {
+        subject = "requester_id"
+        operator = "is"
+        value = "neta.marcus@salto.io"
+      },
+    ]
+    any = [
+      {
+        subject = "requester_id"
+        operator = "is_not"
+        value = "current_user"
+      },
+    ]
+  }
+  _parent = [
+    zendesk.routing_attribute.instance.Test,
+  ]
+  _alias = "newSkill"
+}

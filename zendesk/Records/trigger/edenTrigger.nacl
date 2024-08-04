@@ -1,0 +1,26 @@
+zendesk.trigger edenTrigger {
+  title = "edenTrigger"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "current_tags"
+      value = [
+        zendesk.tag.instance.hbkj,
+      ]
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = zendesk.organization_field.instance.age
+        operator = "is"
+        value = "12"
+      },
+    ]
+  }
+  description = "bla"
+  raw_title = "edenTrigger"
+  category_id = zendesk.trigger_category.instance.General_Settings@s
+  _alias = "edenTrigger"
+}

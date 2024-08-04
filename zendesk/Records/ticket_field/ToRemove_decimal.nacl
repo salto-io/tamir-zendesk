@@ -1,0 +1,15 @@
+zendesk.ticket_field ToRemove_decimal {
+  type = "decimal"
+  raw_title = "ToRemove"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  regexp_for_validation = "\\A[-+]?[0-9]*[.,]?[0-9]+\\z"
+  raw_title_in_portal = "ToRemove"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  _alias = "ToRemove"
+}

@@ -1,0 +1,10 @@
+zendesk.dynamic_content_item dynamic_content_item_5443@s {
+  name = "dynamic content item 5443"
+  placeholder = "{{dc.dynamic_content_item_544}}"
+  default_locale_id = zendesk.locale.instance.en_US@b
+  variants = [
+    zendesk.dynamic_content_item__variants.instance.dynamic_content_item_5443_s__en_US_b@uuumuuum,
+    zendesk.dynamic_content_item__variants.instance.dynamic_content_item_5443_s__he@uuumuu,
+  ]
+  _alias = "dynamic content item 5443"
+}

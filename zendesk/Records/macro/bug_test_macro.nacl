@@ -1,0 +1,13 @@
+zendesk.macro bug_test_macro@s {
+  title = "bug test macro"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "brand_id"
+      value = zendesk.brand.instance.anotherBrand___Eden_test1@sbss
+    },
+  ]
+  raw_title = "bug test macro"
+  _alias = "bug test macro"
+}

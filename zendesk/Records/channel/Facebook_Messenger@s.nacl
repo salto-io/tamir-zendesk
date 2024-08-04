@@ -1,0 +1,4 @@
+zendesk.channel Facebook_Messenger@s {
+  name = "Facebook Messenger"
+  _alias = "Facebook Messenger"
+}

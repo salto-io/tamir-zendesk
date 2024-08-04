@@ -1,0 +1,10 @@
+zendesk.dynamic_content_item__variants colon____multi_space_fsssb__af@uuuuumuu {
+  content = "asdfa"
+  locale_id = zendesk.locale.instance.af
+  active = true
+  default = true
+  _parent = [
+    zendesk.dynamic_content_item.instance.colon____multi_space@fsssb,
+  ]
+  _alias = "colon:   multi-space - af"
+}

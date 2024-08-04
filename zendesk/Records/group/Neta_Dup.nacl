@@ -1,0 +1,8 @@
+zendesk.group Neta_Dup@s {
+  is_public = false
+  name = "Neta Dup"
+  description = ""
+  default = false
+  deleted = false
+  _alias = "Neta Dup"
+}

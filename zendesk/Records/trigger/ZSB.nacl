@@ -1,0 +1,38 @@
+zendesk.trigger ZSB {
+  title = "ZSB"
+  active = true
+  default = false
+  actions = [
+    {
+      field = zendesk.ticket_field.instance.ZSB_checkbox
+      value = "true"
+    },
+    {
+      field = "status"
+      value = "pending"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "ticket_form_id"
+        operator = "is"
+        value = zendesk.ticket_form.instance.ZSB
+      },
+      {
+        field = zendesk.ticket_field.instance.ZSB_checkbox
+        operator = "is"
+        value = "false"
+      },
+      {
+        field = "status"
+        operator = "is"
+        value = "new"
+      },
+    ]
+  }
+  description = "On new ZSB ticket"
+  raw_title = "ZSB"
+  category_id = zendesk.trigger_category.instance.Notifications
+  _alias = "ZSB"
+}

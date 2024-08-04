@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options shir_test_drop_down_tagger_sssu__aroma@uuuumuu {
+  raw_name = "aroma"
+  value = "aroma"
+  _parent = [
+    zendesk.ticket_field.instance.shir_test_drop_down_tagger@sssu,
+  ]
+  _alias = "aroma"
+}

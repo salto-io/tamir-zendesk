@@ -1,0 +1,13 @@
+zendesk.macro missingMacro {
+  title = "missingMacro"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "type"
+      value = "question"
+    },
+  ]
+  raw_title = "missingMacro"
+  _alias = "missingMacro"
+}

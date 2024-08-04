@@ -1,0 +1,8 @@
+zendesk.target _eshed__jira_target_jira_target@hissuu {
+  type = "jira_target"
+  title = "[eshed] jira target"
+  active = true
+  username = "eshed"
+  target_url = "https://test.zendesk.com/api/v2/tickets/{{ticket.id}}.json?ticket[comment][public]=false"
+  _alias = "[eshed] jira target"
+}

@@ -1,0 +1,11 @@
+zendesk.support_address BrandAForGuide_support_BrandAForGuide_subdomain_zendesk_com@umvvv {
+  brand_id = zendesk.brand.instance.BrandAForGuide
+  default = true
+  name = "BrandAForGuide"
+  email = "support@${ zendesk.brand.instance.BrandAForGuide.subdomain }.zendesk.com"
+  forwarding_status = "verified"
+  spf_status = "verified"
+  cname_status = "verified"
+  domain_verification_status = "verified"
+  _alias = "BrandAForGuide"
+}

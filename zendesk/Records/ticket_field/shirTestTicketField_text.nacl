@@ -1,0 +1,14 @@
+zendesk.ticket_field shirTestTicketField_text {
+  type = "text"
+  raw_title = "shirTestTicketField"
+  raw_description = "shirs test"
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "shirTestTicketField"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  _alias = "shirTestTicketField"
+}

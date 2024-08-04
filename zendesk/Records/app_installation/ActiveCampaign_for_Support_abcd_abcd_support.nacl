@@ -1,0 +1,19 @@
+zendesk.app_installation ActiveCampaign_for_Support_abcd_abcd_support@ssssu {
+  app_id = 1417
+  product = "support"
+  settings = {
+    name = "ActiveCampaign for Support abcd abcd"
+    title = "ActiveCampaign for Support abcd abcd"
+    api_url = "asdasd"
+  }
+  enabled = true
+  recurring_payment = false
+  collapsible = true
+  plan_information = {
+    name = "Default Plan"
+  }
+  paid = false
+  has_unpaid_subscription = false
+  has_incomplete_subscription = false
+  _alias = "ActiveCampaign for Support abcd abcd"
+}

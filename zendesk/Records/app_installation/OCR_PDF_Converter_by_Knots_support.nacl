@@ -1,0 +1,17 @@
+zendesk.app_installation OCR_PDF_Converter_by_Knots_support@ssssu {
+  app_id = 853204
+  product = "support"
+  settings = {
+    initialized = "false"
+    name = "OCR PDF Converter by Knots"
+    title = "OCR PDF Converter by Knots"
+    videoShown = "false"
+  }
+  enabled = true
+  recurring_payment = false
+  collapsible = true
+  paid = false
+  has_unpaid_subscription = false
+  has_incomplete_subscription = false
+  _alias = "OCR PDF Converter by Knots"
+}

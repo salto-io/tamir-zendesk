@@ -1,0 +1,17 @@
+zendesk.macro blika_blook {
+  title = "blika_blook"
+  active = true
+  default = false
+  description = "blika_blook!"
+  actions = [
+    {
+      field = "comment_value_html"
+      value = "<p>blika_blook kakakak</p>"
+    },
+  ]
+  attachments = [
+    zendesk.macro_attachment.instance.blika_blook__Screenshot_2024_03_10_at_15_16_27_png@uuuubbuuvvv,
+  ]
+  raw_title = "blika_blook"
+  _alias = "blika_blook"
+}

@@ -1,0 +1,9 @@
+zendesk.custom_object_field__custom_field_options stagingtest__dropdown__value2 {
+  name = "value2"
+  raw_name = "value2"
+  value = "value2"
+  _parent = [
+    zendesk.custom_object_field.instance.stagingtest__dropdown,
+  ]
+  _alias = "value2"
+}

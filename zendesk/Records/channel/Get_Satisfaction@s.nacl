@@ -1,0 +1,4 @@
+zendesk.channel Get_Satisfaction@s {
+  name = "Get Satisfaction"
+  _alias = "Get Satisfaction"
+}

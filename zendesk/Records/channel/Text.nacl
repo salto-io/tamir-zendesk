@@ -1,0 +1,4 @@
+zendesk.channel Text {
+  name = "Text"
+  _alias = "Text"
+}

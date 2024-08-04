@@ -1,0 +1,104 @@
+zendesk.view ViewWithMissingTicketForm {
+  active = true
+  default = false
+  description = "aaaa"
+  execution = {
+    group_by = "requester"
+    group_order = "desc"
+    sort_order = "desc"
+    group = {
+      id = "requester"
+      title = "Requester"
+      filterable = true
+      sortable = true
+      order = "desc"
+    }
+    columns = [
+      {
+        id = "satisfaction_score"
+        title = "Satisfaction"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "submitter"
+        title = "Submitter"
+        filterable = false
+        sortable = false
+      },
+    ]
+    fields = [
+      {
+        id = "satisfaction_score"
+        title = "Satisfaction"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "submitter"
+        title = "Submitter"
+        filterable = false
+        sortable = false
+      },
+    ]
+  }
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "is_not"
+        value = "solved"
+      },
+    ]
+  }
+  raw_title = "ViewWithMissingTicketForm"
+  _alias = "ViewWithMissingTicketForm"
+}

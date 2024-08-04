@@ -1,0 +1,4 @@
+zendesk.trigger_category Billing {
+  name = "Billing"
+  _alias = "Billing"
+}

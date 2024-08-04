@@ -1,0 +1,6 @@
+zendesk.sharing_agreement Salto___Zendesk@sms {
+  name = "Salto @ Zendesk"
+  type = "outbound"
+  status = "accepted"
+  remote_subdomain = "d3v-salto3"
+}

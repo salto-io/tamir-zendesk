@@ -1,0 +1,16 @@
+zendesk.routing_attribute_value Test__other {
+  name = "other"
+  conditions = {
+    all = [
+      {
+        subject = "ticket_form_id"
+        operator = "is"
+        value = zendesk.ticket_form.instance.tagger11_form@s
+      },
+    ]
+  }
+  _parent = [
+    zendesk.routing_attribute.instance.Test,
+  ]
+  _alias = "other"
+}

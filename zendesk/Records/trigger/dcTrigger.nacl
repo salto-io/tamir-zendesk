@@ -1,0 +1,56 @@
+zendesk.trigger dcTrigger {
+  title = "dcTrigger"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "notification_user"
+      value = [
+        "neta.marcus@salto.io",
+        "this is dc test",
+        "{{${ zendesk.dynamic_content_item.instance.test }}}",
+      ]
+    },
+    {
+      field = "add_skills"
+      value = zendesk.routing_attribute_value.instance.Test__Test1
+    },
+    {
+      field = "set_skills"
+      value = zendesk.routing_attribute_value.instance.Test__Test2
+    },
+    {
+      field = "remove_skills"
+      value = zendesk.routing_attribute_value.instance.Test__missingSkill
+    },
+    {
+      field = zendesk.ticket_field.instance._eshed__Categories_of_Newsletter_multiselect@hisssu
+      value = zendesk.ticket_field__custom_field_options.instance._eshed__Categories_of_Newsletter_multiselect_hisssu__fruit___vegetable@uuuuuumuuuuu
+    },
+    {
+      field = "ticket_form_id"
+      value = zendesk.ticket_form.instance.Gamers_form@s
+    },
+    {
+      field = zendesk.organization_field.instance.1@
+      value = "dsa"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = zendesk.ticket_field.instance.123456_text
+        operator = "present"
+        value = ""
+      },
+      {
+        field = "subject_includes_word"
+        operator = "is"
+        value = "this is dc test"
+      },
+    ]
+  }
+  raw_title = "dcTrigger"
+  category_id = zendesk.trigger_category.instance.audit_test@s
+  _alias = "dcTrigger"
+}

@@ -1,0 +1,14 @@
+zendesk.ticket_field Assign__assignee@_00233u {
+  type = "assignee"
+  raw_title = "Assigné"
+  raw_description = "Agent affecté à votre demande"
+  active = true
+  required = true
+  collapsed_for_agents = false
+  raw_title_in_portal = "Assigné"
+  visible_in_portal = true
+  editable_in_portal = false
+  required_in_portal = false
+  removable = false
+  _alias = "Assigné"
+}

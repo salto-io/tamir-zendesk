@@ -1,0 +1,4 @@
+zendesk.channel Google_RCS@s {
+  name = "Google RCS"
+  _alias = "Google RCS"
+}

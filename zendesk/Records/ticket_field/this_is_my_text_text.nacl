@@ -1,0 +1,14 @@
+zendesk.ticket_field this_is_my_text_text@sssu {
+  type = "text"
+  raw_title = "this is my text"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "this is my text"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  _alias = "this is my text"
+}

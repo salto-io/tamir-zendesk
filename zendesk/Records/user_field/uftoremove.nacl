@@ -1,0 +1,9 @@
+zendesk.user_field uftoremove {
+  type = "text"
+  key = "uftoremove"
+  raw_title = "UFToRemove"
+  raw_description = ""
+  active = true
+  system = false
+  _alias = "UFToRemove"
+}

@@ -1,0 +1,47 @@
+zendesk.automation shir_test@s {
+  title = "shir test"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "assignee_id"
+      value = "current_user"
+    },
+    {
+      field = "assignee_id"
+      value = "requester_id"
+    },
+    {
+      field = "follower"
+      value = "la+64@example.org"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "assignee_id"
+        operator = "is"
+        value = "requester_id"
+      },
+      {
+        field = zendesk.ticket_field.instance.shir_test_drop_down_tagger@sssu
+        operator = "is"
+        value = zendesk.ticket_field__custom_field_options.instance.shir_test_drop_down_tagger_sssu__arcafe@uuuumuu
+      },
+      {
+        field = "organization_id"
+        operator = "is"
+        value = "13358311463827"
+      },
+    ]
+    any = [
+      {
+        field = "assignee_id"
+        operator = "is"
+        value = "requester_id"
+      },
+    ]
+  }
+  raw_title = "shir test"
+  _alias = "shir test"
+}

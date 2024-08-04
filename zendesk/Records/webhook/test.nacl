@@ -1,0 +1,16 @@
+zendesk.webhook test {
+  name = "test"
+  description = "desc"
+  status = "active"
+  subscriptions = [
+    "conditional_ticket_events",
+  ]
+  endpoint = "https://example.com/status/200"
+  http_method = "GET"
+  request_format = "json"
+  authentication = {
+    type = "bearer_token"
+    add_position = "header"
+  }
+  _alias = "test"
+}

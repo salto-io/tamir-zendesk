@@ -1,0 +1,7 @@
+zendesk.routing_attribute test2 {
+  name = "test2"
+  values = [
+    zendesk.routing_attribute_value.instance.test2__edenskill,
+  ]
+  _alias = "test2"
+}

@@ -1,0 +1,12 @@
+zendesk.brand support {
+  name = "support"
+  brand_url = "https://nms-support-test.zendesk.com"
+  subdomain = "nms-support-test"
+  has_help_center = true
+  help_center_state = "restricted"
+  active = true
+  default = false
+  is_deleted = false
+  signature_template = "{{agent.signature}}"
+  _alias = "support"
+}

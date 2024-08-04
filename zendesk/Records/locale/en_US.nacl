@@ -1,0 +1,9 @@
+zendesk.locale en_US@b {
+  id = 1
+  locale = "en-US"
+  name = "English"
+  native_name = "English (United States)"
+  presentation_name = "English (United States)"
+  rtl = false
+  _alias = "English (United States)"
+}

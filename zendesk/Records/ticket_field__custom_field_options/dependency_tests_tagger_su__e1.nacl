@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options dependency_tests_tagger_su__e1@uumuu {
+  raw_name = "e1"
+  value = "e1"
+  _parent = [
+    zendesk.ticket_field.instance.dependency_tests_tagger@su,
+  ]
+  _alias = "e1"
+}

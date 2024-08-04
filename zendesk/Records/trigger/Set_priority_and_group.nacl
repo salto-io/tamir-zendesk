@@ -1,0 +1,31 @@
+zendesk.trigger Set_priority_and_group@s {
+  title = "Set priority and group"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "priority"
+      value = "normal"
+    },
+    {
+      field = "group_id"
+      value = zendesk.group.instance.Assistance
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "update_type"
+        operator = "is"
+        value = "Create"
+      },
+      {
+        field = "priority"
+        operator = "is"
+      },
+    ]
+  }
+  raw_title = "Set priority and group"
+  category_id = zendesk.trigger_category.instance.General_Settings@s
+  _alias = "Set priority and group"
+}

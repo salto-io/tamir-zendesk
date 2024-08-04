@@ -1,0 +1,16 @@
+zendesk.routing_attribute_value Test__edenTest {
+  name = "edenTest"
+  conditions = {
+    all = [
+      {
+        subject = zendesk.organization_field.instance.edenmissingtest
+        operator = "is"
+        value = zendesk.organization_field__custom_field_options.instance.edenmissingtest__b
+      },
+    ]
+  }
+  _parent = [
+    zendesk.routing_attribute.instance.Test,
+  ]
+  _alias = "edenTest"
+}

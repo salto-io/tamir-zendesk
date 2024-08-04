@@ -1,0 +1,190 @@
+zendesk.trigger michel_scott_trigger@s {
+  title = "michel scott trigger"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "status"
+      value = "open"
+    },
+    {
+      field = "ticket_form_id"
+      value = zendesk.ticket_form.instance.Formulaire_de_ticket_par_d_faut@ssss_00233
+    },
+    {
+      field = "priority"
+      value = "urgent"
+    },
+    {
+      field = "type"
+      value = "incident"
+    },
+    {
+      field = "group_id"
+      value = zendesk.group.instance.Assistance
+    },
+    {
+      field = "assignee_id"
+      value = "requester_id"
+    },
+    {
+      field = "set_tags"
+      value = [
+        zendesk.tag.instance.eee,
+        zendesk.tag.instance.ddd,
+      ]
+    },
+    {
+      field = "remove_tags"
+      value = [
+        zendesk.tag.instance.rrree,
+        zendesk.tag.instance.wwwssee,
+      ]
+    },
+    {
+      field = zendesk.user_field.instance.userfield1
+      value = zendesk.user_field__custom_field_options.instance.userfield1__v1
+    },
+    {
+      field = zendesk.organization_field.instance.another_drop_down
+      value = zendesk.organization_field__custom_field_options.instance.another_drop_down__option3
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "is"
+        value = "new"
+      },
+      {
+        field = "number_of_incidents"
+        operator = "less_than"
+        value = "1"
+      },
+      {
+        field = "brand_id"
+        operator = "changed"
+      },
+      {
+        field = "ticket_form_id"
+        operator = "not_changed"
+      },
+      {
+        field = "type"
+        operator = "not_value"
+        value = "task"
+      },
+      {
+        field = "priority"
+        operator = "greater_than"
+        value = "high"
+      },
+      {
+        field = "group_id"
+        operator = "is"
+        value = zendesk.group.instance.Assistance
+      },
+    ]
+    any = [
+      {
+        field = zendesk.organization_field.instance.now
+        operator = "is"
+        value = "2022-02-06"
+      },
+      {
+        field = zendesk.organization_field.instance.age
+        operator = "is_not"
+        value = "2"
+      },
+      {
+        field = "requester_id"
+        operator = "value"
+        value = "current_user"
+      },
+      {
+        field = "current_tags"
+        operator = "includes"
+        value = [
+          zendesk.tag.instance.tagone,
+          zendesk.tag.instance.tagtwo,
+          zendesk.tag.instance.value,
+        ]
+      },
+      {
+        field = "via_id"
+        operator = "is"
+        value = zendesk.channel.instance.Chat
+      },
+      {
+        field = "current_via_id"
+        operator = "is"
+        value = zendesk.channel.instance.X_Corp@s
+      },
+      {
+        field = "recipient"
+        operator = "is"
+        value = "support@d3v-salto2.zendesk.com"
+      },
+      {
+        field = "update_type"
+        operator = "is"
+        value = "Change"
+      },
+      {
+        field = "subject_includes_word"
+        operator = "is"
+        value = "contain this"
+      },
+      {
+        field = "ticket_is_public"
+        operator = "is"
+        value = "public"
+      },
+      {
+        field = "comment_is_public"
+        operator = "is"
+        value = "requester_can_see_comment"
+      },
+      {
+        field = "comment_includes_word"
+        operator = "not_includes"
+        value = "word1 word2 word3"
+      },
+      {
+        field = "reopens"
+        operator = "greater_than"
+        value = "4"
+      },
+      {
+        field = "replies"
+        operator = "greater_than"
+        value = "66"
+      },
+      {
+        field = "ticket_due_date"
+        operator = "is"
+        value = "false"
+      },
+      {
+        field = "requester_role"
+        operator = "is"
+        value = "2"
+      },
+      {
+        field = "requester_twitter_followers_count"
+        operator = "less_than"
+        value = "4"
+      },
+      {
+        field = zendesk.organization_field.instance.another_drop_down
+        operator = "is_not"
+        value = zendesk.organization_field__custom_field_options.instance.another_drop_down__option2
+      },
+    ]
+  }
+  description = "very complex"
+  raw_title = "michel scott trigger"
+  category_id = zendesk.trigger_category.instance.Billing
+  _alias = "michel scott trigger"
+}

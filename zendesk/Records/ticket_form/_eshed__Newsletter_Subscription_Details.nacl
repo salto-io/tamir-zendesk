@@ -1,0 +1,24 @@
+zendesk.ticket_form _eshed__Newsletter_Subscription_Details@hisss {
+  raw_name = "[eshed] Newsletter Subscription Details"
+  raw_display_name = ""
+  end_user_visible = false
+  ticket_field_ids = [
+    zendesk.ticket_field.instance.Statut_status,
+    zendesk.ticket_field.instance.Groupe_group,
+    zendesk.ticket_field.instance.Assign__assignee@_00233u,
+    zendesk.ticket_field.instance.Ticket_status_custom_status@suu,
+    zendesk.ticket_field.instance.Sujet_subject,
+    zendesk.ticket_field.instance.Description_description,
+    zendesk.ticket_field.instance._eshed__Subscribed_to_Newsletter_checkbox@hisssu,
+    zendesk.ticket_field.instance._eshed__Subscription_Expiration_Date_date@hisssu,
+    zendesk.ticket_field.instance._eshed__Categories_of_Newsletter_multiselect@hisssu,
+    zendesk.ticket_field.instance._eshed__List_of_Fruit_tagger@hisssu,
+  ]
+  active = true
+  default = false
+  in_all_brands = false
+  restricted_brand_ids = [
+    zendesk.brand.instance.Eshed_Demo@s,
+  ]
+  _alias = "[eshed] Newsletter Subscription Details"
+}

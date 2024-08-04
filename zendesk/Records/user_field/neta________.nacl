@@ -1,0 +1,9 @@
+zendesk.user_field neta________ {
+  type = "text"
+  key = "neta________"
+  raw_title = "neta [{!?.}]"
+  raw_description = ""
+  active = true
+  system = false
+  _alias = "neta [{!?.}]"
+}

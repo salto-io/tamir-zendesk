@@ -1,0 +1,22 @@
+zendesk.ticket_form trigger_test@s {
+  raw_name = "trigger test"
+  raw_display_name = "trigger test"
+  end_user_visible = true
+  ticket_field_ids = [
+    zendesk.ticket_field.instance.Statut_status,
+    zendesk.ticket_field.instance.Groupe_group,
+    zendesk.ticket_field.instance.Assign__assignee@_00233u,
+    zendesk.ticket_field.instance.Ticket_status_custom_status@suu,
+    zendesk.ticket_field.instance.Sujet_subject,
+    zendesk.ticket_field.instance.Description_description,
+    zendesk.ticket_field.instance.digest_test_text@su,
+    zendesk.ticket_field.instance.Test_Audit_2_text@ssu,
+    zendesk.ticket_field.instance.new_for_audit_text@ssu,
+    zendesk.ticket_field.instance.DA_Field_text@su,
+    zendesk.ticket_field.instance.DEL_text,
+  ]
+  active = true
+  default = false
+  in_all_brands = true
+  _alias = "trigger test"
+}

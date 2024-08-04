@@ -1,0 +1,4 @@
+zendesk.channel WeChat {
+  name = "WeChat"
+  _alias = "WeChat"
+}

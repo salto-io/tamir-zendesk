@@ -1,0 +1,8 @@
+zendesk.user_field__custom_field_options neta_dropdown_123__opt123_11 {
+  raw_name = "opt123_11"
+  value = "opt123_11"
+  _parent = [
+    zendesk.user_field.instance.neta_dropdown_123,
+  ]
+  _alias = "opt123_11"
+}

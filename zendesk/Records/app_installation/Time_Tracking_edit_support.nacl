@@ -1,0 +1,24 @@
+zendesk.app_installation Time_Tracking_edit_support@sbu {
+  app_id = 35111
+  product = "support"
+  settings = {
+    display_timelogs = true
+    hide_from_agents = false
+    auto_pause_resume = true
+    manual_pause_resume = true
+    reset = true
+    resume_on_changes = false
+    time_submission = true
+    simple_submission = false
+    debug_prevent_huge_times = false
+    name = "Time Tracking-edit"
+    title = "Time Tracking-edit"
+  }
+  enabled = true
+  recurring_payment = false
+  collapsible = true
+  paid = false
+  has_unpaid_subscription = false
+  has_incomplete_subscription = false
+  _alias = "Time Tracking-edit"
+}

@@ -1,0 +1,13 @@
+zendesk.app_installation test_support {
+  app_id = zendesk.app_owned.instance.test
+  product = "support"
+  settings = {
+    name = "test"
+    title = "test"
+  }
+  enabled = true
+  recurring_payment = false
+  collapsible = true
+  has_incomplete_subscription = false
+  _alias = "test"
+}

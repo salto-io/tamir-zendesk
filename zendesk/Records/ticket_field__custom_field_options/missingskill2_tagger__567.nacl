@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options missingskill2_tagger__567 {
+  raw_name = "567"
+  value = "567"
+  _parent = [
+    zendesk.ticket_field.instance.missingskill2_tagger,
+  ]
+  _alias = "567"
+}

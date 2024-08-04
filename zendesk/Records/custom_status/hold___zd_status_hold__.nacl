@@ -1,0 +1,9 @@
+zendesk.custom_status hold___zd_status_hold__@u_00123_00123vu_00125_00125 {
+  status_category = "hold"
+  raw_agent_label = "{{zd.status_hold}}"
+  raw_end_user_label = "{{zd.status_end_user_hold}}"
+  raw_description = "{{zd.status_hold_description}}"
+  raw_end_user_description = "{{zd.status_end_user_hold_description}}"
+  active = true
+  _alias = "On-hold"
+}

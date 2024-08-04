@@ -1,0 +1,31 @@
+zendesk.automation Auto_mark_pro_tickets@s {
+  title = "Auto mark pro tickets"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "custom_status_id"
+      value = zendesk.custom_status.instance.open___zd_status_open__@u_00123_00123vu_00125_00125
+    },
+    {
+      field = zendesk.ticket_field.instance.Is_Pro_Customer_checkbox@ssu
+      value = "true"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "ticket_form_id"
+        operator = "is"
+        value = zendesk.ticket_form.instance.Pro_customers_ticket_form@s
+      },
+      {
+        field = "status"
+        operator = "is"
+        value = "new"
+      },
+    ]
+  }
+  raw_title = "Auto mark pro tickets"
+  _alias = "Auto mark pro tickets"
+}

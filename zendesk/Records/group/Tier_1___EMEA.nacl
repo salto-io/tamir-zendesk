@@ -1,0 +1,8 @@
+zendesk.group Tier_1___EMEA@ssbs {
+  is_public = true
+  name = "Tier 1 - EMEA"
+  description = "Tier 1 cases for EMEA Region"
+  default = false
+  deleted = false
+  _alias = "Tier 1 - EMEA"
+}

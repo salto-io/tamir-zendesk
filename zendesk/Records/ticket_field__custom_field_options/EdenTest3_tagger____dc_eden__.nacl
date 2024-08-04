@@ -1,0 +1,7 @@
+zendesk.ticket_field__custom_field_options EdenTest3_tagger____dc_eden__@uuuuuvuu {
+  raw_name = "{{${ zendesk.dynamic_content_item.instance.eden }}}"
+  value = "__dc.eden__"
+  _parent = [
+    zendesk.ticket_field.instance.EdenTest3_tagger,
+  ]
+}

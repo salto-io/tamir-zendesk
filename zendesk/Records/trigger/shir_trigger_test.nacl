@@ -1,0 +1,34 @@
+zendesk.trigger shir_trigger_test@s {
+  title = "shir trigger test"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "priority"
+      value = "urgent"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = zendesk.ticket_field.instance.shir_test_drop_down_tagger@sssu
+        operator = "is_not"
+        value = zendesk.ticket_field__custom_field_options.instance.shir_test_drop_down_tagger_sssu__aroma@uuuumuu
+      },
+      {
+        field = "group_id"
+        operator = "is"
+        value = zendesk.group.instance.Finance
+      },
+      {
+        field = "role"
+        operator = "is_not"
+        value = "la+10@example.org"
+      },
+    ]
+  }
+  description = "ticket field deletion"
+  raw_title = "shir trigger test"
+  category_id = zendesk.trigger_category.instance.Notifications
+  _alias = "shir trigger test"
+}

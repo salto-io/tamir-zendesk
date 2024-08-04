@@ -1,0 +1,15 @@
+zendesk.ticket_field zip_code_with_validation_regexp@sssu {
+  type = "regexp"
+  raw_title = "zip code with validation"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  regexp_for_validation = "\\b[0-9]{5}(?:-[0-9]{4})?\\b"
+  raw_title_in_portal = "zip code with validation (user side)"
+  visible_in_portal = true
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  _alias = "zip code with validation"
+}

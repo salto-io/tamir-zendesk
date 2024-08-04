@@ -1,0 +1,15 @@
+zendesk.ticket_field ZSB_checkbox {
+  type = "checkbox"
+  raw_title = "ZSB"
+  raw_description = "Invoke ZSB"
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "ZSB"
+  visible_in_portal = true
+  editable_in_portal = true
+  required_in_portal = false
+  removable = true
+  agent_description = "Is this ZSB related?"
+  _alias = "ZSB"
+}

@@ -1,0 +1,15 @@
+zendesk.ticket_field Is_Transformational__checkbox@sau {
+  type = "checkbox"
+  raw_title = "Is Transformational?"
+  raw_description = "Is this a transformational request?"
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "Is Transformational?"
+  visible_in_portal = true
+  editable_in_portal = true
+  required_in_portal = false
+  removable = true
+  agent_description = "Is this a transformational request?"
+  _alias = "Is Transformational?"
+}

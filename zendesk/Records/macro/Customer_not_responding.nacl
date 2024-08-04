@@ -1,0 +1,13 @@
+zendesk.macro Customer_not_responding@s {
+  title = "Customer not responding"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "priority"
+      value = "low"
+    },
+  ]
+  raw_title = "Customer not responding"
+  _alias = "Customer not responding"
+}

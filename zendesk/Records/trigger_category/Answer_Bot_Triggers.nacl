@@ -1,0 +1,4 @@
+zendesk.trigger_category Answer_Bot_Triggers@s {
+  name = "Answer Bot Triggers"
+  _alias = "Answer Bot Triggers"
+}

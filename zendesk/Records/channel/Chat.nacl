@@ -1,0 +1,4 @@
+zendesk.channel Chat {
+  name = "Chat"
+  _alias = "Chat"
+}

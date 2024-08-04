@@ -1,0 +1,38 @@
+zendesk.trigger Notifier_le_demandeur_et_les_personnes_en_copie__CC__de_la_mise___jour_des_commentaires@ssssssssjkssss_00224sss {
+  title = "Notifier le demandeur et les personnes en copie (CC) de la mise à jour des commentaires"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "notification_user"
+      value = [
+        "requester_and_ccs",
+        "[{{ticket.account}}] Sujet : {{ticket.title}}",
+        '''
+Your request ({{ticket.id}}) has been updated. To add additional comments, reply to this email.
+{{ticket.comments_formatted}}
+
+support engineer
+{{ticket.assignee.name}}
+''',
+      ]
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "update_type"
+        operator = "is"
+        value = "Change"
+      },
+      {
+        field = "comment_is_public"
+        operator = "is"
+        value = "true"
+      },
+    ]
+  }
+  raw_title = "Notifier le demandeur et les personnes en copie (CC) de la mise à jour des commentaires"
+  category_id = zendesk.trigger_category.instance.Notifications
+  _alias = "Notifier le demandeur et les personnes en copie (CC) de la mise à jour des commentaires"
+}

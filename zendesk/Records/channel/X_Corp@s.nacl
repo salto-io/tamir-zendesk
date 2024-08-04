@@ -1,0 +1,4 @@
+zendesk.channel X_Corp@s {
+  name = "X Corp"
+  _alias = "X Corp"
+}

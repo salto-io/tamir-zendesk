@@ -1,0 +1,27 @@
+zendesk.automation status_automation@s {
+  title = "status automation"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "status"
+      value = "closed"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "is"
+        value = "solved"
+      },
+      {
+        field = "brand_id"
+        operator = "is"
+        value = zendesk.brand.instance.Salto
+      },
+    ]
+  }
+  raw_title = "status automation"
+  _alias = "status automation"
+}

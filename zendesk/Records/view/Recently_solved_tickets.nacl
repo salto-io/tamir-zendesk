@@ -1,0 +1,111 @@
+zendesk.view Recently_solved_tickets@s {
+  active = true
+  default = false
+  execution = {
+    group_by = "assignee"
+    group_order = "asc"
+    sort_by = "solved"
+    sort_order = "desc"
+    group = {
+      id = "assignee"
+      title = "Assignee"
+      filterable = true
+      sortable = true
+      order = "asc"
+    }
+    sort = {
+      id = "solved"
+      title = "Solved"
+      filterable = false
+      sortable = true
+      order = "desc"
+    }
+    columns = [
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "solved"
+        title = "Solved"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "priority"
+        title = "Priority"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "group"
+        title = "Group"
+        filterable = true
+        sortable = true
+      },
+    ]
+    fields = [
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "solved"
+        title = "Solved"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "priority"
+        title = "Priority"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "group"
+        title = "Group"
+        filterable = true
+        sortable = true
+      },
+    ]
+  }
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "is"
+        value = "solved"
+      },
+    ]
+  }
+  raw_title = "Recently solved tickets"
+  _alias = "Recently solved tickets"
+}

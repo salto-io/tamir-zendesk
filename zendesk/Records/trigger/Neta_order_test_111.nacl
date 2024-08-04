@@ -1,0 +1,27 @@
+zendesk.trigger Neta_order_test_111@s {
+  title = "Neta order test 111"
+  active = true
+  default = false
+  actions = [
+    {
+      field = zendesk.organization_field.instance.13@
+      value = "aaa"
+    },
+    {
+      field = zendesk.user_field.instance.userfielddel
+      value = zendesk.user_field__custom_field_options.instance.userfielddel__value4
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "update_type"
+        operator = "is"
+        value = "Create"
+      },
+    ]
+  }
+  raw_title = "Neta order test 111"
+  category_id = zendesk.trigger_category.instance.Neta_order_test_1212@s
+  _alias = "Neta order test 111"
+}

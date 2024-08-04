@@ -1,0 +1,48 @@
+zendesk.ticket_form Copy_of_Eden_Test1@s {
+  raw_name = "Copy of Eden Test1"
+  raw_display_name = "this is a test"
+  end_user_visible = true
+  ticket_field_ids = [
+    zendesk.ticket_field.instance.Ticket_status_custom_status@suu,
+    zendesk.ticket_field.instance.Statut_status,
+    zendesk.ticket_field.instance.Groupe_group,
+    zendesk.ticket_field.instance.Assign__assignee@_00233u,
+    zendesk.ticket_field.instance.Sujet_subject,
+    zendesk.ticket_field.instance.Description_description,
+    zendesk.ticket_field.instance.Priorit__priority@_00233u,
+    zendesk.ticket_field.instance.EdenTest3_tagger,
+    zendesk.ticket_field.instance.Customer_Priority_tagger@su,
+    zendesk.ticket_field.instance.tagger1_tagger,
+  ]
+  active = true
+  default = false
+  in_all_brands = false
+  restricted_brand_ids = [
+    zendesk.brand.instance.Salto,
+  ]
+  agent_conditions = [
+    {
+      parent_field_id = zendesk.ticket_field.instance.EdenTest3_tagger
+      parent_field_type = "tagger"
+      value = zendesk.ticket_field__custom_field_options.instance.EdenTest3_tagger__echeck
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance.Customer_Priority_tagger@su
+          is_required = true
+          required_on_statuses = {
+            type = "SOME_STATUSES"
+            statuses = [
+              "new",
+              "solved",
+            ]
+            custom_statuses = [
+              zendesk.custom_status.instance.new___zd_status_new__@u_00123_00123vu_00125_00125,
+              zendesk.custom_status.instance.solved___zd_status_solved__@u_00123_00123vu_00125_00125,
+            ]
+          }
+        },
+      ]
+    },
+  ]
+  _alias = "Copy of Eden Test1"
+}

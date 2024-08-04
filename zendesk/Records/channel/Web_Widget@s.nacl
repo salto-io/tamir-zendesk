@@ -1,0 +1,4 @@
+zendesk.channel Web_Widget@s {
+  name = "Web Widget"
+  _alias = "Web Widget"
+}

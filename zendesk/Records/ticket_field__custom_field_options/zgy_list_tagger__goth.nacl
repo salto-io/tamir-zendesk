@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options zgy_list_tagger__goth {
+  raw_name = "goth"
+  value = "goth"
+  _parent = [
+    zendesk.ticket_field.instance.zgy_list_tagger,
+  ]
+  _alias = "goth"
+}

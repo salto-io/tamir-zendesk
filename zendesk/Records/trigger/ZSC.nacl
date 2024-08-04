@@ -1,0 +1,38 @@
+zendesk.trigger ZSC {
+  title = "ZSC"
+  active = true
+  default = false
+  actions = [
+    {
+      field = zendesk.ticket_field.instance.ZSC_checkbox
+      value = "true"
+    },
+    {
+      field = "status"
+      value = "pending"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "ticket_form_id"
+        operator = "is"
+        value = zendesk.ticket_form.instance.ZSC
+      },
+      {
+        field = zendesk.ticket_field.instance.ZSC_checkbox
+        operator = "is"
+        value = "false"
+      },
+      {
+        field = "status"
+        operator = "is"
+        value = "new"
+      },
+    ]
+  }
+  description = "On new ZSC ticket"
+  raw_title = "ZSC"
+  category_id = zendesk.trigger_category.instance.Notifications
+  _alias = "ZSC"
+}

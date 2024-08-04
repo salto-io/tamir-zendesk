@@ -1,0 +1,20 @@
+zendesk.app_installation Reclame_Aqui_OFICIAL_support@ssu {
+  app_id = 230324
+  product = "support"
+  settings = {
+    private_msg_modal_height = "590"
+    private_msg_modal_width = "400"
+    name = "Reclame Aqui OFICIAL"
+    title = "Reclame Aqui OFICIAL"
+  }
+  enabled = true
+  recurring_payment = false
+  collapsible = true
+  paid = false
+  has_unpaid_subscription = false
+  has_incomplete_subscription = false
+  group_restrictions = [
+    zendesk.group.instance.Assistance,
+  ]
+  _alias = "Reclame Aqui OFICIAL"
+}

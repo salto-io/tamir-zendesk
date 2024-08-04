@@ -1,0 +1,15 @@
+zendesk.app_installation Weni_Platform_support@su {
+  app_id = 859074
+  product = "support"
+  settings = {
+    name = "Weni Platform"
+    title = "Weni Platform"
+  }
+  enabled = true
+  recurring_payment = false
+  collapsible = true
+  paid = false
+  has_unpaid_subscription = false
+  has_incomplete_subscription = false
+  _alias = "Weni Platform"
+}

@@ -1,0 +1,4 @@
+zendesk.channel Channel_Integrations@s {
+  name = "Channel Integrations"
+  _alias = "Channel Integrations"
+}

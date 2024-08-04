@@ -1,0 +1,110 @@
+zendesk.ticket_form SeroussiTest2 {
+  raw_name = "SeroussiTest2"
+  raw_display_name = "SeroussiTest2"
+  end_user_visible = true
+  ticket_field_ids = [
+    zendesk.ticket_field.instance.Ticket_status_custom_status@suu,
+    zendesk.ticket_field.instance.Statut_status,
+    zendesk.ticket_field.instance.Groupe_group,
+    zendesk.ticket_field.instance.Assign__assignee@_00233u,
+    zendesk.ticket_field.instance.Sujet_subject,
+    zendesk.ticket_field.instance.Description_description,
+    zendesk.ticket_field.instance.Priorit__priority@_00233u,
+    zendesk.ticket_field.instance.EdenTest3_tagger,
+    zendesk.ticket_field.instance.Customer_Priority_tagger@su,
+    zendesk.ticket_field.instance.tagger1_tagger,
+  ]
+  active = true
+  default = false
+  in_all_brands = false
+  restricted_brand_ids = [
+    zendesk.brand.instance.Salto,
+  ]
+  agent_conditions = [
+    {
+      parent_field_id = zendesk.ticket_field.instance.EdenTest3_tagger
+      parent_field_type = "tagger"
+      value = zendesk.ticket_field__custom_field_options.instance.EdenTest3_tagger__echeck
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance.Customer_Priority_tagger@su
+          is_required = true
+          required_on_statuses = {
+            type = "SOME_STATUSES"
+            statuses = [
+              "new",
+              "solved",
+            ]
+            custom_statuses = [
+              zendesk.custom_status.instance.new___zd_status_new__@u_00123_00123vu_00125_00125,
+              zendesk.custom_status.instance.solved___zd_status_solved__@u_00123_00123vu_00125_00125,
+            ]
+          }
+        },
+      ]
+    },
+    {
+      parent_field_id = zendesk.ticket_field.instance.Priorit__priority@_00233u
+      parent_field_type = "priority"
+      value = "low"
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance.EdenTest3_tagger
+          is_required = true
+          required_on_statuses = {
+            type = "SOME_STATUSES"
+            statuses = [
+              "open",
+              "solved",
+            ]
+            custom_statuses = [
+              zendesk.custom_status.instance.solved___zd_status_solved__@u_00123_00123vu_00125_00125,
+              zendesk.custom_status.instance.open_test_neta1@ub,
+            ]
+          }
+        },
+      ]
+    },
+    {
+      parent_field_id = zendesk.ticket_field.instance.Priorit__priority@_00233u
+      parent_field_type = "priority"
+      value = "normal"
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance.EdenTest3_tagger
+          is_required = false
+          required_on_statuses = {
+            type = "SOME_STATUSES"
+            statuses = [
+              "open",
+            ]
+            custom_statuses = [
+              zendesk.custom_status.instance.open_test_neta1@ub,
+            ]
+          }
+        },
+      ]
+    },
+    {
+      parent_field_id = zendesk.ticket_field.instance.tagger1_tagger
+      parent_field_type = "tagger"
+      value = zendesk.ticket_field__custom_field_options.instance.tagger1_tagger__v1
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance.Customer_Priority_tagger@su
+          is_required = false
+          required_on_statuses = {
+            type = "SOME_STATUSES"
+            statuses = [
+              "open",
+            ]
+            custom_statuses = [
+              zendesk.custom_status.instance.open_test_neta1@ub,
+            ]
+          }
+        },
+      ]
+    },
+  ]
+  _alias = "SeroussiTest2"
+}

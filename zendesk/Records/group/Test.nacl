@@ -1,0 +1,8 @@
+zendesk.group Test {
+  is_public = true
+  name = "Test"
+  description = "test"
+  default = false
+  deleted = false
+  _alias = "Test"
+}

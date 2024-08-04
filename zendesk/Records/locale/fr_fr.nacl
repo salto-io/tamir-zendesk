@@ -1,0 +1,9 @@
+zendesk.locale fr_fr@b {
+  id = 1365
+  locale = "fr-fr"
+  name = "français (France)"
+  native_name = "français (France)"
+  presentation_name = "French (France) - français (France)"
+  rtl = false
+  _alias = "French (France) - français (France)"
+}

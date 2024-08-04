@@ -1,0 +1,41 @@
+zendesk.automation ref_test@s {
+  title = "ref test"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "notification_user"
+      value = [
+        "requester_and_ccs",
+        "test",
+        '''
+this is a test with field {{ticket.ticket_field_${ zendesk.ticket_field.instance.eden_check_change_test2_multiselect@sssu }}}
+and a link to a form:
+
+<a href="hc/en-us/requests/new?ticket_form_id=12257227602579">Link </a>
+''',
+      ]
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "brand_id"
+        operator = "is"
+        value = zendesk.brand.instance.Salto
+      },
+      {
+        field = "status"
+        operator = "is"
+        value = "open"
+      },
+      {
+        field = "NEW"
+        operator = "is"
+        value = "1"
+      },
+    ]
+  }
+  raw_title = "ref test"
+  _alias = "ref test"
+}

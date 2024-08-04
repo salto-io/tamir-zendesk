@@ -1,0 +1,17 @@
+zendesk.custom_object_field stagingtest__dropdown {
+  type = "dropdown"
+  key = "dropdown"
+  raw_title = "dropdownaabbd"
+  raw_description = ""
+  position = 3
+  active = true
+  system = false
+  custom_field_options = [
+    zendesk.custom_object_field__custom_field_options.instance.stagingtest__dropdown__value1,
+    zendesk.custom_object_field__custom_field_options.instance.stagingtest__dropdown__value2,
+  ]
+  _parent = [
+    zendesk.custom_object.instance.stagingtest,
+  ]
+  _alias = "dropdown"
+}

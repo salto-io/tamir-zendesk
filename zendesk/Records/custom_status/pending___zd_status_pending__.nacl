@@ -1,0 +1,9 @@
+zendesk.custom_status pending___zd_status_pending__@u_00123_00123vu_00125_00125 {
+  status_category = "pending"
+  raw_agent_label = "{{zd.status_pending}}"
+  raw_end_user_label = "{{zd.status_end_user_pending}}"
+  raw_description = "{{zd.status_pending_description}}"
+  raw_end_user_description = "{{zd.status_end_user_pending_description}}"
+  active = true
+  _alias = "Pending"
+}

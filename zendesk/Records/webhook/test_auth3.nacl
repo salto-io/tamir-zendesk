@@ -1,0 +1,18 @@
+zendesk.webhook test_auth3 {
+  name = "test_auth3"
+  status = "active"
+  subscriptions = [
+    "conditional_ticket_events",
+  ]
+  endpoint = "https://www.example.com/none"
+  http_method = "POST"
+  request_format = "json"
+  authentication = {
+    type = "basic_auth"
+    data = {
+      username = "user@name.com"
+    }
+    add_position = "header"
+  }
+  _alias = "test_auth3"
+}

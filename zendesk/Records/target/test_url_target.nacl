@@ -1,0 +1,10 @@
+zendesk.target test_url_target {
+  type = "url_target"
+  title = "test"
+  active = true
+  method = "put"
+  attribute = "test[test]"
+  username = ""
+  target_url = "https://test.zendesk.com/api/v2/tickets/{{ticket.id}}.json?ticket[comment][public]=false"
+  _alias = "test"
+}

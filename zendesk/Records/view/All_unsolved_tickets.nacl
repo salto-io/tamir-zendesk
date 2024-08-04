@@ -1,0 +1,103 @@
+zendesk.view All_unsolved_tickets@s {
+  active = true
+  default = false
+  execution = {
+    group_by = "assignee"
+    group_order = "asc"
+    sort_by = "nice_id"
+    sort_order = "desc"
+    group = {
+      id = "assignee"
+      title = "Assignee"
+      filterable = true
+      sortable = true
+      order = "asc"
+    }
+    sort = {
+      id = "ticket_id"
+      title = "ID"
+      filterable = true
+      sortable = true
+      order = "desc"
+    }
+    columns = [
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "priority"
+        title = "Priority"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "updated"
+        title = "Updated"
+        filterable = true
+        sortable = true
+      },
+    ]
+    fields = [
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "priority"
+        title = "Priority"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "updated"
+        title = "Updated"
+        filterable = true
+        sortable = true
+      },
+    ]
+  }
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "less_than"
+        value = "solved"
+      },
+    ]
+  }
+  restriction = {
+    type = "User"
+    id = "zendesk-adapter@salto.io"
+  }
+  raw_title = "All unsolved tickets"
+  _alias = "All unsolved tickets"
+}

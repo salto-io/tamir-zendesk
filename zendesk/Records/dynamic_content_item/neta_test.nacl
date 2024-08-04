@@ -1,0 +1,9 @@
+zendesk.dynamic_content_item neta_test {
+  name = "neta_test"
+  placeholder = "{{dc.neta_test}}"
+  default_locale_id = zendesk.locale.instance.en_US@b
+  variants = [
+    zendesk.dynamic_content_item__variants.instance.neta_test__en_US_b@uuuum,
+  ]
+  _alias = "neta_test"
+}

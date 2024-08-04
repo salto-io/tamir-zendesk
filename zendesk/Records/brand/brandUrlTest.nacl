@@ -1,0 +1,12 @@
+zendesk.brand brandUrlTest {
+  name = "brandUrlTest"
+  brand_url = "https://brandurltest.zendesk.com"
+  subdomain = "brandurltest"
+  has_help_center = false
+  help_center_state = "disabled"
+  active = true
+  default = false
+  is_deleted = false
+  signature_template = "{{agent.signature}}"
+  _alias = "brandUrlTest"
+}

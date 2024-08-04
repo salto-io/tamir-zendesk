@@ -1,0 +1,11 @@
+zendesk.support_address SeroussiTest_support_SeroussiTest_subdomain_zendesk_com@umvvv {
+  brand_id = zendesk.brand.instance.SeroussiTest
+  default = true
+  name = "SeroussiTest"
+  email = "support@${ zendesk.brand.instance.SeroussiTest.subdomain }.zendesk.com"
+  forwarding_status = "verified"
+  spf_status = "verified"
+  cname_status = "verified"
+  domain_verification_status = "verified"
+  _alias = "SeroussiTest"
+}

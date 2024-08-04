@@ -1,0 +1,13 @@
+zendesk.user_field userfield1 {
+  type = "dropdown"
+  key = "userfield1"
+  raw_title = "userField1"
+  raw_description = "1"
+  active = true
+  system = false
+  custom_field_options = [
+    zendesk.user_field__custom_field_options.instance.userfield1__v1,
+    zendesk.user_field__custom_field_options.instance.userfield1__v111,
+  ]
+  _alias = "userField1"
+}

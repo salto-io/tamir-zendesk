@@ -1,0 +1,33 @@
+zendesk.ticket_field Statut_status {
+  type = "status"
+  raw_title = "Statut"
+  raw_description = "Statut de la demande"
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "Statut"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = false
+  system_field_options = [
+    {
+      name = "Open"
+      value = "open"
+    },
+    {
+      name = "Pending"
+      value = "pending"
+    },
+    {
+      name = "On-hold"
+      value = "hold"
+    },
+    {
+      name = "Solved"
+      value = "solved"
+    },
+  ]
+  sub_type_id = 1
+  _alias = "Statut"
+}

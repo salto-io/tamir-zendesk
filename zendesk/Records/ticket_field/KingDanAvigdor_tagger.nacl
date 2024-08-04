@@ -1,0 +1,17 @@
+zendesk.ticket_field KingDanAvigdor_tagger {
+  type = "tagger"
+  raw_title = "KingDanAvigdor"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "KingDanAvigdor"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  custom_field_options = [
+    zendesk.ticket_field__custom_field_options.instance.KingDanAvigdor_tagger__frog,
+  ]
+  _alias = "KingDanAvigdor"
+}

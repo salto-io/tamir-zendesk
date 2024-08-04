@@ -1,0 +1,8 @@
+zendesk.group SALTO_4956_Group@b {
+  is_public = true
+  name = "SALTO-4956-Group"
+  description = "non default with default for user"
+  default = false
+  deleted = false
+  _alias = "SALTO-4956-Group"
+}

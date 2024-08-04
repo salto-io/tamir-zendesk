@@ -1,0 +1,9 @@
+zendesk.custom_status open_eden1audit {
+  status_category = "open"
+  raw_agent_label = "eden1audit"
+  raw_end_user_label = "eden1audit"
+  raw_description = ""
+  raw_end_user_description = ""
+  active = true
+  _alias = "eden1audit"
+}

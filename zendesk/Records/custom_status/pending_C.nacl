@@ -1,0 +1,9 @@
+zendesk.custom_status pending_C {
+  status_category = "pending"
+  raw_agent_label = "C"
+  raw_end_user_label = "c"
+  raw_description = "c"
+  raw_end_user_description = "c"
+  active = true
+  _alias = "C"
+}

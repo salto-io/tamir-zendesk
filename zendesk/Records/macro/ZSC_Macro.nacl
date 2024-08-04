@@ -1,0 +1,18 @@
+zendesk.macro ZSC_Macro@s {
+  title = "ZSC Macro"
+  active = true
+  default = false
+  description = "For using in ZSC responses"
+  actions = [
+    {
+      field = zendesk.ticket_field.instance.ZSC_checkbox
+      value = "true"
+    },
+    {
+      field = "subject"
+      value = "Answering ZSC"
+    },
+  ]
+  raw_title = "ZSC Macro"
+  _alias = "ZSC Macro"
+}

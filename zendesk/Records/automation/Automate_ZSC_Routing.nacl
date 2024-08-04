@@ -1,0 +1,31 @@
+zendesk.automation Automate_ZSC_Routing@s {
+  title = "Automate ZSC Routing"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "status"
+      value = "open"
+    },
+    {
+      field = zendesk.ticket_field.instance.ZSC_checkbox
+      value = "true"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "is"
+        value = "new"
+      },
+      {
+        field = "ticket_form_id"
+        operator = "is"
+        value = zendesk.ticket_form.instance.ZSC
+      },
+    ]
+  }
+  raw_title = "Automate ZSC Routing"
+  _alias = "Automate ZSC Routing"
+}

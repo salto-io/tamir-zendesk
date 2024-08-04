@@ -1,0 +1,9 @@
+zendesk.dynamic_content_item About_Option___Late_Order@ssbss {
+  name = "About Option - Late Order"
+  placeholder = "{{dc.about_option_-_late_order}}"
+  default_locale_id = zendesk.locale.instance.en_US@b
+  variants = [
+    zendesk.dynamic_content_item__variants.instance.About_Option___Late_Order_ssbss__en_US_b@uuuuumuuum,
+  ]
+  _alias = "About Option - Late Order"
+}

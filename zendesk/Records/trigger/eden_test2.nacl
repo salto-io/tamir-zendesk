@@ -1,0 +1,30 @@
+zendesk.trigger eden_test2@s {
+  title = "eden test2"
+  active = true
+  default = false
+  actions = [
+    {
+      field = zendesk.ticket_field.instance.edenTestForm_clone_tagger@su
+      value = zendesk.ticket_field__custom_field_options.instance.edenTestForm_clone_tagger_su__c_clone@uumuuu
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = zendesk.ticket_field.instance.123456_text
+        operator = "present"
+        value = ""
+      },
+    ]
+    any = [
+      {
+        field = "group_id"
+        operator = "is"
+        value = zendesk.group.instance.edenAudit
+      },
+    ]
+  }
+  raw_title = "eden test2"
+  category_id = zendesk.trigger_category.instance.Notifications
+  _alias = "eden test2"
+}

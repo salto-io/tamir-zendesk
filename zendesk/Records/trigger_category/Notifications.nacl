@@ -1,0 +1,4 @@
+zendesk.trigger_category Notifications {
+  name = "Notifications"
+  _alias = "Notifications"
+}

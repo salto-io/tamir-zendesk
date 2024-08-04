@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options tagger1_tagger__v2 {
+  raw_name = "v2"
+  value = "v2"
+  _parent = [
+    zendesk.ticket_field.instance.tagger1_tagger,
+  ]
+  _alias = "v2"
+}

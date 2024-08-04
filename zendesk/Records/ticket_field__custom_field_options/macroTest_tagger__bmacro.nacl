@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options macroTest_tagger__bmacro {
+  raw_name = "bmacro"
+  value = "bmacro"
+  _parent = [
+    zendesk.ticket_field.instance.macroTest_tagger,
+  ]
+  _alias = "bmacro"
+}

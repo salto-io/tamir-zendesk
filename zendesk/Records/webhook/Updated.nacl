@@ -1,0 +1,11 @@
+zendesk.webhook Updated {
+  name = "Updated"
+  status = "active"
+  subscriptions = [
+    "conditional_ticket_events",
+  ]
+  endpoint = "https://example.com/status/200"
+  http_method = "POST"
+  request_format = "json"
+  _alias = "Updated"
+}

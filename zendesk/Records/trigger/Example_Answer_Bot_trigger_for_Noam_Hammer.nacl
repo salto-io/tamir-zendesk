@@ -1,0 +1,46 @@
+zendesk.trigger Example_Answer_Bot_trigger_for_Noam_Hammer@s {
+  title = "Example Answer Bot trigger for Noam Hammer"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "deflection"
+      value = [
+        "requester_id",
+        "Request received: {{ticket.title}}",
+        '''
+Your request ({{ticket.id}}) has been received and is being reviewed by our support staff.
+
+{% if answer_bot.article_count > 0 %}
+Here are some great articles that may help:
+{{answer_bot.article_list}}
+{{answer_bot.first_article_body}}
+{% endif %}
+
+To add additional comments, reply to this email.
+
+{{ticket.comments_formatted}}
+
+''',
+        "noam",
+      ]
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "update_type"
+        operator = "is"
+        value = "Create"
+      },
+      {
+        field = "requester_id"
+        operator = "is"
+        value = "zendesk-adapter@salto.io"
+      },
+    ]
+  }
+  raw_title = "Example Answer Bot trigger for Noam Hammer"
+  category_id = zendesk.trigger_category.instance.Answer_Bot_Triggers@s
+  _alias = "Example Answer Bot trigger for Noam Hammer"
+}

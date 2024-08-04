@@ -1,0 +1,9 @@
+zendesk.organization_field audit_test {
+  type = "text"
+  key = "audit_test"
+  raw_title = "audit test"
+  raw_description = ""
+  active = true
+  system = false
+  _alias = "audit test"
+}

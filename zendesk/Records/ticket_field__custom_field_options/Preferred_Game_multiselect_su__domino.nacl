@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options Preferred_Game_multiselect_su__domino@uumuu {
+  raw_name = "Domino"
+  value = "domino"
+  _parent = [
+    zendesk.ticket_field.instance.Preferred_Game_multiselect@su,
+  ]
+  _alias = "Domino"
+}

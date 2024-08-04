@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options TestMultiSelect12_multiselect__msop3 {
+  raw_name = "msop33"
+  value = "msop3"
+  _parent = [
+    zendesk.ticket_field.instance.TestMultiSelect12_multiselect,
+  ]
+  _alias = "msop33"
+}

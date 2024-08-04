@@ -1,0 +1,71 @@
+zendesk.layout eden_layout@s {
+  state = "draft"
+  type = "ticket"
+  is_default = false
+  title = "eden layout"
+  sections = [
+    {
+      name = "ticket-workspace"
+      columns = [
+        {
+          width = 0.6
+          components = [
+            {
+              type = "TicketFieldsPane"
+              height = 1
+            },
+          ]
+          isCollapsed = false
+          isSplitterHidden = false
+        },
+        {
+          width = 1.8
+          components = [
+            {
+              type = "MainConversationPane"
+              height = 1
+            },
+          ]
+          isCollapsed = false
+          isSplitterHidden = false
+        },
+        {
+          width = 0.6
+          components = [
+            {
+              type = "ContextPanel"
+              config = {
+                open = {
+                  type = "CustomerContextPane"
+                }
+                components = [
+                  {
+                    type = "CustomerContextPane"
+                  },
+                  {
+                    type = "RelatedObjectsPane"
+                  },
+                  {
+                    type = "KnowledgePane"
+                  },
+                  {
+                    type = "IntelligencePane"
+                  },
+                  {
+                    type = "SideConversationsPane"
+                  },
+                  {
+                    type = "AppsPane"
+                  },
+                ]
+              }
+              height = 1
+            },
+          ]
+          isCollapsed = false
+          isSplitterHidden = false
+        },
+      ]
+    },
+  ]
+}

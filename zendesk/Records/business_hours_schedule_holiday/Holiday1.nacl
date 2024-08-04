@@ -1,0 +1,9 @@
+zendesk.business_hours_schedule_holiday Neta_schedule_1_s__Holiday1@uumuu {
+  name = "Holiday1"
+  start_date = "2022-12-11"
+  end_date = "2022-12-11"
+  _parent = [
+    zendesk.business_hours_schedule.instance.Neta_schedule_1@s,
+  ]
+  _alias = "Holiday1"
+}

@@ -1,0 +1,15 @@
+zendesk.ticket_field zgy_checkbox_checkbox {
+  type = "checkbox"
+  raw_title = "zgy_checkbox"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "zgy_checkbox"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  tag = zendesk.tag.instance.zgy_check
+  removable = true
+  _alias = "zgy_checkbox"
+}

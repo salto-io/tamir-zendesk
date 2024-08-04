@@ -1,0 +1,31 @@
+zendesk.macro deploy_macro_for_shir@s {
+  title = "deploy macro for shir"
+  active = true
+  default = false
+  description = "test side conversation"
+  actions = [
+    {
+      field = "comment_mode_is_public"
+      value = "true"
+    },
+    {
+      field = "side_conversation"
+      value = [
+        "hi hi",
+        "<p>hi hihihihihih</p>",
+        "hi",
+        "text/html",
+      ]
+    },
+    {
+      field = "priority"
+      value = "low"
+    },
+    {
+      field = "assignee_id"
+      value = ""
+    },
+  ]
+  raw_title = "deploy macro for shir"
+  _alias = "deploy macro for shir"
+}

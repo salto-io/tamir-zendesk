@@ -1,0 +1,21 @@
+zendesk.ticket_field edenTestForm_tagger {
+  type = "tagger"
+  raw_title = "edenTestForm"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "adv"
+  visible_in_portal = true
+  editable_in_portal = true
+  required_in_portal = false
+  removable = true
+  custom_field_options = [
+    zendesk.ticket_field__custom_field_options.instance.edenTestForm_tagger__a,
+    zendesk.ticket_field__custom_field_options.instance.edenTestForm_tagger__a1,
+    zendesk.ticket_field__custom_field_options.instance.edenTestForm_tagger__a2,
+    zendesk.ticket_field__custom_field_options.instance.edenTestForm_tagger__b,
+    zendesk.ticket_field__custom_field_options.instance.edenTestForm_tagger__c,
+  ]
+  _alias = "edenTestForm"
+}

@@ -1,0 +1,32 @@
+zendesk.automation Preferred_game_automation@s {
+  title = "Preferred game automation"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "priority"
+      value = "urgent"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "is"
+        value = "new"
+      },
+      {
+        field = zendesk.ticket_field.instance.Preferred_Game_multiselect@su
+        operator = "includes"
+        value = zendesk.ticket_field__custom_field_options.instance.Preferred_Game_multiselect_su__fortnite@uumuu
+      },
+      {
+        field = "priority"
+        operator = "is_not"
+        value = "urgent"
+      },
+    ]
+  }
+  raw_title = "Preferred game automation"
+  _alias = "Preferred game automation"
+}

@@ -1,0 +1,14 @@
+zendesk.ticket_field delete4_text {
+  type = "text"
+  raw_title = "delete4"
+  raw_description = "1"
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "delete4"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  _alias = "delete4"
+}

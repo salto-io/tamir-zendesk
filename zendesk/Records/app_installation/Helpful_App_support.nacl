@@ -1,0 +1,13 @@
+zendesk.app_installation Helpful_App_support@su {
+  app_id = zendesk.app_owned.instance.privateApp
+  product = "support"
+  settings = {
+    name = "Helpful App"
+    title = "Helpful App"
+  }
+  enabled = true
+  recurring_payment = false
+  collapsible = true
+  has_incomplete_subscription = false
+  _alias = "Helpful App"
+}

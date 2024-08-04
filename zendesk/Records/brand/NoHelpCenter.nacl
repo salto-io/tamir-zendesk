@@ -1,0 +1,13 @@
+zendesk.brand NoHelpCenter {
+  name = "NoHelpCenter"
+  brand_url = "https://nohelpcentera.zendesk.com"
+  subdomain = "nohelpcentera"
+  has_help_center = false
+  help_center_state = "disabled"
+  active = true
+  default = false
+  is_deleted = false
+  logo = zendesk.brand_logo.instance.NoHelpCenter__Templates__Campaign__ThailandTemplates__Campaign__ThailandTemplates__Campaign__ThailandTemplates__Campaign__ThailandTemplates__Campaignpdf_pdf_thumb_png@uuuuuuuuuuuuuuuuuuuuvuv
+  signature_template = "{{agent.signature}}"
+  _alias = "NoHelpCenter"
+}

@@ -1,0 +1,37 @@
+zendesk.macro Set_Customer_Priority_to_Critical@s {
+  title = "Set Customer Priority to Critical"
+  active = true
+  default = false
+  actions = [
+    {
+      field = zendesk.ticket_field.instance.Customer_Priority_tagger@su
+      value = zendesk.ticket_field__custom_field_options.instance.Customer_Priority_tagger_su__high@uumuu
+    },
+    {
+      field = "comment_mode_is_public"
+      value = "false"
+    },
+    {
+      field = "comment_value_html"
+      value = "<p>We are escalating this case to the next tier.&nbsp;</p><p><br></p><p>New Priority: {{ticket.ticket_field_${ zendesk.ticket_field.instance.Customer_Priority_tagger@su }}}</p><p><br></p><p>{{ticket.ticket_field_option_title_${ zendesk.ticket_field.instance.Customer_Priority_tagger@su }}}<br></p><p>{{ hello goodbye dc.bug_test }}<br></p><p>Please note your SLA is based on your support level: {{ticket.ticket_field_${ zendesk.ticket_field.instance.Support_Level_tagger@su }}}<br></p><p><br></p><p>Your support engineer</p><p>{{ticket.assignee.name}}​&nbsp;</p>"
+    },
+    {
+      field = "set_tags"
+      value = [
+        zendesk.tag.instance.customer_notified,
+      ]
+    },
+    {
+      field = "assignee_id"
+      value = ""
+    },
+  ]
+  restriction = {
+    type = "Group"
+    ids = [
+      zendesk.group.instance.Tier_3___EMEA@ssbs,
+    ]
+  }
+  raw_title = "Set Customer Priority to Critical"
+  _alias = "Set Customer Priority to Critical"
+}

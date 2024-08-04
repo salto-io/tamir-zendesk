@@ -1,0 +1,14 @@
+zendesk.ticket_field Ofer_s_text_text@tsu {
+  type = "text"
+  raw_title = "Ofer's text"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "Ofer's text"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  _alias = "Ofer's text"
+}

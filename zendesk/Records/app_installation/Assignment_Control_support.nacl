@@ -1,0 +1,15 @@
+zendesk.app_installation Assignment_Control_support@su {
+  app_id = 223590
+  product = "support"
+  settings = {
+    name = "Assignment Control"
+    title = "Assignment Control"
+  }
+  enabled = true
+  recurring_payment = false
+  collapsible = true
+  paid = false
+  has_unpaid_subscription = false
+  has_incomplete_subscription = false
+  _alias = "Assignment Control"
+}

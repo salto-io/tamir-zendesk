@@ -1,0 +1,23 @@
+zendesk.routing_attribute_value Test__Test2 {
+  name = "Test2"
+  conditions = {
+    all = [
+      {
+        subject = "current_via_id"
+        operator = "is"
+        value = zendesk.channel.instance.Email
+      },
+    ]
+    any = [
+      {
+        subject = "via_id"
+        operator = "is_not"
+        value = zendesk.channel.instance.Voicemail
+      },
+    ]
+  }
+  _parent = [
+    zendesk.routing_attribute.instance.Test,
+  ]
+  _alias = "Test2"
+}

@@ -1,0 +1,12 @@
+zendesk.brand shirTest {
+  name = "shirTest"
+  brand_url = "https://brandforshir.zendesk.com"
+  subdomain = "brandforshir"
+  has_help_center = true
+  help_center_state = "restricted"
+  active = true
+  default = false
+  is_deleted = false
+  signature_template = "{{agent.signature}}"
+  _alias = "shirTest"
+}

@@ -1,0 +1,9 @@
+zendesk.custom_status pending_yuval {
+  status_category = "pending"
+  raw_agent_label = "yuval"
+  raw_end_user_label = "yuval"
+  raw_description = ""
+  raw_end_user_description = ""
+  active = true
+  _alias = "yuval"
+}

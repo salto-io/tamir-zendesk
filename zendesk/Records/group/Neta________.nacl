@@ -1,0 +1,8 @@
+zendesk.group Neta________@s_00123hjalvi {
+  is_public = true
+  name = "Neta {[(?!.]"
+  description = ""
+  default = false
+  deleted = false
+  _alias = "Neta {[(?!.]"
+}

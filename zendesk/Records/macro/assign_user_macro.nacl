@@ -1,0 +1,22 @@
+zendesk.macro assign_user_macro@s {
+  title = "assign user macro"
+  active = true
+  default = false
+  description = "missing user on deploy2"
+  actions = [
+    {
+      field = "priority"
+      value = "normal"
+    },
+    {
+      field = "assignee_id"
+      value = "la+41@example.org"
+    },
+    {
+      field = "follower"
+      value = "la+90@example.org"
+    },
+  ]
+  raw_title = "assign user macro"
+  _alias = "assign user macro"
+}

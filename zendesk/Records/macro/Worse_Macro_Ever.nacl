@@ -1,0 +1,18 @@
+zendesk.macro Worse_Macro_Ever@s {
+  title = "Worse Macro Ever"
+  active = true
+  default = false
+  description = "Seriously, read the name"
+  actions = [
+    {
+      field = "status"
+      value = "open"
+    },
+    {
+      field = "brand_id"
+      value = zendesk.brand.instance.Salto
+    },
+  ]
+  raw_title = "Worse Macro Ever"
+  _alias = "Worse Macro Ever"
+}

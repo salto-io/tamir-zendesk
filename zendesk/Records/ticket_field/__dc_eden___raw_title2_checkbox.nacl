@@ -1,0 +1,14 @@
+zendesk.ticket_field __dc_eden___raw_title2_checkbox@_00123_00123v_00125_00125ssu {
+  type = "checkbox"
+  raw_title = "{{${ zendesk.dynamic_content_item.instance.eden }}} raw title2"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "{{${ zendesk.dynamic_content_item.instance.eden }}}"
+  visible_in_portal = true
+  editable_in_portal = true
+  required_in_portal = false
+  removable = true
+  _alias = "edenContent changed ... raw title2"
+}

@@ -1,0 +1,16 @@
+zendesk.ticket_field _eshed__Subscription_Expiration_Date_date@hisssu {
+  type = "date"
+  raw_title = "[eshed] Subscription Expiration Date"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  regexp_for_validation = "\\A([0-9]{4})-(1[0-2]|0[1-9])-(3[01]|[12][0-9]|0[1-9])\\z"
+  raw_title_in_portal = "[eshed] Subscription Expiration Date"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  agent_description = "When subscription expires"
+  _alias = "[eshed] Subscription Expiration Date"
+}

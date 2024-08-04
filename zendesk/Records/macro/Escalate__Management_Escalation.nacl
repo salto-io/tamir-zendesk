@@ -1,0 +1,47 @@
+zendesk.macro Escalate__Management_Escalation@ffs {
+  title = "Escalate::Management Escalation"
+  active = true
+  default = false
+  description = "Escalate to Management"
+  actions = [
+    {
+      field = "group_id"
+      value = zendesk.group.instance.Support_Managers@s
+    },
+    {
+      field = zendesk.ticket_field.instance.Escalation_Status_tagger@su
+      value = zendesk.ticket_field__custom_field_options.instance.Escalation_Status_tagger_su__escalated@uumuu
+    },
+    {
+      field = "comment_mode_is_public"
+      value = "false"
+    },
+    {
+      field = "comment_value_html"
+      value = "<p>Hi {{ticket.assignee.name}}​&nbsp;</p><p><br></p><p>The customer has asked that a manager calls them back.&nbsp;</p>"
+    },
+    {
+      field = "status"
+      value = "hold"
+    },
+    {
+      field = "current_tags"
+      value = [
+        zendesk.tag.instance.escalated,
+      ]
+    },
+    {
+      field = zendesk.ticket_field.instance.Support_Level_tagger@su
+      value = zendesk.ticket_field__custom_field_options.instance.Support_Level_tagger_su__signature_support@uumuuu
+    },
+  ]
+  restriction = {
+    type = "Group"
+    ids = [
+      zendesk.group.instance.Tier_2___AMER@ssbs,
+      zendesk.group.instance.Tier_2___EMEA@ssbs,
+    ]
+  }
+  raw_title = "Escalate::Management Escalation"
+  _alias = "Escalate::Management Escalation"
+}

@@ -1,0 +1,12 @@
+zendesk.brand Eshed_Demo@s {
+  name = "Eshed Demo"
+  brand_url = "https://eshed-demo-salto.zendesk.com"
+  subdomain = "eshed-demo-salto"
+  has_help_center = true
+  help_center_state = "restricted"
+  active = true
+  default = false
+  is_deleted = false
+  signature_template = "{{agent.signature}}"
+  _alias = "Eshed Demo"
+}

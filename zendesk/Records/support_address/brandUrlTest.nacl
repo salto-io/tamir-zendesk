@@ -1,0 +1,11 @@
+zendesk.support_address brandUrlTest_support_brandUrlTest_subdomain_zendesk_com@umvvv {
+  brand_id = zendesk.brand.instance.brandUrlTest
+  default = true
+  name = "brandUrlTest"
+  email = "support@${ zendesk.brand.instance.brandUrlTest.subdomain }.zendesk.com"
+  forwarding_status = "verified"
+  spf_status = "verified"
+  cname_status = "verified"
+  domain_verification_status = "verified"
+  _alias = "brandUrlTest"
+}

@@ -1,0 +1,13 @@
+zendesk.app_installation audit_check3_support@su {
+  app_id = zendesk.app_owned.instance.audit_check@s
+  product = "support"
+  settings = {
+    name = "audit check3"
+    title = "audit check3"
+  }
+  enabled = true
+  recurring_payment = false
+  collapsible = false
+  has_incomplete_subscription = false
+  _alias = "audit check3"
+}

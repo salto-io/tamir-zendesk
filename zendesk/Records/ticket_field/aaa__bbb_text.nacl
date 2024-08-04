@@ -1,0 +1,15 @@
+zendesk.ticket_field aaa__bbb_text@ffu {
+  type = "text"
+  raw_title = "aaa::bbb"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "aaa::bbb"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  agent_description = "abvd"
+  _alias = "aaa::bbb"
+}

@@ -1,0 +1,140 @@
+zendesk.view BrokenView {
+  active = true
+  default = false
+  execution = {
+    group_by = zendesk.ticket_field.instance.ToRemove_decimal
+    group_order = "desc"
+    sort_by = zendesk.ticket_field.instance.ToRemove_decimal
+    sort_order = "desc"
+    group = {
+      id = zendesk.ticket_field.instance.ToRemove_decimal
+      title = "ToRemove"
+      type = "decimal"
+      filterable = false
+      sortable = true
+      order = "desc"
+    }
+    sort = {
+      id = zendesk.ticket_field.instance.ToRemove_decimal
+      title = "ToRemove"
+      type = "decimal"
+      filterable = false
+      sortable = true
+      order = "desc"
+    }
+    columns = [
+      {
+        id = "satisfaction_score"
+        title = "Satisfaction"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = zendesk.ticket_field.instance.ToRemove_decimal
+        title = "ToRemove"
+        type = "decimal"
+        filterable = false
+        sortable = true
+      },
+    ]
+    fields = [
+      {
+        id = "satisfaction_score"
+        title = "Satisfaction"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+    ]
+    custom_fields = [
+      {
+        id = zendesk.ticket_field.instance.ToRemove_decimal
+        title = "ToRemove"
+        type = "decimal"
+        filterable = false
+        sortable = true
+      },
+    ]
+  }
+  conditions = {
+    all = [
+      {
+        field = zendesk.ticket_field.instance.tagger12_tagger
+        operator = "is"
+        value = zendesk.ticket_field__custom_field_options.instance.tagger12_tagger__v223
+      },
+      {
+        field = "status"
+        operator = "is_not"
+        value = "new"
+      },
+      {
+        field = "requester_id"
+        operator = "is"
+        value = "eden.hassid@salto.io"
+      },
+    ]
+    any = [
+      {
+        field = zendesk.ticket_field.instance.ToRemove2_date
+        operator = "is"
+        value = "2022-05-09"
+      },
+    ]
+  }
+  restriction = {
+    type = "Group"
+    ids = [
+      zendesk.group.instance.Finance,
+    ]
+  }
+  raw_title = "BrokenView"
+  _alias = "BrokenView"
+}

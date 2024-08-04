@@ -1,0 +1,9 @@
+zendesk.organization_field "5@" {
+  type = "text"
+  key = "5"
+  raw_title = "field5"
+  raw_description = "field5"
+  active = true
+  system = false
+  _alias = "field5"
+}

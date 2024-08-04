@@ -1,0 +1,93 @@
+zendesk.routing_attribute_value Test__missingSkill {
+  name = "missingSkill"
+  conditions = {
+    all = [
+      {
+        subject = "number_of_incidents"
+        operator = "less_than_equal"
+        value = "2"
+      },
+      {
+        subject = "type"
+        operator = "is"
+        value = "problem"
+      },
+    ]
+    any = [
+      {
+        subject = "priority"
+        operator = "is"
+        value = "normal"
+      },
+      {
+        subject = "requester_id"
+        operator = "is"
+        value = "la+84@example.org"
+      },
+      {
+        subject = "organization_id"
+        operator = "is"
+        value = "6121368811283"
+      },
+      {
+        subject = "via_id"
+        operator = "is"
+        value = zendesk.channel.instance.X_Corp_Direct_Message@s
+      },
+      {
+        subject = "current_via_id"
+        operator = "is"
+        value = zendesk.channel.instance.LINE
+      },
+      {
+        subject = "recipient"
+        operator = "is"
+        value = "support@d3v-salto2.zendesk.com"
+      },
+      {
+        subject = "subject_includes_word"
+        operator = "includes"
+        value = "yygg"
+      },
+      {
+        subject = "ticket_is_public"
+        operator = "is"
+        value = "public"
+      },
+      {
+        subject = "comment_is_public"
+        operator = "is"
+        value = "not_relevant"
+      },
+      {
+        subject = "comment_includes_word"
+        operator = "includes"
+        value = "jkhjjjk"
+      },
+      {
+        subject = "requester_role"
+        operator = "is"
+        value = "0"
+      },
+      {
+        subject = "requester_time_zone"
+        operator = "is"
+        value = "International Date Line West"
+      },
+      {
+        subject = zendesk.ticket_field.instance.ToRemove2_date
+        operator = "is"
+        value = "2022-09-23"
+      },
+      {
+        subject = zendesk.organization_field.instance.now
+        operator = "is"
+        value = "2022-09-07"
+      },
+    ]
+  }
+  _parent = [
+    zendesk.routing_attribute.instance.Test,
+  ]
+  _alias = "missingSkill"
+}

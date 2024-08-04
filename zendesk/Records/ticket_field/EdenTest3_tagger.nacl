@@ -1,0 +1,20 @@
+zendesk.ticket_field EdenTest3_tagger {
+  type = "tagger"
+  raw_title = "EdenTest3"
+  raw_description = "desc33"
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "title"
+  visible_in_portal = true
+  editable_in_portal = true
+  required_in_portal = false
+  removable = true
+  custom_field_options = [
+    zendesk.ticket_field__custom_field_options.instance.EdenTest3_tagger__echeck,
+    zendesk.ticket_field__custom_field_options.instance.EdenTest3_tagger__form_check,
+    zendesk.ticket_field__custom_field_options.instance.EdenTest3_tagger____dc_eden__@uuuuuvuu,
+    zendesk.ticket_field__custom_field_options.instance.EdenTest3_tagger____dc_eden2__@uuuuuvuu,
+  ]
+  _alias = "EdenTest3"
+}

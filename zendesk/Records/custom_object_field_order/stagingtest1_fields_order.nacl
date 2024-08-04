@@ -1,0 +1,8 @@
+zendesk.custom_object_field_order stagingtest1_fields_order {
+  custom_object_fields = [
+    zendesk.custom_object_field.instance.stagingtest1__dropdown,
+  ]
+  _parent = [
+    zendesk.custom_object.instance.stagingtest1,
+  ]
+}

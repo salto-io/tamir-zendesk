@@ -1,0 +1,10 @@
+zendesk.dynamic_content_item__variants test_audit_test_s__cs@uumuu {
+  content = "vvv"
+  locale_id = zendesk.locale.instance.cs
+  active = false
+  default = false
+  _parent = [
+    zendesk.dynamic_content_item.instance.test_audit_test@s,
+  ]
+  _alias = "test audit test - cs"
+}

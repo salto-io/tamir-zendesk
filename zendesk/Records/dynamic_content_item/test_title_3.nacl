@@ -1,0 +1,9 @@
+zendesk.dynamic_content_item test_title_3@s {
+  name = "test title 3"
+  placeholder = "{{dc.test_title_2}}"
+  default_locale_id = zendesk.locale.instance.en_US@b
+  variants = [
+    zendesk.dynamic_content_item__variants.instance.test_title_3_s__en_US_b@uumuuum,
+  ]
+  _alias = "test title 3"
+}

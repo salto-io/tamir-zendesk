@@ -1,0 +1,27 @@
+zendesk.automation custom_status_test@s {
+  title = "custom status test"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "priority"
+      value = "low"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "custom_status_id"
+        operator = "is"
+        value = zendesk.custom_status.instance.pending_eden3
+      },
+      {
+        field = "NEW"
+        operator = "is"
+        value = "24"
+      },
+    ]
+  }
+  raw_title = "custom status test"
+  _alias = "custom status test"
+}

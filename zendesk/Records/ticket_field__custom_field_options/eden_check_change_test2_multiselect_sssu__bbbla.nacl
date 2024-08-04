@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options eden_check_change_test2_multiselect_sssu__bbbla@uuuumuu {
+  raw_name = "bbbla"
+  value = "bbbla"
+  _parent = [
+    zendesk.ticket_field.instance.eden_check_change_test2_multiselect@sssu,
+  ]
+  _alias = "bbbla"
+}

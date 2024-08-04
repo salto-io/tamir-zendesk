@@ -1,0 +1,4 @@
+zendesk.channel Apple_Messages_for_Business@s {
+  name = "Apple Messages for Business"
+  _alias = "Apple Messages for Business"
+}

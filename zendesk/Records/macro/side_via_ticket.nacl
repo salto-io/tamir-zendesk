@@ -1,0 +1,18 @@
+zendesk.macro side_via_ticket@s {
+  title = "side via ticket"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "side_conversation_ticket"
+      value = [
+        "child ticket",
+        "",
+        "SupportAssignable:support_assignable/group/[object Object]",
+        "text/html",
+      ]
+    },
+  ]
+  raw_title = "side via ticket"
+  _alias = "side via ticket"
+}

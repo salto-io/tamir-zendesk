@@ -1,0 +1,17 @@
+zendesk.macro side_via_slack@s {
+  title = "side via slack"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "side_conversation_slack"
+      value = [
+        "<p>sas</p>",
+        "asd",
+        "text/html",
+      ]
+    },
+  ]
+  raw_title = "side via slack"
+  _alias = "side via slack"
+}

@@ -1,0 +1,11 @@
+zendesk.target test_campfire_target {
+  type = "campfire_target"
+  title = "test"
+  active = true
+  subdomain = "test"
+  room = "321"
+  ssl = false
+  preserve_format = false
+  token = "adasd"
+  _alias = "test"
+}

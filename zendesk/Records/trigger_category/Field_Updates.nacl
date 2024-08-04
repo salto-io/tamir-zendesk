@@ -1,0 +1,4 @@
+zendesk.trigger_category Field_Updates@s {
+  name = "Field Updates"
+  _alias = "Field Updates"
+}

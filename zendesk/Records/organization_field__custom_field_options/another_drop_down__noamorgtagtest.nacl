@@ -1,0 +1,8 @@
+zendesk.organization_field__custom_field_options another_drop_down__noamorgtagtest {
+  raw_name = "NoamOrgTagTest"
+  value = "noamorgtagtest"
+  _parent = [
+    zendesk.organization_field.instance.another_drop_down,
+  ]
+  _alias = "NoamOrgTagTest"
+}

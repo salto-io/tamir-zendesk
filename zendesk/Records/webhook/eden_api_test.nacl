@@ -1,0 +1,24 @@
+zendesk.webhook eden_api_test@s {
+  name = "eden api test"
+  description = ""
+  status = "active"
+  subscriptions = [
+    "zen:event-type:organization.created",
+    "zen:event-type:organization.custom_field_changed",
+    "zen:event-type:organization.deleted",
+    "zen:event-type:organization.external_id_changed",
+    "zen:event-type:organization.name_changed",
+    "zen:event-type:organization.tags_changed",
+  ]
+  endpoint = "https://example.com/status/200"
+  http_method = "POST"
+  request_format = "json"
+  authentication = {
+    type = "api_key"
+    data = {
+      name = "TEST"
+    }
+    add_position = "header"
+  }
+  _alias = "eden api test"
+}

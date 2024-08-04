@@ -1,0 +1,8 @@
+zendesk.target Default_sandbox_email_target_email_target@sssuu {
+  type = "email_target"
+  title = "Default sandbox email target"
+  active = true
+  email = "sandbox@example.com"
+  subject = "Default sandbox email target"
+  _alias = "Default sandbox email target"
+}

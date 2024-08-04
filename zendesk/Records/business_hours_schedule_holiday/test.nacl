@@ -1,0 +1,9 @@
+zendesk.business_hours_schedule_holiday eden1__test {
+  name = "test"
+  start_date = "2024-03-03"
+  end_date = "2024-03-03"
+  _parent = [
+    zendesk.business_hours_schedule.instance.eden1,
+  ]
+  _alias = "test"
+}

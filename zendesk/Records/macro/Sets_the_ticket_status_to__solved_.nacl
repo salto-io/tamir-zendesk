@@ -1,0 +1,22 @@
+zendesk.macro Sets_the_ticket_status_to__solved_@ssssszaza {
+  title = "Sets the ticket status to `solved`"
+  active = true
+  default = false
+  description = "daniels cool ass marco"
+  actions = [
+    {
+      field = "status"
+      value = "open"
+    },
+    {
+      field = "ticket_form_id"
+      value = zendesk.ticket_form.instance.Formulaire_de_ticket_par_d_faut@ssss_00233
+    },
+    {
+      field = "comment_value_html"
+      value = "<p>hi baby</p>"
+    },
+  ]
+  raw_title = "Sets the ticket status to `solved`"
+  _alias = "Sets the ticket status to `solved`"
+}

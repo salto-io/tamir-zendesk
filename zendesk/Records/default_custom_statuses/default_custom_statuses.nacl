@@ -1,0 +1,6 @@
+zendesk.default_custom_statuses {
+  pending = zendesk.custom_status.instance.pending_eden6
+  solved = zendesk.custom_status.instance.solved___zd_status_solved__@u_00123_00123vu_00125_00125
+  open = zendesk.custom_status.instance.open_test_neta1@ub
+  hold = zendesk.custom_status.instance.hold___zd_status_hold__@u_00123_00123vu_00125_00125
+}

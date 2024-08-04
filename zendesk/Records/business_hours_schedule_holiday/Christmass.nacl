@@ -1,0 +1,9 @@
+zendesk.business_hours_schedule_holiday EMEA__Christmass {
+  name = "Christmass"
+  start_date = "2022-12-26"
+  end_date = "2023-01-02"
+  _parent = [
+    zendesk.business_hours_schedule.instance.EMEA,
+  ]
+  _alias = "Christmass"
+}

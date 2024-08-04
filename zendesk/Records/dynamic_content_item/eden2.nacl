@@ -1,0 +1,10 @@
+zendesk.dynamic_content_item eden2 {
+  name = "eden2"
+  placeholder = "{{dc.eden2}}"
+  default_locale_id = zendesk.locale.instance.en_US@b
+  variants = [
+    zendesk.dynamic_content_item__variants.instance.eden2__cs,
+    zendesk.dynamic_content_item__variants.instance.eden2__en_US_b@uuum,
+  ]
+  _alias = "eden2"
+}

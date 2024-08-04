@@ -1,0 +1,22 @@
+zendesk.ticket_field dependency_tests_tagger@su {
+  type = "tagger"
+  raw_title = "dependency tests"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "dependency tests"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  custom_field_options = [
+    zendesk.ticket_field__custom_field_options.instance.dependency_tests_tagger_su__e1@uumuu,
+    zendesk.ticket_field__custom_field_options.instance.dependency_tests_tagger_su__e2@uumuu,
+    zendesk.ticket_field__custom_field_options.instance.dependency_tests_tagger_su__e3@uumuu,
+    zendesk.ticket_field__custom_field_options.instance.dependency_tests_tagger_su__e4@uumuu,
+    zendesk.ticket_field__custom_field_options.instance.dependency_tests_tagger_su__e5@uumuu,
+    zendesk.ticket_field__custom_field_options.instance.dependency_tests_tagger_su__e6_v2@uumuub,
+  ]
+  _alias = "dependency tests"
+}

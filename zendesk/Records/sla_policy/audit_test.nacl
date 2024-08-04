@@ -1,0 +1,22 @@
+zendesk.sla_policy audit_test@s {
+  title = "audit test"
+  filter = {
+    all = [
+      {
+        field = "brand_id"
+        operator = "is_not"
+        value = zendesk.brand.instance.Salto
+      },
+    ]
+  }
+  policy_metrics = [
+    {
+      priority = "urgent"
+      metric = "first_reply_time"
+      target = 60
+      business_hours = false
+      target_in_seconds = 3600
+    },
+  ]
+  _alias = "audit test"
+}

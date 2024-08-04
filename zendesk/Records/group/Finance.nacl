@@ -1,0 +1,8 @@
+zendesk.group Finance {
+  is_public = true
+  name = "Finance"
+  description = " finance "
+  default = false
+  deleted = false
+  _alias = "Finance"
+}

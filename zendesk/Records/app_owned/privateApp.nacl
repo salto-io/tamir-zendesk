@@ -1,0 +1,72 @@
+zendesk.app_owned privateApp {
+  owner_id = 12052666
+  name = "privateApp"
+  single_install = false
+  default_locale = "en"
+  author_name = "John Doe2"
+  author_email = "jdoe@example.com"
+  author_url = "https://example.com/john"
+  short_description = "Play the famous zen tunes in your help desk."
+  long_description = '''
+<p>Play the famous zen tunes in your help desk and 
+ listen to the beats it has to offer.</p>
+
+'''
+  raw_long_description = '''
+Play the famous zen tunes in your help desk and 
+ listen to the beats it has to offer.
+'''
+  installation_instructions = '''
+<p>Simply click install.</p>
+
+'''
+  raw_installation_instructions = "Simply click install."
+  small_icon = "https://861392.apps.zdusercontent.com/861392/assets/1663960330-8b283dcb16f219f42805d2ee5e50aa0c/logo-small.png"
+  large_icon = "https://861392.apps.zdusercontent.com/861392/assets/1663960330-8b283dcb16f219f42805d2ee5e50aa0c/logo.png"
+  visibility = "private"
+  installable = true
+  framework_version = "2.0"
+  featured = false
+  promoted = false
+  products = [
+    "support",
+  ]
+  version = "1.0"
+  marketing_only = false
+  deprecated = false
+  obsolete = false
+  paid = false
+  state = "published"
+  closed_preview = false
+  parameters = {
+    name = {
+      name = "name"
+      kind = "text"
+      required = true
+      position = 0
+      secure = false
+    }
+    nameCCCCCCCC = {
+      name = "nameCCCCCCCC"
+      kind = "text"
+      required = false
+      position = 1
+      secure = false
+    }
+    name2 = {
+      name = "name2"
+      kind = "text"
+      required = false
+      position = 2
+      secure = false
+    }
+    name3 = {
+      name = "name3"
+      kind = "text"
+      required = false
+      position = 3
+      secure = false
+    }
+  }
+  _alias = "privateApp"
+}

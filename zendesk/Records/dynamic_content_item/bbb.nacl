@@ -1,0 +1,9 @@
+zendesk.dynamic_content_item bbb {
+  name = "bbb"
+  placeholder = "{{dc.aaa}}"
+  default_locale_id = zendesk.locale.instance.en_US@b
+  variants = [
+    zendesk.dynamic_content_item__variants.instance.bbb__en_US_b@uuum,
+  ]
+  _alias = "bbb"
+}

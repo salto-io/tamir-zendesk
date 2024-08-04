@@ -1,0 +1,50 @@
+zendesk.ticket_form INCIDENT_18947_1@b {
+  raw_name = "INCIDENT-18947-1"
+  raw_display_name = ""
+  end_user_visible = false
+  ticket_field_ids = [
+    zendesk.ticket_field.instance.Statut_status,
+    zendesk.ticket_field.instance.Groupe_group,
+    zendesk.ticket_field.instance.Assign__assignee@_00233u,
+    zendesk.ticket_field.instance.Ticket_status_custom_status@suu,
+    zendesk.ticket_field.instance.Sujet_subject,
+    zendesk.ticket_field.instance.Description_description,
+    zendesk.ticket_field.instance.INCIDENT_18947_tagger@bu,
+    zendesk.ticket_field.instance.eden_check_change_test2_multiselect@sssu,
+    zendesk.ticket_field.instance.eden_demo_222_text@ssu,
+  ]
+  active = true
+  default = false
+  in_all_brands = true
+  agent_conditions = [
+    {
+      parent_field_id = zendesk.ticket_field.instance.INCIDENT_18947_tagger@bu
+      parent_field_type = "tagger"
+      value = zendesk.ticket_field__custom_field_options.instance.INCIDENT_18947_tagger_bu__q1@uumuu
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance.eden_check_change_test2_multiselect@sssu
+          is_required = false
+          required_on_statuses = {
+            type = "NO_STATUSES"
+          }
+        },
+      ]
+    },
+    {
+      parent_field_id = zendesk.ticket_field.instance.INCIDENT_18947_tagger@bu
+      parent_field_type = "tagger"
+      value = zendesk.ticket_field__custom_field_options.instance.INCIDENT_18947_tagger_bu__q2@uumuu
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance.eden_demo_222_text@ssu
+          is_required = false
+          required_on_statuses = {
+            type = "NO_STATUSES"
+          }
+        },
+      ]
+    },
+  ]
+  _alias = "INCIDENT-18947-1"
+}

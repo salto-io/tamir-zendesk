@@ -1,0 +1,14 @@
+zendesk.ticket_field Description_description {
+  type = "description"
+  raw_title = "Description"
+  raw_description = "Saisissez les détails de votre demande. Un membre de notre équipe d’assistance répondra dans les plus brefs délais."
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "Description"
+  visible_in_portal = true
+  editable_in_portal = true
+  required_in_portal = true
+  removable = false
+  _alias = "Description"
+}

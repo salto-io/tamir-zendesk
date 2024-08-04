@@ -1,0 +1,15 @@
+zendesk.ticket_field aaa__cbd_text@ffu {
+  type = "text"
+  raw_title = "aaa::cbd"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "aaa::cbd"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  agent_description = "asbaaaaa"
+  _alias = "aaa::cbd"
+}

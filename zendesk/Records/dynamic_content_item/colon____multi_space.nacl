@@ -1,0 +1,9 @@
+zendesk.dynamic_content_item colon____multi_space@fsssb {
+  name = "colon:   multi-space"
+  placeholder = "{{dc.colon_multi-space}}"
+  default_locale_id = zendesk.locale.instance.af
+  variants = [
+    zendesk.dynamic_content_item__variants.instance.colon____multi_space_fsssb__af@uuuuumuu,
+  ]
+  _alias = "colon:   multi-space"
+}

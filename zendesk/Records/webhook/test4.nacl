@@ -1,0 +1,18 @@
+zendesk.webhook test4 {
+  name = "test4"
+  status = "active"
+  subscriptions = [
+    "conditional_ticket_events",
+  ]
+  endpoint = "https://www.example.com/none"
+  http_method = "POST"
+  request_format = "json"
+  authentication = {
+    type = "basic_auth"
+    data = {
+      username = "user@name.com"
+    }
+    add_position = "header"
+  }
+  _alias = "test4"
+}

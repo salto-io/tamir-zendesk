@@ -1,0 +1,73 @@
+zendesk.workspace Adam_Test@s {
+  title = "Adam Test"
+  description = ""
+  layout_uuid = zendesk.layout.instance.Adam_Test_Layout_3@s
+  apps = [
+    {
+      id = zendesk.app_installation.instance.Knowledge_Capture_support@su
+      expand = false
+      position = 11
+    },
+    {
+      id = zendesk.app_installation.instance.Weni_Platform_support@su
+      expand = false
+      position = 12
+    },
+    {
+      id = zendesk.app_installation.instance.ChannelReply_support
+      expand = false
+      position = 13
+    },
+    {
+      id = zendesk.app_installation.instance.Time_Tracking_edit_support@sbu
+      expand = false
+      position = 14
+    },
+    {
+      id = zendesk.app_installation.instance.Helpful_App_support@su
+      expand = false
+      position = 15
+    },
+    {
+      id = zendesk.app_installation.instance.Assignment_Control_support@su
+      expand = false
+      position = 16
+    },
+    {
+      id = zendesk.app_installation.instance.test_support
+      expand = false
+      position = 17
+    },
+    {
+      id = zendesk.app_installation.instance.Reclame_Aqui_OFICIAL_support@ssu
+      expand = false
+      position = 18
+    },
+    {
+      id = zendesk.app_installation.instance.audit_check3_support@su
+      expand = false
+      position = 19
+    },
+    {
+      id = zendesk.app_installation.instance.WHMCShi_hi_support@su
+      expand = false
+      position = 20
+    },
+    {
+      id = zendesk.app_installation.instance.ActiveCampaign_for_Support_abcd_abcd_support@ssssu
+      expand = false
+      position = 21
+    },
+  ]
+  activated = true
+  knowledge_settings = {
+    default_search_filters = {
+      default_search_filters_brands = "_TICKET"
+      default_search_filters_categories = ""
+      default_search_filters_external_content_sources = ""
+      default_search_filters_locales = "_TICKET"
+      default_search_filters_sections = ""
+    }
+  }
+  _alias = "Adam Test"
+}

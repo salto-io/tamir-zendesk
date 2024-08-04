@@ -1,0 +1,8 @@
+zendesk.group Platform {
+  is_public = true
+  name = "Platform"
+  description = ""
+  default = false
+  deleted = false
+  _alias = "Platform"
+}

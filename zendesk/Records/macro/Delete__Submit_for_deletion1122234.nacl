@@ -1,0 +1,23 @@
+zendesk.macro Delete__Submit_for_deletion1122234@ffss {
+  title = "Delete::Submit for deletion1122234"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "assignee_id"
+      value = "la+8@example.org"
+    },
+    {
+      field = "current_tags"
+      value = [
+        zendesk.tag.instance.review_delete,
+      ]
+    },
+    {
+      field = "status"
+      value = "solved"
+    },
+  ]
+  raw_title = "Delete::Submit for deletion1122234"
+  _alias = "Delete::Submit for deletion1122234"
+}

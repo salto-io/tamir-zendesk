@@ -1,0 +1,54 @@
+zendesk.macro babababab {
+  title = "babababab"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "status"
+      value = "open"
+    },
+    {
+      field = "side_conversation"
+      value = [
+        "test",
+        "<p>babababab</p>",
+        "bla bla",
+        "text/html",
+      ]
+    },
+    {
+      field = "side_conversation_slack"
+      value = [
+        "<p>this is a message!!!</p>",
+        "#eden",
+        "text/html",
+      ]
+    },
+    {
+      field = "side_conversation_ticket"
+      value = [
+        "fwd: {{ticket.title}} (Ticket #{{ticket.id}} ",
+        "<p>this is a message</p><p><br></p><p><br></p>",
+        "SupportAssignable:support_assignable/group/${ zendesk.group.instance.edenAudit }",
+        "text/html",
+      ]
+    },
+    {
+      field = "assignee_id"
+      value = ""
+    },
+    {
+      field = zendesk.ticket_field.instance.eden_check_change_test2_multiselect@sssu
+      value = zendesk.ticket_field__custom_field_options.instance.eden_check_change_test2_multiselect_sssu__bla@uuuumuu
+    },
+    {
+      field = "comment_value_html"
+      value = "<p>hii</p>"
+    },
+  ]
+  attachments = [
+    zendesk.macro_attachment.instance.babababab__nacl_png@uuv,
+  ]
+  raw_title = "babababab"
+  _alias = "babababab"
+}

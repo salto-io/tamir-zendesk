@@ -1,0 +1,18 @@
+zendesk.ticket_form digest_test@s {
+  raw_name = "digest test"
+  raw_display_name = "1"
+  end_user_visible = false
+  ticket_field_ids = [
+    zendesk.ticket_field.instance.Statut_status,
+    zendesk.ticket_field.instance.Groupe_group,
+    zendesk.ticket_field.instance.Assign__assignee@_00233u,
+    zendesk.ticket_field.instance.Ticket_status_custom_status@suu,
+    zendesk.ticket_field.instance.Sujet_subject,
+    zendesk.ticket_field.instance.Description_description,
+    zendesk.ticket_field.instance.digest_test_text@su,
+  ]
+  active = true
+  default = false
+  in_all_brands = true
+  _alias = "digest test"
+}

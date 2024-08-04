@@ -1,0 +1,10 @@
+zendesk.monitored_twitter_handle placeholde81041 {
+  screen_name = "@placeholde81041"
+  twitter_user_id = 1768326605544276000
+  avatar_url = "https://abs.twimg.com/sticky/default_profile_images/default_profile.png"
+  name = "placeholde81041"
+  allow_reply = true
+  can_reply = true
+  brand_id = zendesk.brand.instance.Salto
+  default_twitter_handle = false
+}

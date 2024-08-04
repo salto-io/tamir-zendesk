@@ -1,0 +1,4 @@
+zendesk.channel Side_conversation@s {
+  name = "Side conversation"
+  _alias = "Side conversation"
+}

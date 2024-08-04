@@ -1,0 +1,9 @@
+zendesk.brand_logo NoHelpCenter__Templates__Campaign__ThailandTemplates__Campaign__ThailandTemplates__Campaign__ThailandTemplates__Campaign__ThailandTemplates__Campaignpdf_pdf_thumb_png@uuuuuuuuuuuuuuuuuuuuvuv {
+  filename = "Templates__Campaign__ThailandTemplates__Campaign__ThailandTemplates__Campaign__ThailandTemplates__Campaign__ThailandTemplates__Campaignpdf.pdf_thumb.png"
+  contentType = "image/png"
+  content = file("zendesk/brand_logo/NoHelpCenter__Templates__Campaign__ThailandTemplates__Campaign__ThailandTemplates__Campaign__ThailandTemplates__Campaign__ThailandTemplates__Campaignpdf.pdf_thumb.png")
+  _parent = [
+    zendesk.brand.instance.NoHelpCenter,
+  ]
+  _alias = "Templates__Campaign__ThailandTemplates__Campaign__ThailandTemplates__Campaign__ThailandTemplates__Campaign__ThailandTemplates__Campaignpdf.pdf_thumb.png"
+}

@@ -1,0 +1,93 @@
+zendesk.ticket_form Adam_test_sorting@s {
+  raw_name = "Adam test sorting"
+  raw_display_name = ""
+  end_user_visible = false
+  ticket_field_ids = [
+    zendesk.ticket_field.instance.Statut_status,
+    zendesk.ticket_field.instance.Groupe_group,
+    zendesk.ticket_field.instance.Assign__assignee@_00233u,
+    zendesk.ticket_field.instance.Ticket_status_custom_status@suu,
+    zendesk.ticket_field.instance.Sujet_subject,
+    zendesk.ticket_field.instance.Description_description,
+    zendesk.ticket_field.instance.Customer_Priority_tagger@su,
+    zendesk.ticket_field.instance._eshed__List_of_Fruit_tagger@hisssu,
+    zendesk.ticket_field.instance.Is_Pro_Customer_checkbox@ssu,
+    zendesk.ticket_field.instance._eshed__Categories_of_Newsletter_multiselect@hisssu,
+  ]
+  active = true
+  default = false
+  in_all_brands = true
+  agent_conditions = [
+    {
+      parent_field_id = zendesk.ticket_field.instance.Is_Pro_Customer_checkbox@ssu
+      parent_field_type = "checkbox"
+      value = false
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance.Customer_Priority_tagger@su
+          is_required = false
+          required_on_statuses = {
+            type = "NO_STATUSES"
+          }
+        },
+      ]
+    },
+    {
+      parent_field_id = zendesk.ticket_field.instance._eshed__List_of_Fruit_tagger@hisssu
+      parent_field_type = "tagger"
+      value = zendesk.ticket_field__custom_field_options.instance._eshed__List_of_Fruit_tagger_hisssu__apple@uuuuuumuu
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance._eshed__Categories_of_Newsletter_multiselect@hisssu
+          is_required = false
+          required_on_statuses = {
+            type = "NO_STATUSES"
+          }
+        },
+      ]
+    },
+    {
+      parent_field_id = zendesk.ticket_field.instance._eshed__List_of_Fruit_tagger@hisssu
+      parent_field_type = "tagger"
+      value = zendesk.ticket_field__custom_field_options.instance._eshed__List_of_Fruit_tagger_hisssu__banana@uuuuuumuu
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance._eshed__Categories_of_Newsletter_multiselect@hisssu
+          is_required = false
+          required_on_statuses = {
+            type = "NO_STATUSES"
+          }
+        },
+      ]
+    },
+    {
+      parent_field_id = zendesk.ticket_field.instance._eshed__List_of_Fruit_tagger@hisssu
+      parent_field_type = "tagger"
+      value = zendesk.ticket_field__custom_field_options.instance._eshed__List_of_Fruit_tagger_hisssu__strawberry@uuuuuumuu
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance._eshed__Categories_of_Newsletter_multiselect@hisssu
+          is_required = false
+          required_on_statuses = {
+            type = "NO_STATUSES"
+          }
+        },
+      ]
+    },
+    {
+      parent_field_id = zendesk.ticket_field.instance.Customer_Priority_tagger@su
+      parent_field_type = "tagger"
+      value = zendesk.ticket_field__custom_field_options.instance.Customer_Priority_tagger_su__very_critical@uumuuu
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance._eshed__List_of_Fruit_tagger@hisssu
+          is_required = false
+          required_on_statuses = {
+            type = "NO_STATUSES"
+          }
+        },
+      ]
+    },
+  ]
+  _alias = "Adam test sorting"
+}

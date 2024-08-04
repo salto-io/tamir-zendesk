@@ -1,0 +1,12 @@
+zendesk.user_field withmissingoption {
+  type = "dropdown"
+  key = "withmissingoption"
+  raw_title = "withMissingOption"
+  raw_description = ""
+  active = true
+  system = false
+  custom_field_options = [
+    zendesk.user_field__custom_field_options.instance.withmissingoption__456,
+  ]
+  _alias = "withMissingOption"
+}

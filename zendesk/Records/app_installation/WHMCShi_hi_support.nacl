@@ -1,0 +1,19 @@
+zendesk.app_installation WHMCShi_hi_support@su {
+  app_id = 7549
+  product = "support"
+  settings = {
+    name = "WHMCShi hi"
+    title = "WHMCShi hi"
+    whmcsurl = "asdasd"
+    displaydueinvoices = false
+    displaycontactinfo = true
+    displayproducts = false
+  }
+  enabled = true
+  recurring_payment = false
+  collapsible = true
+  paid = false
+  has_unpaid_subscription = false
+  has_incomplete_subscription = false
+  _alias = "WHMCShi hi"
+}

@@ -1,0 +1,15 @@
+zendesk.ticket_field Adam_test_lookup_lookup@ssu {
+  type = "lookup"
+  raw_title = "Adam test lookup"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "Adam test lookup"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  relationship_target_type = "zen:user"
+  _alias = "Adam test lookup"
+}

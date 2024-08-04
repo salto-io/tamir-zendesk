@@ -1,0 +1,10 @@
+zendesk.dynamic_content_item__variants colon_colon_f__af@umuu {
+  content = "ba"
+  locale_id = zendesk.locale.instance.af
+  active = true
+  default = true
+  _parent = [
+    zendesk.dynamic_content_item.instance.colon_colon@f,
+  ]
+  _alias = "colon:colon - af"
+}

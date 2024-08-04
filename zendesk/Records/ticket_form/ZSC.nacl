@@ -1,0 +1,17 @@
+zendesk.ticket_form ZSC {
+  raw_name = "ZSC"
+  raw_display_name = "ZSC Issue?"
+  end_user_visible = true
+  ticket_field_ids = [
+    zendesk.ticket_field.instance.Statut_status,
+    zendesk.ticket_field.instance.Groupe_group,
+    zendesk.ticket_field.instance.Assign__assignee@_00233u,
+    zendesk.ticket_field.instance.Sujet_subject,
+    zendesk.ticket_field.instance.Description_description,
+    zendesk.ticket_field.instance.ZSC_checkbox,
+  ]
+  active = true
+  default = false
+  in_all_brands = true
+  _alias = "ZSC"
+}

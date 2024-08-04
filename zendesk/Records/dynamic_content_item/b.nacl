@@ -1,0 +1,9 @@
+zendesk.dynamic_content_item b {
+  name = "b"
+  placeholder = "{{dc.---____abc_abc}}"
+  default_locale_id = zendesk.locale.instance.af
+  variants = [
+    zendesk.dynamic_content_item__variants.instance.b__af,
+  ]
+  _alias = "b"
+}

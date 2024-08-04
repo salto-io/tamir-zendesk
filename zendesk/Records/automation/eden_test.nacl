@@ -1,0 +1,27 @@
+zendesk.automation eden_test@s {
+  title = "eden test"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "status"
+      value = "pending"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "is"
+        value = "new"
+      },
+      {
+        field = "priority"
+        operator = "is"
+        value = "normal"
+      },
+    ]
+  }
+  raw_title = "eden test"
+  _alias = "eden test"
+}

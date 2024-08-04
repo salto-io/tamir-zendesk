@@ -1,0 +1,37 @@
+zendesk.ticket_form edenContent_changed_____test_raw_title@ssvvvsss {
+  raw_name = "{{${ zendesk.dynamic_content_item.instance.eden }}} test raw title"
+  raw_display_name = ""
+  end_user_visible = false
+  ticket_field_ids = [
+    zendesk.ticket_field.instance.Statut_status,
+    zendesk.ticket_field.instance.Groupe_group,
+    zendesk.ticket_field.instance.Assign__assignee@_00233u,
+    zendesk.ticket_field.instance.Ticket_status_custom_status@suu,
+    zendesk.ticket_field.instance.Sujet_subject,
+    zendesk.ticket_field.instance.Description_description,
+    zendesk.ticket_field.instance.123456_text,
+    zendesk.ticket_field.instance._eshed__Categories_of_Newsletter_multiselect@hisssu,
+    zendesk.ticket_field.instance.__dc_eden___raw_title_checkbox@_00123_00123v_00125_00125ssu,
+    zendesk.ticket_field.instance.__dc_eden___raw_title2_checkbox@_00123_00123v_00125_00125ssu,
+  ]
+  active = true
+  default = false
+  in_all_brands = true
+  agent_conditions = [
+    {
+      parent_field_id = zendesk.ticket_field.instance.__dc_eden___raw_title_checkbox@_00123_00123v_00125_00125ssu
+      parent_field_type = "checkbox"
+      value = true
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance.123456_text
+          is_required = false
+          required_on_statuses = {
+            type = "NO_STATUSES"
+          }
+        },
+      ]
+    },
+  ]
+  _alias = "edenContent changed ... test raw title"
+}

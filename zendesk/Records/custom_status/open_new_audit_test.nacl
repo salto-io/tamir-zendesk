@@ -1,0 +1,9 @@
+zendesk.custom_status open_new_audit_test@uss {
+  status_category = "open"
+  raw_agent_label = "new audit test"
+  raw_end_user_label = "new audit test"
+  raw_description = ""
+  raw_end_user_description = ""
+  active = true
+  _alias = "new audit test"
+}

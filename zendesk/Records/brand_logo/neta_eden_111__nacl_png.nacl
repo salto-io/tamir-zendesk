@@ -1,0 +1,9 @@
+zendesk.brand_logo neta_eden_111__nacl_png@uuuuv {
+  filename = "nacl.png"
+  contentType = "image/png"
+  content = file("zendesk/brand_logo/neta_eden_111__nacl.png")
+  _parent = [
+    zendesk.brand.instance.neta_eden_111,
+  ]
+  _alias = "nacl.png"
+}

@@ -1,0 +1,8 @@
+zendesk.user_field__custom_field_options userfielddel__value4 {
+  raw_name = "value4"
+  value = "value4"
+  _parent = [
+    zendesk.user_field.instance.userfielddel,
+  ]
+  _alias = "value4"
+}

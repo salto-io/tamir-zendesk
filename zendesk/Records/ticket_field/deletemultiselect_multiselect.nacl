@@ -1,0 +1,17 @@
+zendesk.ticket_field deletemultiselect_multiselect {
+  type = "multiselect"
+  raw_title = "deletemultiselect"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "deletemultiselect"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  custom_field_options = [
+    zendesk.ticket_field__custom_field_options.instance.deletemultiselect_multiselect__dfsfsdfds,
+  ]
+  _alias = "deletemultiselect"
+}

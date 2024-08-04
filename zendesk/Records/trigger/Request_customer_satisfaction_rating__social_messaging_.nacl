@@ -1,0 +1,51 @@
+zendesk.trigger Request_customer_satisfaction_rating__social_messaging_@ssssjsk {
+  title = "Request customer satisfaction rating (social messaging)"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "notification_messaging_csat"
+      value = "requester_id"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "value"
+        value = "solved"
+      },
+    ]
+    any = [
+      {
+        field = "via_id"
+        operator = "is"
+        value = zendesk.channel.instance.WeChat
+      },
+      {
+        field = "via_id"
+        operator = "is"
+        value = zendesk.channel.instance.LINE
+      },
+      {
+        field = "via_id"
+        operator = "is"
+        value = zendesk.channel.instance.WhatsApp
+      },
+      {
+        field = "via_id"
+        operator = "is"
+        value = zendesk.channel.instance.Facebook_Messenger@s
+      },
+      {
+        field = "via_id"
+        operator = "is"
+        value = zendesk.channel.instance.X_Corp_Direct_Message@s
+      },
+    ]
+  }
+  description = "Asks customer for a rating after the conversation is over. This trigger is created by the system."
+  raw_title = "Request customer satisfaction rating (social messaging)"
+  category_id = zendesk.trigger_category.instance.Field_Updates@s
+  _alias = "Request customer satisfaction rating (social messaging)"
+}

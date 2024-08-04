@@ -1,0 +1,16 @@
+zendesk.ticket_field PlatinumField_checkbox {
+  type = "checkbox"
+  raw_title = "PlatinumField"
+  raw_description = "It doesn't rust!"
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "PlatinumField"
+  visible_in_portal = true
+  editable_in_portal = true
+  required_in_portal = false
+  tag = ""
+  removable = true
+  agent_description = "A really strong one"
+  _alias = "PlatinumField"
+}

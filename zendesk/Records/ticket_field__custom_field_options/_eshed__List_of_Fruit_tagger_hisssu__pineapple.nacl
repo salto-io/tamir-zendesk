@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options _eshed__List_of_Fruit_tagger_hisssu__pineapple@uuuuuumuu {
+  raw_name = "Pineapple"
+  value = "pineapple"
+  _parent = [
+    zendesk.ticket_field.instance._eshed__List_of_Fruit_tagger@hisssu,
+  ]
+  _alias = "Pineapple"
+}

@@ -1,0 +1,8 @@
+zendesk.organization_field__custom_field_options neta_drop_down_123__somethinge_else {
+  raw_name = "something else"
+  value = "somethinge_else"
+  _parent = [
+    zendesk.organization_field.instance.neta_drop_down_123,
+  ]
+  _alias = "something else"
+}

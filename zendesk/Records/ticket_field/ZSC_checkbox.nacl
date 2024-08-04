@@ -1,0 +1,15 @@
+zendesk.ticket_field ZSC_checkbox {
+  type = "checkbox"
+  raw_title = "ZSC"
+  raw_description = "For identifying ZSC requests"
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "Is this a ZSC request"
+  visible_in_portal = true
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  agent_description = "For ZSC requests"
+  _alias = "ZSC"
+}

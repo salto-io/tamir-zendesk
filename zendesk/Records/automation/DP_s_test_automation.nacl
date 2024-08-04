@@ -1,0 +1,29 @@
+zendesk.automation DP_s_test_automation@tss {
+  title = "DP's test automation"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "current_tags"
+      value = [
+        zendesk.tag.instance.overdue,
+      ]
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "is"
+        value = "new"
+      },
+      {
+        field = "NEW"
+        operator = "is"
+        value = "24"
+      },
+    ]
+  }
+  raw_title = "DP's test automation"
+  _alias = "DP's test automation"
+}

@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options multiSelectFieldDEL_multiselect__value1 {
+  raw_name = "value1"
+  value = "value1"
+  _parent = [
+    zendesk.ticket_field.instance.multiSelectFieldDEL_multiselect,
+  ]
+  _alias = "value1"
+}

@@ -1,0 +1,14 @@
+zendesk.ticket_field Sujet_subject {
+  type = "subject"
+  raw_title = "Sujet"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "Sujet"
+  visible_in_portal = true
+  editable_in_portal = true
+  required_in_portal = true
+  removable = false
+  _alias = "Sujet"
+}

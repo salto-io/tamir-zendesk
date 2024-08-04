@@ -1,0 +1,11 @@
+zendesk.oauth_client salto_test {
+  name = "salto_test"
+  identifier = "salto_test"
+  company = "premium sandbox"
+  description = ""
+  redirect_uri = [
+    "http://localhost:8080/zendesk-oauth2-redirect",
+  ]
+  global = false
+  _alias = "salto_test"
+}

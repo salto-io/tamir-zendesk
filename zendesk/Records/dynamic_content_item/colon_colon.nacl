@@ -1,0 +1,9 @@
+zendesk.dynamic_content_item colon_colon@f {
+  name = "colon:colon"
+  placeholder = "{{dc.colon_colon}}"
+  default_locale_id = zendesk.locale.instance.af
+  variants = [
+    zendesk.dynamic_content_item__variants.instance.colon_colon_f__af@umuu,
+  ]
+  _alias = "colon:colon"
+}

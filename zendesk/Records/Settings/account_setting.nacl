@@ -1,0 +1,348 @@
+zendesk.account_setting {
+  branding = {
+    header_color = "690801"
+    page_background_color = "333333"
+    tab_background_color = "57110C"
+    text_color = "FFFFFF"
+  }
+  apps = {
+    use = true
+    create_private = true
+    create_public = false
+  }
+  tickets = {
+    agent_ticket_deletion = false
+    list_newest_comments_first = true
+    collaboration = false
+    private_attachments = false
+    email_attachments = false
+    agent_collision = true
+    tagging = true
+    list_empty_views = true
+    comments_public_by_default = true
+    is_first_comment_private_enabled = true
+    maximum_personal_views_to_list = 10
+    status_hold = true
+    markdown_ticket_comments = false
+    rich_text_comments = true
+    emoji_autocompletion = true
+    has_color_text = true
+    assign_tickets_upon_solve = true
+    allow_group_reset = true
+    assign_default_organization = true
+    messaging_transcript_public = true
+    app_shortcuts_context_panel_enabled = true
+    auto_translation_enabled = true
+    agent_invitation_enabled = true
+    chat_sla_enablement = false
+    modern_ticket_reassignment = false
+    show_modern_ticket_reassignment = false
+    default_solved_ticket_reassignment_strategy = ""
+    accepted_new_collaboration_tos = false
+    follower_and_email_cc_collaborations = true
+    auto_updated_ccs_followers_rules = false
+    agent_can_change_requester = true
+    comment_email_ccs_allowed = true
+    ticket_followers_allowed = true
+    light_agent_email_ccs_allowed = false
+    agent_email_ccs_become_followers = true
+    using_skill_based_routing = true
+    edit_ticket_skills_permission = 0
+    custom_statuses_enabled = true
+    modify_closed_tickets_customer_setting = false
+  }
+  agents = {
+    agent_workspace = true
+    focus_mode = false
+    aw_self_serve_migration_enabled = true
+    aw_auto_activation_status = 0
+    aw_prevent_opt_out = false
+    agent_as_a_requester = "private-groups"
+    idle_timeout_enabled = false
+    agent_home = false
+  }
+  groups = {
+    check_group_name_uniqueness = true
+  }
+  chat = {
+    enabled = false
+    integrated = false
+    available = true
+    maximum_request_count = 1
+    welcome_message = "Bonjour. Que puis-je faire pour vous aujourd’hui ?"
+    ctm_auto_activation_status = 0
+    ctm_operating_hours_migration_status = 0
+    ctm_chat_triggers_migration_status = 0
+    ctm_prevent_opt_out = false
+  }
+  voice = {
+    enabled = true
+    logging = false
+    outbound_enabled = true
+    agent_confirmation_when_forwarding = true
+    agent_wrap_up_after_calls = true
+    maximum_queue_size = 5
+    maximum_queue_wait_time = 1
+    only_during_business_hours = false
+    recordings_public = true
+    uk_mobile_forwarding = true
+    voice_ai_enabled = false
+    voice_ai_display_transcript = false
+    voice_zendesk_qa_enabled = false
+  }
+  twitter = {
+    shorten_url = "never"
+  }
+  google_apps = {
+    has_google_apps = false
+    has_google_apps_admin = false
+  }
+  user = {
+    tagging = true
+    time_zone_selection = true
+    language_selection = true
+    multiple_organizations = true
+    agent_created_welcome_emails = false
+    end_user_phone_number_validation = false
+    have_gravatars_enabled = true
+  }
+  screencast = {
+    enabled_for_tickets = false
+  }
+  lotus = {
+    prefer_lotus = true
+    reporting = true
+    pod_id = 19
+  }
+  gooddata_advanced_analytics = {
+    enabled = true
+  }
+  statistics = {
+    forum = false
+    search = true
+    rule_usage = true
+  }
+  billing = {
+    backend = "zuora"
+  }
+  active_features = {
+    on_hold_status = true
+    user_tagging = true
+    ticket_tagging = true
+    topic_suggestion = false
+    voice = true
+    business_hours = true
+    facebook_login = false
+    google_login = false
+    twitter_login = false
+    forum_analytics = true
+    agent_forwarding = false
+    chat = false
+    chat_about_my_ticket = false
+    customer_satisfaction = true
+    satisfaction_prediction = false
+    automatic_answers = true
+    csat_reason_code = true
+    screencasts = false
+    markdown = false
+    bcc_archiving = false
+    allow_ccs = true
+    organization_access_enabled = true
+    audit_logs_gdpr = false
+    access_logs_enabled = false
+    advanced_analytics = false
+    insights = false
+    explore = true
+    explore_on_support_ent_plan = true
+    explore_on_support_pro_plan = false
+    good_data_and_explore = false
+    good_data_only = false
+    explore_forbidden = false
+    explore_not_set = false
+    sandbox = true
+    suspended_ticket_notification = true
+    twitter = true
+    facebook = false
+    dynamic_contents = true
+    light_agents = true
+    ticket_forms = true
+    user_org_fields = true
+    is_abusive = false
+    rich_content_in_emails = true
+    custom_object_nav_enabled = true
+    release_control_enabled = true
+    benchmark_opt_out = false
+    custom_dkim_domain = true
+    allow_email_template_customization = true
+    custom_objects_activated = true
+  }
+  ticket_form = {
+    ticket_forms_instructions = '''
+Please choose your issue below
+(edited) 
+'''
+    raw_ticket_forms_instructions = '''
+Please choose your issue below
+(edited) 
+'''
+  }
+  brands = {
+    default_brand_id = zendesk.brand.instance.Salto
+    require_brand_on_new_tickets = false
+  }
+  api = {
+    accepted_api_agreement = true
+    api_password_access = "true"
+    api_token_access = "true"
+  }
+  rule = {
+    macro_most_used = true
+    macro_order = "position"
+    using_skill_based_routing = true
+    enable_macro_suggestions = false
+  }
+  limits = {
+    attachment_size = 52428800
+  }
+  onboarding = {
+    checklist_onboarding_version = 6
+  }
+  cross_sell = {
+    show_chat_tooltip = true
+  }
+  cdn = {
+    cdn_provider = "default"
+    fallback_cdn_provider = "cloudfront"
+    hosts = [
+      {
+        name = "default"
+      },
+      {
+        name = "cloudfront"
+      },
+    ]
+  }
+  metrics = {
+    account_size = "1-99"
+  }
+  localization = {
+    time_zone = "American Samoa"
+    iana_time_zone = "Pacific/Pago_Pago"
+    default_locale_identifier = "en-US"
+    uses_12_hour_clock = false
+  }
+  knowledge = {
+    default_search_filters_brands = "_TICKET"
+    default_search_filters_categories = ""
+    default_search_filters_external_content_sources = ""
+    default_search_filters_locales = "_TICKET"
+    default_search_filters_sections = ""
+    search_articles = true
+    search_community_posts = true
+    search_external_content = true
+    require_article_templates = false
+    generative_answers = false
+  }
+  routing = {
+    enabled = true
+    autorouting_tag = "audit"
+    max_email_capacity = 1
+    max_messaging_capacity = 1
+    reassignment_messaging_enabled = false
+    reassignment_messaging_timeout = 15
+    reassignment_talk_timeout = 30
+    skills_enabled = true
+    skills_timeout_enabled = false
+    skills_timeout_support = 3600
+    skills_timeout_messaging = 30
+    skills_timeout_talk = 30
+    reassignment_reopened_tickets_enabled = false
+    reassignment_reopened_tickets_support_enabled = false
+    reassignment_reopened_tickets_messaging_enabled = false
+    messaging_activity_routing_enabled = true
+    auto_activation = 0
+    auto_accept_messaging_enabled = false
+    focus_mode_enabled = false
+    assignment_method = "highest_spare_capacity"
+  }
+  deletion = {
+    user_auto_delete_soft_deleted_retention = 30
+    user_auto_delete_max_deletions_per_hour = 1000
+    user_auto_delete_batch_size = 1000
+    user_auto_delete_account_prioritisation = 1
+  }
+  messaging_inactivity = {
+    timeout = 10
+    enabled = false
+  }
+  device_metadata = {
+    enabled = true
+    hide_ip = false
+    hide_location = false
+  }
+  messaging = {
+    messaging_end_session = false
+  }
+  ticket_sharing_partners = {
+    support_addresses = [
+      "support@d3v-salto3.zendesk.com",
+      "support@test-nms1.zendesk.com",
+      "support@supportnms.zendesk.com",
+      "support@salto162.zendesk.com",
+      "support@salto27.zendesk.com",
+      "support@nms-test-3.zendesk.com",
+    ]
+  }
+  email = {
+    accept_wildcard_emails = false
+    custom_dkim_domain = false
+    email_sender_authentication = true
+    email_template_photos = true
+    email_template_selection = false
+    gmail_actions = true
+    html_mail_template = '''
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <style type="text/css">
+    table td {
+      border-collapse: collapse;
+    }
+    {{styles}}
+  </style>
+</head>
+<body {{attributes}} style="width: 100%!important; margin: 0; padding: 0;">
+  <div style="padding: 10px; line-height: 1.5; font-family: 'Lucida Grande',Verdana,Arial,sans-serif; font-size: 12px; color:#444444;">
+    {{content}}
+  </div>
+  <div style="padding: 10px; line-height: 1.5; font-family: 'Lucida Grande',Verdana,Arial,sans-serif; font-size: 12px; color: #aaaaaa; margin: 10px 0 14px 0; padding-top: 10px; border-top: 1px solid #eeeeee;">
+    {{footer}} {{footer_link}}
+  </div>
+</body>
+</html>
+
+'''
+    mail_delimiter = "{{txt.email.delimiter}}"
+    modern_email_template = true
+    no_mail_delimiter = true
+    personalized_replies = true
+    rich_content_in_emails = true
+    send_gmail_messages_via_gmail = true
+    text_mail_template = '''
+{{content}}
+
+{{footer}}
+'''
+  }
+  automatic_answers = {
+    threshold = "balanced"
+  }
+  side_conversations = {
+    email_channel = true
+    msteams_channel = false
+    slack_channel = true
+    tickets_channel = true
+    show_in_context_panel = true
+  }
+}

@@ -1,0 +1,23 @@
+zendesk.ticket_field Preferred_Game_multiselect@su {
+  type = "multiselect"
+  raw_title = "Preferred Game"
+  raw_description = "What is your preferred game?"
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "Preferred Game"
+  visible_in_portal = true
+  editable_in_portal = true
+  required_in_portal = true
+  removable = true
+  agent_description = "What is your preferred game?"
+  custom_field_options = [
+    zendesk.ticket_field__custom_field_options.instance.Preferred_Game_multiselect_su__chess@uumuu,
+    zendesk.ticket_field__custom_field_options.instance.Preferred_Game_multiselect_su__checkers@uumuu,
+    zendesk.ticket_field__custom_field_options.instance.Preferred_Game_multiselect_su__domino@uumuu,
+    zendesk.ticket_field__custom_field_options.instance.Preferred_Game_multiselect_su__go@uumuu,
+    zendesk.ticket_field__custom_field_options.instance.Preferred_Game_multiselect_su__fortnite@uumuu,
+  ]
+  default_custom_field_option = zendesk.ticket_field__custom_field_options.instance.Preferred_Game_multiselect_su__fortnite@uumuu
+  _alias = "Preferred Game"
+}

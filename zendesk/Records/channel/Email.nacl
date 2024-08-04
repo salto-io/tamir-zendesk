@@ -1,0 +1,4 @@
+zendesk.channel Email {
+  name = "Email"
+  _alias = "Email"
+}

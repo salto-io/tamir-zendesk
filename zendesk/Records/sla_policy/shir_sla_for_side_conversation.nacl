@@ -1,0 +1,49 @@
+zendesk.sla_policy shir_sla_for_side_conversation@s {
+  title = "shir sla for side conversation"
+  description = "side"
+  filter = {
+    all = [
+      {
+        field = "via_id"
+        operator = "is"
+        value = zendesk.channel.instance.Side_conversation@s
+      },
+      {
+        field = "brand_id"
+        operator = "is_not"
+        value = zendesk.brand.instance.BrandBForGuide
+      },
+    ]
+  }
+  policy_metrics = [
+    {
+      priority = "low"
+      metric = "first_reply_time"
+      target = 60
+      business_hours = false
+      target_in_seconds = 3600
+    },
+    {
+      priority = "normal"
+      metric = "first_reply_time"
+      target = 60
+      business_hours = false
+      target_in_seconds = 3600
+    },
+    {
+      priority = "high"
+      metric = "first_reply_time"
+      target = 60
+      business_hours = false
+      target_in_seconds = 3600
+    },
+    {
+      priority = "urgent"
+      metric = "first_reply_time"
+      target = 60
+      business_hours = false
+      target_in_seconds = 3600
+    },
+  ]
+  _alias = "shir sla for side conversation"
+}

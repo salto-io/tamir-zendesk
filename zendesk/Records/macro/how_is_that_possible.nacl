@@ -1,0 +1,14 @@
+zendesk.macro how_is_that_possible {
+  title = "how_is_that_possible"
+  active = true
+  default = false
+  description = "how_is_that_possible!"
+  actions = [
+    {
+      field = "comment_value_html"
+      value = "<p>how_is_that_possible bloop kakakak</p>"
+    },
+  ]
+  raw_title = "how_is_that_possible"
+  _alias = "how_is_that_possible"
+}

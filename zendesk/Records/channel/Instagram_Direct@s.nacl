@@ -1,0 +1,4 @@
+zendesk.channel Instagram_Direct@s {
+  name = "Instagram Direct"
+  _alias = "Instagram Direct"
+}

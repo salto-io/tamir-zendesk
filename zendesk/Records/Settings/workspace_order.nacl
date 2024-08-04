@@ -1,0 +1,16 @@
+zendesk.workspace_order {
+  active = [
+    zendesk.workspace.instance.Noam_Crazy_workspace@s,
+    zendesk.workspace.instance.My_WS@s,
+    zendesk.workspace.instance.neta_test1,
+    zendesk.workspace.instance.neta_test2,
+    zendesk.workspace.instance.Adam_Test@s,
+    zendesk.workspace.instance.daniels_workspace@s,
+    zendesk.workspace.instance.WS_with_default_layout@s,
+    zendesk.workspace.instance.workspace_with_layout@s,
+    zendesk.workspace.instance.workspace_with_layout2@s,
+    zendesk.workspace.instance.macro_test@s,
+  ]
+  inactive = [
+  ]
+}

@@ -1,0 +1,21 @@
+zendesk.ticket_field valueStatuses_tagger {
+  type = "tagger"
+  raw_title = "valueStatuses"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "valueStatuses"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  agent_description = "valueStatuses"
+  custom_field_options = [
+    zendesk.ticket_field__custom_field_options.instance.valueStatuses_tagger__ve1,
+    zendesk.ticket_field__custom_field_options.instance.valueStatuses_tagger__ve2,
+    zendesk.ticket_field__custom_field_options.instance.valueStatuses_tagger__ve3,
+  ]
+  default_custom_field_option = zendesk.ticket_field__custom_field_options.instance.valueStatuses_tagger__ve1
+  _alias = "valueStatuses"
+}

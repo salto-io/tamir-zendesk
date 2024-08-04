@@ -1,0 +1,9 @@
+zendesk.macro_attachment sacsacsac__Screenshot_2024_03_10_at_15_16_27_png@uuubbuuvvv {
+  filename = "Screenshot_2024-03-10_at_15.16.27.png"
+  contentType = "image/png"
+  content = file("zendesk/macro_attachment/sacsacsac__Screenshot_2024-03-10_at_15.16.27.png")
+  _parent = [
+    zendesk.macro.instance.sacsacsac,
+  ]
+  _alias = "Screenshot_2024-03-10_at_15.16.27.png"
+}

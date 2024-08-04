@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options Customer_Priority_tagger_su__medium@uumuu {
+  raw_name = "Medium"
+  value = "medium"
+  _parent = [
+    zendesk.ticket_field.instance.Customer_Priority_tagger@su,
+  ]
+  _alias = "Medium"
+}

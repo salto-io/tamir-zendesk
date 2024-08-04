@@ -1,0 +1,27 @@
+zendesk.macro Daniel_s_maccro_hiaa__copy1___copy_a@tsssjksjk {
+  title = "Daniel's maccro hiaa (copy1) (copy)a"
+  active = true
+  default = false
+  description = "daniels cool ass marco"
+  actions = [
+    {
+      field = "status"
+      value = "open"
+    },
+    {
+      field = "ticket_form_id"
+      value = zendesk.ticket_form.instance.Formulaire_de_ticket_par_d_faut@ssss_00233
+    },
+    {
+      field = "comment_value_html"
+      value = "<p>hi baby</p>"
+    },
+  ]
+  attachments = [
+    zendesk.macro_attachment.instance.Daniel_s_maccro_hiaa__copy1___copy_a__Screenshot_2024_02_04_at_16_49_13_png@tsssjksjkuuubbuuvvv,
+    zendesk.macro_attachment.instance.Daniel_s_maccro_hiaa__copy1___copy_a__Screenshot_2024_02_04_at_16_05_56_png@tsssjksjkuuubbuuvvv,
+    zendesk.macro_attachment.instance.Daniel_s_maccro_hiaa__copy1___copy_a__Screenshot_2024_03_10_at_15_16_27_png@tsssjksjkuuubbuuvvv,
+  ]
+  raw_title = "Daniel's maccro hiaa (copy1) (copy)a"
+  _alias = "Daniel's maccro hiaa (copy1) (copy)a"
+}

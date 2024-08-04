@@ -1,0 +1,9 @@
+zendesk.business_hours_schedule_holiday eden_schedule22_b__bla_bla@umuus {
+  name = "bla bla"
+  start_date = "2023-02-15"
+  end_date = "2023-02-15"
+  _parent = [
+    zendesk.business_hours_schedule.instance.eden_schedule22@b,
+  ]
+  _alias = "bla bla"
+}

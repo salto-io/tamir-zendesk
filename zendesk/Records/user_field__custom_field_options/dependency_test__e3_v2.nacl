@@ -1,0 +1,8 @@
+zendesk.user_field__custom_field_options dependency_test__e3_v2@uuub {
+  raw_name = "e3-v2"
+  value = "e3-v2"
+  _parent = [
+    zendesk.user_field.instance.dependency_test,
+  ]
+  _alias = "e3-v2"
+}

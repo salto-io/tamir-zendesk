@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options Escalation_Status_tagger_su__escalated@uumuu {
+  raw_name = "Escalated"
+  value = "escalated"
+  _parent = [
+    zendesk.ticket_field.instance.Escalation_Status_tagger@su,
+  ]
+  _alias = "Escalated"
+}

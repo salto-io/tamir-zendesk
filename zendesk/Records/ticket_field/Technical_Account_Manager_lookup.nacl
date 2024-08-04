@@ -1,0 +1,36 @@
+zendesk.ticket_field Technical_Account_Manager_lookup@ssu {
+  type = "lookup"
+  raw_title = "Technical Account Manager"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "Technical Account Manager"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  relationship_target_type = "zen:user"
+  relationship_filter = {
+    all = [
+      {
+        field = zendesk.user_field.instance.userfielddropdowntest
+        operator = "is"
+        value = zendesk.user_field__custom_field_options.instance.userfielddropdowntest__ufv11
+      },
+      {
+        field = "locale_id"
+        operator = "is"
+        value = zendesk.locale.instance.he
+      },
+    ]
+    any = [
+      {
+        field = zendesk.user_field.instance.userfield1
+        operator = "is"
+        value = zendesk.user_field__custom_field_options.instance.userfield1__v1
+      },
+    ]
+  }
+  _alias = "Technical Account Manager"
+}

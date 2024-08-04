@@ -1,0 +1,9 @@
+zendesk.organization_field "64@" {
+  type = "text"
+  key = "64"
+  raw_title = "field64"
+  raw_description = "field64"
+  active = true
+  system = false
+  _alias = "field64"
+}

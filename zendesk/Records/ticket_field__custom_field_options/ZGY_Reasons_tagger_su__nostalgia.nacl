@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options ZGY_Reasons_tagger_su__nostalgia@uumuu {
+  raw_name = "nostalgia"
+  value = "nostalgia"
+  _parent = [
+    zendesk.ticket_field.instance.ZGY_Reasons_tagger@su,
+  ]
+  _alias = "nostalgia"
+}

@@ -1,0 +1,19 @@
+zendesk.ticket_field tagger1_tagger {
+  type = "tagger"
+  raw_title = "tagger1"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "tagger1"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  agent_description = "desc"
+  custom_field_options = [
+    zendesk.ticket_field__custom_field_options.instance.tagger1_tagger__v1,
+    zendesk.ticket_field__custom_field_options.instance.tagger1_tagger__v2,
+  ]
+  _alias = "tagger1"
+}

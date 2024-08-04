@@ -1,0 +1,99 @@
+zendesk.view All {
+  active = true
+  default = false
+  execution = {
+    group_by = "priority"
+    group_order = "desc"
+    sort_by = "status"
+    sort_order = "desc"
+    group = {
+      id = "priority"
+      title = "Priority"
+      filterable = true
+      sortable = true
+      order = "desc"
+    }
+    sort = {
+      id = "status"
+      title = "Status category"
+      filterable = true
+      sortable = true
+      order = "desc"
+    }
+    columns = [
+      {
+        id = "satisfaction_score"
+        title = "Satisfaction"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+    ]
+    fields = [
+      {
+        id = "satisfaction_score"
+        title = "Satisfaction"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+    ]
+  }
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "less_than"
+        value = "closed"
+      },
+    ]
+  }
+  raw_title = "All"
+  _alias = "All"
+}

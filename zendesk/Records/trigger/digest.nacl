@@ -1,0 +1,23 @@
+zendesk.trigger digest {
+  title = "digest"
+  active = true
+  default = false
+  actions = [
+    {
+      field = zendesk.ticket_field.instance._eshed__Categories_of_Newsletter_multiselect@hisssu
+      value = zendesk.ticket_field__custom_field_options.instance._eshed__Categories_of_Newsletter_multiselect_hisssu__arts___crafts@uuuuuumuuuuu
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = zendesk.ticket_field.instance.123456_text
+        operator = "present"
+        value = ""
+      },
+    ]
+  }
+  raw_title = "digest"
+  category_id = zendesk.trigger_category.instance.audit_test@s
+  _alias = "digest"
+}

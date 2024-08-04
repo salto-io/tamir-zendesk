@@ -1,0 +1,21 @@
+zendesk.ticket_field Coffee_Type_tagger@su {
+  type = "tagger"
+  raw_title = "Coffee Type"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "Coffee Type"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  custom_field_options = [
+    zendesk.ticket_field__custom_field_options.instance.Coffee_Type_tagger_su__flat_white@uumuuu,
+    zendesk.ticket_field__custom_field_options.instance.Coffee_Type_tagger_su__latte@uumuu,
+    zendesk.ticket_field__custom_field_options.instance.Coffee_Type_tagger_su__capuccino@uumuu,
+    zendesk.ticket_field__custom_field_options.instance.Coffee_Type_tagger_su__capuccino_small@uumuuu,
+  ]
+  default_custom_field_option = zendesk.ticket_field__custom_field_options.instance.Coffee_Type_tagger_su__latte@uumuu
+  _alias = "Coffee Type"
+}

@@ -1,0 +1,50 @@
+zendesk.sla_policy shir_test_policy@s {
+  title = "shir test policy"
+  filter = {
+    all = [
+      {
+        field = "assignee_id"
+        operator = "is_not"
+        value = "requester_id"
+      },
+      {
+        field = "requester_id"
+        operator = "is_not"
+        value = "zendesk-adapter@salto.io"
+      },
+    ]
+    any = [
+      {
+        field = "organization_id"
+        operator = "is"
+        value = 13358311463059
+      },
+      {
+        field = "organization_id"
+        operator = "is_not"
+      },
+      {
+        field = "organization_id"
+        operator = "is_not"
+        value = 13358311463187
+      },
+    ]
+  }
+  policy_metrics = [
+    {
+      priority = "high"
+      metric = "requester_wait_time"
+      target = 300
+      business_hours = false
+      target_in_seconds = 18000
+    },
+    {
+      priority = "urgent"
+      metric = "first_reply_time"
+      target = 180
+      business_hours = false
+      target_in_seconds = 10800
+    },
+  ]
+  _alias = "shir test policy"
+}

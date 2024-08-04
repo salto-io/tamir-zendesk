@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options zgy_list_tagger__indie {
+  raw_name = "indie"
+  value = "indie"
+  _parent = [
+    zendesk.ticket_field.instance.zgy_list_tagger,
+  ]
+  _alias = "indie"
+}

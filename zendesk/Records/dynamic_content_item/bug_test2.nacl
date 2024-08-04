@@ -1,0 +1,11 @@
+zendesk.dynamic_content_item bug_test2@s {
+  name = "bug test2"
+  placeholder = "{{dc.bug_test}}"
+  default_locale_id = zendesk.locale.instance.fr_fr@b
+  variants = [
+    zendesk.dynamic_content_item__variants.instance.bug_test2_s__de@umuu,
+    zendesk.dynamic_content_item__variants.instance.bug_test2_s__en_US_b@umuuum,
+    zendesk.dynamic_content_item__variants.instance.bug_test2_s__fr_fr_b@umuuum,
+  ]
+  _alias = "bug test2"
+}

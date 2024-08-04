@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options valueStatuses_tagger__ve3 {
+  raw_name = "ve3"
+  value = "ve3"
+  _parent = [
+    zendesk.ticket_field.instance.valueStatuses_tagger,
+  ]
+  _alias = "ve3"
+}

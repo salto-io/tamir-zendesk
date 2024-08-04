@@ -1,0 +1,15 @@
+zendesk.ticket_field edenTest123_text {
+  type = "text"
+  raw_title = "edenTest123"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "edenTest123"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  agent_description = "bla234"
+  _alias = "edenTest123"
+}

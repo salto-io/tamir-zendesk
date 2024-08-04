@@ -1,0 +1,10 @@
+zendesk.dynamic_content_item__variants Bla__a_b_c_d__e_fsbusff__en_US_b@uuuuuuumuuum {
+  content = "bla"
+  locale_id = zendesk.locale.instance.en_US@b
+  active = true
+  default = true
+  _parent = [
+    zendesk.dynamic_content_item.instance.Bla__a_b_c_d__e@fsbusff,
+  ]
+  _alias = "Bla: a-b_c d::e - en-US"
+}

@@ -1,0 +1,38 @@
+zendesk.routing_attribute_value Expert__brokenSkill {
+  name = "brokenSkill"
+  conditions = {
+    all = [
+      {
+        subject = zendesk.user_field.instance.uftoremove
+        operator = "is"
+        value = "123"
+      },
+      {
+        subject = zendesk.organization_field.instance.oftoremove
+        operator = "is"
+        value = "123"
+      },
+    ]
+    any = [
+      {
+        subject = zendesk.ticket_field.instance.tagger12_tagger
+        operator = "is"
+        value = zendesk.ticket_field__custom_field_options.instance.tagger12_tagger__v223
+      },
+      {
+        subject = zendesk.user_field.instance.userfielddropdowntest
+        operator = "is"
+        value = zendesk.user_field__custom_field_options.instance.userfielddropdowntest__v2
+      },
+      {
+        subject = zendesk.organization_field.instance.another_drop_down
+        operator = "is"
+        value = zendesk.organization_field__custom_field_options.instance.another_drop_down__option3
+      },
+    ]
+  }
+  _parent = [
+    zendesk.routing_attribute.instance.Expert,
+  ]
+  _alias = "brokenSkill"
+}

@@ -1,0 +1,14 @@
+zendesk.macro blika_blook2 {
+  title = "blika_blook2"
+  active = true
+  default = false
+  description = "blika_blook2 blok blok blok!"
+  actions = [
+    {
+      field = "brand_id"
+      value = zendesk.brand.instance.anotherBrand___Eden_test1@sbss
+    },
+  ]
+  raw_title = "blika_blook2"
+  _alias = "blika_blook2"
+}

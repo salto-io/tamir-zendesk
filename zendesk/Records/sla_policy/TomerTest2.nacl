@@ -1,0 +1,55 @@
+zendesk.sla_policy TomerTest2 {
+  title = "TomerTest2"
+  description = "some text here"
+  filter = {
+    all = [
+      {
+        field = "ticket_type_id"
+        operator = "is"
+        value = 1
+      },
+    ]
+    any = [
+      {
+        field = "via_id"
+        operator = "is"
+        value = zendesk.channel.instance.CTI_voicemail@s
+      },
+      {
+        field = "group_id"
+        operator = "is"
+      },
+    ]
+  }
+  policy_metrics = [
+    {
+      priority = "low"
+      metric = "first_reply_time"
+      target = 244
+      business_hours = false
+      target_in_seconds = 14640
+    },
+    {
+      priority = "normal"
+      metric = "first_reply_time"
+      target = 183
+      business_hours = false
+      target_in_seconds = 10980
+    },
+    {
+      priority = "high"
+      metric = "first_reply_time"
+      target = 122
+      business_hours = false
+      target_in_seconds = 7320
+    },
+    {
+      priority = "urgent"
+      metric = "first_reply_time"
+      target = 61
+      business_hours = false
+      target_in_seconds = 3660
+    },
+  ]
+  _alias = "TomerTest2"
+}

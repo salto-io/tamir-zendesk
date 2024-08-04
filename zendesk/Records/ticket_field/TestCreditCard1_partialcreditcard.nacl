@@ -1,0 +1,15 @@
+zendesk.ticket_field TestCreditCard1_partialcreditcard {
+  type = "partialcreditcard"
+  raw_title = "TestCreditCard1"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "TestCreditCard1"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  agent_description = "lsdflhsdlfh"
+  _alias = "TestCreditCard1"
+}

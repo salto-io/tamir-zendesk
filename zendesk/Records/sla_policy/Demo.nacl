@@ -1,0 +1,48 @@
+zendesk.sla_policy Demo {
+  title = "Demo"
+  filter = {
+    all = [
+      {
+        field = "organization_id"
+        operator = "is"
+        value = 6121395770515
+      },
+      {
+        field = "exact_created_at"
+        operator = "greater_than_equal"
+        value = "2022-06-01 00:00"
+      },
+    ]
+  }
+  policy_metrics = [
+    {
+      priority = "low"
+      metric = "first_reply_time"
+      target = 60
+      business_hours = false
+      target_in_seconds = 3600
+    },
+    {
+      priority = "normal"
+      metric = "first_reply_time"
+      target = 60
+      business_hours = true
+      target_in_seconds = 3600
+    },
+    {
+      priority = "high"
+      metric = "first_reply_time"
+      target = 60
+      business_hours = false
+      target_in_seconds = 3600
+    },
+    {
+      priority = "urgent"
+      metric = "first_reply_time"
+      target = 60
+      business_hours = false
+      target_in_seconds = 3600
+    },
+  ]
+  _alias = "Demo"
+}

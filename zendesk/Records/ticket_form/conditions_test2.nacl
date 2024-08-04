@@ -1,0 +1,60 @@
+zendesk.ticket_form conditions_test2@s {
+  raw_name = "conditions test2"
+  raw_display_name = "this is a test"
+  end_user_visible = true
+  ticket_field_ids = [
+    zendesk.ticket_field.instance.Statut_status,
+    zendesk.ticket_field.instance.Groupe_group,
+    zendesk.ticket_field.instance.Assign__assignee@_00233u,
+    zendesk.ticket_field.instance.Ticket_status_custom_status@suu,
+    zendesk.ticket_field.instance.Sujet_subject,
+    zendesk.ticket_field.instance.Description_description,
+    zendesk.ticket_field.instance.eden_check_change_test2_multiselect@sssu,
+    zendesk.ticket_field.instance.edenTest78_text,
+    zendesk.ticket_field.instance.EdenTest3_tagger,
+    zendesk.ticket_field.instance.Customer_Priority_tagger@su,
+  ]
+  active = true
+  default = false
+  in_all_brands = false
+  restricted_brand_ids = [
+    zendesk.brand.instance.Salto,
+  ]
+  end_user_conditions = [
+    {
+      parent_field_id = zendesk.ticket_field.instance.EdenTest3_tagger
+      parent_field_type = "tagger"
+      value = zendesk.ticket_field__custom_field_options.instance.EdenTest3_tagger__echeck
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance.Customer_Priority_tagger@su
+          is_required = true
+        },
+      ]
+    },
+  ]
+  agent_conditions = [
+    {
+      parent_field_id = zendesk.ticket_field.instance.EdenTest3_tagger
+      parent_field_type = "tagger"
+      value = zendesk.ticket_field__custom_field_options.instance.EdenTest3_tagger__echeck
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance.Customer_Priority_tagger@su
+          is_required = false
+          required_on_statuses = {
+            type = "NO_STATUSES"
+          }
+        },
+        {
+          id = zendesk.ticket_field.instance.edenTest78_text
+          is_required = false
+          required_on_statuses = {
+            type = "NO_STATUSES"
+          }
+        },
+      ]
+    },
+  ]
+  _alias = "conditions test2"
+}

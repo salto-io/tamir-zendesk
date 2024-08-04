@@ -1,0 +1,45 @@
+zendesk.ticket_field eldarr_lookup_org_lookup {
+  type = "lookup"
+  raw_title = "eldarr_lookup_org"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "eldarr_lookup_org"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  agent_description = "eldarr_lookup_org_description"
+  relationship_target_type = "zen:organization"
+  relationship_filter = {
+    all = [
+      {
+        field = "tags"
+        operator = "not_present"
+        value = ""
+      },
+      {
+        field = zendesk.organization_field.instance.age
+        operator = "greater_than_equal"
+        value = "11"
+      },
+      {
+        field = zendesk.organization_field.instance.another_drop_down
+        operator = "is"
+        value = zendesk.organization_field__custom_field_options.instance.another_drop_down__option2
+      },
+      {
+        field = zendesk.organization_field.instance.now
+        operator = "greater_than_equal"
+        value = "2022-08-08"
+      },
+      {
+        field = zendesk.organization_field.instance.oftoremove
+        operator = "less_than"
+        value = "123"
+      },
+    ]
+  }
+  _alias = "eldarr_lookup_org"
+}

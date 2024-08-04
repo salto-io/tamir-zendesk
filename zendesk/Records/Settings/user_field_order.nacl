@@ -1,0 +1,21 @@
+zendesk.user_field_order {
+  active = [
+    zendesk.user_field.instance.userfield1,
+    zendesk.user_field.instance.piefield,
+    zendesk.user_field.instance.userfielddropdowntest,
+    zendesk.user_field.instance.uftoremove,
+    zendesk.user_field.instance.userfielddel,
+    zendesk.user_field.instance.test1,
+    zendesk.user_field.instance.withmissingoption,
+    zendesk.user_field.instance.neta_dropdown_123,
+    zendesk.user_field.instance.edenaudittest,
+    zendesk.user_field.instance.edenaudittest2,
+    zendesk.user_field.instance.neta________,
+    zendesk.user_field.instance.new_for_audit,
+    zendesk.user_field.instance.adam_test_user_lookup,
+    zendesk.user_field.instance.test_custom_object,
+    zendesk.user_field.instance.dependency_test,
+  ]
+  inactive = [
+  ]
+}

@@ -1,0 +1,77 @@
+zendesk.view daniels_view@s {
+  active = true
+  default = false
+  description = "bloop as hello i am a view that is used for testing hoo hoo"
+  execution = {
+    group_order = "desc"
+    sort_order = "desc"
+    columns = [
+      {
+        id = "satisfaction_score"
+        title = "Satisfaction"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+    ]
+    fields = [
+      {
+        id = "satisfaction_score"
+        title = "Satisfaction"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+    ]
+  }
+  conditions = {
+    all = [
+      {
+        field = "ticket_form_id"
+        operator = "is"
+        value = zendesk.ticket_form.instance.daniel_s_ticket_form@tss
+      },
+      {
+        field = "assignee_id"
+        operator = "is"
+        value = "requester_id"
+      },
+    ]
+    any = [
+      {
+        field = "ticket_form_id"
+        operator = "is_not"
+        value = zendesk.ticket_form.instance.daniel_s_ticket_form@tss
+      },
+      {
+        field = "brand_id"
+        operator = "is"
+        value = zendesk.brand.instance.TomerBrand
+      },
+    ]
+  }
+  raw_title = "daniels view"
+  _alias = "daniels view"
+}

@@ -1,0 +1,15 @@
+zendesk.ticket_field Ofer_s_number_integer@tsu {
+  type = "integer"
+  raw_title = "Ofer's number"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  regexp_for_validation = "\\A[-+]?\\d+\\z"
+  raw_title_in_portal = "Ofer's number"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  _alias = "Ofer's number"
+}

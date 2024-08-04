@@ -1,0 +1,10 @@
+zendesk.dynamic_content_item eden {
+  name = "eden"
+  placeholder = "{{dc.eden}}"
+  default_locale_id = zendesk.locale.instance.en_US@b
+  variants = [
+    zendesk.dynamic_content_item__variants.instance.eden__de,
+    zendesk.dynamic_content_item__variants.instance.eden__en_US_b@uuum,
+  ]
+  _alias = "eden"
+}

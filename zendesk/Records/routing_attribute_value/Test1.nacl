@@ -1,0 +1,33 @@
+zendesk.routing_attribute_value Test__Test1 {
+  name = "Test1"
+  conditions = {
+    all = [
+      {
+        subject = "ticket_form_id"
+        operator = "is"
+        value = zendesk.ticket_form.instance.Formulaire_de_ticket_par_d_faut@ssss_00233
+      },
+      {
+        subject = "number_of_incidents"
+        operator = "greater_than"
+        value = "213"
+      },
+    ]
+    any = [
+      {
+        subject = "organization_id"
+        operator = "is"
+        value = "1500709144521"
+      },
+      {
+        subject = zendesk.ticket_field.instance.tagger12_tagger
+        operator = "is"
+        value = zendesk.ticket_field__custom_field_options.instance.tagger12_tagger__v222
+      },
+    ]
+  }
+  _parent = [
+    zendesk.routing_attribute.instance.Test,
+  ]
+  _alias = "Test1"
+}

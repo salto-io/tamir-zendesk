@@ -1,0 +1,4 @@
+zendesk.channel CTI_phone_call__outgoing_@sssjk {
+  name = "CTI phone call (outgoing)"
+  _alias = "CTI phone call (outgoing)"
+}

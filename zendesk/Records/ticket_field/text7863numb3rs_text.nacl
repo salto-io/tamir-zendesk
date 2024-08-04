@@ -1,0 +1,14 @@
+zendesk.ticket_field text7863numb3rs_text {
+  type = "text"
+  raw_title = "text7863numb3rs"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "text7863numb3rs"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  _alias = "text7863numb3rs"
+}

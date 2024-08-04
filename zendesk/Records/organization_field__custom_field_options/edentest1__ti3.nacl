@@ -1,0 +1,8 @@
+zendesk.organization_field__custom_field_options edentest1__ti3 {
+  raw_name = "ti3"
+  value = "ti3"
+  _parent = [
+    zendesk.organization_field.instance.edentest1,
+  ]
+  _alias = "ti3"
+}

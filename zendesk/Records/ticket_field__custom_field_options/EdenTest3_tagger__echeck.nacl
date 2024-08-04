@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options EdenTest3_tagger__echeck {
+  raw_name = "echeck"
+  value = "echeck"
+  _parent = [
+    zendesk.ticket_field.instance.EdenTest3_tagger,
+  ]
+  _alias = "echeck"
+}

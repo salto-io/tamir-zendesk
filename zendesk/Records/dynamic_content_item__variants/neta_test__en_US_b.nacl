@@ -1,0 +1,10 @@
+zendesk.dynamic_content_item__variants neta_test__en_US_b@uuuum {
+  content = "neta_test Content changed ..."
+  locale_id = zendesk.locale.instance.en_US@b
+  active = true
+  default = true
+  _parent = [
+    zendesk.dynamic_content_item.instance.neta_test,
+  ]
+  _alias = "neta_test - en-US"
+}

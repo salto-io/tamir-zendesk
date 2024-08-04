@@ -1,0 +1,16 @@
+zendesk.custom_object_field stagingtest__letterstest {
+  type = "dropdown"
+  key = "letterstest"
+  raw_title = "lettersTestaab"
+  raw_description = "aabbcaaaa"
+  position = 2
+  active = true
+  system = false
+  custom_field_options = [
+    zendesk.custom_object_field__custom_field_options.instance.stagingtest__letterstest__integra__o@uuuu_00231_00227,
+  ]
+  _parent = [
+    zendesk.custom_object.instance.stagingtest,
+  ]
+  _alias = "letterstest"
+}

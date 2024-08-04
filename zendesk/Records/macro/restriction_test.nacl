@@ -1,0 +1,21 @@
+zendesk.macro restriction_test@s {
+  title = "restriction test"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "subject"
+      value = "szv"
+    },
+  ]
+  restriction = {
+    type = "Group"
+    ids = [
+      zendesk.group.instance.Assistance,
+      zendesk.group.instance.Test,
+      zendesk.group.instance.edenAudit,
+    ]
+  }
+  raw_title = "restriction test"
+  _alias = "restriction test"
+}

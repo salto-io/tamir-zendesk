@@ -1,0 +1,60 @@
+zendesk.workspace Noam_Crazy_workspace@s {
+  title = "Noam Crazy workspace"
+  description = "crazy!!!"
+  ticket_form_id = zendesk.ticket_form.instance.Noam_TicketForm@s
+  activated = true
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "is"
+        value = "open"
+      },
+      {
+        field = "number_of_incidents"
+        operator = "less_than_equal"
+        value = "321"
+      },
+      {
+        field = "ticket_form_id"
+        operator = "is"
+        value = zendesk.ticket_form.instance.Noam_TicketForm@s
+      },
+      {
+        field = "type"
+        operator = "is_not"
+        value = "problem"
+      },
+      {
+        field = "priority"
+        operator = "is"
+        value = "normal"
+      },
+    ]
+    any = [
+      {
+        field = "group_id"
+        operator = "is"
+        value = zendesk.group.instance.Assistance
+      },
+      {
+        field = "current_tags"
+        operator = "includes"
+        value = [
+          zendesk.tag.instance.bla,
+        ]
+      },
+      {
+        field = "via_id"
+        operator = "is"
+        value = zendesk.channel.instance.Email
+      },
+      {
+        field = "subject_includes_word"
+        operator = "not_includes"
+        value = "yo"
+      },
+    ]
+  }
+  _alias = "Noam Crazy workspace"
+}

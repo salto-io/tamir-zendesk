@@ -1,0 +1,15 @@
+zendesk.dynamic_content_item__variants Support_SLAs_s__en_US_b@umuuum {
+  content = '''
+Please note your SLA is based on your support level: {{ticket.ticket_field_${ zendesk.ticket_field.instance.Support_Level_tagger@su }}}
+
+support engineer
+{{ticket.assignee.name}}
+'''
+  locale_id = zendesk.locale.instance.en_US@b
+  active = true
+  default = true
+  _parent = [
+    zendesk.dynamic_content_item.instance.Support_SLAs@s,
+  ]
+  _alias = "Support SLAs - en-US"
+}

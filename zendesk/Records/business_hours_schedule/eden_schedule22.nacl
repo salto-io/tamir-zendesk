@@ -1,0 +1,31 @@
+zendesk.business_hours_schedule eden_schedule22@b {
+  name = "eden-schedule22"
+  time_zone = "American Samoa"
+  intervals = [
+    {
+      start_time = 1980
+      end_time = 2460
+    },
+    {
+      start_time = 3420
+      end_time = 3900
+    },
+    {
+      start_time = 4860
+      end_time = 5340
+    },
+    {
+      start_time = 6300
+      end_time = 6780
+    },
+    {
+      start_time = 7740
+      end_time = 8220
+    },
+  ]
+  holidays = [
+    zendesk.business_hours_schedule_holiday.instance.eden_schedule22_b__new_changed2@umuub,
+    zendesk.business_hours_schedule_holiday.instance.eden_schedule22_b__bla_bla@umuus,
+  ]
+  _alias = "eden-schedule22"
+}

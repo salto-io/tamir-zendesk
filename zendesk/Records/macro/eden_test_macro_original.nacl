@@ -1,0 +1,59 @@
+zendesk.macro eden_test_macro_original@s {
+  title = "eden test macro original"
+  active = true
+  default = false
+  description = "test"
+  actions = [
+    {
+      field = "status"
+      value = "open"
+    },
+    {
+      field = "side_conversation"
+      value = [
+        "test",
+        "<p>this is a testsvsave</p>",
+        "bla bla",
+        "text/html",
+      ]
+    },
+    {
+      field = "side_conversation_slack"
+      value = [
+        "<p>this is a message4!</p><p>edited!</p>",
+        "#eden",
+        "text/html",
+      ]
+    },
+    {
+      field = "side_conversation_ticket"
+      value = [
+        "fwd: {{ticket.title}} (Ticket #{{ticket.id}} ",
+        "<p>this is a test {{ticket.ticket_field_${ zendesk.ticket_field.instance.EdenTest3_tagger }}}</p><p>bla bla&nbsp;{{ticket.ticket_field_${ zendesk.ticket_field.instance.EdenTest3_tagger }}}</p>",
+        "",
+        "text/html",
+      ]
+    },
+    {
+      field = "subject"
+      value = "{ticket.ticket_field_${ zendesk.ticket_field.instance.EdenTest3_tagger }} | {ticket.ticket_field_${ zendesk.ticket_field.instance.EdenTest3_tagger }}"
+    },
+    {
+      field = zendesk.ticket_field.instance.eden_check_change_test2_multiselect@sssu
+      value = zendesk.ticket_field__custom_field_options.instance.eden_check_change_test2_multiselect_sssu__bla@uuuumuu
+    },
+    {
+      field = zendesk.ticket_field.instance.EdenTest3_tagger
+      value = ""
+    },
+  ]
+  restriction = {
+    type = "Group"
+    ids = [
+      zendesk.group.instance.Support_Managers@s,
+      zendesk.group.instance.edenAudit,
+    ]
+  }
+  raw_title = "eden test macro original"
+  _alias = "eden test macro original"
+}

@@ -1,0 +1,28 @@
+zendesk.trigger a {
+  title = "a"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "notification_user"
+      value = [
+        "assignee_id",
+        "dcas",
+        "safv",
+      ]
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = zendesk.ticket_field.instance.123456_text
+        operator = "present"
+        value = ""
+      },
+    ]
+  }
+  description = "a"
+  raw_title = "a"
+  category_id = zendesk.trigger_category.instance.Billing
+  _alias = "a"
+}

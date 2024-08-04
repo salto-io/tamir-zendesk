@@ -1,0 +1,128 @@
+zendesk.trigger_order {
+  order = [
+    {
+      category = zendesk.trigger_category.instance.Notifications
+      active = [
+        zendesk.trigger.instance.Affecter_automatiquement_au_premier_agent_r_pondant_par_e_mail@sssss_00233ssb,
+        zendesk.trigger.instance.Notifier_le_demandeur_du_nouveau_ticket_proactif@s,
+        zendesk.trigger.instance.newTrigger,
+        zendesk.trigger.instance.Notifier_le_demandeur_et_les_personnes_en_copie__CC__de_la_mise___jour_des_commentaires@ssssssssjkssss_00224sss,
+        zendesk.trigger.instance.NoamTest,
+        zendesk.trigger.instance.Notifier_l_assign__du_ticket_r_ouvert@s_08217_00233sss_00233,
+        zendesk.trigger.instance.Notifier_l_assign__de_la_mise___jour_des_commentaires@s_08217_00233ssss_00224sss,
+        zendesk.trigger.instance.Notifier_le_demandeur_et_les_personnes_en_copie__CC__de_la_r_ception_de_la_demande@ssssssssjksss_00233sss,
+        zendesk.trigger.instance.Notifier_l_assign__de_l_affectation@s_08217_00233ss_08217,
+        zendesk.trigger.instance.Assign_Account_Manager_to_High_Priority_Tickets@s,
+        zendesk.trigger.instance.newTrigger2,
+        zendesk.trigger.instance.ZSB,
+        zendesk.trigger.instance.Notify_Tier_3_of_new_escalated_ticket@s,
+        zendesk.trigger.instance.ZSC,
+        zendesk.trigger.instance.shir_trigger_test@s,
+        zendesk.trigger.instance.eden1,
+        zendesk.trigger.instance.eden_test_1@s,
+        zendesk.trigger.instance.eshed___assigned_by_email@sbsss,
+        zendesk.trigger.instance.missing_user_test@s,
+        zendesk.trigger.instance.eden_test2@s,
+        zendesk.trigger.instance.ticket_form_test@s,
+        zendesk.trigger.instance.null_user@s,
+        zendesk.trigger.instance.notification_webhook@s,
+      ]
+      inactive = [
+      ]
+    },
+    {
+      category = zendesk.trigger_category.instance.Billing
+      active = [
+        zendesk.trigger.instance.michel_scott_trigger@s,
+        zendesk.trigger.instance.TestTestTest,
+        zendesk.trigger.instance.Test1,
+        zendesk.trigger.instance.Neta_trigger_123@s,
+        zendesk.trigger.instance.bestTriggerBecauseItsOfers,
+        zendesk.trigger.instance.test1,
+        zendesk.trigger.instance.a,
+        zendesk.trigger.instance.Received_from@s,
+      ]
+      inactive = [
+      ]
+    },
+    {
+      category = zendesk.trigger_category.instance.Other
+      active = [
+        zendesk.trigger.instance.BrokenTrigger2,
+        zendesk.trigger.instance.phone_test@s,
+        zendesk.trigger.instance.broken_tagger11@b,
+        zendesk.trigger.instance.TransformationalTrigger,
+        zendesk.trigger.instance.audit_tes@s,
+        zendesk.trigger.instance.org_test@s,
+      ]
+      inactive = [
+      ]
+    },
+    {
+      category = zendesk.trigger_category.instance.Answer_Bot_Triggers@s
+      active = [
+        zendesk.trigger.instance.Example_Answer_Bot_trigger_for_Noam_Hammer@s,
+      ]
+      inactive = [
+      ]
+    },
+    {
+      category = zendesk.trigger_category.instance.General_Settings@s
+      active = [
+        zendesk.trigger.instance.Set_priority_and_group@s,
+        zendesk.trigger.instance.edenTrigger,
+      ]
+      inactive = [
+      ]
+    },
+    {
+      category = zendesk.trigger_category.instance.Field_Updates@s
+      active = [
+        zendesk.trigger.instance.Update_Customer_Priority@s,
+        zendesk.trigger.instance.Transfer_to_EMEA_Group@s,
+        zendesk.trigger.instance.eshed_test_trigger@b,
+        zendesk.trigger.instance.Closed_ticket_submitted_for_deletion@s,
+        zendesk.trigger.instance.Request_customer_satisfaction_rating__Messaging_@ssssjk,
+        zendesk.trigger.instance.Request_customer_satisfaction_rating__social_messaging_@ssssjsk,
+        zendesk.trigger.instance.When_Cloud_Model_is_Premier@s,
+      ]
+      inactive = [
+      ]
+    },
+    {
+      category = zendesk.trigger_category.instance.audit_test@s
+      active = [
+        zendesk.trigger.instance.dcTrigger,
+        zendesk.trigger.instance.1@,
+        zendesk.trigger.instance.2@,
+        zendesk.trigger.instance.3@,
+        zendesk.trigger.instance.digest,
+      ]
+      inactive = [
+      ]
+    },
+    {
+      category = zendesk.trigger_category.instance.ZGY
+      active = [
+      ]
+      inactive = [
+      ]
+    },
+    {
+      category = zendesk.trigger_category.instance.KNOTS_OCR
+      active = [
+      ]
+      inactive = [
+      ]
+    },
+    {
+      category = zendesk.trigger_category.instance.Neta_order_test_1212@s
+      active = [
+        zendesk.trigger.instance.Neta_order_test_111@s,
+        zendesk.trigger.instance.Neta_order_test_111__copy_@ssssjk,
+      ]
+      inactive = [
+      ]
+    },
+  ]
+}

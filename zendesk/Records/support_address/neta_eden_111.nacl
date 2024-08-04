@@ -1,0 +1,11 @@
+zendesk.support_address neta_eden_111_support_neta_eden_111_subdomain_zendesk_com@uuumuuvvv {
+  brand_id = zendesk.brand.instance.neta_eden_111
+  default = true
+  name = "neta_eden_111"
+  email = "support@${ zendesk.brand.instance.neta_eden_111.subdomain }.zendesk.com"
+  forwarding_status = "verified"
+  spf_status = "verified"
+  cname_status = "verified"
+  domain_verification_status = "verified"
+  _alias = "neta_eden_111"
+}

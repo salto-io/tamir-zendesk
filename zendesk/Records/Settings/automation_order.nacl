@@ -1,0 +1,22 @@
+zendesk.automation_order {
+  active = [
+    zendesk.automation.instance.Clore_le_ticket_4_jours_apr_s_la_d_finition_du_statut_sur_R_solu@sss_00160s_00232ss_00233ssss_00233,
+    zendesk.automation.instance.DP_s_test_automation@tss,
+    zendesk.automation.instance.missingAuto,
+    zendesk.automation.instance.missingAutomation,
+    zendesk.automation.instance.Preferred_game_automation@s,
+    zendesk.automation.instance.Automate_ZSB_routing@s,
+    zendesk.automation.instance.Automate_ZSC_Routing@s,
+    zendesk.automation.instance.Auto_mark_pro_tickets@s,
+    zendesk.automation.instance.Neta_test_automation_444@s,
+    zendesk.automation.instance.test_auto_eden@s,
+    zendesk.automation.instance.shir_test@s,
+    zendesk.automation.instance.ref_test@s,
+    zendesk.automation.instance.custom_status_test@s,
+    zendesk.automation.instance.status_automation@s,
+    zendesk.automation.instance.digest_test__2@ssb,
+    zendesk.automation.instance.eden_test@s,
+  ]
+  inactive = [
+  ]
+}

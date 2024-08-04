@@ -1,0 +1,19 @@
+zendesk.user_field test_custom_object {
+  type = "lookup"
+  key = "test_custom_object"
+  raw_title = "test custom object"
+  raw_description = ""
+  active = true
+  system = false
+  relationship_target_type = "zen:custom_object:stagingtest"
+  relationship_filter = {
+    all = [
+      {
+        field = "custom_object.stagingtest.custom_fields.dropdown"
+        operator = "is"
+        value = "22078733696403"
+      },
+    ]
+  }
+  _alias = "test custom object"
+}

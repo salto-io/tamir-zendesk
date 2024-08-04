@@ -1,0 +1,4 @@
+zendesk.channel Ticket_sharing@s {
+  name = "Ticket sharing"
+  _alias = "Ticket sharing"
+}

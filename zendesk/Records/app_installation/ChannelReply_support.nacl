@@ -1,0 +1,15 @@
+zendesk.app_installation ChannelReply_support {
+  app_id = 77161
+  product = "support"
+  settings = {
+    name = "ChannelReply"
+    title = "ChannelReply"
+  }
+  enabled = true
+  recurring_payment = false
+  collapsible = true
+  paid = false
+  has_unpaid_subscription = false
+  has_incomplete_subscription = false
+  _alias = "ChannelReply"
+}

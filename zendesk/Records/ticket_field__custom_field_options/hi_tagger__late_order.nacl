@@ -1,0 +1,7 @@
+zendesk.ticket_field__custom_field_options hi_tagger__late_order {
+  raw_name = "{{${ zendesk.dynamic_content_item.instance.About_Option___Late_Order@ssbss }}}"
+  value = "late_order"
+  _parent = [
+    zendesk.ticket_field.instance.hi_tagger,
+  ]
+}

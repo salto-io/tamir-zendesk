@@ -1,0 +1,21 @@
+zendesk.routing_attribute_value Expert__shirsSkill {
+  name = "shirsSkill"
+  conditions = {
+    all = [
+      {
+        subject = zendesk.user_field.instance.userfielddel
+        operator = "is"
+        value = zendesk.user_field__custom_field_options.instance.userfielddel__value2
+      },
+      {
+        subject = zendesk.user_field.instance.userfielddropdowntest
+        operator = "is"
+        value = zendesk.user_field__custom_field_options.instance.userfielddropdowntest__ufv2
+      },
+    ]
+  }
+  _parent = [
+    zendesk.routing_attribute.instance.Expert,
+  ]
+  _alias = "shirsSkill"
+}

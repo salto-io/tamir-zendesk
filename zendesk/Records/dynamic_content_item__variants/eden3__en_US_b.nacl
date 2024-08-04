@@ -1,0 +1,10 @@
+zendesk.dynamic_content_item__variants eden3__en_US_b@uuum {
+  content = "ee"
+  locale_id = zendesk.locale.instance.en_US@b
+  active = true
+  default = true
+  _parent = [
+    zendesk.dynamic_content_item.instance.eden3,
+  ]
+  _alias = "eden3 - en-US"
+}

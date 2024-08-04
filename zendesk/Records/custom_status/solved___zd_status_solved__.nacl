@@ -1,0 +1,9 @@
+zendesk.custom_status solved___zd_status_solved__@u_00123_00123vu_00125_00125 {
+  status_category = "solved"
+  raw_agent_label = "{{zd.status_solved}}"
+  raw_end_user_label = "{{zd.status_end_user_solved}}"
+  raw_description = "{{zd.status_solved_description}}"
+  raw_end_user_description = "{{zd.status_end_user_solved_description}}"
+  active = true
+  _alias = "Solved"
+}

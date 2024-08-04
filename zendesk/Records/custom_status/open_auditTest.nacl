@@ -1,0 +1,9 @@
+zendesk.custom_status open_auditTest {
+  status_category = "open"
+  raw_agent_label = "auditTest"
+  raw_end_user_label = "auditTest"
+  raw_description = ""
+  raw_end_user_description = ""
+  active = true
+  _alias = "auditTest"
+}

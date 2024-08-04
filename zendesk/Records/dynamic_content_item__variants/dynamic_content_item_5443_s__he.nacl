@@ -1,0 +1,10 @@
+zendesk.dynamic_content_item__variants dynamic_content_item_5443_s__he@uuumuu {
+  content = "אבג"
+  locale_id = zendesk.locale.instance.he
+  active = true
+  default = false
+  _parent = [
+    zendesk.dynamic_content_item.instance.dynamic_content_item_5443@s,
+  ]
+  _alias = "dynamic content item 5443 - he"
+}

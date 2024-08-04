@@ -1,0 +1,30 @@
+zendesk.ticket_field yuval_test_text@su {
+  type = "text"
+  raw_title = "yuval test"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "yuval test"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  agent_description = "test"
+  _alias = "yuval test"
+}
+zendesk.ticket_field yuval_test_text {
+  type = "text"
+  raw_title = "yuval_test"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "yuval_test"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  agent_description = "test123"
+  _alias = "yuval_test"
+}

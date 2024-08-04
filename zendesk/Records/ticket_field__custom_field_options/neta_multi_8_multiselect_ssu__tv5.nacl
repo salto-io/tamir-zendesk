@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options neta_multi_8_multiselect_ssu__tv5@uuumuu {
+  raw_name = "tv5"
+  value = "tv5"
+  _parent = [
+    zendesk.ticket_field.instance.neta_multi_8_multiselect@ssu,
+  ]
+  _alias = "tv5"
+}

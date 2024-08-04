@@ -1,0 +1,88 @@
+zendesk.view shir_view_test@s {
+  active = true
+  default = false
+  execution = {
+    group_order = "desc"
+    sort_order = "desc"
+    columns = [
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "organization"
+        title = "Organization"
+        filterable = true
+        sortable = true
+      },
+    ]
+    fields = [
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "organization"
+        title = "Organization"
+        filterable = true
+        sortable = true
+      },
+    ]
+  }
+  conditions = {
+    all = [
+      {
+        field = zendesk.ticket_field.instance.shir_test_drop_down_tagger@sssu
+        operator = "is"
+        value = zendesk.ticket_field__custom_field_options.instance.shir_test_drop_down_tagger_sssu__arcafe@uuuumuu
+      },
+      {
+        field = "group_id"
+        operator = "is_not"
+        value = zendesk.group.instance.Test
+      },
+      {
+        field = "organization_id"
+        operator = "is"
+        value = "6121368771219"
+      },
+    ]
+    any = [
+      {
+        field = "organization_id"
+        operator = "is_not"
+        value = "6121341780755"
+      },
+    ]
+  }
+  raw_title = "shir view test"
+  _alias = "shir view test"
+}

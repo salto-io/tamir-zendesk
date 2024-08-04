@@ -1,0 +1,18 @@
+zendesk.ticket_field macroTest_tagger {
+  type = "tagger"
+  raw_title = "macroTest"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "macroTest"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  custom_field_options = [
+    zendesk.ticket_field__custom_field_options.instance.macroTest_tagger__amacro,
+    zendesk.ticket_field__custom_field_options.instance.macroTest_tagger__bmacro,
+  ]
+  _alias = "macroTest"
+}

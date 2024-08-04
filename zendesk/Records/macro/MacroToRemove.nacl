@@ -1,0 +1,21 @@
+zendesk.macro MacroToRemove {
+  title = "MacroToRemove"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "subject"
+      value = "abv"
+    },
+    {
+      field = zendesk.ticket_field.instance.tagger12_tagger
+      value = zendesk.ticket_field__custom_field_options.instance.tagger12_tagger__v223
+    },
+    {
+      field = zendesk.ticket_field.instance.TestCheckbox1_checkbox
+      value = "true"
+    },
+  ]
+  raw_title = "MacroToRemove"
+  _alias = "MacroToRemove"
+}

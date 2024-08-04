@@ -1,0 +1,119 @@
+zendesk.view Management_Escalation_Cases___All@sssbs {
+  active = true
+  default = false
+  execution = {
+    group_order = "desc"
+    sort_order = "desc"
+    columns = [
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = zendesk.ticket_field.instance.Escalation_Status_tagger@su
+        title = "Escalation Status"
+        type = "tagger"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = zendesk.ticket_field.instance.Product_Area_tagger@su
+        title = "Product Area"
+        type = "tagger"
+        filterable = true
+        sortable = true
+      },
+    ]
+    fields = [
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+    ]
+    custom_fields = [
+      {
+        id = zendesk.ticket_field.instance.Escalation_Status_tagger@su
+        title = "Escalation Status"
+        type = "tagger"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = zendesk.ticket_field.instance.Product_Area_tagger@su
+        title = "Product Area"
+        type = "tagger"
+        filterable = true
+        sortable = true
+      },
+    ]
+  }
+  conditions = {
+    all = [
+      {
+        field = "group_id"
+        operator = "is"
+        value = zendesk.group.instance.Support_Managers@s
+      },
+      {
+        field = "current_tags"
+        operator = "includes"
+        value = [
+          zendesk.tag.instance.escalated,
+        ]
+      },
+      {
+        field = "status"
+        operator = "is"
+        value = "new"
+      },
+    ]
+  }
+  restriction = {
+    type = "Group"
+    ids = [
+      zendesk.group.instance.Support_Managers@s,
+    ]
+  }
+  raw_title = "Management Escalation Cases - All"
+  _alias = "Management Escalation Cases - All"
+}

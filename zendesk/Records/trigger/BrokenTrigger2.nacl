@@ -1,0 +1,89 @@
+zendesk.trigger BrokenTrigger2 {
+  title = "BrokenTrigger2"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "status"
+      value = "hold"
+    },
+    {
+      field = zendesk.organization_field.instance.oftoremove
+      value = "123"
+    },
+    {
+      field = zendesk.user_field.instance.uftoremove
+      value = "667"
+    },
+    {
+      field = "brand_id"
+      value = zendesk.brand.instance.BrandBForGuide
+    },
+    {
+      field = "ticket_form_id"
+      value = zendesk.ticket_form.instance.tf_1@zb
+    },
+    {
+      field = "group_id"
+      value = zendesk.group.instance.Finance
+    },
+    {
+      field = "set_schedule"
+      value = zendesk.business_hours_schedule.instance.scheduleToRemove
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "brand_id"
+        operator = "is"
+        value = zendesk.brand.instance.BrandBForGuide
+      },
+      {
+        field = "ticket_form_id"
+        operator = "is"
+        value = zendesk.ticket_form.instance.Formulaire_de_ticket_par_d_faut@ssss_00233
+      },
+      {
+        field = "group_id"
+        operator = "is"
+        value = zendesk.group.instance.audit_test2@s
+      },
+      {
+        field = "schedule_id"
+        operator = "is"
+        value = zendesk.business_hours_schedule.instance.scheduleToRemove
+      },
+      {
+        field = zendesk.organization_field.instance.oftoremove
+        operator = "is"
+        value = "123"
+      },
+      {
+        field = zendesk.user_field.instance.uftoremove
+        operator = "is"
+        value = "789"
+      },
+      {
+        field = "status"
+        operator = "is_not"
+        value = "new"
+      },
+    ]
+    any = [
+      {
+        field = "within_schedule"
+        operator = "is"
+        value = zendesk.business_hours_schedule.instance.scheduleToRemove
+      },
+      {
+        field = zendesk.ticket_field.instance.ToRemove_decimal
+        operator = "present"
+        value = ""
+      },
+    ]
+  }
+  raw_title = "BrokenTrigger2"
+  category_id = zendesk.trigger_category.instance.Other
+  _alias = "BrokenTrigger2"
+}

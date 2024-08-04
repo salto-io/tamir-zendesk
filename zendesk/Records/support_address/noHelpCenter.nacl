@@ -1,0 +1,11 @@
+zendesk.support_address noHelpCenter_support_NoHelpCenter_subdomain_zendesk_com@umvvv {
+  brand_id = zendesk.brand.instance.NoHelpCenter
+  default = true
+  name = "noHelpCenter"
+  email = "support@${ zendesk.brand.instance.NoHelpCenter.subdomain }.zendesk.com"
+  forwarding_status = "verified"
+  spf_status = "verified"
+  cname_status = "verified"
+  domain_verification_status = "verified"
+  _alias = "noHelpCenter"
+}

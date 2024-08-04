@@ -1,0 +1,41 @@
+zendesk.trigger Notifier_l_assign__du_ticket_r_ouvert@s_08217_00233sss_00233 {
+  title = "Notifier l’assigné du ticket réouvert"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "notification_user"
+      value = [
+        "assignee_id",
+        "[{{ticket.account}}] Sujet : {{ticket.title}}",
+        '''
+Ce ticket (#{{ticket.id}}) a été rouvert.
+
+{{ticket.comments_formatted}}
+''',
+      ]
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "assignee_id"
+        operator = "is_not"
+        value = "current_user"
+      },
+      {
+        field = "status"
+        operator = "value_previous"
+        value = "solved"
+      },
+      {
+        field = "status"
+        operator = "is_not"
+        value = "closed"
+      },
+    ]
+  }
+  raw_title = "Notifier l’assigné du ticket réouvert"
+  category_id = zendesk.trigger_category.instance.Notifications
+  _alias = "Notifier l’assigné du ticket réouvert"
+}

@@ -1,0 +1,9 @@
+zendesk.business_hours_schedule_holiday TestSchedule_1_s__SuperBowl_after_party@umuuss {
+  name = "SuperBowl after party"
+  start_date = "2022-02-14"
+  end_date = "2022-02-15"
+  _parent = [
+    zendesk.business_hours_schedule.instance.TestSchedule_1@s,
+  ]
+  _alias = "SuperBowl after party"
+}

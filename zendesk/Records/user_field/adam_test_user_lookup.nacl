@@ -1,0 +1,10 @@
+zendesk.user_field adam_test_user_lookup {
+  type = "lookup"
+  key = "adam_test_user_lookup"
+  raw_title = "Adam test user lookup"
+  raw_description = ""
+  active = true
+  system = false
+  relationship_target_type = "zen:user"
+  _alias = "Adam test user lookup"
+}

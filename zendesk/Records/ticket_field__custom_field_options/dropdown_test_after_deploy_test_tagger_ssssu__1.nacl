@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options dropdown_test_after_deploy_test_tagger_ssssu__1@uuuuumuu {
+  raw_name = "one"
+  value = "1"
+  _parent = [
+    zendesk.ticket_field.instance.dropdown_test_after_deploy_test_tagger@ssssu,
+  ]
+  _alias = "one"
+}

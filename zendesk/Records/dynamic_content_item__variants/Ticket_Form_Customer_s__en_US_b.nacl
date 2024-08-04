@@ -1,0 +1,10 @@
+zendesk.dynamic_content_item__variants Ticket_Form_Customer_s__en_US_b@uumuuum {
+  content = "I'm a customer"
+  locale_id = zendesk.locale.instance.en_US@b
+  active = true
+  default = true
+  _parent = [
+    zendesk.dynamic_content_item.instance.Ticket_Form_Customer@s,
+  ]
+  _alias = "Ticket Form Customer - en-US"
+}

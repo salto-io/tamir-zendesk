@@ -1,0 +1,6 @@
+zendesk.routing_attribute test3 {
+  name = "test3"
+  values = [
+  ]
+  _alias = "test3"
+}

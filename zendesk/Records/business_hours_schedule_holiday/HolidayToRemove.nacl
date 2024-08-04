@@ -1,0 +1,9 @@
+zendesk.business_hours_schedule_holiday scheduleToRemove__HolidayToRemove {
+  name = "HolidayToRemove"
+  start_date = "2022-05-09"
+  end_date = "2022-05-09"
+  _parent = [
+    zendesk.business_hours_schedule.instance.scheduleToRemove,
+  ]
+  _alias = "HolidayToRemove"
+}

@@ -1,0 +1,15 @@
+zendesk.user_field dependency_test {
+  type = "dropdown"
+  key = "dependency_test"
+  raw_title = "dependency test"
+  raw_description = ""
+  active = true
+  system = false
+  custom_field_options = [
+    zendesk.user_field__custom_field_options.instance.dependency_test__e1,
+    zendesk.user_field__custom_field_options.instance.dependency_test__e2,
+    zendesk.user_field__custom_field_options.instance.dependency_test__e3_v2@uuub,
+    zendesk.user_field__custom_field_options.instance.dependency_test__e6,
+  ]
+  _alias = "dependency test"
+}

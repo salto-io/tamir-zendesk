@@ -1,0 +1,4 @@
+zendesk.trigger_category KNOTS_OCR {
+  name = "KNOTS_OCR"
+  _alias = "KNOTS_OCR"
+}

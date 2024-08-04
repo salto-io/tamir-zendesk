@@ -1,0 +1,18 @@
+zendesk.macro bug_macro@s {
+  title = "bug macro"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "side_conversation_ticket"
+      value = [
+        "bla",
+        "<p>hummana hummana blooooob blopb lbplbplbpblpbl plbp lbp lbpl bpl bpl bpl bp lbpl bpl this is a test {{ticket.ticket_field_${ zendesk.ticket_field.instance.EdenTest3_tagger }}}</p><p>bla bla&nbsp;{{ticket.ticket_field_${ zendesk.ticket_field.instance.EdenTest3_tagger }}}</p><p><br></p>",
+        "SupportAssignable:support_assignable/group/${ zendesk.group.instance.edenAudit }",
+        "text/html",
+      ]
+    },
+  ]
+  raw_title = "bug macro"
+  _alias = "bug macro"
+}

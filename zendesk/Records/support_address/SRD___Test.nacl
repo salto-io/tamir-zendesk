@@ -1,0 +1,11 @@
+zendesk.support_address SRD___Test_support_SRD___Test_sbs_subdomain_zendesk_com@sbsumuuumvvv {
+  brand_id = zendesk.brand.instance.SRD___Test@sbs
+  default = true
+  name = "SRD - Test"
+  email = "support@${ zendesk.brand.instance.SRD___Test@sbs.subdomain }.zendesk.com"
+  forwarding_status = "verified"
+  spf_status = "verified"
+  cname_status = "verified"
+  domain_verification_status = "verified"
+  _alias = "SRD - Test"
+}

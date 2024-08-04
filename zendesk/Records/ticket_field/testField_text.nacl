@@ -1,0 +1,14 @@
+zendesk.ticket_field testField_text {
+  type = "text"
+  raw_title = "testField"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "ccccc1"
+  visible_in_portal = true
+  editable_in_portal = true
+  required_in_portal = false
+  removable = true
+  _alias = "testField"
+}

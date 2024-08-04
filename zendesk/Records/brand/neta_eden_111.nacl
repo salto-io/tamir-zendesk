@@ -1,0 +1,13 @@
+zendesk.brand neta_eden_111 {
+  name = "neta_eden_111"
+  brand_url = "https://salto111.zendesk.com"
+  subdomain = "salto111"
+  has_help_center = true
+  help_center_state = "restricted"
+  active = true
+  default = false
+  is_deleted = false
+  logo = zendesk.brand_logo.instance.neta_eden_111__nacl_png@uuuuv
+  signature_template = "{{agent.signature}}"
+  _alias = "neta_eden_111"
+}

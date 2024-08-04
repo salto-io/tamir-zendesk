@@ -1,0 +1,8 @@
+zendesk.group Assistance {
+  is_public = true
+  name = "Assistance"
+  description = ""
+  default = true
+  deleted = false
+  _alias = "Assistance"
+}

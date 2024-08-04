@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options _eshed__Categories_of_Newsletter_multiselect_hisssu__pets@uuuuuumuu {
+  raw_name = "Pets"
+  value = "pets"
+  _parent = [
+    zendesk.ticket_field.instance._eshed__Categories_of_Newsletter_multiselect@hisssu,
+  ]
+  _alias = "Pets"
+}

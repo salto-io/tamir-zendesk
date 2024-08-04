@@ -1,0 +1,77 @@
+zendesk.ticket_field eldarr_lookup_ticket_lookup {
+  type = "lookup"
+  raw_title = "eldarr_lookup_ticket"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "eldarr_lookup_ticket"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  agent_description = "eldarr_lookup_ticket_description"
+  relationship_target_type = "zen:ticket"
+  relationship_filter = {
+    all = [
+      {
+        field = "ticket_form_id"
+        operator = "is"
+        value = zendesk.ticket_form.instance.Other
+      },
+      {
+        field = "type"
+        operator = "is"
+        value = "problem"
+      },
+      {
+        field = "priority"
+        operator = "less_than"
+        value = "normal"
+      },
+      {
+        field = "assignee_id"
+        operator = "is_not"
+        value = "zendesk-adapter@salto.io"
+      },
+      {
+        field = "requester_id"
+        operator = "is"
+        value = "la+41@example.org"
+      },
+      {
+        field = "organization_id"
+        operator = "is"
+        value = "6121365856659"
+      },
+      {
+        field = "current_tags"
+        operator = "not_present"
+        value = ""
+      },
+      {
+        field = "via_id"
+        operator = "is"
+        value = zendesk.channel.instance.CTI_voicemail@s
+      },
+      {
+        field = zendesk.ticket_field.instance.TestDecimal2_decimal
+        operator = "greater_than"
+        value = "124"
+      },
+    ]
+    any = [
+      {
+        field = "assignee_id"
+        operator = "is"
+        value = "la+8@example.org"
+      },
+      {
+        field = "organization_id"
+        operator = "is_not"
+        value = "6100636057875"
+      },
+    ]
+  }
+  _alias = "eldarr_lookup_ticket"
+}

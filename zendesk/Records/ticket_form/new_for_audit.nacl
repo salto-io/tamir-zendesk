@@ -1,0 +1,17 @@
+zendesk.ticket_form new_for_audit@s {
+  raw_name = "new for audit"
+  raw_display_name = ""
+  end_user_visible = false
+  ticket_field_ids = [
+    zendesk.ticket_field.instance.Statut_status,
+    zendesk.ticket_field.instance.Groupe_group,
+    zendesk.ticket_field.instance.Assign__assignee@_00233u,
+    zendesk.ticket_field.instance.Ticket_status_custom_status@suu,
+    zendesk.ticket_field.instance.Sujet_subject,
+    zendesk.ticket_field.instance.Description_description,
+  ]
+  active = true
+  default = false
+  in_all_brands = true
+  _alias = "new for audit"
+}

@@ -1,0 +1,25 @@
+zendesk.macro Daniel_s_maccro_hiaaaa@tss {
+  title = "Daniel's maccro hiaaaa"
+  active = true
+  default = false
+  description = "daniels cool ass marco"
+  actions = [
+    {
+      field = "status"
+      value = "open"
+    },
+    {
+      field = "ticket_form_id"
+      value = zendesk.ticket_form.instance.Formulaire_de_ticket_par_d_faut@ssss_00233
+    },
+    {
+      field = "comment_value_html"
+      value = "<p>hi baby</p>"
+    },
+  ]
+  attachments = [
+    zendesk.macro_attachment.instance.Daniel_s_maccro_hiaaaa__Screenshot_2024_03_10_at_15_16_27_png@tssuuubbuuvvv,
+  ]
+  raw_title = "Daniel's maccro hiaaaa"
+  _alias = "Daniel's maccro hiaaaa"
+}

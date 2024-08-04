@@ -1,0 +1,23 @@
+zendesk.trigger When_Cloud_Model_is_Premier@s {
+  title = "When Cloud Model is Premier"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "priority"
+      value = "urgent"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = zendesk.ticket_field.instance.Cloud_Model_tagger@su
+        operator = "is"
+        value = zendesk.ticket_field__custom_field_options.instance.Cloud_Model_tagger_su__premier@uumuu
+      },
+    ]
+  }
+  raw_title = "When Cloud Model is Premier"
+  category_id = zendesk.trigger_category.instance.Field_Updates@s
+  _alias = "When Cloud Model is Premier"
+}

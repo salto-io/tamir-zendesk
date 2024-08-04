@@ -1,0 +1,14 @@
+zendesk.organization_field another_drop_down {
+  type = "dropdown"
+  key = "another_drop_down"
+  raw_title = "another drop down"
+  raw_description = "drop menu"
+  active = true
+  system = false
+  custom_field_options = [
+    zendesk.organization_field__custom_field_options.instance.another_drop_down__option2,
+    zendesk.organization_field__custom_field_options.instance.another_drop_down__option3,
+    zendesk.organization_field__custom_field_options.instance.another_drop_down__noamorgtagtest,
+  ]
+  _alias = "another drop down"
+}

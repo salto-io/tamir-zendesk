@@ -1,0 +1,23 @@
+zendesk.trigger "3@" {
+  title = "3"
+  active = true
+  default = false
+  actions = [
+    {
+      field = zendesk.ticket_field.instance._eshed__List_of_Fruit_tagger@hisssu
+      value = zendesk.ticket_field__custom_field_options.instance._eshed__List_of_Fruit_tagger_hisssu__citron@uuuuuumuu
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = zendesk.organization_field.instance.edentest1
+        operator = "is"
+        value = zendesk.organization_field__custom_field_options.instance.edentest1__ti3
+      },
+    ]
+  }
+  raw_title = "3"
+  category_id = zendesk.trigger_category.instance.audit_test@s
+  _alias = "3"
+}

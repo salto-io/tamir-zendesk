@@ -1,0 +1,17 @@
+zendesk.brand Salto {
+  name = "Salto"
+  brand_url = "https://d3v-salto2.zendesk.com"
+  subdomain = "d3v-salto2"
+  has_help_center = true
+  help_center_state = "restricted"
+  active = true
+  default = true
+  is_deleted = false
+  logo = zendesk.brand_logo.instance.Salto__e2epngg_png@uuv
+  signature_template = '''
+{{agent.signature}}
+
+Company as Code
+'''
+  _alias = "Salto"
+}

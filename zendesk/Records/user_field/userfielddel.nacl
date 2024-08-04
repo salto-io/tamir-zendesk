@@ -1,0 +1,14 @@
+zendesk.user_field userfielddel {
+  type = "dropdown"
+  key = "userfielddel"
+  raw_title = "userFieldDel"
+  raw_description = ""
+  active = true
+  system = false
+  custom_field_options = [
+    zendesk.user_field__custom_field_options.instance.userfielddel__value1,
+    zendesk.user_field__custom_field_options.instance.userfielddel__value2,
+    zendesk.user_field__custom_field_options.instance.userfielddel__value4,
+  ]
+  _alias = "userFieldDel"
+}

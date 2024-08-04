@@ -1,0 +1,18 @@
+zendesk.macro ZSB_Macro@s {
+  title = "ZSB Macro"
+  active = true
+  default = false
+  description = "For using in ZSB responses"
+  actions = [
+    {
+      field = zendesk.ticket_field.instance.ZSB_checkbox
+      value = "true"
+    },
+    {
+      field = "subject"
+      value = "Answering ZSB"
+    },
+  ]
+  raw_title = "ZSB Macro"
+  _alias = "ZSB Macro"
+}

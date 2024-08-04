@@ -1,0 +1,19 @@
+zendesk.ticket_field Support_Level_tagger@su {
+  type = "tagger"
+  raw_title = "Support Level"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "Support Level"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  custom_field_options = [
+    zendesk.ticket_field__custom_field_options.instance.Support_Level_tagger_su__basic_support@uumuuu,
+    zendesk.ticket_field__custom_field_options.instance.Support_Level_tagger_su__premier_support@uumuuu,
+    zendesk.ticket_field__custom_field_options.instance.Support_Level_tagger_su__signature_support@uumuuu,
+  ]
+  _alias = "Support Level"
+}

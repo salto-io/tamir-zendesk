@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options Product_Area_tagger_su__development__static_code_analysis@uumuuuuuu {
+  raw_name = "Development::Static code analysis"
+  value = "development__static_code_analysis"
+  _parent = [
+    zendesk.ticket_field.instance.Product_Area_tagger@su,
+  ]
+  _alias = "Development::Static code analysis"
+}

@@ -1,0 +1,8 @@
+zendesk.organization_field__custom_field_options orgfielddel__value2 {
+  raw_name = "value2"
+  value = "value2"
+  _parent = [
+    zendesk.organization_field.instance.orgfielddel,
+  ]
+  _alias = "value2"
+}

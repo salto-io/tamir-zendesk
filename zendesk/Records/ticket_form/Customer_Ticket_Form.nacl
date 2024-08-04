@@ -1,0 +1,19 @@
+zendesk.ticket_form Customer_Ticket_Form@s {
+  raw_name = "Customer Ticket Form"
+  raw_display_name = "{{${ zendesk.dynamic_content_item.instance.Ticket_Form_Customer@s }}}"
+  end_user_visible = true
+  ticket_field_ids = [
+    zendesk.ticket_field.instance.Statut_status,
+    zendesk.ticket_field.instance.Groupe_group,
+    zendesk.ticket_field.instance.Assign__assignee@_00233u,
+    zendesk.ticket_field.instance.Sujet_subject,
+    zendesk.ticket_field.instance.Description_description,
+    zendesk.ticket_field.instance.Salto_Id_text@su,
+    zendesk.ticket_field.instance.Type_tickettype,
+    zendesk.ticket_field.instance.Priorit__priority@_00233u,
+  ]
+  active = true
+  default = false
+  in_all_brands = true
+  _alias = "Customer Ticket Form"
+}

@@ -1,0 +1,17 @@
+zendesk.macro Daniel_s_macro_3aaa__copy_222@tsssjk {
+  title = "Daniel's macro 3aaa (copy)222"
+  active = true
+  default = false
+  description = "daniel's cool macro 3asdas"
+  actions = [
+    {
+      field = "comment_value_html"
+      value = "<p>a</p>"
+    },
+  ]
+  attachments = [
+    zendesk.macro_attachment.instance.Daniel_s_macro_3aaa__copy_222__Screenshot_2024_03_10_at_15_16_27_png@tsssjkuuubbuuvvv,
+  ]
+  raw_title = "Daniel's macro 3aaa (copy)222"
+  _alias = "Daniel's macro 3aaa (copy)222"
+}

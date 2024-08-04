@@ -1,0 +1,21 @@
+zendesk.routing_attribute Test {
+  name = "Test"
+  values = [
+    zendesk.routing_attribute_value.instance.Test__Test1,
+    zendesk.routing_attribute_value.instance.Test__Test12,
+    zendesk.routing_attribute_value.instance.Test__Test1222,
+    zendesk.routing_attribute_value.instance.Test__Test1233,
+    zendesk.routing_attribute_value.instance.Test__Test2,
+    zendesk.routing_attribute_value.instance.Test__Test22,
+    zendesk.routing_attribute_value.instance.Test__Test23,
+    zendesk.routing_attribute_value.instance.Test__Test24,
+    zendesk.routing_attribute_value.instance.Test__Test25,
+    zendesk.routing_attribute_value.instance.Test__Test26,
+    zendesk.routing_attribute_value.instance.Test__edenTest,
+    zendesk.routing_attribute_value.instance.Test__missingSkill,
+    zendesk.routing_attribute_value.instance.Test__newSkill,
+    zendesk.routing_attribute_value.instance.Test__other,
+    zendesk.routing_attribute_value.instance.Test__test27,
+  ]
+  _alias = "Test"
+}

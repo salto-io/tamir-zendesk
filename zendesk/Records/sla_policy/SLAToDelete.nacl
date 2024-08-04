@@ -1,0 +1,39 @@
+zendesk.sla_policy SLAToDelete {
+  title = "SLAToDelete"
+  filter = {
+    all = [
+      {
+        field = zendesk.ticket_field.instance.ToRemove2_date
+        operator = "is"
+        value = "2022-05-10"
+      },
+      {
+        field = zendesk.ticket_field.instance.TestDropdown1_updated_tagger@su
+        operator = "is"
+        value = zendesk.ticket_field__custom_field_options.instance.TestDropdown1_updated_tagger_su__option3@uumuu
+      },
+      {
+        field = zendesk.user_field.instance.userfielddropdowntest
+        operator = "is"
+        value = zendesk.user_field__custom_field_options.instance.userfielddropdowntest__v2
+      },
+    ]
+    any = [
+      {
+        field = zendesk.organization_field.instance.another_drop_down
+        operator = "is"
+        value = zendesk.organization_field__custom_field_options.instance.another_drop_down__option3
+      },
+    ]
+  }
+  policy_metrics = [
+    {
+      priority = "urgent"
+      metric = "first_reply_time"
+      target = 60
+      business_hours = true
+      target_in_seconds = 3600
+    },
+  ]
+  _alias = "SLAToDelete"
+}

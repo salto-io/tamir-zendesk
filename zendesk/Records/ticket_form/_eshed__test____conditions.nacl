@@ -1,0 +1,58 @@
+zendesk.ticket_form _eshed__test____conditions@hihisbs {
+  raw_name = "[eshed][test] - conditions"
+  raw_display_name = "Conditions"
+  end_user_visible = true
+  ticket_field_ids = [
+    zendesk.ticket_field.instance.Statut_status,
+    zendesk.ticket_field.instance.Groupe_group,
+    zendesk.ticket_field.instance.Assign__assignee@_00233u,
+    zendesk.ticket_field.instance.Ticket_status_custom_status@suu,
+    zendesk.ticket_field.instance.Sujet_subject,
+    zendesk.ticket_field.instance.Description_description,
+    zendesk.ticket_field.instance._eshed__test__drop_down_tagger@hihisbu,
+    zendesk.ticket_field.instance._eshed__List_of_Fruit_tagger@hisssu,
+    zendesk.ticket_field.instance._eshed__Subscribed_to_Newsletter_checkbox@hisssu,
+    zendesk.ticket_field.instance._eshed__Subscription_Expiration_Date_date@hisssu,
+    zendesk.ticket_field.instance._eshed__Categories_of_Newsletter_multiselect@hisssu,
+  ]
+  active = true
+  default = false
+  in_all_brands = true
+  agent_conditions = [
+    {
+      parent_field_id = zendesk.ticket_field.instance._eshed__test__drop_down_tagger@hihisbu
+      parent_field_type = "tagger"
+      value = zendesk.ticket_field__custom_field_options.instance._eshed__test__drop_down_tagger_hihisbu___eshed_something_1@uuuuuuumuuuuu
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance._eshed__List_of_Fruit_tagger@hisssu
+          is_required = true
+          required_on_statuses = {
+            type = "ALL_STATUSES"
+          }
+        },
+      ]
+    },
+    {
+      parent_field_id = zendesk.ticket_field.instance._eshed__test__drop_down_tagger@hihisbu
+      parent_field_type = "tagger"
+      value = zendesk.ticket_field__custom_field_options.instance._eshed__test__drop_down_tagger_hihisbu___eshed_something_2@uuuuuuumuuuuu
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance._eshed__Subscribed_to_Newsletter_checkbox@hisssu
+          is_required = false
+          required_on_statuses = {
+            type = "SOME_STATUSES"
+            statuses = [
+              "open",
+            ]
+            custom_statuses = [
+              zendesk.custom_status.instance.open_test_neta1@ub,
+            ]
+          }
+        },
+      ]
+    },
+  ]
+  _alias = "[eshed][test] - conditions"
+}

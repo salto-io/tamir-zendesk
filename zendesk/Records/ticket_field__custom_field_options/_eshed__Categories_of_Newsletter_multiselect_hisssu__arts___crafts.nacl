@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options _eshed__Categories_of_Newsletter_multiselect_hisssu__arts___crafts@uuuuuumuuuuu {
+  raw_name = "Arts & Crafts"
+  value = "arts___crafts"
+  _parent = [
+    zendesk.ticket_field.instance._eshed__Categories_of_Newsletter_multiselect@hisssu,
+  ]
+  _alias = "Arts & Crafts"
+}

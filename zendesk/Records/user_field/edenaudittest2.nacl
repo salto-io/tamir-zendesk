@@ -1,0 +1,9 @@
+zendesk.user_field edenaudittest2 {
+  type = "text"
+  key = "edenaudittest2"
+  raw_title = "edenAuditTest2"
+  raw_description = ""
+  active = true
+  system = false
+  _alias = "edenAuditTest2"
+}

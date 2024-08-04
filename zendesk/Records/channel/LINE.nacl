@@ -1,0 +1,4 @@
+zendesk.channel LINE {
+  name = "LINE"
+  _alias = "LINE"
+}

@@ -1,0 +1,8 @@
+zendesk.organization_field__custom_field_options edenmissingtest__b {
+  raw_name = "b"
+  value = "b"
+  _parent = [
+    zendesk.organization_field.instance.edenmissingtest,
+  ]
+  _alias = "b"
+}

@@ -1,0 +1,33 @@
+zendesk.ticket_field Priorit__priority@_00233u {
+  type = "priority"
+  raw_title = "Priorité"
+  raw_description = "Priorité de la demande"
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "Priorité"
+  visible_in_portal = true
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  system_field_options = [
+    {
+      name = "Low"
+      value = "low"
+    },
+    {
+      name = "Normal"
+      value = "normal"
+    },
+    {
+      name = "High"
+      value = "high"
+    },
+    {
+      name = "Urgent"
+      value = "urgent"
+    },
+  ]
+  sub_type_id = 0
+  _alias = "Priorité"
+}

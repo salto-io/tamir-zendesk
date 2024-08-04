@@ -1,0 +1,32 @@
+zendesk.app_installation Knowledge_Capture_support@su {
+  app_id = 111872
+  product = "support"
+  settings = {
+    allowCreation = true
+    allowAssignOwner = false
+    alwaysShowInSidebar = true
+    autoSelectBrand = true
+    allowFlagging = true
+    alwaysShowInEditor = true
+    rapidResolve = true
+    name = "Knowledge Capture"
+    title = "Knowledge Capture"
+  }
+  enabled = true
+  role_restrictions = [
+    zendesk.custom_role.instance.Admin,
+    zendesk.custom_role.instance.Team_lead@s,
+    zendesk.custom_role.instance.Staff,
+  ]
+  recurring_payment = false
+  collapsible = true
+  paid = false
+  has_unpaid_subscription = false
+  has_incomplete_subscription = false
+  group_restrictions = [
+    zendesk.group.instance.Assistance,
+    zendesk.group.instance.Tier_3___EMEA@ssbs,
+    zendesk.group.instance.Support_Managers@s,
+  ]
+  _alias = "Knowledge Capture"
+}

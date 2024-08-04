@@ -1,0 +1,14 @@
+zendesk.ticket_field delete3_text {
+  type = "text"
+  raw_title = "delete3"
+  raw_description = "1"
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "delete3"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  _alias = "delete3"
+}

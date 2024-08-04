@@ -1,0 +1,9 @@
+zendesk.dynamic_content_item Bla__a_b_c_d__e@fsbusff {
+  name = "Bla: a-b_c d::e"
+  placeholder = "{{dc.bla_a-b_c_d-e}}"
+  default_locale_id = zendesk.locale.instance.en_US@b
+  variants = [
+    zendesk.dynamic_content_item__variants.instance.Bla__a_b_c_d__e_fsbusff__en_US_b@uuuuuuumuuum,
+  ]
+  _alias = "Bla: a-b_c d::e"
+}

@@ -1,0 +1,21 @@
+zendesk.ticket_field TestMultiSelect12_multiselect {
+  type = "multiselect"
+  raw_title = "TestMultiSelect12"
+  raw_description = "descfor end users"
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "TestMultiSelect1-endusers"
+  visible_in_portal = true
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  agent_description = "The desc..."
+  custom_field_options = [
+    zendesk.ticket_field__custom_field_options.instance.TestMultiSelect12_multiselect__msop1,
+    zendesk.ticket_field__custom_field_options.instance.TestMultiSelect12_multiselect__msop2,
+    zendesk.ticket_field__custom_field_options.instance.TestMultiSelect12_multiselect__msop3,
+    zendesk.ticket_field__custom_field_options.instance.TestMultiSelect12_multiselect__msop5,
+  ]
+  _alias = "TestMultiSelect12"
+}

@@ -1,0 +1,97 @@
+zendesk.view shirs_view_user_fields@s {
+  active = true
+  default = false
+  description = "test user field values"
+  execution = {
+    group_by = "requester"
+    group_order = "asc"
+    sort_by = "assigned"
+    sort_order = "desc"
+    group = {
+      id = "requester"
+      title = "Requester"
+      filterable = true
+      sortable = true
+      order = "asc"
+    }
+    sort = {
+      id = "assigned"
+      title = "Assigned"
+      filterable = true
+      sortable = true
+      order = "desc"
+    }
+    columns = [
+      {
+        id = "satisfaction_score"
+        title = "Satisfaction"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+    ]
+    fields = [
+      {
+        id = "satisfaction_score"
+        title = "Satisfaction"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+    ]
+  }
+  conditions = {
+    all = [
+      {
+        field = "requester_id"
+        operator = "is"
+        value = "current_user"
+      },
+      {
+        field = "assignee_id"
+        operator = "is_not"
+        value = "requester_id"
+      },
+    ]
+  }
+  restriction = {
+    type = "User"
+    id = "zendesk-adapter@salto.io"
+  }
+  raw_title = "shirs view user fields"
+  _alias = "shirs view user fields"
+}

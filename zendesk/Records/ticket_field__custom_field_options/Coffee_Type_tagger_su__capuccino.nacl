@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options Coffee_Type_tagger_su__capuccino@uumuu {
+  raw_name = "Capuccino Normal"
+  value = "capuccino"
+  _parent = [
+    zendesk.ticket_field.instance.Coffee_Type_tagger@su,
+  ]
+  _alias = "Capuccino Normal"
+}

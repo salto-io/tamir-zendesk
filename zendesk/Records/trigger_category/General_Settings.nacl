@@ -1,0 +1,4 @@
+zendesk.trigger_category General_Settings@s {
+  name = "General Settings"
+  _alias = "General Settings"
+}

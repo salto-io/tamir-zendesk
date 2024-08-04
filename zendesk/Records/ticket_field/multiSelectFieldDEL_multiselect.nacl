@@ -1,0 +1,20 @@
+zendesk.ticket_field multiSelectFieldDEL_multiselect {
+  type = "multiselect"
+  raw_title = "multiSelectFieldDEL"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "multiSelectFieldDEL"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  custom_field_options = [
+    zendesk.ticket_field__custom_field_options.instance.multiSelectFieldDEL_multiselect__value1,
+    zendesk.ticket_field__custom_field_options.instance.multiSelectFieldDEL_multiselect__value2,
+    zendesk.ticket_field__custom_field_options.instance.multiSelectFieldDEL_multiselect__value3,
+    zendesk.ticket_field__custom_field_options.instance.multiSelectFieldDEL_multiselect__value4,
+  ]
+  _alias = "multiSelectFieldDEL"
+}

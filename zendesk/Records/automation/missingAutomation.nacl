@@ -1,0 +1,79 @@
+zendesk.automation missingAutomation {
+  title = "missingAutomation"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "notification_target"
+      value = [
+        "(Value no longer exists. Choose another.)",
+        "asd",
+      ]
+    },
+    {
+      field = "notification_webhook"
+      value = [
+        "(Value no longer exists. Choose another.)",
+        "",
+      ]
+    },
+    {
+      field = "notification_group"
+      value = [
+        "(Value no longer exists. Choose another.)",
+        "asdasdas",
+        "fgfdffg",
+      ]
+    },
+    {
+      field = "notification_user"
+      value = [
+        "la+32@example.org",
+        "hmmjmj",
+        "ghhghhghgj",
+      ]
+    },
+    {
+      field = "priority"
+      value = "urgent"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "priority"
+        operator = "is"
+        value = "high"
+      },
+      {
+        field = "status"
+        operator = "is"
+        value = "new"
+      },
+      {
+        field = "satisfaction_score"
+        operator = "is"
+        value = "unoffered"
+      },
+      {
+        field = "SOLVED"
+        operator = "is"
+        value = "24"
+      },
+    ]
+    any = [
+      {
+        field = "status"
+        operator = "is"
+        value = "new"
+      },
+      {
+        field = "priority"
+        operator = "is"
+        value = "high"
+      },
+    ]
+  }
+  raw_title = "missingAutomation"
+  _alias = "missingAutomation"
+}

@@ -1,0 +1,11 @@
+zendesk.support_address shirTest_support_shirTest_subdomain_zendesk_com@umvvv {
+  brand_id = zendesk.brand.instance.shirTest
+  default = true
+  name = "shirTest"
+  email = "support@${ zendesk.brand.instance.shirTest.subdomain }.zendesk.com"
+  forwarding_status = "verified"
+  spf_status = "verified"
+  cname_status = "verified"
+  domain_verification_status = "verified"
+  _alias = "shirTest"
+}

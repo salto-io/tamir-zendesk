@@ -1,0 +1,18 @@
+zendesk.ticket_field Must_Select_From_Here_multiselect@sssu {
+  type = "multiselect"
+  raw_title = "Must Select From Here"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "Must Select From Here"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  custom_field_options = [
+    zendesk.ticket_field__custom_field_options.instance.Must_Select_From_Here_multiselect_sssu__eshed_something_1@uuuumuuuu,
+    zendesk.ticket_field__custom_field_options.instance.Must_Select_From_Here_multiselect_sssu__eshed_something_2@uuuumuuuu,
+  ]
+  _alias = "Must Select From Here"
+}

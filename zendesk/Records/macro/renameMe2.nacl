@@ -1,0 +1,13 @@
+zendesk.macro renameMe2 {
+  title = "renameMe2"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "status"
+      value = "solved"
+    },
+  ]
+  raw_title = "renameMe2"
+  _alias = "renameMe2"
+}

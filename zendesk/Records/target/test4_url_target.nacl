@@ -1,0 +1,10 @@
+zendesk.target test4_url_target {
+  type = "url_target"
+  title = "test4"
+  active = true
+  method = "get"
+  attribute = "attr4"
+  username = ""
+  target_url = "http://example.com/test4"
+  _alias = "test4"
+}

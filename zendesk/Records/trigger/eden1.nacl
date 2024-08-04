@@ -1,0 +1,65 @@
+zendesk.trigger eden1 {
+  title = "eden1"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "notification_user"
+      value = [
+        "eden.hassid@salto.io",
+        "this is a trigger test",
+        '''
+another try5
+
+
+organization: 
+{{ticket.organization.custom_fields.${ zendesk.organization_field.instance.edentest1 }}}
+{{ticket.organization.custom_fields.${ zendesk.organization_field.instance.edentest1 }.title}}
+
+user:
+{{ticket.requester.custom_fields.${ zendesk.user_field.instance.test1 }}}
+{{ticket.requester.custom_fields.${ zendesk.user_field.instance.test1 }.title}}
+
+
+organization2: 
+{{ticket.organization.custom_fields.${ zendesk.organization_field.instance.neta_drop_down_123 }}}
+{{ticket.organization.custom_fields.${ zendesk.organization_field.instance.neta_drop_down_123 }.title}}
+
+user2:
+{{ticket.requester.custom_fields.${ zendesk.user_field.instance.neta_dropdown_123 }}}
+{{ticket.requester.custom_fields.${ zendesk.user_field.instance.neta_dropdown_123 }.title}}
+
+more: {{ticket.organization.name}}
+{{ticket.requester.name}}
+''',
+      ]
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "is"
+        value = "new"
+      },
+      {
+        field = "ticket_form_id"
+        operator = "is"
+        value = zendesk.ticket_form.instance.Eden_Test1@s
+      },
+      {
+        field = "organization_id"
+        operator = "is_not"
+        value = "6100636057875"
+      },
+      {
+        field = "type"
+        operator = "not_changed"
+      },
+    ]
+  }
+  description = "test of a modification 3"
+  raw_title = "eden1"
+  category_id = zendesk.trigger_category.instance.Notifications
+  _alias = "eden1"
+}

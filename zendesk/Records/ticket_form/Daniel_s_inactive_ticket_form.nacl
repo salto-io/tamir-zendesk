@@ -1,0 +1,22 @@
+zendesk.ticket_form Daniel_s_inactive_ticket_form@tsss {
+  raw_name = "Daniel's inactive ticket form"
+  raw_display_name = "kblam"
+  end_user_visible = true
+  ticket_field_ids = [
+    zendesk.ticket_field.instance.Statut_status,
+    zendesk.ticket_field.instance.Groupe_group,
+    zendesk.ticket_field.instance.Assign__assignee@_00233u,
+    zendesk.ticket_field.instance.Ticket_status_custom_status@suu,
+    zendesk.ticket_field.instance.123456_text,
+    zendesk.ticket_field.instance._eshed__List_of_Fruit_tagger@hisssu,
+    zendesk.ticket_field.instance.Sujet_subject,
+    zendesk.ticket_field.instance.Description_description,
+  ]
+  active = false
+  default = false
+  in_all_brands = false
+  restricted_brand_ids = [
+    zendesk.brand.instance.BrandAForGuide,
+  ]
+  _alias = "Daniel's inactive ticket form"
+}

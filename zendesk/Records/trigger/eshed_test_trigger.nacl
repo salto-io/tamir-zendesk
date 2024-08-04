@@ -1,0 +1,28 @@
+zendesk.trigger eshed_test_trigger@b {
+  title = "eshed-test-trigger"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "ticket_form_id"
+      value = zendesk.ticket_form.instance._eshed__Newsletter_Subscription_Details@hisss
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "type"
+        operator = "is"
+        value = "incident"
+      },
+      {
+        field = "number_of_incidents"
+        operator = "greater_than"
+        value = "2"
+      },
+    ]
+  }
+  raw_title = "eshed-test-trigger"
+  category_id = zendesk.trigger_category.instance.Field_Updates@s
+  _alias = "eshed-test-trigger"
+}

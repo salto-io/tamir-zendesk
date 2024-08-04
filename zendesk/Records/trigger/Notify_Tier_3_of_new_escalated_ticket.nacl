@@ -1,0 +1,41 @@
+zendesk.trigger Notify_Tier_3_of_new_escalated_ticket@s {
+  title = "Notify Tier 3 of new escalated ticket"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "notification_group"
+      value = [
+        zendesk.group.instance.audit_test2@s,
+        "{{ticket.id}} has been escalated",
+        "{{ticket.id}} has been escalated and requires Tier 3 action",
+      ]
+    },
+    {
+      field = "ticket_form_id"
+      value = zendesk.ticket_form.instance.Premier_Priority_Ticket@s
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "less_than"
+        value = "solved"
+      },
+      {
+        field = zendesk.ticket_field.instance.Escalation_Status_tagger@su
+        operator = "is"
+        value = zendesk.ticket_field__custom_field_options.instance.Escalation_Status_tagger_su__investigating@uumuu
+      },
+      {
+        field = "ticket_form_id"
+        operator = "not_value_previous"
+        value = zendesk.ticket_form.instance.Other
+      },
+    ]
+  }
+  raw_title = "Notify Tier 3 of new escalated ticket"
+  category_id = zendesk.trigger_category.instance.Notifications
+  _alias = "Notify Tier 3 of new escalated ticket"
+}

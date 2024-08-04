@@ -1,0 +1,24 @@
+zendesk.trigger org_test@s {
+  title = "org test"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "status"
+      value = "open"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "organization_id"
+        operator = "is"
+        value = "19636269843219"
+      },
+    ]
+  }
+  description = "test"
+  raw_title = "org test"
+  category_id = zendesk.trigger_category.instance.Other
+  _alias = "org test"
+}

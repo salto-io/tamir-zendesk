@@ -1,0 +1,8 @@
+zendesk.group Tier_2___EMEA@ssbs {
+  is_public = true
+  name = "Tier 2 - EMEA"
+  description = ""
+  default = false
+  deleted = false
+  _alias = "Tier 2 - EMEA"
+}

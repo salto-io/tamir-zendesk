@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options edenTestForm_tagger__b {
+  raw_name = "b"
+  value = "b"
+  _parent = [
+    zendesk.ticket_field.instance.edenTestForm_tagger,
+  ]
+  _alias = "b"
+}

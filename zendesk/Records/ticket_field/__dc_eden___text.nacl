@@ -1,0 +1,15 @@
+zendesk.ticket_field __dc_eden___text@_00123_00123v_00125_00125u {
+  type = "text"
+  raw_title = "{{${ zendesk.dynamic_content_item.instance.eden }}}"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "{{${ zendesk.dynamic_content_item.instance.eden }}}"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  agent_description = "bla234"
+  _alias = "edenContent changed ..."
+}

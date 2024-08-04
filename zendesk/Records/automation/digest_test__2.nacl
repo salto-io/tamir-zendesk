@@ -1,0 +1,22 @@
+zendesk.automation digest_test__2@ssb {
+  title = "digest test -2"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "status"
+      value = "hold"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "is"
+        value = "new"
+      },
+    ]
+  }
+  raw_title = "digest test -2"
+  _alias = "digest test -2"
+}

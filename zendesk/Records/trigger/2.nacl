@@ -1,0 +1,23 @@
+zendesk.trigger "2@" {
+  title = "2"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "assignee_id"
+      value = "lookup:ticket.ticket_field_13080414697363.ticket_field_8661139751827"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = zendesk.user_field.instance.neta_dropdown_123
+        operator = "is"
+        value = zendesk.user_field__custom_field_options.instance.neta_dropdown_123__opt123_11
+      },
+    ]
+  }
+  raw_title = "2"
+  category_id = zendesk.trigger_category.instance.audit_test@s
+  _alias = "2"
+}

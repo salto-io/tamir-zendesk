@@ -1,0 +1,13 @@
+zendesk.macro null_user_macro@s {
+  title = "null user macro"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "assignee_id"
+      value = ""
+    },
+  ]
+  raw_title = "null user macro"
+  _alias = "null user macro"
+}

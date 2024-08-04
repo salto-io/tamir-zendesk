@@ -1,0 +1,4 @@
+zendesk.trigger_category audit_test@s {
+  name = "audit test"
+  _alias = "audit test"
+}

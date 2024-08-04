@@ -1,0 +1,16 @@
+zendesk.ticket_field _eshed__Subscribed_to_Newsletter_checkbox@hisssu {
+  type = "checkbox"
+  raw_title = "[eshed] Subscribed to Newsletter"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "[eshed] Subscribed to Newsletter"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  tag = zendesk.tag.instance.eshed
+  removable = true
+  agent_description = "Is customer subscribed to our fancy newsletter"
+  _alias = "[eshed] Subscribed to Newsletter"
+}

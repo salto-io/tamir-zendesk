@@ -1,0 +1,35 @@
+zendesk.trigger Notifier_l_assign__de_l_affectation@s_08217_00233ss_08217 {
+  title = "Notifier l’assigné de l’affectation"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "notification_user"
+      value = [
+        "assignee_id",
+        "[{{ticket.account}}] Affectation : {{ticket.title}}",
+        '''
+Vous avez été affecté à ce ticket (#{{ticket.id}}).
+
+{{ticket.comments_formatted}}
+''',
+      ]
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "assignee_id"
+        operator = "changed"
+      },
+      {
+        field = "assignee_id"
+        operator = "is_not"
+        value = "current_user"
+      },
+    ]
+  }
+  raw_title = "Notifier l’assigné de l’affectation"
+  category_id = zendesk.trigger_category.instance.Notifications
+  _alias = "Notifier l’assigné de l’affectation"
+}

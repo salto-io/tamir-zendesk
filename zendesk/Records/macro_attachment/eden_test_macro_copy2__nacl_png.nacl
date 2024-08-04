@@ -1,0 +1,9 @@
+zendesk.macro_attachment eden_test_macro_copy2__nacl_png@sssuuv {
+  filename = "nacl.png"
+  contentType = "image/png"
+  content = file("zendesk/macro_attachment/eden test macro copy2__nacl.png")
+  _parent = [
+    zendesk.macro.instance.eden_test_macro_copy2@s,
+  ]
+  _alias = "nacl.png"
+}

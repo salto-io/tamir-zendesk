@@ -1,0 +1,11 @@
+zendesk.support_address TomerBrand_support_TomerBrand_subdomain_zendesk_com@umvvv {
+  brand_id = zendesk.brand.instance.TomerBrand
+  default = true
+  name = "TomerBrand"
+  email = "support@${ zendesk.brand.instance.TomerBrand.subdomain }.zendesk.com"
+  forwarding_status = "verified"
+  spf_status = "verified"
+  cname_status = "verified"
+  domain_verification_status = "verified"
+  _alias = "TomerBrand"
+}

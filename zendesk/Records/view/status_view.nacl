@@ -1,0 +1,101 @@
+zendesk.view status_view@s {
+  active = true
+  default = false
+  execution = {
+    group_by = "status"
+    group_order = "desc"
+    sort_order = "desc"
+    group = {
+      id = "status"
+      title = "Status category"
+      filterable = true
+      sortable = true
+      order = "desc"
+    }
+    columns = [
+      {
+        id = "satisfaction_score"
+        title = "Satisfaction"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+    ]
+    fields = [
+      {
+        id = "satisfaction_score"
+        title = "Satisfaction"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+    ]
+  }
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "is"
+        value = "new"
+      },
+      {
+        field = "custom_status_id"
+        operator = "includes"
+        value = [
+          zendesk.custom_status.instance.new___zd_status_new__@u_00123_00123vu_00125_00125,
+          zendesk.custom_status.instance.open___zd_status_open__@u_00123_00123vu_00125_00125,
+          zendesk.custom_status.instance.hold___zd_status_hold__@u_00123_00123vu_00125_00125,
+          zendesk.custom_status.instance.solved___zd_status_solved__@u_00123_00123vu_00125_00125,
+        ]
+      },
+    ]
+  }
+  raw_title = "status view"
+  _alias = "status view"
+}

@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options hi_tagger__missed_package {
+  raw_name = "Missed Package"
+  value = "missed_package"
+  _parent = [
+    zendesk.ticket_field.instance.hi_tagger,
+  ]
+  _alias = "Missed Package"
+}

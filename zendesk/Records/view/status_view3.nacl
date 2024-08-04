@@ -1,0 +1,106 @@
+zendesk.view status_view3@s {
+  active = true
+  default = false
+  execution = {
+    group_order = "desc"
+    sort_order = "desc"
+    columns = [
+      {
+        id = "satisfaction_score"
+        title = "Satisfaction"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+    ]
+    fields = [
+      {
+        id = "satisfaction_score"
+        title = "Satisfaction"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+    ]
+  }
+  conditions = {
+    all = [
+      {
+        field = "current_tags"
+        operator = "includes"
+        value = [
+          zendesk.tag.instance.bla,
+        ]
+      },
+      {
+        field = "group_id"
+        operator = "is"
+        value = zendesk.group.instance.Test
+      },
+      {
+        field = "custom_status_id"
+        operator = "includes"
+        value = [
+          zendesk.custom_status.instance.new___zd_status_new__@u_00123_00123vu_00125_00125,
+          zendesk.custom_status.instance.open___zd_status_open__@u_00123_00123vu_00125_00125,
+          zendesk.custom_status.instance.pending___zd_status_pending__@u_00123_00123vu_00125_00125,
+          zendesk.custom_status.instance.hold___zd_status_hold__@u_00123_00123vu_00125_00125,
+        ]
+      },
+    ]
+  }
+  restriction = {
+    type = "Group"
+    ids = [
+      zendesk.group.instance.Test,
+    ]
+  }
+  raw_title = "status view3"
+  _alias = "status view3"
+}

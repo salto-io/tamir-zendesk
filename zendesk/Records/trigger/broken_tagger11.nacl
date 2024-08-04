@@ -1,0 +1,31 @@
+zendesk.trigger broken_tagger11@b {
+  title = "broken-tagger11"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "ticket_form_id"
+      value = zendesk.ticket_form.instance.Premier_Priority_Ticket@s
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = zendesk.user_field.instance.userfielddel
+        operator = "is"
+        value = zendesk.user_field__custom_field_options.instance.userfielddel__value4
+      },
+    ]
+    any = [
+      {
+        field = "ticket_form_id"
+        operator = "is_not"
+        value = zendesk.ticket_form.instance.Formulaire_de_ticket_par_d_faut@ssss_00233
+      },
+    ]
+  }
+  description = "tagger11 will delete its option"
+  raw_title = "broken-tagger11"
+  category_id = zendesk.trigger_category.instance.Other
+  _alias = "broken-tagger11"
+}

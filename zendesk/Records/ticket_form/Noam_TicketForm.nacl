@@ -1,0 +1,111 @@
+zendesk.ticket_form Noam_TicketForm@s {
+  raw_name = "Noam TicketForm"
+  raw_display_name = "Crazy Ticket form!!!"
+  end_user_visible = true
+  ticket_field_ids = [
+    zendesk.ticket_field.instance.Ticket_status_custom_status@suu,
+    zendesk.ticket_field.instance.Statut_status,
+    zendesk.ticket_field.instance.Groupe_group,
+    zendesk.ticket_field.instance.Assign__assignee@_00233u,
+    zendesk.ticket_field.instance.Sujet_subject,
+    zendesk.ticket_field.instance.Description_description,
+    zendesk.ticket_field.instance.Priorit__priority@_00233u,
+    zendesk.ticket_field.instance.TestRegex1_regexp,
+    zendesk.ticket_field.instance.TestMultiSelect12_multiselect,
+    zendesk.ticket_field.instance.tagger12_tagger,
+    zendesk.ticket_field.instance.Type_tickettype,
+    zendesk.ticket_field.instance.TestDropdown1_updated_tagger@su,
+  ]
+  active = true
+  default = false
+  in_all_brands = true
+  restricted_brand_ids = [
+    zendesk.brand.instance.Salto,
+  ]
+  end_user_conditions = [
+    {
+      parent_field_id = zendesk.ticket_field.instance.tagger12_tagger
+      parent_field_type = "tagger"
+      value = zendesk.ticket_field__custom_field_options.instance.tagger12_tagger__v11
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance.TestDropdown1_updated_tagger@su
+          is_required = true
+        },
+      ]
+    },
+  ]
+  agent_conditions = [
+    {
+      parent_field_id = zendesk.ticket_field.instance.Priorit__priority@_00233u
+      parent_field_type = "priority"
+      value = "low"
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance.TestMultiSelect12_multiselect
+          is_required = false
+          required_on_statuses = {
+            type = "NO_STATUSES"
+          }
+        },
+        {
+          id = zendesk.ticket_field.instance.TestRegex1_regexp
+          is_required = false
+          required_on_statuses = {
+            type = "SOME_STATUSES"
+            statuses = [
+              "new",
+              "open",
+            ]
+            custom_statuses = [
+              zendesk.custom_status.instance.new___zd_status_new__@u_00123_00123vu_00125_00125,
+              zendesk.custom_status.instance.open_test_neta1@ub,
+            ]
+          }
+        },
+      ]
+    },
+    {
+      parent_field_id = zendesk.ticket_field.instance.Priorit__priority@_00233u
+      parent_field_type = "priority"
+      value = "normal"
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance.TestMultiSelect12_multiselect
+          is_required = true
+          required_on_statuses = {
+            type = "ALL_STATUSES"
+          }
+        },
+        {
+          id = zendesk.ticket_field.instance.TestRegex1_regexp
+          is_required = true
+          required_on_statuses = {
+            type = "SOME_STATUSES"
+            statuses = [
+              "solved",
+            ]
+            custom_statuses = [
+              zendesk.custom_status.instance.solved___zd_status_solved__@u_00123_00123vu_00125_00125,
+            ]
+          }
+        },
+      ]
+    },
+    {
+      parent_field_id = zendesk.ticket_field.instance.tagger12_tagger
+      parent_field_type = "tagger"
+      value = zendesk.ticket_field__custom_field_options.instance.tagger12_tagger__v223
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance.Priorit__priority@_00233u
+          is_required = false
+          required_on_statuses = {
+            type = "NO_STATUSES"
+          }
+        },
+      ]
+    },
+  ]
+  _alias = "Noam TicketForm"
+}

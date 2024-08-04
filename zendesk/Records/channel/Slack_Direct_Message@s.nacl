@@ -1,0 +1,4 @@
+zendesk.channel Slack_Direct_Message@s {
+  name = "Slack Direct Message"
+  _alias = "Slack Direct Message"
+}

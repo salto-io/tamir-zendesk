@@ -1,0 +1,14 @@
+zendesk.organization_field edentest1 {
+  type = "dropdown"
+  key = "edentest1"
+  raw_title = "EdenTest1"
+  raw_description = "decription "
+  active = true
+  system = false
+  custom_field_options = [
+    zendesk.organization_field__custom_field_options.instance.edentest1__test,
+    zendesk.organization_field__custom_field_options.instance.edentest1__ti3,
+    zendesk.organization_field__custom_field_options.instance.edentest1__ti4,
+  ]
+  _alias = "EdenTest1"
+}

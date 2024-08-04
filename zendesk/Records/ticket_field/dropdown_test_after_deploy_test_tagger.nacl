@@ -1,0 +1,19 @@
+zendesk.ticket_field dropdown_test_after_deploy_test_tagger@ssssu {
+  type = "tagger"
+  raw_title = "dropdown test after deploy test"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "dropdown test after deploy test"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  custom_field_options = [
+    zendesk.ticket_field__custom_field_options.instance.dropdown_test_after_deploy_test_tagger_ssssu__1@uuuuumuu,
+    zendesk.ticket_field__custom_field_options.instance.dropdown_test_after_deploy_test_tagger_ssssu__2@uuuuumuu,
+  ]
+  default_custom_field_option = zendesk.ticket_field__custom_field_options.instance.dropdown_test_after_deploy_test_tagger_ssssu__1@uuuuumuu
+  _alias = "dropdown test after deploy test"
+}

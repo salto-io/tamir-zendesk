@@ -1,0 +1,32 @@
+zendesk.trigger Transfer_to_EMEA_Group@s {
+  title = "Transfer to EMEA Group"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "group_id"
+      value = zendesk.group.instance.Tier_3___EMEA@ssbs
+    },
+    {
+      field = "set_schedule"
+      value = zendesk.business_hours_schedule.instance.EMEA
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = zendesk.ticket_field.instance.Region_text
+        operator = "present"
+        value = ""
+      },
+      {
+        field = zendesk.ticket_field.instance.Customer_Priority_tagger@su
+        operator = "is"
+        value = zendesk.ticket_field__custom_field_options.instance.Customer_Priority_tagger_su__high@uumuu
+      },
+    ]
+  }
+  raw_title = "Transfer to EMEA Group"
+  category_id = zendesk.trigger_category.instance.Field_Updates@s
+  _alias = "Transfer to EMEA Group"
+}

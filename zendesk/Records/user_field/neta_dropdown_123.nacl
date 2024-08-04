@@ -1,0 +1,13 @@
+zendesk.user_field neta_dropdown_123 {
+  type = "dropdown"
+  key = "neta_dropdown_123"
+  raw_title = "neta dropdown 123"
+  raw_description = ""
+  active = true
+  system = false
+  custom_field_options = [
+    zendesk.user_field__custom_field_options.instance.neta_dropdown_123__opt123_11,
+    zendesk.user_field__custom_field_options.instance.neta_dropdown_123__opt123_2,
+  ]
+  _alias = "neta dropdown 123"
+}

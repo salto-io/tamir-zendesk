@@ -1,0 +1,17 @@
+zendesk.ticket_field missingskill2_tagger {
+  type = "tagger"
+  raw_title = "missingskill2"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "missingskill2"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  custom_field_options = [
+    zendesk.ticket_field__custom_field_options.instance.missingskill2_tagger__567,
+  ]
+  _alias = "missingskill2"
+}

@@ -1,0 +1,9 @@
+zendesk.custom_status open_test_neta1@ub {
+  status_category = "open"
+  raw_agent_label = "test-neta1"
+  raw_end_user_label = "test-neta1"
+  raw_description = ""
+  raw_end_user_description = ""
+  active = true
+  _alias = "test-neta1"
+}

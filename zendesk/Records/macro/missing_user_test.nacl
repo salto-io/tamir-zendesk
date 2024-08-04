@@ -1,0 +1,13 @@
+zendesk.macro missing_user_test@s {
+  title = "missing user test"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "assignee_id"
+      value = "pablo.gonzalez@salto.io"
+    },
+  ]
+  raw_title = "missing user test"
+  _alias = "missing user test"
+}

@@ -1,0 +1,17 @@
+zendesk.ticket_form tagger11_form@s {
+  raw_name = "tagger11 form"
+  raw_display_name = "tager11 form edited"
+  end_user_visible = true
+  ticket_field_ids = [
+    zendesk.ticket_field.instance.Statut_status,
+    zendesk.ticket_field.instance.Groupe_group,
+    zendesk.ticket_field.instance.Assign__assignee@_00233u,
+    zendesk.ticket_field.instance.Sujet_subject,
+    zendesk.ticket_field.instance.tagger12_tagger,
+    zendesk.ticket_field.instance.Description_description,
+  ]
+  active = true
+  default = true
+  in_all_brands = true
+  _alias = "tagger11 form"
+}

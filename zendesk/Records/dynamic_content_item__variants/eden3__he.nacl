@@ -1,0 +1,10 @@
+zendesk.dynamic_content_item__variants eden3__he {
+  content = "dbfz"
+  locale_id = zendesk.locale.instance.he
+  active = true
+  default = false
+  _parent = [
+    zendesk.dynamic_content_item.instance.eden3,
+  ]
+  _alias = "eden3 - he"
+}

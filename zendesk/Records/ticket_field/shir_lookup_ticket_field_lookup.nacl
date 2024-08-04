@@ -1,0 +1,25 @@
+zendesk.ticket_field shir_lookup_ticket_field_lookup@sssu {
+  type = "lookup"
+  raw_title = "shir lookup ticket field"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "shir lookup ticket field"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  agent_description = "test"
+  relationship_target_type = "zen:ticket"
+  relationship_filter = {
+    all = [
+      {
+        field = "assignee_id"
+        operator = "is_not"
+        value = "current_user"
+      },
+    ]
+  }
+  _alias = "shir lookup ticket field"
+}

@@ -1,0 +1,14 @@
+zendesk.sla_policy_order {
+  active = [
+    zendesk.sla_policy.instance.TomerTest2,
+    zendesk.sla_policy.instance.Demo,
+    zendesk.sla_policy.instance.SLAToDelete,
+    zendesk.sla_policy.instance.Premier_Priority@s,
+    zendesk.sla_policy.instance.shir_test_policy@s,
+    zendesk.sla_policy.instance.shir_sla_for_side_conversation@s,
+    zendesk.sla_policy.instance.audit_test@s,
+    zendesk.sla_policy.instance.seroussiSideConvo,
+    zendesk.sla_policy.instance.eden_test@s,
+    zendesk.sla_policy.instance.new_for_audit@s,
+  ]
+}

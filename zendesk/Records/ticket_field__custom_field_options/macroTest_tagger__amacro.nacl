@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options macroTest_tagger__amacro {
+  raw_name = "amacro"
+  value = "amacro"
+  _parent = [
+    zendesk.ticket_field.instance.macroTest_tagger,
+  ]
+  _alias = "amacro"
+}

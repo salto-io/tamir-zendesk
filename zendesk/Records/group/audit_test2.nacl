@@ -1,0 +1,8 @@
+zendesk.group audit_test2@s {
+  is_public = true
+  name = "audit test2"
+  description = ""
+  default = false
+  deleted = false
+  _alias = "audit test2"
+}

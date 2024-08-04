@@ -1,0 +1,9 @@
+zendesk.dynamic_content_item Ticket_Form_Customer@s {
+  name = "Ticket Form Customer"
+  placeholder = "{{dc.ticket_form_customer}}"
+  default_locale_id = zendesk.locale.instance.en_US@b
+  variants = [
+    zendesk.dynamic_content_item__variants.instance.Ticket_Form_Customer_s__en_US_b@uumuuum,
+  ]
+  _alias = "Ticket Form Customer"
+}

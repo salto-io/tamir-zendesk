@@ -1,0 +1,9 @@
+zendesk.custom_status open_checkAudit {
+  status_category = "open"
+  raw_agent_label = "checkAudit"
+  raw_end_user_label = "checkAudit"
+  raw_description = ""
+  raw_end_user_description = ""
+  active = true
+  _alias = "checkAudit"
+}

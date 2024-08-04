@@ -1,0 +1,28 @@
+zendesk.trigger bestTriggerBecauseItsOfers {
+  title = "bestTriggerBecauseItsOfers"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "group_id"
+      value = zendesk.group.instance.Assistance
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "brand_id"
+        operator = "is_not"
+        value = zendesk.brand.instance.BrandBForGuide
+      },
+      {
+        field = zendesk.ticket_field.instance.eden_check_change_test2_multiselect@sssu
+        operator = "includes"
+        value = zendesk.ticket_field__custom_field_options.instance.eden_check_change_test2_multiselect_sssu__bla@uuuumuu
+      },
+    ]
+  }
+  raw_title = "bestTriggerBecauseItsOfers"
+  category_id = zendesk.trigger_category.instance.Billing
+  _alias = "bestTriggerBecauseItsOfers"
+}

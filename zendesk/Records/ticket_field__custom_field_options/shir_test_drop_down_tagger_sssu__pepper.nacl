@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options shir_test_drop_down_tagger_sssu__pepper@uuuumuu {
+  raw_name = "pepper"
+  value = "pepper"
+  _parent = [
+    zendesk.ticket_field.instance.shir_test_drop_down_tagger@sssu,
+  ]
+  _alias = "pepper"
+}

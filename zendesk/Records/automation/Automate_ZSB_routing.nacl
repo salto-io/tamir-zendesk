@@ -1,0 +1,31 @@
+zendesk.automation Automate_ZSB_routing@s {
+  title = "Automate ZSB routing"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "status"
+      value = "open"
+    },
+    {
+      field = zendesk.ticket_field.instance.ZSB_checkbox
+      value = "false"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "is"
+        value = "new"
+      },
+      {
+        field = "ticket_form_id"
+        operator = "is"
+        value = zendesk.ticket_form.instance.ZSB
+      },
+    ]
+  }
+  raw_title = "Automate ZSB routing"
+  _alias = "Automate ZSB routing"
+}

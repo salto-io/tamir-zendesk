@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options Product_Area_tagger_su__configuration_custom_fields_formulas@uumuuuuu {
+  raw_name = "Configuration::Custom fields, formulas, etc"
+  value = "configuration_custom_fields_formulas"
+  _parent = [
+    zendesk.ticket_field.instance.Product_Area_tagger@su,
+  ]
+  _alias = "Configuration::Custom fields, formulas, etc"
+}

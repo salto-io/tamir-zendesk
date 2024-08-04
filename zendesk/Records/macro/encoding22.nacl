@@ -1,0 +1,21 @@
+zendesk.macro encoding22 {
+  title = "encoding22"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "comment_value_html"
+      value = "<p>test</p><p><br></p><p>hi‍‍‍</p>"
+    },
+    {
+      field = "comment_value"
+      value = '''
+test
+
+hi
+'''
+    },
+  ]
+  raw_title = "encoding22"
+  _alias = "encoding22"
+}

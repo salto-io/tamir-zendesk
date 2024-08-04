@@ -1,0 +1,9 @@
+zendesk.locale af {
+  id = 1100
+  locale = "af"
+  name = "Afrikaans"
+  native_name = "Afrikaans"
+  presentation_name = "Afrikaans"
+  rtl = false
+  _alias = "Afrikaans"
+}

@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options Customer_Priority_tagger_su__high@uumuu {
+  raw_name = "Critical"
+  value = "high"
+  _parent = [
+    zendesk.ticket_field.instance.Customer_Priority_tagger@su,
+  ]
+  _alias = "Critical"
+}

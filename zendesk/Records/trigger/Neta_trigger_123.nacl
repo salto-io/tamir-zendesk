@@ -1,0 +1,33 @@
+zendesk.trigger Neta_trigger_123@s {
+  title = "Neta trigger 123"
+  active = true
+  default = false
+  actions = [
+    {
+      field = zendesk.ticket_field.instance.Neta_multiselect_123_multiselect@ssu
+      value = zendesk.ticket_field__custom_field_options.instance.Neta_multiselect_123_multiselect_ssu__aaa@uuumuu
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "update_type"
+        operator = "is"
+        value = "Create"
+      },
+      {
+        field = zendesk.ticket_field.instance.Neta_multiselect_123_multiselect@ssu
+        operator = "includes"
+        value = zendesk.ticket_field__custom_field_options.instance.Neta_multiselect_123_multiselect_ssu__bbb@uuumuu
+      },
+      {
+        field = zendesk.ticket_field.instance.Neta_multiselect_123_multiselect@ssu
+        operator = "not_includes"
+        value = zendesk.ticket_field__custom_field_options.instance.Neta_multiselect_123_multiselect_ssu__ccc_modified4@uuumuuu
+      },
+    ]
+  }
+  raw_title = "Neta trigger 123"
+  category_id = zendesk.trigger_category.instance.Billing
+  _alias = "Neta trigger 123"
+}

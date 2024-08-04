@@ -1,0 +1,14 @@
+zendesk.macro Daniel_s_macro_4aa@tss {
+  title = "Daniel's macro 4aa"
+  active = true
+  default = false
+  description = "hi"
+  actions = [
+    {
+      field = "comment_value_html"
+      value = "<p>bavsxc</p>"
+    },
+  ]
+  raw_title = "Daniel's macro 4aa"
+  _alias = "Daniel's macro 4aa"
+}

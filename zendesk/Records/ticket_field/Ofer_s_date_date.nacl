@@ -1,0 +1,15 @@
+zendesk.ticket_field Ofer_s_date_date@tsu {
+  type = "date"
+  raw_title = "Ofer's date"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  regexp_for_validation = "\\A([0-9]{4})-(1[0-2]|0[1-9])-(3[01]|[12][0-9]|0[1-9])\\z"
+  raw_title_in_portal = "Ofer's date"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  _alias = "Ofer's date"
+}

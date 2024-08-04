@@ -1,0 +1,16 @@
+zendesk.ticket_form ST_L1__Email_Templates__Campaign__Thailand_Ttogether__Registration_2021_______________________________________________3______________________pdf@sffsffffsffsuu_03586_03633u_03609_03605_03629_03609_03585_03634_03619_03648_03586u_03634_03619u_03623_03617_03650_03588_03619_03591_03585_03634_03619_03648_03619_03634_03648_03607_03637u_03618_03623_03604u_03623_03618_03585_03633_03609_03648_03615_03626uuu_03626_03635_03627_03619_03633_03610_03612_03641u_03611_03619_03632_03585_03629_03610_03585_03634_03619uv {
+  raw_name = "ST L1::Email Templates::Campaign::Thailand Ttogether::Registration 2021__ขั_นตอนการเข_าร_วมโครงการเราเที_ยวด_วยกันเฟส_3__สำหรับผู_ประกอบการ_.pdf"
+  raw_display_name = ""
+  end_user_visible = false
+  ticket_field_ids = [
+    zendesk.ticket_field.instance.Statut_status,
+    zendesk.ticket_field.instance.Groupe_group,
+    zendesk.ticket_field.instance.Assign__assignee@_00233u,
+    zendesk.ticket_field.instance.Sujet_subject,
+    zendesk.ticket_field.instance.Description_description,
+  ]
+  active = true
+  default = false
+  in_all_brands = true
+  _alias = "ST L1::Email Templates::Campaign::Thailand Ttogether::Registration 2021__ขั_นตอนการเข_าร_วมโครงการเราเที_ยวด_วยกันเฟส_3__สำหรับผู_ประกอบการ_.pdf"
+}

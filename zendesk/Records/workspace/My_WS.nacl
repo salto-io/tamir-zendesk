@@ -1,0 +1,13 @@
+zendesk.workspace My_WS@s {
+  title = "My WS"
+  description = ""
+  apps = [
+    {
+      id = zendesk.app_installation.instance.Time_Tracking_edit_support@sbu
+      expand = false
+      position = 1
+    },
+  ]
+  activated = true
+  _alias = "My WS"
+}

@@ -1,0 +1,14 @@
+zendesk.user_field userfielddropdowntest {
+  type = "dropdown"
+  key = "userfielddropdowntest"
+  raw_title = "UserFieldDropDownTest"
+  raw_description = "desc"
+  active = true
+  system = false
+  custom_field_options = [
+    zendesk.user_field__custom_field_options.instance.userfielddropdowntest__ufv11,
+    zendesk.user_field__custom_field_options.instance.userfielddropdowntest__ufv2,
+    zendesk.user_field__custom_field_options.instance.userfielddropdowntest__v2,
+  ]
+  _alias = "UserFieldDropDownTest"
+}

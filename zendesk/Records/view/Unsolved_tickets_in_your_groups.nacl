@@ -1,0 +1,116 @@
+zendesk.view Unsolved_tickets_in_your_groups@s {
+  active = true
+  default = false
+  execution = {
+    group_by = "group"
+    group_order = "desc"
+    sort_by = "nice_id"
+    sort_order = "desc"
+    group = {
+      id = "group"
+      title = "Group"
+      filterable = true
+      sortable = true
+      order = "desc"
+    }
+    sort = {
+      id = "ticket_id"
+      title = "ID"
+      filterable = true
+      sortable = true
+      order = "desc"
+    }
+    columns = [
+      {
+        id = "ticket_id"
+        title = "ID"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "sla_next_breach_at"
+        title = "SLA"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "status"
+        title = "Status category"
+        filterable = true
+        sortable = true
+      },
+    ]
+    fields = [
+      {
+        id = "ticket_id"
+        title = "ID"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "sla_next_breach_at"
+        title = "SLA"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "status"
+        title = "Status category"
+        filterable = true
+        sortable = true
+      },
+    ]
+  }
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "less_than"
+        value = "solved"
+      },
+      {
+        field = "group_id"
+        operator = "is"
+        value = "current_groups"
+      },
+    ]
+  }
+  raw_title = "Unsolved tickets in your groups"
+  _alias = "Unsolved tickets in your groups"
+}

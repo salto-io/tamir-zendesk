@@ -1,0 +1,14 @@
+zendesk.ticket_field TestMultiLine1_textarea {
+  type = "textarea"
+  raw_title = "TestMultiLine1"
+  raw_description = "blala"
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "TestMultiLine1"
+  visible_in_portal = true
+  editable_in_portal = true
+  required_in_portal = true
+  removable = true
+  _alias = "TestMultiLine1"
+}

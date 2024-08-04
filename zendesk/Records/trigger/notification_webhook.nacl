@@ -1,0 +1,31 @@
+zendesk.trigger notification_webhook@s {
+  title = "notification webhook"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "notification_webhook"
+      value = [
+        zendesk.webhook.instance.test_auth3,
+        "",
+      ]
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = zendesk.ticket_field.instance.123456_text
+        operator = "present"
+        value = ""
+      },
+      {
+        field = "role"
+        operator = "is"
+        value = "agent"
+      },
+    ]
+  }
+  raw_title = "notification webhook"
+  category_id = zendesk.trigger_category.instance.Notifications
+  _alias = "notification webhook"
+}

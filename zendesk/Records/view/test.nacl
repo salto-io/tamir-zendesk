@@ -1,0 +1,100 @@
+zendesk.view test {
+  active = true
+  default = false
+  execution = {
+    group_order = "desc"
+    sort_order = "desc"
+    columns = [
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "updated"
+        title = "Updated"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "group"
+        title = "Group"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+    ]
+    fields = [
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "updated"
+        title = "Updated"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "group"
+        title = "Group"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+    ]
+  }
+  conditions = {
+    all = [
+      {
+        field = "brand_id"
+        operator = "is"
+        value = zendesk.brand.instance.TomerBrand
+      },
+      {
+        field = "assignee_id"
+        operator = "is"
+        value = "neta.marcus@salto.io"
+      },
+    ]
+  }
+  raw_title = "test"
+  _alias = "test"
+}

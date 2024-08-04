@@ -1,0 +1,64 @@
+zendesk.ticket_form TFToRemove2 {
+  raw_name = "TFToRemove2"
+  raw_display_name = ""
+  end_user_visible = false
+  ticket_field_ids = [
+    zendesk.ticket_field.instance.Statut_status,
+    zendesk.ticket_field.instance.Groupe_group,
+    zendesk.ticket_field.instance.Assign__assignee@_00233u,
+    zendesk.ticket_field.instance.Sujet_subject,
+    zendesk.ticket_field.instance.Description_description,
+    zendesk.ticket_field.instance.ToRemove2_date,
+    zendesk.ticket_field.instance.ToRemove_decimal,
+    zendesk.ticket_field.instance.tagger12_tagger,
+    zendesk.ticket_field.instance.Customer_Priority_tagger@su,
+  ]
+  active = true
+  default = false
+  in_all_brands = false
+  agent_conditions = [
+    {
+      parent_field_id = zendesk.ticket_field.instance.Customer_Priority_tagger@su
+      parent_field_type = "tagger"
+      value = zendesk.ticket_field__custom_field_options.instance.Customer_Priority_tagger_su__high@uumuu
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance.ToRemove2_date
+          is_required = false
+          required_on_statuses = {
+            type = "NO_STATUSES"
+          }
+        },
+      ]
+    },
+    {
+      parent_field_id = zendesk.ticket_field.instance.tagger12_tagger
+      parent_field_type = "tagger"
+      value = zendesk.ticket_field__custom_field_options.instance.tagger12_tagger__v223
+      child_fields = [
+        {
+          id = zendesk.ticket_field.instance.Customer_Priority_tagger@su
+          is_required = false
+          required_on_statuses = {
+            type = "NO_STATUSES"
+          }
+        },
+        {
+          id = zendesk.ticket_field.instance.ToRemove_decimal
+          is_required = false
+          required_on_statuses = {
+            type = "NO_STATUSES"
+          }
+        },
+        {
+          id = zendesk.ticket_field.instance.ToRemove2_date
+          is_required = true
+          required_on_statuses = {
+            type = "ALL_STATUSES"
+          }
+        },
+      ]
+    },
+  ]
+  _alias = "TFToRemove2"
+}

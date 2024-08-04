@@ -1,0 +1,36 @@
+zendesk.trigger Received_from@s {
+  title = "Received from"
+  active = true
+  default = false
+  actions = [
+    {
+      field = zendesk.ticket_field.instance._eshed__Subscription_Expiration_Date_date@hisssu
+      value = [
+        "specific_date",
+        "2024-06-10",
+      ]
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "locale_id"
+        operator = "is"
+        value = zendesk.locale.instance.en_US@b
+      },
+      {
+        field = "role"
+        operator = "is"
+        value = "neta.marcus@salto.io"
+      },
+      {
+        field = "recipient"
+        operator = "is"
+        value = "audittest@salto87.zendesk.com"
+      },
+    ]
+  }
+  raw_title = "Received from"
+  category_id = zendesk.trigger_category.instance.Billing
+  _alias = "Received from"
+}

@@ -1,0 +1,12 @@
+zendesk.brand SRD___Test@sbs {
+  name = "SRD - Test"
+  brand_url = "https://another-srd-brand.zendesk.com"
+  subdomain = "another-srd-brand"
+  has_help_center = true
+  help_center_state = "restricted"
+  active = true
+  default = false
+  is_deleted = false
+  signature_template = "{{agent.signature}}"
+  _alias = "SRD - Test"
+}

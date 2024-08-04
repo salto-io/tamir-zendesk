@@ -1,0 +1,44 @@
+zendesk.automation Neta_test_automation_444@s {
+  title = "Neta test automation 444"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "notification_target"
+      value = [
+        zendesk.target.instance.Default_sandbox_email_target_email_target@sssuu,
+        '''
+{{ticket.ticket_field_option_title_${ zendesk.ticket_field.instance.tagger1_tagger }}}
+test1
+''',
+      ]
+    },
+    {
+      field = zendesk.ticket_field.instance.tagger1_tagger
+      value = zendesk.ticket_field__custom_field_options.instance.tagger1_tagger__v1
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = zendesk.ticket_field.instance.tagger1_tagger
+        operator = "is"
+        value = zendesk.ticket_field__custom_field_options.instance.tagger1_tagger__v2
+      },
+      {
+        field = "assignee_id"
+        operator = "is"
+        value = "neta.marcus@salto.io"
+      },
+    ]
+    any = [
+      {
+        field = zendesk.ticket_field.instance.tagger1_tagger
+        operator = "is"
+        value = zendesk.ticket_field__custom_field_options.instance.tagger1_tagger__v1
+      },
+    ]
+  }
+  raw_title = "Neta test automation 444"
+  _alias = "Neta test automation 444"
+}

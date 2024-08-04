@@ -1,0 +1,18 @@
+zendesk.macro eden_restriction_test@s {
+  title = "eden restriction test"
+  active = true
+  default = false
+  description = "test"
+  actions = [
+    {
+      field = "priority"
+      value = "low"
+    },
+    {
+      field = "brand_id"
+      value = zendesk.brand.instance.Salto
+    },
+  ]
+  raw_title = "eden restriction test"
+  _alias = "eden restriction test"
+}

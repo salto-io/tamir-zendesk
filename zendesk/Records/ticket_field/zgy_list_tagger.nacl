@@ -1,0 +1,22 @@
+zendesk.ticket_field zgy_list_tagger {
+  type = "tagger"
+  raw_title = "zgy_list"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "zgy_list"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  custom_field_options = [
+    zendesk.ticket_field__custom_field_options.instance.zgy_list_tagger__punk,
+    zendesk.ticket_field__custom_field_options.instance.zgy_list_tagger__pop,
+    zendesk.ticket_field__custom_field_options.instance.zgy_list_tagger__indie,
+    zendesk.ticket_field__custom_field_options.instance.zgy_list_tagger__emo,
+    zendesk.ticket_field__custom_field_options.instance.zgy_list_tagger__goth,
+  ]
+  default_custom_field_option = zendesk.ticket_field__custom_field_options.instance.zgy_list_tagger__punk
+  _alias = "zgy_list"
+}

@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options deletemultiselect_multiselect__dfsfsdfds {
+  raw_name = "dfsfsdfds"
+  value = "dfsfsdfds"
+  _parent = [
+    zendesk.ticket_field.instance.deletemultiselect_multiselect,
+  ]
+  _alias = "dfsfsdfds"
+}

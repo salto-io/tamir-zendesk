@@ -1,0 +1,16 @@
+zendesk.routing_attribute_value Test__Test12 {
+  name = "Test12"
+  conditions = {
+    all = [
+      {
+        subject = zendesk.ticket_field.instance.tagger12_tagger
+        operator = "is"
+        value = zendesk.ticket_field__custom_field_options.instance.tagger12_tagger__v222
+      },
+    ]
+  }
+  _parent = [
+    zendesk.routing_attribute.instance.Test,
+  ]
+  _alias = "Test12"
+}

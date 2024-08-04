@@ -1,0 +1,34 @@
+zendesk.trigger TransformationalTrigger {
+  title = "TransformationalTrigger"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "priority"
+      value = "high"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "is"
+        value = "new"
+      },
+      {
+        field = zendesk.ticket_field.instance.Is_Transformational__checkbox@sau
+        operator = "is"
+        value = "true"
+      },
+      {
+        field = "priority"
+        operator = "less_than"
+        value = "high"
+      },
+    ]
+  }
+  description = "Auto prioritize new transformational tickets"
+  raw_title = "TransformationalTrigger"
+  category_id = zendesk.trigger_category.instance.Other
+  _alias = "TransformationalTrigger"
+}

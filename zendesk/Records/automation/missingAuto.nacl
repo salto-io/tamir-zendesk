@@ -1,0 +1,38 @@
+zendesk.automation missingAuto {
+  title = "missingAuto"
+  active = true
+  default = false
+  actions = [
+    {
+      field = zendesk.organization_field.instance.another_drop_down
+      value = zendesk.organization_field__custom_field_options.instance.another_drop_down__option3
+    },
+    {
+      field = "priority"
+      value = "urgent"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "is"
+        value = "new"
+      },
+      {
+        field = "priority"
+        operator = "is"
+        value = "high"
+      },
+    ]
+    any = [
+      {
+        field = "requester_id"
+        operator = "is"
+        value = "la+90@example.org"
+      },
+    ]
+  }
+  raw_title = "missingAuto"
+  _alias = "missingAuto"
+}

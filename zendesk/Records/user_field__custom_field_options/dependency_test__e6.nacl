@@ -1,0 +1,8 @@
+zendesk.user_field__custom_field_options dependency_test__e6 {
+  raw_name = "e6"
+  value = "e6"
+  _parent = [
+    zendesk.user_field.instance.dependency_test,
+  ]
+  _alias = "e6"
+}

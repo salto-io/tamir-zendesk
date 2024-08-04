@@ -1,0 +1,35 @@
+zendesk.macro side_convo@s {
+  title = "side convo"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "side_conversation"
+      value = [
+        "test",
+        "<p>test</p>",
+        "test@test.com",
+        "text/html",
+      ]
+    },
+    {
+      field = "side_conversation_slack"
+      value = [
+        "<p>test</p>",
+        "test",
+        "text/html",
+      ]
+    },
+    {
+      field = "side_conversation_ticket"
+      value = [
+        "test",
+        "<p>test</p>",
+        "SupportAssignable:support_assignable/group/${ zendesk.group.instance.Assistance }",
+        "text/html",
+      ]
+    },
+  ]
+  raw_title = "side convo"
+  _alias = "side convo"
+}

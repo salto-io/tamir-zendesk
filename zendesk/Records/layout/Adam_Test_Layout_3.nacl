@@ -1,0 +1,81 @@
+zendesk.layout Adam_Test_Layout_3@s {
+  state = "draft"
+  type = "ticket"
+  is_default = false
+  title = "Adam Test Layout 3"
+  sections = [
+    {
+      name = "ticket-workspace"
+      columns = [
+        {
+          width = 0.925
+          components = [
+            {
+              type = "MainConversationPane"
+              height = 1
+            },
+          ]
+          isCollapsed = false
+          isSplitterHidden = false
+        },
+        {
+          components = [
+            {
+              type = "AppPane"
+              config = {
+                installation_id = zendesk.app_installation.instance.Hide_Ticket_Fields_support@ssu
+              }
+              height = 1
+            },
+          ]
+          isCollapsed = false
+          isSplitterHidden = false
+          width = 0.672
+        },
+        {
+          width = 1.403
+          components = [
+            {
+              type = "ContextPanel"
+              config = {
+                open = {
+                  type = "SideConversationsPane"
+                }
+                components = [
+                  {
+                    type = "RelatedObjectsPane"
+                  },
+                  {
+                    type = "IntelligencePane"
+                  },
+                  {
+                    type = "SideConversationsPane"
+                  },
+                  {
+                    type = "AppsPane"
+                    height = 1
+                  },
+                  {
+                    type = "CustomerContextPane"
+                    height = 1
+                  },
+                  {
+                    type = "TicketFieldsPane"
+                    height = 1
+                  },
+                  {
+                    type = "KnowledgePane"
+                    height = 1
+                  },
+                ]
+              }
+              height = 1
+            },
+          ]
+          isCollapsed = false
+          isSplitterHidden = false
+        },
+      ]
+    },
+  ]
+}

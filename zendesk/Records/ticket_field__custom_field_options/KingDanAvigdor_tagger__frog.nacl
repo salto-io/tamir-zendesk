@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options KingDanAvigdor_tagger__frog {
+  raw_name = "frog"
+  value = "frog"
+  _parent = [
+    zendesk.ticket_field.instance.KingDanAvigdor_tagger,
+  ]
+  _alias = "frog"
+}

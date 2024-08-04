@@ -1,0 +1,24 @@
+zendesk.ticket_field lookup_lookup {
+  type = "lookup"
+  raw_title = "lookup"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "lookup"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  relationship_target_type = zendesk.custom_object.instance.stagingtest
+  relationship_filter = {
+    all = [
+      {
+        field = "custom_object.${ zendesk.custom_object.instance.stagingtest }.custom_fields.${ zendesk.custom_object_field.instance.stagingtest__dropdown }"
+        operator = "is"
+        value = zendesk.custom_object_field__custom_field_options.instance.stagingtest__dropdown__value1
+      },
+    ]
+  }
+  _alias = "lookup"
+}

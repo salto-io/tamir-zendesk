@@ -1,0 +1,12 @@
+zendesk.organization_field edenmissingtest {
+  type = "dropdown"
+  key = "edenmissingtest"
+  raw_title = "edenMissingTest"
+  raw_description = ""
+  active = true
+  system = false
+  custom_field_options = [
+    zendesk.organization_field__custom_field_options.instance.edenmissingtest__b,
+  ]
+  _alias = "edenMissingTest"
+}

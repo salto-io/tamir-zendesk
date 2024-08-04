@@ -1,0 +1,23 @@
+zendesk.trigger null_user@s {
+  title = "null user"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "assignee_id"
+      value = "__NULL__"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = zendesk.ticket_field.instance.123456_text
+        operator = "present"
+        value = ""
+      },
+    ]
+  }
+  raw_title = "null user"
+  category_id = zendesk.trigger_category.instance.Notifications
+  _alias = "null user"
+}

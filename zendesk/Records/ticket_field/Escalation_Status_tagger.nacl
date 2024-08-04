@@ -1,0 +1,20 @@
+zendesk.ticket_field Escalation_Status_tagger@su {
+  type = "tagger"
+  raw_title = "Escalation Status"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "Escalation Status"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  agent_description = "support engineers should use this field to reflect the current status of an escalation. "
+  custom_field_options = [
+    zendesk.ticket_field__custom_field_options.instance.Escalation_Status_tagger_su__escalated@uumuu,
+    zendesk.ticket_field__custom_field_options.instance.Escalation_Status_tagger_su__investigating@uumuu,
+    zendesk.ticket_field__custom_field_options.instance.Escalation_Status_tagger_su__done@uumuu,
+  ]
+  _alias = "Escalation Status"
+}

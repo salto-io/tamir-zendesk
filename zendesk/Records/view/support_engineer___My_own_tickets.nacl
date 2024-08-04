@@ -1,0 +1,123 @@
+zendesk.view support_engineer___My_own_tickets@ssbsss {
+  active = true
+  default = false
+  execution = {
+    group_by = "status"
+    group_order = "asc"
+    sort_by = "nice_id"
+    sort_order = "desc"
+    group = {
+      id = "status"
+      title = "Status category"
+      filterable = true
+      sortable = true
+      order = "asc"
+    }
+    sort = {
+      id = "ticket_id"
+      title = "ID"
+      filterable = true
+      sortable = true
+      order = "desc"
+    }
+    columns = [
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "type"
+        title = "Type"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "priority"
+        title = "Priority"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "sla_next_breach_at"
+        title = "SLA"
+        filterable = true
+        sortable = true
+      },
+    ]
+    fields = [
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "type"
+        title = "Type"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "priority"
+        title = "Priority"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "sla_next_breach_at"
+        title = "SLA"
+        filterable = true
+        sortable = true
+      },
+    ]
+  }
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "less_than"
+        value = "solved"
+      },
+      {
+        field = "assignee_id"
+        operator = "is"
+        value = "current_user"
+      },
+      {
+        field = "current_tags"
+        operator = "not_includes"
+        value = [
+          zendesk.tag.instance.option2,
+        ]
+      },
+    ]
+  }
+  raw_title = "support engineer - My own tickets"
+  _alias = "support engineer - My own tickets"
+}

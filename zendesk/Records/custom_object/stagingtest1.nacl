@@ -1,0 +1,11 @@
+zendesk.custom_object stagingtest1 {
+  key = "stagingtest1"
+  raw_title = "StagingTest1"
+  raw_title_pluralized = "StagingTests1"
+  raw_description = "staging1"
+  include_in_list_view = true
+  custom_object_fields = [
+    zendesk.custom_object_field.instance.stagingtest1__dropdown,
+  ]
+  _alias = "stagingtest1"
+}

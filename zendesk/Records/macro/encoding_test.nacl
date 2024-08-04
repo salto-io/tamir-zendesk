@@ -1,0 +1,20 @@
+zendesk.macro encoding_test@s {
+  title = "encoding test"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "comment_value_html"
+      value = "<p><br></p><p>this is a unicode test ‍</p>"
+    },
+    {
+      field = "comment_value"
+      value = '''
+
+this is a unicode test ‍
+'''
+    },
+  ]
+  raw_title = "encoding test"
+  _alias = "encoding test"
+}

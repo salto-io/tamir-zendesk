@@ -1,0 +1,8 @@
+zendesk.group Demo {
+  is_public = true
+  name = "Demo"
+  description = "This is my demo"
+  default = false
+  deleted = false
+  _alias = "Demo"
+}

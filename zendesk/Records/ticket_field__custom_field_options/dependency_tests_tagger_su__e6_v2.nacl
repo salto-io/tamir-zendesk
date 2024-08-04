@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options dependency_tests_tagger_su__e6_v2@uumuub {
+  raw_name = "e6-v2"
+  value = "e6-v2"
+  _parent = [
+    zendesk.ticket_field.instance.dependency_tests_tagger@su,
+  ]
+  _alias = "e6-v2"
+}

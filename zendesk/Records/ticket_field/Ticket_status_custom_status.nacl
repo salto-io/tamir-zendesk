@@ -1,0 +1,14 @@
+zendesk.ticket_field Ticket_status_custom_status@suu {
+  type = "custom_status"
+  raw_title = "Ticket status"
+  raw_description = "Request ticket status"
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "Ticket status"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = false
+  _alias = "Ticket status"
+}

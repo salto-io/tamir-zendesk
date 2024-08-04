@@ -1,0 +1,15 @@
+zendesk.ticket_field EdenTest2_textarea {
+  type = "textarea"
+  raw_title = "EdenTest2"
+  raw_description = "my second description check 1"
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "check"
+  visible_in_portal = true
+  editable_in_portal = true
+  required_in_portal = false
+  removable = true
+  agent_description = "my description"
+  _alias = "EdenTest2"
+}

@@ -1,0 +1,18 @@
+zendesk.oauth_client zis_daniel_second_test123 {
+  name = "ZIS Client"
+  identifier = "zis_daniel_second_test123"
+  redirect_uri = [
+    "https://zis.zendesk.com/api/services/zis/connections/oauth/callback",
+  ]
+  global = false
+  _alias = "ZIS Client"
+}
+zendesk.oauth_client zis_daniel_test123123 {
+  name = "ZIS Client"
+  identifier = "zis_daniel_test123123"
+  redirect_uri = [
+    "https://zis.zendesk.com/api/services/zis/connections/oauth/callback",
+  ]
+  global = false
+  _alias = "ZIS Client"
+}

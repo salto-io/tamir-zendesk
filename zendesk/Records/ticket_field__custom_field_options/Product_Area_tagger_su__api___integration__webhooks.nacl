@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options Product_Area_tagger_su__api___integration__webhooks@uumuuuuuuu {
+  raw_name = "API & Integration::Webhooks"
+  value = "api___integration__webhooks"
+  _parent = [
+    zendesk.ticket_field.instance.Product_Area_tagger@su,
+  ]
+  _alias = "API & Integration::Webhooks"
+}

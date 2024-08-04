@@ -1,0 +1,9 @@
+zendesk.macro_attachment Daniel_s_maccro_hiaa__copy1___copy_a__Screenshot_2024_02_04_at_16_49_13_png@tsssjksjkuuubbuuvvv {
+  filename = "Screenshot_2024-02-04_at_16.49.13.png"
+  contentType = "image/png"
+  content = file("zendesk/macro_attachment/Daniel's maccro hiaa (copy1) (copy)a__Screenshot_2024-02-04_at_16.49.13.png")
+  _parent = [
+    zendesk.macro.instance.Daniel_s_maccro_hiaa__copy1___copy_a@tsssjksjk,
+  ]
+  _alias = "Screenshot_2024-02-04_at_16.49.13.png"
+}

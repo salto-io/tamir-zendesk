@@ -1,0 +1,18 @@
+zendesk.ticket_form eden___test@sbs {
+  raw_name = "eden - test"
+  raw_display_name = "bla1"
+  end_user_visible = true
+  ticket_field_ids = [
+    zendesk.ticket_field.instance.Statut_status,
+    zendesk.ticket_field.instance.Groupe_group,
+    zendesk.ticket_field.instance.Assign__assignee@_00233u,
+    zendesk.ticket_field.instance.Ticket_status_custom_status@suu,
+    zendesk.ticket_field.instance.Sujet_subject,
+    zendesk.ticket_field.instance.Description_description,
+    zendesk.ticket_field.instance.dropdown_test_after_deploy_test_tagger@ssssu,
+  ]
+  active = true
+  default = false
+  in_all_brands = true
+  _alias = "eden - test"
+}

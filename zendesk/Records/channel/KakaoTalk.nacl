@@ -1,0 +1,4 @@
+zendesk.channel KakaoTalk {
+  name = "KakaoTalk"
+  _alias = "KakaoTalk"
+}

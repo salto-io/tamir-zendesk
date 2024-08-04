@@ -1,0 +1,22 @@
+zendesk.workspace neta_test1 {
+  title = "neta_test1"
+  description = ""
+  apps = [
+    {
+      id = zendesk.app_installation.instance.Time_Tracking_edit_support@sbu
+      expand = false
+      position = 1
+    },
+  ]
+  activated = true
+  conditions = {
+    all = [
+      {
+        field = "group_id"
+        operator = "is"
+        value = zendesk.group.instance.Assistance
+      },
+    ]
+  }
+  _alias = "neta_test1"
+}

@@ -1,0 +1,18 @@
+zendesk.macro trying_shit_out_idk@s {
+  title = "trying shit out idk"
+  active = true
+  default = false
+  description = "trying stuff!"
+  actions = [
+    {
+      field = "comment_value_html"
+      value = "<p>blip bloop kakakak</p>"
+    },
+  ]
+  attachments = [
+    zendesk.macro_attachment.instance.trying_shit_out_idk__Screenshot_2024_03_10_at_15_16_27_png@sssuuubbuuvvv,
+    zendesk.macro_attachment.instance.trying_shit_out_idk__nacl_png@sssuuv,
+  ]
+  raw_title = "trying shit out idk"
+  _alias = "trying shit out idk"
+}

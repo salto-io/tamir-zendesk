@@ -1,0 +1,14 @@
+zendesk.macro sacsacsac2 {
+  title = "sacsacsac2"
+  active = true
+  default = false
+  description = "sacsacsac2!"
+  actions = [
+    {
+      field = "comment_value_html"
+      value = "<p>sacsacsac2</p>"
+    },
+  ]
+  raw_title = "sacsacsac2"
+  _alias = "sacsacsac2"
+}

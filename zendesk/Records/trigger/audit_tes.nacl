@@ -1,0 +1,28 @@
+zendesk.trigger audit_tes@s {
+  title = "audit tes"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "status"
+      value = "pending"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "is"
+        value = "new"
+      },
+      {
+        field = "brand_id"
+        operator = "is"
+        value = zendesk.brand.instance.anotherBrand___Eden_test1@sbss
+      },
+    ]
+  }
+  raw_title = "audit tes"
+  category_id = zendesk.trigger_category.instance.Other
+  _alias = "audit tes"
+}

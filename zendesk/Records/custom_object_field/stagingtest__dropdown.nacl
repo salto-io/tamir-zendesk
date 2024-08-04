@@ -9,6 +9,7 @@ zendesk.custom_object_field stagingtest__dropdown {
   custom_field_options = [
     zendesk.custom_object_field__custom_field_options.instance.stagingtest__dropdown__value1,
     zendesk.custom_object_field__custom_field_options.instance.stagingtest__dropdown__value2,
+    zendesk.custom_object_field__custom_field_options.instance.stagingtest__dropdown__value3,
   ]
   _parent = [
     zendesk.custom_object.instance.stagingtest,

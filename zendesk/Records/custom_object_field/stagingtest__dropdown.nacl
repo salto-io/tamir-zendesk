@@ -2,7 +2,7 @@ zendesk.custom_object_field stagingtest__dropdown {
   type = "dropdown"
   key = "dropdown"
   raw_title = "dropdownaabbd"
-  raw_description = ""
+  raw_description = "desc"
   position = 3
   active = true
   system = false

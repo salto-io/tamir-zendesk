@@ -1,0 +1,843 @@
+2024-08-04T18:20:15.889Z info cli/main CLI started. Version: version 0.3.61, branch main, hash 781fe2d03, Node exec location: /Users/tamtamir/.nvm/versions/node/v18.16.0/bin/node, Salto exec location: /Users/tamtamir/bin/salto, Current dir: /Users/tamtamir/workspaces/zendesk
+2024-08-04T18:20:15.889Z debug cli/main OS properties - platform: darwin, release: 22.3.0, arch arm64
+2024-08-04T18:20:15.889Z debug cli/main Installation ID: 491e0c87-419b-46d6-a77f-e29d1dae36fb
+2024-08-04T18:20:15.889Z info cli/main running "salto deploy -f"
+2024-08-04T18:20:15.894Z debug cli/command_builder Running command deploy in path . with arguments {
+  force: true,
+  dryRun: false,
+  detailedPlan: false,
+  checkOnly: false,
+  verbose: false
+}
+2024-08-04T18:20:15.899Z debug core/local-workspace/remote_map/location_cache Max location cache pool size: 1
+2024-08-04T18:20:15.904Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: staticFilesCache-config-cache
+2024-08-04T18:20:15.904Z debug core/local-workspace/remote_map/remote_map opening connection to /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache/tmp-dbs/2d556114-16b2-46a5-855b-a56bc95108e8, read-only=false
+2024-08-04T18:20:15.932Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: naclFileSource-salto.config/adapters-elements_index
+2024-08-04T18:20:15.937Z debug core/local-workspace/remote_map/remote_map cleaning tmp db 2d556114-16b2-46a5-855b-a56bc95108e8
+2024-08-04T18:20:15.938Z debug core/local-workspace/remote_map/remote_map caught a rocksdb lock error while cleaning tmp db: IO error: lock hold by current process, acquire time 1722795615 acquiring thread 6210760704: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache/tmp-dbs/2d556114-16b2-46a5-855b-a56bc95108e8/LOCK: No locks available
+2024-08-04T18:20:15.938Z debug core/local-workspace/remote_map/remote_map opening connection to /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, read-only=false
+2024-08-04T18:20:15.942Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: naclFileSource-salto.config/adapters-errors
+2024-08-04T18:20:15.942Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: naclFileSource-salto.config/adapters-merged
+2024-08-04T18:20:15.942Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-metadata
+2024-08-04T18:20:15.942Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: naclFileSource-salto.config/adapters-referenced_index
+2024-08-04T18:20:15.942Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-elements
+2024-08-04T18:20:15.942Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: naclFileSource-salto.config/adapters-searchableNamesIndex
+2024-08-04T18:20:15.942Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-sourceMap
+2024-08-04T18:20:15.943Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: naclFileSource-salto.config/adapters-static_files_index
+2024-08-04T18:20:15.943Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-errors
+2024-08-04T18:20:15.943Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: naclFileSource-salto.config/adapters-metadata
+2024-08-04T18:20:15.943Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-referenced
+2024-08-04T18:20:15.943Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: parsedResultCache-naclFileSource-salto.config/adapters-parsed_nacl_files-staticFiles
+2024-08-04T18:20:15.949Z debug workspace/workspace/nacl_files/nacl_files_source building elements indices for 0 NaCl files
+2024-08-04T18:20:15.949Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files starting
+2024-08-04T18:20:15.949Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files took 0 ms
+2024-08-04T18:20:15.949Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files starting
+2024-08-04T18:20:15.949Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files took 0 ms
+2024-08-04T18:20:15.949Z info workspace/workspace/nacl_files/elements_cache going to merge new elements to the existing elements
+2024-08-04T18:20:15.950Z debug workspace/merger/index merged 0 elements to 0 elements [errors=0]
+2024-08-04T18:20:15.951Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: workspace-salto.config/adapters-validationErrors
+2024-08-04T18:20:15.951Z debug core/local-workspace/workspace Creating environment source for env1 at /Users/tamtamir/workspaces/zendesk
+2024-08-04T18:20:15.953Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: staticFilesCache-envs/env1
+2024-08-04T18:20:15.953Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: staticFilesCache-common
+2024-08-04T18:20:15.955Z debug workspace/workspace/workspace Loading workspace with id: 4fd15e14-8bd9-4652-a705-ac695c240e37
+2024-08-04T18:20:15.956Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: state-env1-elements
+2024-08-04T18:20:15.956Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: state-env1-path_index
+2024-08-04T18:20:15.956Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: state-env1-top_level_path_index
+2024-08-04T18:20:15.956Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: state-env1-service_update_date
+2024-08-04T18:20:15.956Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: state-env1-salto_metadata
+2024-08-04T18:20:15.965Z debug core/local-workspace/state/content_providers/common Calculating hash from hashes ef03ecfc61b18ddba19be6ea9b52bd6b, got 6645f6382ca662f0d4f51c1c155c76e0
+2024-08-04T18:20:15.966Z debug core/local-workspace/state/state found different hash - loading state data (quickAccessHash=6a53b276a0373064c5ca36c47c58c69d stateFilesHash=6645f6382ca662f0d4f51c1c155c76e0)
+2024-08-04T18:20:16.074Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file zendesk/brand_logo/NoHelpCenter__Templates__Campaign__ThailandTemplates__Campaign__ThailandTemplates__Campaign__ThailandTemplates__Campaign__ThailandTemplates__Campaignpdf.pdf_thumb.png to set without content
+2024-08-04T18:20:16.074Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file zendesk/brand_logo/Salto__e2epngg.png to set without content
+2024-08-04T18:20:16.075Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file zendesk/brand_logo/neta_eden_111__nacl.png to set without content
+2024-08-04T18:20:16.107Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file zendesk/macro_attachment/AST L1::Email Templates::Campaign::Thailand Ttogether::Registration__Templates__Campaign__ThailandTemplates__Campaign__ThailandTemplates__Campaign__ThailandTemplat_c08f7274f62bfeba79c8661d39a658d1.pdf to set without content
+2024-08-04T18:20:16.107Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file zendesk/macro_attachment/Daniel's maccro hiaa (copy1) (copy)a__Screenshot_2024-02-04_at_16.05.56.png to set without content
+2024-08-04T18:20:16.107Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file zendesk/macro_attachment/Daniel's maccro hiaa (copy1) (copy)a__Screenshot_2024-02-04_at_16.49.13.png to set without content
+2024-08-04T18:20:16.107Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file zendesk/macro_attachment/Daniel's maccro hiaa (copy1) (copy)a__Screenshot_2024-03-10_at_15.16.27.png to set without content
+2024-08-04T18:20:16.107Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file zendesk/macro_attachment/Daniel's maccro hiaaaa__Screenshot_2024-03-10_at_15.16.27.png to set without content
+2024-08-04T18:20:16.107Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file zendesk/macro_attachment/Daniel's macro 3aaa (copy)222__Screenshot_2024-03-10_at_15.16.27.png to set without content
+2024-08-04T18:20:16.107Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file zendesk/macro_attachment/babababab__nacl.png to set without content
+2024-08-04T18:20:16.107Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file zendesk/macro_attachment/blika_blook__Screenshot_2024-03-10_at_15.16.27.png to set without content
+2024-08-04T18:20:16.108Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file zendesk/macro_attachment/eden test macro copy2__nacl.png to set without content
+2024-08-04T18:20:16.108Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file zendesk/macro_attachment/eden test macro copy3__nacl.png to set without content
+2024-08-04T18:20:16.108Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file zendesk/macro_attachment/sacsacsac__Screenshot_2024-03-10_at_15.16.27.png to set without content
+2024-08-04T18:20:16.108Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file zendesk/macro_attachment/trying shit out idk__Screenshot_2024-03-10_at_15.16.27.png to set without content
+2024-08-04T18:20:16.108Z warn workspace/workspace/state/static_files_sources/override_static_files_source Received file zendesk/macro_attachment/trying shit out idk__nacl.png to set without content
+The last time you fetched the state of the zendesk account was 31 minutes ago.
+2024-08-04T18:20:16.171Z debug cli/outputer The last time you fetched the state of the zendesk account was 31 minutes ago.
+- Loading workspace...
+2024-08-04T18:20:16.172Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: naclFileSource-envs/env1-elements_index
+2024-08-04T18:20:16.172Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: naclFileSource-envs/env1-errors
+2024-08-04T18:20:16.172Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: naclFileSource-envs/env1-merged
+2024-08-04T18:20:16.172Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: parsedResultCache-naclFileSource-envs/env1-parsed_nacl_files-metadata
+2024-08-04T18:20:16.172Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: naclFileSource-envs/env1-referenced_index
+2024-08-04T18:20:16.172Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: parsedResultCache-naclFileSource-envs/env1-parsed_nacl_files-elements
+2024-08-04T18:20:16.172Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: naclFileSource-envs/env1-searchableNamesIndex
+2024-08-04T18:20:16.172Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: parsedResultCache-naclFileSource-envs/env1-parsed_nacl_files-sourceMap
+2024-08-04T18:20:16.172Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: naclFileSource-envs/env1-static_files_index
+2024-08-04T18:20:16.173Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: parsedResultCache-naclFileSource-envs/env1-parsed_nacl_files-errors
+2024-08-04T18:20:16.173Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: naclFileSource-envs/env1-metadata
+2024-08-04T18:20:16.173Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: parsedResultCache-naclFileSource-envs/env1-parsed_nacl_files-referenced
+2024-08-04T18:20:16.173Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: parsedResultCache-naclFileSource-envs/env1-parsed_nacl_files-staticFiles
+2024-08-04T18:20:16.174Z debug workspace/workspace/nacl_files/nacl_files_source building elements indices for 0 NaCl files
+2024-08-04T18:20:16.174Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files starting
+2024-08-04T18:20:16.174Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files took 0 ms
+2024-08-04T18:20:16.174Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files starting
+2024-08-04T18:20:16.174Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files took 0 ms
+2024-08-04T18:20:16.174Z info workspace/workspace/nacl_files/elements_cache going to merge new elements to the existing elements
+2024-08-04T18:20:16.174Z debug workspace/merger/index merged 0 elements to 0 elements [errors=0]
+2024-08-04T18:20:16.175Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: naclFileSource--elements_index
+2024-08-04T18:20:16.175Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: naclFileSource--errors
+2024-08-04T18:20:16.175Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: naclFileSource--merged
+2024-08-04T18:20:16.175Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: parsedResultCache-naclFileSource--parsed_nacl_files-metadata
+2024-08-04T18:20:16.175Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: naclFileSource--referenced_index
+2024-08-04T18:20:16.175Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: parsedResultCache-naclFileSource--parsed_nacl_files-elements
+2024-08-04T18:20:16.175Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: naclFileSource--searchableNamesIndex
+2024-08-04T18:20:16.175Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: parsedResultCache-naclFileSource--parsed_nacl_files-sourceMap
+2024-08-04T18:20:16.175Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: naclFileSource--static_files_index
+2024-08-04T18:20:16.175Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: parsedResultCache-naclFileSource--parsed_nacl_files-errors
+2024-08-04T18:20:16.175Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: naclFileSource--metadata
+2024-08-04T18:20:16.175Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: parsedResultCache-naclFileSource--parsed_nacl_files-referenced
+2024-08-04T18:20:16.175Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: parsedResultCache-naclFileSource--parsed_nacl_files-staticFiles
+2024-08-04T18:20:16.285Z debug workspace/workspace/nacl_files/nacl_files_source building elements indices for 2 NaCl files
+2024-08-04T18:20:16.285Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files starting
+2024-08-04T18:20:16.285Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files took 0 ms
+2024-08-04T18:20:16.285Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files starting
+2024-08-04T18:20:16.285Z trace workspace/workspace/nacl_files/nacl_files_source Updating indexes of modified nacl file: zendesk/Records/custom_object_field/stagingtest__dropdown.nacl
+2024-08-04T18:20:16.288Z trace workspace/workspace/nacl_files/nacl_files_source Finished updating indexes of zendesk/Records/custom_object_field/stagingtest__dropdown.nacl
+2024-08-04T18:20:16.288Z trace workspace/workspace/nacl_files/nacl_files_source Updating indexes of modified nacl file: zendesk/Records/custom_object_field/stagingtest__relationfield.nacl
+2024-08-04T18:20:16.289Z trace workspace/workspace/nacl_files/nacl_files_source Finished updating indexes of zendesk/Records/custom_object_field/stagingtest__relationfield.nacl
+2024-08-04T18:20:16.289Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files took 4 ms
+2024-08-04T18:20:16.289Z info workspace/workspace/nacl_files/elements_cache going to merge new elements to the existing elements
+2024-08-04T18:20:16.289Z debug workspace/merger/index merged 2 elements to 2 elements [errors=0]
+2024-08-04T18:20:16.298Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: multi_env-env1-merged
+2024-08-04T18:20:16.298Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: multi_env-env1-errors
+2024-08-04T18:20:16.298Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: multi_env-multi_env_mergeManagermerge_manager
+2024-08-04T18:20:16.298Z debug workspace/workspace/nacl_files/elements_cache Merging components: env1, COMMON_
+2024-08-04T18:20:16.299Z debug workspace/workspace/nacl_files/elements_cache Setting hash multi_env-multi_env_mergeManagermerge_manager::env1_COMMON__merged_hash to 2d6c631207130aab90155e16f5c47d75
+2024-08-04T18:20:16.299Z debug workspace/merger/index merged 2 elements to 2 elements [errors=0]
+2024-08-04T18:20:16.301Z debug workspace/workspace/nacl_files/elements_cache Setting COMMON_ source hash in namespace multi_env-multi_env_mergeManagermerge_manager to 2d6c631207130aab90155e16f5c47d75
+2024-08-04T18:20:16.301Z debug workspace/workspace/nacl_files/elements_cache Applying merged changes to cache.
+2024-08-04T18:20:16.301Z debug workspace/workspace/nacl_files/elements_cache Change type: modify, on 2 elements. The first 2 ids are: zendesk.custom_object_field.instance.stagingtest__dropdown, zendesk.custom_object_field.instance.stagingtest__relationfield
+2024-08-04T18:20:16.302Z debug workspace/workspace/workspace initializing state for workspace 4fd15e14-8bd9-4652-a705-ac695c240e37/zendesk
+2024-08-04T18:20:16.303Z debug workspace/workspace/workspace Full workspace config: {
+  envs: [
+    { name: 'env1', accountToServiceName: { zendesk: 'zendesk' } },
+    [length]: 1
+  ],
+  currentEnv: 'env1',
+  uid: '4fd15e14-8bd9-4652-a705-ac695c240e37',
+  name: 'zendesk'
+}
+2024-08-04T18:20:16.303Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: workspace-env1-merged
+2024-08-04T18:20:16.303Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: workspace-env1-errors
+2024-08-04T18:20:16.303Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: workspace-env1-validationErrors
+2024-08-04T18:20:16.303Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: workspace-env1-changedBy
+2024-08-04T18:20:16.303Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: workspace-env1-changedAt
+2024-08-04T18:20:16.303Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: workspace-env1-authorInformation
+2024-08-04T18:20:16.303Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: workspace-env1-alias
+2024-08-04T18:20:16.303Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: workspace-env1-referencedStaticFiles
+2024-08-04T18:20:16.303Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: workspace-env1-referenceSources
+2024-08-04T18:20:16.303Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: workspace-env1-referenceTargets
+2024-08-04T18:20:16.304Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: workspace-env1-mapVersions
+2024-08-04T18:20:16.304Z debug core/local-workspace/remote_map/remote_map creating remote map for loc: /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache, namespace: workspaceMergeManagermerge_manager
+2024-08-04T18:20:16.306Z warn workspace/workspace/workspace Local state cache did not match local file system state. Resetting cache.
+2024-08-04T18:20:16.306Z debug workspace/workspace/workspace Cached hash: 6a53b276a0373064c5ca36c47c58c69d, stateHash: 6645f6382ca662f0d4f51c1c155c76e0.
+2024-08-04T18:20:16.307Z debug workspace/workspace/workspace got 0 init hidden element changes
+2024-08-04T18:20:16.307Z debug workspace/workspace/workspace got 0 state removed element changes
+2024-08-04T18:20:16.307Z debug workspace/workspace/nacl_files/elements_cache Merging components: multi_env_element_sourceenv1, state_element_sourceenv1
+2024-08-04T18:20:16.307Z debug workspace/workspace/nacl_files/elements_cache Invalid cache: state_element_sourceenv1
+2024-08-04T18:20:16.307Z debug workspace/workspace/nacl_files/elements_cache Invalid cache merge between multi_env_element_sourceenv1 and state_element_sourceenv1
+2024-08-04T18:20:16.307Z debug workspace/workspace/nacl_files/elements_cache Prechange hash: f6c0f7072b688e32a75b71432725a1cd6a53b276a0373064c5ca36c47c58c69d and update merged hash: f6c0f7072b688e32a75b71432725a1cd6645f6382ca662f0d4f51c1c155c76e0
+2024-08-04T18:20:16.307Z debug workspace/workspace/nacl_files/elements_cache Setting hash workspaceMergeManagermerge_manager::multi_env_element_sourceenv1_state_element_sourceenv1_merged_hash to 2d6c631207130aab90155e16f5c47d756645f6382ca662f0d4f51c1c155c76e0
+2024-08-04T18:20:16.307Z warn workspace/workspace/nacl_files/elements_cache Invalid data detected in local cache workspaceMergeManager. Rebuilding cache.
+2024-08-04T18:20:16.730Z debug workspace/merger/index merged 2806 elements to 1730 elements [errors=0]
+2024-08-04T18:20:16.733Z debug workspace/workspace/nacl_files/elements_cache Setting multi_env_element_sourceenv1 source hash in namespace workspaceMergeManagermerge_manager to 2d6c631207130aab90155e16f5c47d75
+2024-08-04T18:20:16.733Z debug workspace/workspace/nacl_files/elements_cache Setting state_element_sourceenv1 source hash in namespace workspaceMergeManagermerge_manager to 6645f6382ca662f0d4f51c1c155c76e0
+2024-08-04T18:20:16.733Z debug workspace/workspace/nacl_files/elements_cache Applying merged changes to cache.
+2024-08-04T18:20:16.733Z debug workspace/workspace/nacl_files/elements_cache Clearing due to cache invalidation
+2024-08-04T18:20:16.837Z debug workspace/workspace/nacl_files/elements_cache Change type: add, on 1730 elements. The first 100 ids are: zendesk.account_features, zendesk.account_features.instance, zendesk.account_features__account_service_custom_object_limits, zendesk.account_features__admin_center_framework_view_ticket_tags, zendesk.account_features__admin_center_framework_view_triggers, zendesk.account_features__advanced_security, zendesk.account_features__agent_chat_limits, zendesk.account_features__agent_copilot_copy_quick_answer, zendesk.account_features__agent_copilot_high_assist, zendesk.account_features__agent_copilot_intent_in_header, zendesk.account_features__agent_copilot_killswitch, zendesk.account_features__agent_copilot_pinned_summary, zendesk.account_features__agent_copilot_similar_tickets, zendesk.account_features__agent_copilot_suggested_first_reply, zendesk.account_features__agent_copilot_suggested_macros, zendesk.account_features__agent_copilot_ticket_merging_suggestions, zendesk.account_features__agent_workspace_auto_activation_deactivation_override, zendesk.account_features__agent_workspace_compatible, zendesk.account_features__agent_workspace_role_restriction, zendesk.account_features__all_personal_macros_for_admin_ui, zendesk.account_features__all_sunco_messaging_channels, zendesk.account_features__app_market_main_page_link, zendesk.account_features__apps_client_rate_limit, zendesk.account_features__apps_core_apis_instrumentation, zendesk.account_features__apps_expand_collapse, zendesk.account_features__apps_lazy_loading, zendesk.account_features__apps_lotus_faster_rendering, zendesk.account_features__apps_new_ajax_request, zendesk.account_features__apps_new_reorder_page, zendesk.account_features__apps_private, zendesk.account_features__apps_public, zendesk.account_features__apps_react_container, zendesk.account_features__apps_status_button_api_fix, zendesk.account_features__apps_tracking, zendesk.account_features__apps_zaf_loader, zendesk.account_features__apps_zaf_telemetry, zendesk.account_features__apps_zaf_v1_extension, zendesk.account_features__at_mentions, zendesk.account_features__au_data_center, zendesk.account_features__auto_accept_with_settings, zendesk.account_features__auto_translation_enabled, zendesk.account_features__automated_resolution_triggers_capped, zendesk.account_features__automatic_answers, zendesk.account_features__automation_condition_attachment, zendesk.account_features__automation_condition_malware_attachment, zendesk.account_features__billing_advanced_data_protection_sku, zendesk.account_features__billing_deprecate_classic_pricing, zendesk.account_features__billing_enable_bridge_suspension_mvp, zendesk.account_features__billing_improve_in_product_dunning_messages, zendesk.account_features__billing_journal_comparator, zendesk.account_features__billing_maintenance, zendesk.account_features__billing_maintenance_disable_ui, zendesk.account_features__billing_paypal_support, zendesk.account_features__billing_pricebook_consolidation, zendesk.account_features__billing_primary_sync, zendesk.account_features__billing_suite, zendesk.account_features__billing_use_classic_provisioning_service, zendesk.account_features__bime_integration, zendesk.account_features__bulk_assign_agents_to_skill, zendesk.account_features__business_hours, zendesk.account_features__cai_metric, zendesk.account_features__central_admin_non_multiproduct, zendesk.account_features__chat_authenticated_visitor, zendesk.account_features__chat_html_notifications, zendesk.account_features__chat_product_tray, zendesk.account_features__classic_reporting, zendesk.account_features__client_side_logging, zendesk.account_features__cms, zendesk.account_features__co_trigger_definitions, zendesk.account_features__collaboration_enabled, zendesk.account_features__collaborators_settable_in_help_center, zendesk.account_features__comment_email_ccs_allowed, zendesk.account_features__condition_definitions_humanization, zendesk.account_features__conditional_fields_app, zendesk.account_features__configurable_essentials_card, zendesk.account_features__contextual_workspace_show_assignee_condition, zendesk.account_features__contextual_workspaces, zendesk.account_features__cov2_cbp_as_default, zendesk.account_features__cov2_configurable_standard_fields, zendesk.account_features__cov2_end_user_permissions, zendesk.account_features__cov2_field_trigger_conditions, zendesk.account_features__cov2_filter_translation, zendesk.account_features__cov2_list_view_configuration, zendesk.account_features__cov2_lookup_fields_in_guide, zendesk.account_features__cov2_record_domain_events, zendesk.account_features__create_revisions_on_category_changes, zendesk.account_features__crm_integrations, zendesk.account_features__csat_reason_code, zendesk.account_features__cts_create_statuses_and_form, zendesk.account_features__cts_forms_workflow, zendesk.account_features__cts_soft_delete, zendesk.account_features__custom_date_fields_operator_parity, zendesk.account_features__custom_object_nav_enabled, zendesk.account_features__custom_objects_enabled, zendesk.account_features__custom_objects_v2, zendesk.account_features__custom_objects_v2_dynamic_filters, zendesk.account_features__custom_objects_v2_search, zendesk.account_features__custom_status_ticket_field_enabled, zendesk.account_features__custom_statuses, zendesk.account_features__custom_statuses_enabled
+2024-08-04T18:20:16.838Z debug workspace/workspace/index_utils updating changed by index starting
+2024-08-04T18:20:16.838Z info workspace/workspace/index_utils cache is invalid, re-indexing changed by index
+2024-08-04T18:20:16.849Z debug workspace/workspace/index_utils updating changed by index took 10 ms
+2024-08-04T18:20:16.849Z debug workspace/workspace/index_utils updating changed at index starting
+2024-08-04T18:20:16.849Z info workspace/workspace/index_utils cache is invalid, re-indexing changed at index
+2024-08-04T18:20:16.861Z debug workspace/workspace/index_utils updating changed at index took 12 ms
+2024-08-04T18:20:16.861Z debug workspace/workspace/index_utils updating author information index starting
+2024-08-04T18:20:16.861Z info workspace/workspace/index_utils cache is invalid, re-indexing author information index
+2024-08-04T18:20:16.872Z debug workspace/workspace/index_utils updating author information index took 11 ms
+2024-08-04T18:20:16.872Z debug workspace/workspace/index_utils updating alias index starting
+2024-08-04T18:20:16.873Z info workspace/workspace/index_utils cache is invalid, re-indexing alias index
+2024-08-04T18:20:16.878Z debug workspace/workspace/index_utils updating alias index took 6 ms
+2024-08-04T18:20:16.878Z debug workspace/workspace/index_utils updating static files index starting
+2024-08-04T18:20:16.878Z info workspace/workspace/index_utils cache is invalid, re-indexing static files index
+2024-08-04T18:20:16.920Z debug workspace/workspace/index_utils updating static files index took 41 ms
+2024-08-04T18:20:16.920Z debug workspace/workspace/reference_indexes updating references indexes starting
+2024-08-04T18:20:16.920Z info workspace/workspace/reference_indexes cache is invalid, re-indexing references indexes
+2024-08-04T18:20:17.050Z debug workspace/workspace/reference_indexes updating references indexes took 130 ms
+2024-08-04T18:20:17.192Z debug workspace/validator validateElements with 1730 elements starting
+2024-08-04T18:20:17.192Z debug workspace/expressions resolve 1730 elements starting
+2024-08-04T18:20:17.247Z debug workspace/expressions resolve handled a total of 1807 elements
+2024-08-04T18:20:17.247Z debug workspace/expressions resolve 1730 elements took 55 ms
+2024-08-04T18:20:17.328Z debug workspace/validator validateElements with 1730 elements took 136 ms
+✔ Finished loading workspace for environment env1
+2024-08-04T18:20:17.334Z debug workspace/merger/index merged 1 elements to 1 elements [errors=0]
+2024-08-04T18:20:17.334Z debug core/core/adapters/adapters Using the following config for zendesk account: {
+  "fetch": {
+    "include": [
+      {
+        "type": ".*"
+      }
+    ],
+    "exclude": [
+      {
+        "type": "organization"
+      },
+      {
+        "type": "oauth_global_client"
+      }
+    ],
+    "omitInactive": {
+      "default": true
+    }
+  }
+}
+2024-08-04T18:20:17.338Z debug adapter-components/client/rate_limit zendesk client rate limit config: { total: undefined, get: 100, deploy: 100 }
+2024-08-04T18:20:17.360Z debug core/core/plan/plan get plan with 1730 -> 1730 elements starting
+2024-08-04T18:20:17.361Z debug core/core/plan/plan add nodes to graph with for 3460 elements starting
+2024-08-04T18:20:17.605Z debug core/core/plan/plan add nodes to graph with for 3460 elements took 244 ms
+2024-08-04T18:20:17.606Z debug core/core/plan/plan resolve node elements for 1 nodes starting
+2024-08-04T18:20:17.606Z debug core/core/plan/plan Resolving before items starting
+2024-08-04T18:20:17.606Z debug workspace/expressions resolve 1 elements starting
+2024-08-04T18:20:17.607Z debug workspace/expressions resolve handled a total of 29 elements
+2024-08-04T18:20:17.607Z debug workspace/expressions resolve 1 elements took 1 ms
+2024-08-04T18:20:17.607Z debug core/core/plan/plan Resolving before items took 1 ms
+2024-08-04T18:20:17.607Z debug core/core/plan/plan Resolving after items starting
+2024-08-04T18:20:17.607Z debug workspace/expressions resolve 1 elements starting
+2024-08-04T18:20:17.607Z debug workspace/expressions resolve handled a total of 29 elements
+2024-08-04T18:20:17.608Z debug workspace/expressions resolve 1 elements took 1 ms
+2024-08-04T18:20:17.608Z debug core/core/plan/plan Resolving after items took 1 ms
+2024-08-04T18:20:17.608Z debug core/core/plan/plan resolve node elements for 1 nodes took 2 ms
+2024-08-04T18:20:17.608Z debug core/core/plan/dependency/dependency add dependencies to graph starting
+2024-08-04T18:20:17.608Z debug core/core/plan/dependency/reference_dependency addReferencesDependency starting
+2024-08-04T18:20:17.609Z debug core/core/plan/dependency/reference_dependency addReferencesDependency took 1 ms
+2024-08-04T18:20:17.609Z debug core/core/plan/dependency/dependency add dependencies to graph took 1 ms
+2024-08-04T18:20:17.609Z debug core/core/plan/filter filterInvalidChanges for 1 changes with 1 validators starting
+2024-08-04T18:20:17.610Z debug adapter-components/deployment/change_validators/create_change_validator validator checkDeploymentAnnotations starting
+2024-08-04T18:20:17.610Z debug adapter-components/deployment/change_validators/create_change_validator validator incomingUnresolvedReference starting
+2024-08-04T18:20:17.610Z debug adapter-components/deployment/change_validators/create_change_validator validator adapterValidator starting
+2024-08-04T18:20:17.610Z debug adapter-components/deployment/change_validators/create_change_validator validator outgoingUnresolvedReferencesValidator starting
+2024-08-04T18:20:17.610Z debug adapter-components/deployment/change_validators/create_change_validator validator deployTypesNotSupported starting
+2024-08-04T18:20:17.610Z debug adapter-components/deployment/change_validators/create_change_validator validator createCheckDeploymentBasedOnConfig starting
+2024-08-04T18:20:17.610Z debug adapter-components/deployment/change_validators/create_change_validator validator accountSettings starting
+2024-08-04T18:20:17.610Z debug adapter-components/deployment/change_validators/create_change_validator validator emptyCustomFieldOptions starting
+2024-08-04T18:20:17.610Z debug adapter-components/deployment/change_validators/create_change_validator validator emptyVariants starting
+2024-08-04T18:20:17.610Z debug adapter-components/deployment/change_validators/create_change_validator validator parentAnnotationToHaveSingleValue starting
+2024-08-04T18:20:17.611Z debug adapter-components/deployment/change_validators/create_change_validator validator missingFromParent starting
+2024-08-04T18:20:17.612Z debug adapter-components/deployment/change_validators/create_change_validator validator childMissingParentAnnotation starting
+2024-08-04T18:20:17.612Z debug adapter-components/deployment/change_validators/create_change_validator validator removedFromParent starting
+2024-08-04T18:20:17.613Z debug adapter-components/deployment/change_validators/create_change_validator validator duplicateCustomFieldOptionValues starting
+2024-08-04T18:20:17.613Z debug adapter-components/deployment/change_validators/create_change_validator validator noDuplicateLocaleIdInDynamicContentItem starting
+2024-08-04T18:20:17.613Z debug adapter-components/deployment/change_validators/create_change_validator validator onlyOneTicketFormDefault starting
+2024-08-04T18:20:17.613Z debug adapter-components/deployment/change_validators/create_change_validator validator customRoleName starting
+2024-08-04T18:20:17.613Z debug adapter-components/deployment/change_validators/create_change_validator validator orderInstanceContainsAllTheInstances starting
+2024-08-04T18:20:17.613Z debug adapter-components/deployment/change_validators/create_change_validator validator triggerOrderInstanceContainsAllTheInstances starting
+2024-08-04T18:20:17.613Z debug adapter-components/deployment/change_validators/create_change_validator validator brandCreation starting
+2024-08-04T18:20:17.613Z debug adapter-components/deployment/change_validators/create_change_validator validator webhookAuthData starting
+2024-08-04T18:20:17.613Z debug adapter-components/deployment/change_validators/create_change_validator validator targetAuthData starting
+2024-08-04T18:20:17.613Z debug adapter-components/deployment/change_validators/create_change_validator validator phoneNumbers starting
+2024-08-04T18:20:17.613Z debug adapter-components/deployment/change_validators/create_change_validator validator automationAllConditions starting
+2024-08-04T18:20:17.614Z debug adapter-components/deployment/change_validators/create_change_validator validator macroActionsTicketFieldDeactivation starting
+2024-08-04T18:20:17.614Z debug adapter-components/deployment/change_validators/create_change_validator validator customStatusesEnabled starting
+2024-08-04T18:20:17.614Z debug adapter-components/deployment/change_validators/create_change_validator validator customStatusUniqueAgentLabel starting
+2024-08-04T18:20:17.614Z debug adapter-components/deployment/change_validators/create_change_validator validator customStatusCategoryChange starting
+2024-08-04T18:20:17.614Z debug adapter-components/deployment/change_validators/create_change_validator validator customStatusCategory starting
+2024-08-04T18:20:17.614Z debug adapter-components/deployment/change_validators/create_change_validator validator customStatusActiveDefault starting
+2024-08-04T18:20:17.614Z debug adapter-components/deployment/change_validators/create_change_validator validator defaultCustomStatuses starting
+2024-08-04T18:20:17.614Z debug adapter-components/deployment/change_validators/create_change_validator validator customRoleRemoval starting
+2024-08-04T18:20:17.614Z debug adapter-components/deployment/change_validators/create_change_validator validator sideConversations starting
+2024-08-04T18:20:17.614Z debug adapter-components/deployment/change_validators/create_change_validator validator users starting
+2024-08-04T18:20:17.614Z debug adapter-components/deployment/change_validators/create_change_validator validator requiredAppOwnedParameters starting
+2024-08-04T18:20:17.614Z debug adapter-components/deployment/change_validators/create_change_validator validator oneTranslationPerLocale starting
+2024-08-04T18:20:17.614Z debug adapter-components/deployment/change_validators/create_change_validator validator articleRemoval starting
+2024-08-04T18:20:17.614Z debug adapter-components/deployment/change_validators/create_change_validator validator articleLabelNamesRemoval starting
+2024-08-04T18:20:17.614Z debug adapter-components/deployment/change_validators/create_change_validator validator articleAttachmentSize starting
+2024-08-04T18:20:17.614Z debug adapter-components/deployment/change_validators/create_change_validator validator everyoneUserSegmentModification starting
+2024-08-04T18:20:17.614Z debug adapter-components/deployment/change_validators/create_change_validator validator brandFieldForBrandBasedElements starting
+2024-08-04T18:20:17.615Z debug adapter-components/deployment/change_validators/create_change_validator validator translationForDefaultLocale starting
+2024-08-04T18:20:17.615Z debug adapter-components/deployment/change_validators/create_change_validator validator helpCenterActivation starting
+2024-08-04T18:20:17.615Z debug adapter-components/deployment/change_validators/create_change_validator validator helpCenterCreationOrRemoval starting
+2024-08-04T18:20:17.615Z debug adapter-components/deployment/change_validators/create_change_validator validator externalSourceWebhook starting
+2024-08-04T18:20:17.615Z debug adapter-components/deployment/change_validators/create_change_validator validator defaultGroupChange starting
+2024-08-04T18:20:17.615Z debug adapter-components/deployment/change_validators/create_change_validator validator organizationExistence starting
+2024-08-04T18:20:17.615Z debug adapter-components/deployment/change_validators/create_change_validator validator badFormatWebhookAction starting
+2024-08-04T18:20:17.615Z debug adapter-components/deployment/change_validators/create_change_validator validator guideDisabled starting
+2024-08-04T18:20:17.615Z debug adapter-components/deployment/change_validators/create_change_validator validator guideThemeDeleteLive starting
+2024-08-04T18:20:17.615Z debug adapter-components/deployment/change_validators/create_change_validator validator guideThemeUpdateMetadata starting
+2024-08-04T18:20:17.615Z debug adapter-components/deployment/change_validators/create_change_validator validator additionOfTicketStatusForTicketForm starting
+2024-08-04T18:20:17.615Z debug adapter-components/deployment/change_validators/create_change_validator validator defaultDynamicContentItemVariant starting
+2024-08-04T18:20:17.615Z debug adapter-components/deployment/change_validators/create_change_validator validator dynamicContentPlaceholderModification starting
+2024-08-04T18:20:17.615Z debug adapter-components/deployment/change_validators/create_change_validator validator featureActivation starting
+2024-08-04T18:20:17.615Z debug adapter-components/deployment/change_validators/create_change_validator validator deflectionAction starting
+2024-08-04T18:20:17.616Z debug adapter-components/deployment/change_validators/create_change_validator validator standardFields starting
+2024-08-04T18:20:17.616Z debug adapter-components/deployment/change_validators/create_change_validator validator uniqueAutomationConditions starting
+2024-08-04T18:20:17.616Z debug adapter-components/deployment/change_validators/create_change_validator validator defaultAutomationRemoval starting
+2024-08-04T18:20:17.616Z debug adapter-components/deployment/change_validators/create_change_validator validator attachmentWithoutContent starting
+2024-08-04T18:20:17.616Z debug adapter-components/deployment/change_validators/create_change_validator validator duplicateRoutingAttributeValue starting
+2024-08-04T18:20:17.616Z debug adapter-components/deployment/change_validators/create_change_validator validator triggerCategoryRemoval starting
+2024-08-04T18:20:17.616Z debug adapter-components/deployment/change_validators/create_change_validator validator duplicateIdFieldValues starting
+2024-08-04T18:20:17.616Z debug adapter-components/deployment/change_validators/create_change_validator validator duplicateDynamicContentItem starting
+2024-08-04T18:20:17.616Z debug adapter-components/deployment/change_validators/create_change_validator validator notEnabledMissingReferences starting
+2024-08-04T18:20:17.616Z debug adapter-components/deployment/change_validators/create_change_validator validator conditionalTicketFields starting
+2024-08-04T18:20:17.616Z debug adapter-components/deployment/change_validators/create_change_validator validator dynamicContentDeletion starting
+2024-08-04T18:20:17.616Z debug adapter-components/deployment/change_validators/create_change_validator validator inactiveTicketFormInView starting
+2024-08-04T18:20:17.616Z debug adapter-components/deployment/change_validators/create_change_validator validator immutableTypeAndKeyForUserFields starting
+2024-08-04T18:20:17.616Z debug adapter-components/deployment/change_validators/create_change_validator validator localeModification starting
+2024-08-04T18:20:17.616Z debug adapter-components/deployment/change_validators/create_change_validator validator emptyAutomationOrder starting
+2024-08-04T18:20:17.616Z debug adapter-components/deployment/change_validators/create_change_validator validator viewCustomStatusConditions starting
+2024-08-04T18:20:17.616Z debug adapter-components/deployment/change_validators/create_change_validator validator childInOrder starting
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator childrenReferences starting
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator orderChildrenParent starting
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator guideOrderDeletion starting
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator ticketFieldDeactivation starting
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator incomingUnresolvedReference took 7 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator deployTypesNotSupported took 7 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator accountSettings took 7 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator emptyCustomFieldOptions took 7 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator emptyVariants took 7 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator parentAnnotationToHaveSingleValue took 7 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator missingFromParent took 6 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator childMissingParentAnnotation took 5 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator removedFromParent took 5 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator duplicateCustomFieldOptionValues took 4 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator noDuplicateLocaleIdInDynamicContentItem took 4 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator onlyOneTicketFormDefault took 4 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator customRoleName took 4 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator orderInstanceContainsAllTheInstances took 4 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator triggerOrderInstanceContainsAllTheInstances took 4 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator webhookAuthData took 4 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator targetAuthData took 4 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator phoneNumbers took 4 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator customStatusCategoryChange took 3 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator customStatusCategory took 3 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator customStatusActiveDefault took 3 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator defaultCustomStatuses took 3 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator customRoleRemoval took 3 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator sideConversations took 3 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator requiredAppOwnedParameters took 3 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator articleRemoval took 3 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator articleLabelNamesRemoval took 3 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator everyoneUserSegmentModification took 3 ms
+2024-08-04T18:20:17.617Z debug adapter-components/deployment/change_validators/create_change_validator validator brandFieldForBrandBasedElements took 3 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator helpCenterActivation took 2 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator helpCenterCreationOrRemoval took 3 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator externalSourceWebhook took 3 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator badFormatWebhookAction took 3 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator guideDisabled took 3 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator guideThemeDeleteLive took 3 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator guideThemeUpdateMetadata took 3 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator additionOfTicketStatusForTicketForm took 3 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator defaultDynamicContentItemVariant took 3 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator dynamicContentPlaceholderModification took 3 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator featureActivation took 3 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator deflectionAction took 3 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator standardFields took 2 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator defaultAutomationRemoval took 2 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator attachmentWithoutContent took 2 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator triggerCategoryRemoval took 2 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator duplicateDynamicContentItem took 2 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator notEnabledMissingReferences took 2 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator conditionalTicketFields took 2 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator dynamicContentDeletion took 2 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator inactiveTicketFormInView took 2 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator immutableTypeAndKeyForUserFields took 2 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator localeModification took 2 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator emptyAutomationOrder took 2 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator childInOrder took 2 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator childrenReferences took 1 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator orderChildrenParent took 1 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator guideOrderDeletion took 1 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator ticketFieldDeactivation took 1 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator duplicateIdFieldValues took 2 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator defaultGroupChange took 3 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator customStatusesEnabled took 4 ms
+2024-08-04T18:20:17.618Z debug adapter-components/deployment/change_validators/create_change_validator validator viewCustomStatusConditions took 2 ms
+2024-08-04T18:20:17.619Z debug adapter-components/deployment/change_validators/create_change_validator validator macroActionsTicketFieldDeactivation took 5 ms
+2024-08-04T18:20:17.619Z debug adapter-components/deployment/change_validators/create_change_validator validator organizationExistence took 4 ms
+2024-08-04T18:20:17.619Z debug adapter-components/deployment/change_validators/create_change_validator validator createCheckDeploymentBasedOnConfig took 9 ms
+2024-08-04T18:20:17.619Z debug adapter-components/deployment/change_validators/create_change_validator validator oneTranslationPerLocale took 5 ms
+2024-08-04T18:20:17.619Z debug adapter-components/deployment/change_validators/create_change_validator validator brandCreation took 6 ms
+2024-08-04T18:20:17.619Z debug adapter-components/deployment/change_validators/create_change_validator validator outgoingUnresolvedReferencesValidator took 9 ms
+2024-08-04T18:20:17.619Z debug adapter-components/deployment/change_validators/create_change_validator validator users took 5 ms
+2024-08-04T18:20:17.619Z debug adapter-components/deployment/change_validators/create_change_validator validator articleAttachmentSize took 5 ms
+2024-08-04T18:20:17.619Z debug adapter-components/deployment/change_validators/create_change_validator validator automationAllConditions took 6 ms
+2024-08-04T18:20:17.619Z debug adapter-components/deployment/change_validators/create_change_validator validator translationForDefaultLocale took 4 ms
+2024-08-04T18:20:17.619Z debug adapter-components/deployment/change_validators/create_change_validator validator checkDeploymentAnnotations took 9 ms
+2024-08-04T18:20:17.633Z debug adapter-components/deployment/change_validators/create_change_validator validator duplicateRoutingAttributeValue took 17 ms
+2024-08-04T18:20:17.633Z debug adapter-components/deployment/change_validators/create_change_validator validator uniqueAutomationConditions took 17 ms
+2024-08-04T18:20:17.644Z debug adapter-components/deployment/change_validators/create_change_validator validator customStatusUniqueAgentLabel took 30 ms
+2024-08-04T18:20:17.645Z debug adapter-components/deployment/change_validators/create_change_validator validator adapterValidator took 35 ms
+2024-08-04T18:20:17.645Z debug core/core/plan/filter filterInvalidChanges for 1 changes with 1 validators took 36 ms
+2024-08-04T18:20:17.645Z debug core/core/plan/group removeRedundantFieldNodes starting
+2024-08-04T18:20:17.645Z debug core/core/plan/group removeRedundantFieldNodes took 0 ms
+2024-08-04T18:20:17.646Z debug dag/group build grouped graph for 1 nodes starting
+2024-08-04T18:20:17.646Z debug dag/group build grouped graph for 1 nodes took 1 ms
+2024-08-04T18:20:17.646Z debug core/core/plan/plan get plan with 1730 -> 1730 elements took 286 ms
+Salto will perform the following actions:
+2024-08-04T18:20:17.646Z debug cli/outputer Salto will perform the following actions:
+
+| zendesk.custom_object_field.instance.stagingtest__dropdown
+  M raw_description
+
+Resources and actions are indicated with the following symbols:
+  + create
+  M change
+  - remove
+Impacts: 0 types and 1 instance.
+
+2024-08-04T18:20:17.647Z debug cli/outputer 
+| zendesk.custom_object_field.instance.stagingtest__dropdown
+  M raw_description
+
+Resources and actions are indicated with the following symbols:
+  + create
+  M change
+  - remove
+Impacts: 0 types and 1 instance.
+
+
+Starting the deployment plan
+2024-08-04T18:20:17.648Z debug cli/outputer 
+Starting the deployment plan
+2024-08-04T18:20:17.649Z debug workspace/merger/index merged 1 elements to 1 elements [errors=0]
+2024-08-04T18:20:17.649Z debug core/core/adapters/adapters Using the following config for zendesk account: {
+  "fetch": {
+    "include": [
+      {
+        "type": ".*"
+      }
+    ],
+    "exclude": [
+      {
+        "type": "organization"
+      },
+      {
+        "type": "oauth_global_client"
+      }
+    ],
+    "omitInactive": {
+      "default": true
+    }
+  }
+}
+2024-08-04T18:20:17.650Z debug adapter-components/client/rate_limit zendesk client rate limit config: { total: undefined, get: 100, deploy: 100 }
+2024-08-04T18:20:17.653Z debug core/core/deploy/deploy_actions Deploy item zendesk.custom_object_field.instance.stagingtest__dropdown
+2024-08-04T18:20:17.653Z debug core/core/deploy/deploy_actions Deploy change zendesk.custom_object_field.instance.stagingtest__dropdown.raw_description (action=modify)
+    zendesk.custom_object_field.instance.stagingtest__dropdown: Changing
+
+2024-08-04T18:20:17.653Z debug cli/outputer     zendesk.custom_object_field.instance.stagingtest__dropdown: Changing
+
+2024-08-04T18:20:17.653Z debug adapter-utils/decorators deploying account configuration starting
+2024-08-04T18:20:17.654Z debug adapter-components/elements_deprecated/type_elements Modifying field type for custom_object_field.id from number to number with restrictions undefined
+2024-08-04T18:20:17.655Z trace adapter-components/elements_deprecated/type_elements Hiding values for field custom_object_field.created_at
+2024-08-04T18:20:17.655Z trace adapter-components/elements_deprecated/type_elements Hiding values for field custom_object_field.updated_at
+2024-08-04T18:20:17.655Z trace adapter-components/elements_deprecated/type_elements Creating hidden field custom_object_field.created_by_id with type unknown
+2024-08-04T18:20:17.655Z trace adapter-components/elements_deprecated/type_elements Hiding values for field custom_object_field.created_by_id
+2024-08-04T18:20:17.655Z trace adapter-components/elements_deprecated/type_elements Creating hidden field custom_object_field.updated_by_id with type unknown
+2024-08-04T18:20:17.655Z trace adapter-components/elements_deprecated/type_elements Hiding values for field custom_object_field.updated_by_id
+2024-08-04T18:20:17.655Z trace adapter-components/elements_deprecated/type_elements Hiding values for field custom_object_field.id
+2024-08-04T18:20:17.655Z debug adapter-components/fetch/element/type_utils Mark field custom_object_field.id as service_id
+2024-08-04T18:20:17.655Z debug adapter-components/elements_deprecated/type_elements Modifying field type for custom_object_field.id from number to number with restrictions undefined
+2024-08-04T18:20:17.655Z trace adapter-components/elements_deprecated/type_elements Hiding values for field custom_object_field.created_at
+2024-08-04T18:20:17.655Z trace adapter-components/elements_deprecated/type_elements Hiding values for field custom_object_field.updated_at
+2024-08-04T18:20:17.655Z trace adapter-components/elements_deprecated/type_elements Creating hidden field custom_object_field.created_by_id with type unknown
+2024-08-04T18:20:17.655Z trace adapter-components/elements_deprecated/type_elements Hiding values for field custom_object_field.created_by_id
+2024-08-04T18:20:17.655Z trace adapter-components/elements_deprecated/type_elements Creating hidden field custom_object_field.updated_by_id with type unknown
+2024-08-04T18:20:17.655Z trace adapter-components/elements_deprecated/type_elements Hiding values for field custom_object_field.updated_by_id
+2024-08-04T18:20:17.655Z trace adapter-components/elements_deprecated/type_elements Hiding values for field custom_object_field.id
+2024-08-04T18:20:17.655Z debug adapter-components/fetch/element/type_utils Mark field custom_object_field.id as service_id
+2024-08-04T18:20:17.659Z debug adapter-components/references/field_references could not find matching strategy for field _config.field._parent
+2024-08-04T18:20:17.659Z debug adapter-components/references/field_references could not find matching strategy for field zendesk.custom_object_field.field.custom_field_options
+2024-08-04T18:20:17.659Z debug adapter-components/references/field_references could not find matching strategy for field zendesk.custom_object_field.field.custom_field_options
+2024-08-04T18:20:17.659Z debug adapter-components/references/field_references could not find matching strategy for field zendesk.custom_object_field.field.custom_field_options
+2024-08-04T18:20:17.659Z debug adapter-components/references/field_references could not find matching strategy for field _config.field._parent
+2024-08-04T18:20:17.659Z debug adapter-components/references/field_references could not find matching strategy for field zendesk.custom_object_field.field.custom_field_options
+2024-08-04T18:20:17.659Z debug adapter-components/references/field_references could not find matching strategy for field zendesk.custom_object_field.field.custom_field_options
+2024-08-04T18:20:17.659Z debug adapter-components/references/field_references could not find matching strategy for field zendesk.custom_object_field.field.custom_field_options
+2024-08-04T18:20:17.660Z debug adapter-utils/filter (articleBodyFilter):preDeploy starting
+2024-08-04T18:20:17.660Z debug adapter-utils/filter (articleBodyFilter):preDeploy took 0 ms
+2024-08-04T18:20:17.660Z debug adapter-utils/filter (handleTemplateExpressionFilter):preDeploy starting
+2024-08-04T18:20:17.660Z debug adapter-utils/filter (handleTemplateExpressionFilter):preDeploy took 0 ms
+2024-08-04T18:20:17.660Z debug adapter-utils/filter (handleAppInstallationsFilter):preDeploy starting
+2024-08-04T18:20:17.660Z debug adapter-utils/filter (handleAppInstallationsFilter):preDeploy took 0 ms
+2024-08-04T18:20:17.660Z debug adapter-utils/filter (guideParentSection):preDeploy starting
+2024-08-04T18:20:17.660Z debug adapter-utils/filter (guideParentSection):preDeploy took 0 ms
+2024-08-04T18:20:17.660Z debug adapter-utils/filter (dynamicContentReferencesFilter):preDeploy starting
+2024-08-04T18:20:17.660Z debug adapter-utils/filter (dynamicContentReferencesFilter):preDeploy took 0 ms
+2024-08-04T18:20:17.660Z debug adapter-utils/filter (addFieldOptionsFilter):preDeploy starting
+2024-08-04T18:20:17.660Z debug adapter-utils/filter (addFieldOptionsFilter):preDeploy took 0 ms
+2024-08-04T18:20:17.660Z debug adapter-utils/filter (customObjectFieldOptionsFilter):preDeploy starting
+2024-08-04T18:20:17.660Z debug adapter-utils/filter (customObjectFieldOptionsFilter):preDeploy took 0 ms
+2024-08-04T18:20:17.660Z debug adapter-utils/filter (customObjectFieldOptionsFilter):preDeploy starting
+2024-08-04T18:20:17.660Z debug adapter-utils/filter (customObjectFieldOptionsFilter):preDeploy took 0 ms
+2024-08-04T18:20:17.660Z debug adapter-utils/filter (addFieldOptionsFilter):preDeploy starting
+2024-08-04T18:20:17.660Z debug adapter-utils/filter (addFieldOptionsFilter):preDeploy took 0 ms
+2024-08-04T18:20:17.660Z debug adapter-utils/filter (guideSectionCategoryFilter):preDeploy starting
+2024-08-04T18:20:17.660Z debug adapter-utils/filter (guideSectionCategoryFilter):preDeploy took 0 ms
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (articleFilter):preDeploy starting
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (articleFilter):preDeploy took 1 ms
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (macroFilter):preDeploy starting
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (macroFilter):preDeploy took 0 ms
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (customStatus):preDeploy starting
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (customStatus):preDeploy took 0 ms
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (supportAddress):preDeploy starting
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (supportAddress):preDeploy took 0 ms
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (tagsFilter):preDeploy starting
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (tagsFilter):preDeploy took 0 ms
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (organizationsFilter):preDeploy starting
+2024-08-04T18:20:17.661Z debug zendesk-adapter/filters/organizations Resolving organization IDs to organization names was disabled (preDeploy)
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (organizationsFilter):preDeploy took 0 ms
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (usersFilter):preDeploy starting
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (usersFilter):preDeploy took 0 ms
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (organizationFieldFilter):preDeploy starting
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (organizationFieldFilter):preDeploy took 0 ms
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (dynamicContentFilter):preDeploy starting
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (dynamicContentFilter):preDeploy took 0 ms
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (viewOrderFilter):preDeploy starting
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (viewOrderFilter):preDeploy took 0 ms
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (automationOrderFilter):preDeploy starting
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (automationOrderFilter):preDeploy took 0 ms
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (slaPolicyOrderFilter):preDeploy starting
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (slaPolicyOrderFilter):preDeploy took 0 ms
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (workspaceOrderFilter):preDeploy starting
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (workspaceOrderFilter):preDeploy took 0 ms
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (organizationFieldOrderFilter):preDeploy starting
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (organizationFieldOrderFilter):preDeploy took 0 ms
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (userFieldOrderFilter):preDeploy starting
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (userFieldOrderFilter):preDeploy took 0 ms
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (ticketFormOrderFilter):preDeploy starting
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (ticketFormOrderFilter):preDeploy took 0 ms
+2024-08-04T18:20:17.661Z debug adapter-utils/filter (workspaceFilter):preDeploy starting
+2024-08-04T18:20:17.662Z debug adapter-utils/filter (workspaceFilter):preDeploy took 1 ms
+2024-08-04T18:20:17.662Z debug adapter-utils/filter (viewFilter):preDeploy starting
+2024-08-04T18:20:17.662Z debug adapter-utils/filter (viewFilter):preDeploy took 0 ms
+2024-08-04T18:20:17.662Z debug adapter-utils/filter (userFieldFilter):preDeploy starting
+2024-08-04T18:20:17.662Z debug adapter-utils/filter (userFieldFilter):preDeploy took 0 ms
+2024-08-04T18:20:17.662Z debug adapter-utils/filter (ticketFieldFilter):preDeploy starting
+2024-08-04T18:20:17.662Z debug adapter-utils/filter (ticketFieldFilter):preDeploy took 0 ms
+2024-08-04T18:20:17.662Z debug adapter-utils/filter (ticketStatusCustomStatusDeploy):deploy starting
+2024-08-04T18:20:17.662Z debug adapter-utils/filter (ticketStatusCustomStatusDeploy):deploy took 0 ms
+2024-08-04T18:20:17.662Z debug adapter-utils/filter (ticketFieldFilter):deploy starting
+2024-08-04T18:20:17.662Z debug adapter-utils/filter (ticketFieldFilter):deploy took 0 ms
+2024-08-04T18:20:17.662Z debug adapter-utils/filter (userFieldFilter):deploy starting
+2024-08-04T18:20:17.662Z debug adapter-utils/filter (userFieldFilter):deploy took 0 ms
+2024-08-04T18:20:17.662Z debug adapter-utils/filter (viewFilter):deploy starting
+2024-08-04T18:20:17.662Z debug adapter-utils/filter (viewFilter):deploy took 0 ms
+2024-08-04T18:20:17.662Z debug adapter-utils/filter (workspaceFilter):deploy starting
+2024-08-04T18:20:17.662Z debug adapter-utils/filter (workspaceFilter):deploy took 0 ms
+2024-08-04T18:20:17.662Z debug adapter-utils/filter (ticketFormOrderFilter):deploy starting
+2024-08-04T18:20:17.662Z debug adapter-utils/filter (ticketFormOrderFilter):deploy took 0 ms
+2024-08-04T18:20:17.662Z debug adapter-utils/filter (userFieldOrderFilter):deploy starting
+2024-08-04T18:20:17.662Z debug adapter-utils/filter (userFieldOrderFilter):deploy took 0 ms
+2024-08-04T18:20:17.662Z debug adapter-utils/filter (organizationFieldOrderFilter):deploy starting
+2024-08-04T18:20:17.662Z debug adapter-utils/filter (organizationFieldOrderFilter):deploy took 0 ms
+2024-08-04T18:20:17.662Z debug adapter-utils/filter (workspaceOrderFilter):deploy starting
+2024-08-04T18:20:17.662Z debug adapter-utils/filter (workspaceOrderFilter):deploy took 0 ms
+2024-08-04T18:20:17.663Z debug adapter-utils/filter (slaPolicyOrderFilter):deploy starting
+2024-08-04T18:20:17.663Z debug adapter-utils/filter (slaPolicyOrderFilter):deploy took 0 ms
+2024-08-04T18:20:17.663Z debug adapter-utils/filter (automationOrderFilter):deploy starting
+2024-08-04T18:20:17.663Z debug adapter-utils/filter (automationOrderFilter):deploy took 0 ms
+2024-08-04T18:20:17.663Z debug adapter-utils/filter (triggerOrderFilter):deploy starting
+2024-08-04T18:20:17.663Z debug adapter-utils/filter (triggerOrderFilter):deploy took 0 ms
+2024-08-04T18:20:17.663Z debug adapter-utils/filter (viewOrderFilter):deploy starting
+2024-08-04T18:20:17.663Z debug adapter-utils/filter (viewOrderFilter):deploy took 0 ms
+2024-08-04T18:20:17.663Z debug adapter-utils/filter (businessHoursScheduleFilter):deploy starting
+2024-08-04T18:20:17.663Z debug adapter-utils/filter (businessHoursScheduleFilter):deploy took 0 ms
+2024-08-04T18:20:17.663Z debug adapter-utils/filter (accountSettingsFilter):deploy starting
+2024-08-04T18:20:17.663Z debug adapter-utils/filter (accountSettingsFilter):deploy took 0 ms
+2024-08-04T18:20:17.663Z debug adapter-utils/filter (dynamicContentFilter):deploy starting
+2024-08-04T18:20:17.663Z debug adapter-utils/filter (dynamicContentFilter):deploy took 0 ms
+2024-08-04T18:20:17.663Z debug adapter-utils/filter (organizationFieldFilter):deploy starting
+2024-08-04T18:20:17.663Z debug adapter-utils/filter (organizationFieldFilter):deploy took 0 ms
+2024-08-04T18:20:17.663Z debug adapter-utils/filter (tagsFilter):deploy starting
+2024-08-04T18:20:17.663Z debug adapter-utils/filter (tagsFilter):deploy took 0 ms
+2024-08-04T18:20:17.663Z debug adapter-utils/filter (locale):deploy starting
+2024-08-04T18:20:17.663Z debug adapter-utils/filter (locale):deploy took 0 ms
+2024-08-04T18:20:17.663Z debug adapter-utils/filter (customStatus):deploy starting
+2024-08-04T18:20:17.664Z debug adapter-utils/filter (customStatus):deploy took 1 ms
+2024-08-04T18:20:17.664Z debug adapter-utils/filter (macroAttachmentsFilter):deploy starting
+2024-08-04T18:20:17.664Z debug adapter-utils/filter (macroAttachmentsFilter):deploy took 0 ms
+2024-08-04T18:20:17.664Z debug adapter-utils/filter (ticketFormDeploy):deploy starting
+2024-08-04T18:20:17.664Z debug adapter-utils/filter (ticketFormDeploy):deploy took 0 ms
+2024-08-04T18:20:17.664Z debug adapter-utils/filter (customRoleFilter):deploy starting
+2024-08-04T18:20:17.664Z debug adapter-utils/filter (customRoleFilter):deploy took 0 ms
+2024-08-04T18:20:17.664Z debug adapter-utils/filter (brandLogoFilter):deploy starting
+2024-08-04T18:20:17.664Z debug adapter-utils/filter (brandLogoFilter):deploy took 0 ms
+2024-08-04T18:20:17.664Z debug adapter-utils/filter (removeBrandLogoFilter):deploy starting
+2024-08-04T18:20:17.664Z debug adapter-utils/filter (removeBrandLogoFilter):deploy took 0 ms
+2024-08-04T18:20:17.664Z debug adapter-utils/filter (categoryOrderFilter):deploy starting
+2024-08-04T18:20:17.664Z debug adapter-utils/filter (categoryOrderFilter):deploy took 0 ms
+2024-08-04T18:20:17.664Z debug adapter-utils/filter (sectionOrderFilter):deploy starting
+2024-08-04T18:20:17.664Z debug adapter-utils/filter (sectionOrderFilter):deploy took 0 ms
+2024-08-04T18:20:17.664Z debug adapter-utils/filter (articleOrderFilter):deploy starting
+2024-08-04T18:20:17.664Z debug adapter-utils/filter (articleOrderFilter):deploy took 0 ms
+2024-08-04T18:20:17.664Z debug adapter-utils/filter (articleFilter):deploy starting
+2024-08-04T18:20:17.664Z debug adapter-utils/filter (articleFilter):deploy took 0 ms
+2024-08-04T18:20:17.664Z debug adapter-utils/filter (guideSectionCategoryFilter):deploy starting
+2024-08-04T18:20:17.665Z debug adapter-utils/filter (guideSectionCategoryFilter):deploy took 0 ms
+2024-08-04T18:20:17.665Z debug adapter-utils/filter (guideTranslationFilter):deploy starting
+2024-08-04T18:20:17.665Z debug zendesk-adapter/filters/guide_translation there are no translation instances, not running guideTranslationFilter
+2024-08-04T18:20:17.665Z debug adapter-utils/filter (guideTranslationFilter):deploy took 0 ms
+2024-08-04T18:20:17.665Z debug adapter-utils/filter (guideDefaultLanguage):deploy starting
+2024-08-04T18:20:17.665Z debug adapter-utils/filter (guideDefaultLanguage):deploy took 0 ms
+2024-08-04T18:20:17.665Z debug adapter-utils/filter (customObjectFieldsOrderFilter):deploy starting
+2024-08-04T18:20:17.665Z debug adapter-utils/filter (customObjectFieldsOrderFilter):deploy took 0 ms
+2024-08-04T18:20:17.665Z debug adapter-utils/filter (customObjectFieldOptionsFilter):deploy starting
+2024-08-04T18:20:17.665Z debug adapter-components/deployment/deployment_deprecated Starting deploying instance zendesk.custom_object_field.instance.stagingtest__dropdown with action 'modify'
+2024-08-04T18:20:17.666Z trace adapter-components/deployment/deployment_deprecated deploying instance zendesk.custom_object_field.instance.stagingtest__dropdown with params { method: 'put',
+  url: '/api/v2/custom_objects/stagingtest/fields/22078729434899',
+  queryParams: undefined }
+2024-08-04T18:20:17.666Z debug adapter-components/client/rate_limit zendesk:client.put(/api/v2/custom_objects/stagingtest/fields/22078729434899) enqueued
+2024-08-04T18:20:17.674Z debug adapter-components/client/decorators zendesk:client.put(/api/v2/custom_objects/stagingtest/fields/22078729434899) starting
+2024-08-04T18:20:18.851Z debug adapter-components/client/http_client Received response for PUT on /api/v2/custom_objects/stagingtest/fields/22078729434899 ({"url":"/api/v2/custom_objects/stagingtest/fields/22078729434899"}) with status 200
+2024-08-04T18:20:18.852Z trace adapter-components/client/http_client Full HTTP response for PUT on /api/v2/custom_objects/stagingtest/fields/22078729434899 (size 1342): {"url":"/api/v2/custom_objects/stagingtest/fields/22078729434899","method":"PUT","status":200,"response":{"custom_object_field":{"url":"https://d3v-salto2.zendesk.com/api/v2/custom_objects/stagingtest/fields/22078729434899.json","id":22078729434899,"type":"dropdown","key":"dropdown","title":"dropdownaabbd","description":"de","raw_title":"dropdownaabbd","raw_description":"de","position":3,"active":true,"system":false,"regexp_for_validation":null,"created_at":"2023-10-22T08:43:59Z","updated_at":"2024-08-04T17:58:41Z","custom_field_options":[{"id":22078733696403,"name":"value1","raw_name":"value1","value":"value1"},{"id":22078733696531,"name":"value2","raw_name":"value2","value":"value2"},{"id":32016155837459,"name":"value3","raw_name":"value3","value":"value3"}]}},"headers":{"x-rate-limit":"2500","x-rate-limit-remaining":"2498"},"data":{"custom_object_field":{"id":22078729434899,"created_at":"2023-10-22T08:43:59Z","updated_at":"2024-08-04T17:48:43Z","type":"dropdown","key":"dropdown","raw_title":"dropdownaabbd","raw_description":"de","position":3,"active":true,"system":false,"custom_field_options":[{"id":22078733696403,"name":"value1","raw_name":"value1","value":"value1"},{"id":22078733696531,"name":"value2","raw_name":"value2","value":"value2"},{"id":32016155837459,"name":"value3","raw_name":"value3","value":"value3"}]}}}
+2024-08-04T18:20:18.852Z debug adapter-components/client/decorators zendesk:client.put(/api/v2/custom_objects/stagingtest/fields/22078729434899) took 1178 ms
+2024-08-04T18:20:18.856Z debug adapter-utils/filter (customObjectFieldOptionsFilter):deploy took 1191 ms
+2024-08-04T18:20:18.856Z debug adapter-utils/filter (appInstallationsFilter):deploy starting
+2024-08-04T18:20:18.856Z debug adapter-utils/filter (appInstallationsFilter):deploy took 0 ms
+2024-08-04T18:20:18.856Z debug adapter-utils/filter (slaPolicyFilter):deploy starting
+2024-08-04T18:20:18.857Z debug adapter-utils/filter (slaPolicyFilter):deploy took 1 ms
+2024-08-04T18:20:18.857Z debug adapter-utils/filter (routingAttributeFilter):deploy starting
+2024-08-04T18:20:18.857Z debug adapter-utils/filter (routingAttributeFilter):deploy took 0 ms
+2024-08-04T18:20:18.857Z debug adapter-utils/filter (routingAttributeValueFilter):deploy starting
+2024-08-04T18:20:18.857Z debug adapter-utils/filter (routingAttributeValueFilter):deploy took 0 ms
+2024-08-04T18:20:18.857Z debug adapter-utils/filter (webhookFilter):deploy starting
+2024-08-04T18:20:18.858Z debug adapter-utils/filter (webhookFilter):deploy took 1 ms
+2024-08-04T18:20:18.858Z debug adapter-utils/filter (targetFilter):deploy starting
+2024-08-04T18:20:18.858Z debug adapter-utils/filter (targetFilter):deploy took 0 ms
+2024-08-04T18:20:18.858Z debug adapter-utils/filter (guideParentSection):deploy starting
+2024-08-04T18:20:18.858Z debug adapter-utils/filter (guideParentSection):deploy took 0 ms
+2024-08-04T18:20:18.858Z debug adapter-utils/filter (deployBrandedGuideTypesFilter):deploy starting
+2024-08-04T18:20:18.859Z debug adapter-utils/filter (deployBrandedGuideTypesFilter):deploy took 1 ms
+2024-08-04T18:20:18.859Z debug adapter-utils/filter (guideThemesFilter):deploy starting
+2024-08-04T18:20:18.859Z debug adapter-utils/filter (guideThemesFilter):deploy took 0 ms
+2024-08-04T18:20:18.859Z debug adapter-utils/filter (guideThemesSettingsFilter):deploy starting
+2024-08-04T18:20:18.859Z debug adapter-utils/filter (guideThemesSettingsFilter):deploy took 0 ms
+2024-08-04T18:20:18.859Z debug adapter-utils/filter (defaultDeployFilter):deploy starting
+2024-08-04T18:20:18.860Z debug adapter-utils/filter (defaultDeployFilter):deploy took 0 ms
+2024-08-04T18:20:18.860Z debug adapter-utils/filter (ticketFieldFilter):onDeploy starting
+2024-08-04T18:20:18.860Z debug adapter-utils/filter (ticketFieldFilter):onDeploy took 0 ms
+2024-08-04T18:20:18.860Z debug adapter-utils/filter (userFieldFilter):onDeploy starting
+2024-08-04T18:20:18.860Z debug adapter-utils/filter (userFieldFilter):onDeploy took 0 ms
+2024-08-04T18:20:18.860Z debug adapter-utils/filter (viewFilter):onDeploy starting
+2024-08-04T18:20:18.860Z debug adapter-utils/filter (viewFilter):onDeploy took 0 ms
+2024-08-04T18:20:18.860Z debug adapter-utils/filter (workspaceFilter):onDeploy starting
+2024-08-04T18:20:18.861Z debug adapter-utils/filter (workspaceFilter):onDeploy took 1 ms
+2024-08-04T18:20:18.861Z debug adapter-utils/filter (ticketFormOrderFilter):onDeploy starting
+2024-08-04T18:20:18.861Z debug adapter-utils/filter (ticketFormOrderFilter):onDeploy took 0 ms
+2024-08-04T18:20:18.861Z debug adapter-utils/filter (userFieldOrderFilter):onDeploy starting
+2024-08-04T18:20:18.861Z debug adapter-utils/filter (userFieldOrderFilter):onDeploy took 0 ms
+2024-08-04T18:20:18.861Z debug adapter-utils/filter (organizationFieldOrderFilter):onDeploy starting
+2024-08-04T18:20:18.861Z debug adapter-utils/filter (organizationFieldOrderFilter):onDeploy took 0 ms
+2024-08-04T18:20:18.861Z debug adapter-utils/filter (workspaceOrderFilter):onDeploy starting
+2024-08-04T18:20:18.861Z debug adapter-utils/filter (workspaceOrderFilter):onDeploy took 0 ms
+2024-08-04T18:20:18.861Z debug adapter-utils/filter (slaPolicyOrderFilter):onDeploy starting
+2024-08-04T18:20:18.861Z debug adapter-utils/filter (slaPolicyOrderFilter):onDeploy took 0 ms
+2024-08-04T18:20:18.861Z debug adapter-utils/filter (automationOrderFilter):onDeploy starting
+2024-08-04T18:20:18.862Z debug adapter-utils/filter (automationOrderFilter):onDeploy took 1 ms
+2024-08-04T18:20:18.862Z debug adapter-utils/filter (viewOrderFilter):onDeploy starting
+2024-08-04T18:20:18.862Z debug adapter-utils/filter (viewOrderFilter):onDeploy took 0 ms
+2024-08-04T18:20:18.862Z debug adapter-utils/filter (dynamicContentFilter):onDeploy starting
+2024-08-04T18:20:18.862Z debug adapter-utils/filter (dynamicContentFilter):onDeploy took 0 ms
+2024-08-04T18:20:18.862Z debug adapter-utils/filter (organizationFieldFilter):onDeploy starting
+2024-08-04T18:20:18.862Z debug adapter-utils/filter (organizationFieldFilter):onDeploy took 0 ms
+2024-08-04T18:20:18.862Z debug adapter-utils/filter (usersFilter):onDeploy starting
+2024-08-04T18:20:18.862Z debug adapter-utils/filter (usersFilter):onDeploy took 0 ms
+2024-08-04T18:20:18.862Z debug adapter-utils/filter (organizationsFilter):onDeploy starting
+2024-08-04T18:20:18.862Z debug zendesk-adapter/filters/organizations Resolving organization IDs to organization names was disabled (onDeploy)
+2024-08-04T18:20:18.863Z debug adapter-utils/filter (organizationsFilter):onDeploy took 1 ms
+2024-08-04T18:20:18.863Z debug adapter-utils/filter (tagsFilter):onDeploy starting
+2024-08-04T18:20:18.863Z debug adapter-utils/filter (tagsFilter):onDeploy took 0 ms
+2024-08-04T18:20:18.863Z debug adapter-utils/filter (supportAddress):onDeploy starting
+2024-08-04T18:20:18.863Z debug adapter-utils/filter (supportAddress):onDeploy took 0 ms
+2024-08-04T18:20:18.863Z debug adapter-utils/filter (macroFilter):onDeploy starting
+2024-08-04T18:20:18.863Z debug adapter-utils/filter (macroFilter):onDeploy took 0 ms
+2024-08-04T18:20:18.863Z debug adapter-utils/filter (ticketFormDeploy):onDeploy starting
+2024-08-04T18:20:18.863Z debug adapter-utils/filter (ticketFormDeploy):onDeploy took 0 ms
+2024-08-04T18:20:18.863Z debug adapter-utils/filter (articleFilter):onDeploy starting
+2024-08-04T18:20:18.864Z debug adapter-utils/filter (articleFilter):onDeploy took 1 ms
+2024-08-04T18:20:18.864Z debug adapter-utils/filter (guideSectionCategoryFilter):onDeploy starting
+2024-08-04T18:20:18.864Z debug adapter-utils/filter (guideSectionCategoryFilter):onDeploy took 0 ms
+2024-08-04T18:20:18.864Z debug adapter-utils/filter (addFieldOptionsFilter):onDeploy starting
+2024-08-04T18:20:18.864Z debug adapter-utils/filter (addFieldOptionsFilter):onDeploy took 0 ms
+2024-08-04T18:20:18.864Z debug adapter-utils/filter (customObjectFieldOptionsFilter):onDeploy starting
+2024-08-04T18:20:18.864Z debug adapter-utils/filter (customObjectFieldOptionsFilter):onDeploy took 0 ms
+2024-08-04T18:20:18.864Z debug adapter-utils/filter (customObjectFieldOptionsFilter):onDeploy starting
+2024-08-04T18:20:18.864Z debug adapter-utils/filter (customObjectFieldOptionsFilter):onDeploy took 0 ms
+2024-08-04T18:20:18.864Z debug adapter-utils/filter (addFieldOptionsFilter):onDeploy starting
+2024-08-04T18:20:18.864Z debug adapter-utils/filter (addFieldOptionsFilter):onDeploy took 0 ms
+2024-08-04T18:20:18.864Z debug adapter-utils/filter (dynamicContentReferencesFilter):onDeploy starting
+2024-08-04T18:20:18.865Z debug adapter-utils/filter (dynamicContentReferencesFilter):onDeploy took 1 ms
+2024-08-04T18:20:18.865Z debug adapter-utils/filter (guideParentSection):onDeploy starting
+2024-08-04T18:20:18.865Z debug adapter-utils/filter (guideParentSection):onDeploy took 0 ms
+2024-08-04T18:20:18.865Z debug adapter-utils/filter (serviceUrlFilter):onDeploy starting
+2024-08-04T18:20:18.865Z debug adapter-utils/filter (serviceUrlFilter):onDeploy took 0 ms
+2024-08-04T18:20:18.865Z debug adapter-utils/filter (handleAppInstallationsFilter):onDeploy starting
+2024-08-04T18:20:18.865Z debug adapter-utils/filter (handleAppInstallationsFilter):onDeploy took 0 ms
+2024-08-04T18:20:18.866Z debug adapter-utils/filter (handleTemplateExpressionFilter):onDeploy starting
+2024-08-04T18:20:18.866Z debug adapter-utils/filter (handleTemplateExpressionFilter):onDeploy took 0 ms
+2024-08-04T18:20:18.866Z debug adapter-utils/filter (articleBodyFilter):onDeploy starting
+2024-08-04T18:20:18.866Z debug adapter-utils/filter (articleBodyFilter):onDeploy took 0 ms
+2024-08-04T18:20:18.867Z debug adapter-components/references/field_references could not find matching strategy for field _config.field._parent
+2024-08-04T18:20:18.868Z debug adapter-components/references/field_references could not find matching strategy for field zendesk.custom_object_field.field.custom_field_options
+2024-08-04T18:20:18.868Z debug adapter-components/references/field_references could not find matching strategy for field zendesk.custom_object_field.field.custom_field_options
+2024-08-04T18:20:18.868Z debug adapter-components/references/field_references could not find matching strategy for field zendesk.custom_object_field.field.custom_field_options
+2024-08-04T18:20:18.868Z debug adapter-utils/decorators deploying account configuration took 1215 ms
+2024-08-04T18:20:18.869Z debug adapter-utils/list_comparison applyListChanges - zendesk.custom_object_field.instance.stagingtest__dropdown starting
+2024-08-04T18:20:18.870Z debug adapter-utils/list_comparison applyListChanges - zendesk.custom_object_field.instance.stagingtest__dropdown took 1 ms
+2024-08-04T18:20:18.870Z debug core/api postDeployAction starting
+2024-08-04T18:20:18.871Z debug workspace/workspace/state/in_mem updateStateElements starting
+2024-08-04T18:20:18.871Z debug adapter-utils/list_comparison applyListChanges - zendesk.custom_object_field.instance.stagingtest__dropdown starting
+2024-08-04T18:20:18.871Z debug adapter-utils/list_comparison applyListChanges - zendesk.custom_object_field.instance.stagingtest__dropdown took 0 ms
+2024-08-04T18:20:18.873Z debug workspace/workspace/state/in_mem updateStateElements took 2 ms
+2024-08-04T18:20:18.873Z debug core/api postDeployAction took 3 ms
+    zendesk.custom_object_field.instance.stagingtest__dropdown: Change completed after 2s
+
+2024-08-04T18:20:18.873Z debug cli/outputer     zendesk.custom_object_field.instance.stagingtest__dropdown: Change completed after 2s
+
+2024-08-04T18:20:18.882Z debug core/core/plan/plan get plan with 1730 -> 1 elements starting
+2024-08-04T18:20:18.882Z debug core/core/plan/plan add nodes to graph with for 1731 elements starting
+2024-08-04T18:20:18.892Z debug core/core/plan/plan add nodes to graph with for 1731 elements took 10 ms
+2024-08-04T18:20:18.892Z debug core/core/plan/plan resolve node elements for 1 nodes starting
+2024-08-04T18:20:18.892Z debug core/core/plan/plan Resolving before items starting
+2024-08-04T18:20:18.892Z debug workspace/expressions resolve 1 elements starting
+2024-08-04T18:20:18.893Z debug workspace/expressions resolve handled a total of 29 elements
+2024-08-04T18:20:18.893Z debug workspace/expressions resolve 1 elements took 1 ms
+2024-08-04T18:20:18.893Z debug core/core/plan/plan Resolving before items took 1 ms
+2024-08-04T18:20:18.893Z debug core/core/plan/plan Resolving after items starting
+2024-08-04T18:20:18.893Z debug workspace/expressions resolve 1 elements starting
+2024-08-04T18:20:18.893Z debug workspace/expressions resolve handled a total of 14 elements
+2024-08-04T18:20:18.893Z debug workspace/expressions resolve 1 elements took 0 ms
+2024-08-04T18:20:18.893Z debug core/core/plan/plan Resolving after items took 0 ms
+2024-08-04T18:20:18.893Z debug core/core/plan/plan resolve node elements for 1 nodes took 1 ms
+2024-08-04T18:20:18.893Z debug core/core/plan/dependency/dependency add dependencies to graph starting
+2024-08-04T18:20:18.893Z debug core/core/plan/dependency/dependency add dependencies to graph took 0 ms
+2024-08-04T18:20:18.893Z debug core/core/plan/filter filterInvalidChanges for 1 changes with 0 validators starting
+2024-08-04T18:20:18.893Z debug core/core/plan/filter filterInvalidChanges for 1 changes with 0 validators took 0 ms
+2024-08-04T18:20:18.893Z debug core/core/plan/group removeRedundantFieldNodes starting
+2024-08-04T18:20:18.894Z debug core/core/plan/group removeRedundantFieldNodes took 0 ms
+2024-08-04T18:20:18.894Z debug dag/group build grouped graph for 1 nodes starting
+2024-08-04T18:20:18.894Z debug dag/group build grouped graph for 1 nodes took 0 ms
+2024-08-04T18:20:18.894Z debug core/core/plan/plan get plan with 1730 -> 1 elements took 12 ms
+
+Deployment succeeded - 1 applied change(s).
+2024-08-04T18:20:18.894Z debug cli/outputer 
+Deployment succeeded - 1 applied change(s).
+2024-08-04T18:20:18.894Z debug cli/commands/deploy 0 errors occurred:
+
+2024-08-04T18:20:18.905Z info cli/workspace/workspace going to update workspace with 3 changes
+2024-08-04T18:20:18.905Z debug cli/workspace/workspace | zendesk.custom_object_field.instance.stagingtest__dropdown
+2024-08-04T18:20:18.905Z debug cli/workspace/workspace   | custom_field_options
+2024-08-04T18:20:18.905Z debug cli/workspace/workspace     M 0
+2024-08-04T18:20:18.905Z debug cli/workspace/workspace     M 1
+2024-08-04T18:20:18.905Z debug cli/workspace/workspace     M 2
+2024-08-04T18:20:18.907Z debug workspace/workspace/nacl_files/nacl_files_source Nacl source envs/env1 getting source maps for 0 nacl files
+2024-08-04T18:20:18.908Z debug workspace/workspace/nacl_files/nacl_files_source Nacl source envs/env1 going to update 0 nacl files with 0 changes
+2024-08-04T18:20:18.908Z debug workspace/workspace/nacl_files/nacl_files_source Nacl source  getting source maps for 1 nacl files
+2024-08-04T18:20:18.909Z debug workspace/workspace/nacl_files/nacl_files_source Nacl source  going to update 1 nacl files with 3 changes
+2024-08-04T18:20:18.914Z trace workspace/workspace/nacl_files/nacl_files_source Nacl source  starting to update file zendesk/Records/custom_object_field/stagingtest__dropdown.nacl with 3 changes
+2024-08-04T18:20:18.915Z trace workspace/workspace/nacl_files/nacl_files_source Nacl source  finished updating file zendesk/Records/custom_object_field/stagingtest__dropdown.nacl with 3 changes
+2024-08-04T18:20:18.915Z debug workspace/workspace/nacl_files/nacl_files_source going to update 1 NaCl files
+2024-08-04T18:20:18.915Z debug workspace/workspace/nacl_files/nacl_files_source building elements indices for 1 NaCl files
+2024-08-04T18:20:18.915Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files starting
+2024-08-04T18:20:18.915Z debug workspace/workspace/nacl_files/nacl_files_source handle deletions of nacl files took 0 ms
+2024-08-04T18:20:18.915Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files starting
+2024-08-04T18:20:18.916Z trace workspace/workspace/nacl_files/nacl_files_source Updating indexes of modified nacl file: zendesk/Records/custom_object_field/stagingtest__dropdown.nacl
+2024-08-04T18:20:18.916Z trace workspace/workspace/nacl_files/nacl_files_source Finished updating indexes of zendesk/Records/custom_object_field/stagingtest__dropdown.nacl
+2024-08-04T18:20:18.916Z debug workspace/workspace/nacl_files/nacl_files_source handle additions/modifications of nacl files took 1 ms
+2024-08-04T18:20:18.916Z info workspace/workspace/nacl_files/elements_cache going to merge new elements to the existing elements
+2024-08-04T18:20:18.916Z debug workspace/merger/index merged 1 elements to 1 elements [errors=0]
+2024-08-04T18:20:18.923Z debug workspace/workspace/nacl_files/elements_cache Merging components: env1, COMMON_
+2024-08-04T18:20:18.923Z debug workspace/workspace/nacl_files/elements_cache Setting hash multi_env-multi_env_mergeManagermerge_manager::env1_COMMON__merged_hash to b6d84378cefd96b59aa868e41d96bb72
+2024-08-04T18:20:18.923Z debug workspace/merger/index merged 1 elements to 1 elements [errors=0]
+2024-08-04T18:20:18.924Z debug workspace/workspace/nacl_files/elements_cache Setting COMMON_ source hash in namespace multi_env-multi_env_mergeManagermerge_manager to b6d84378cefd96b59aa868e41d96bb72
+2024-08-04T18:20:18.924Z debug workspace/workspace/nacl_files/elements_cache Applying merged changes to cache.
+2024-08-04T18:20:18.924Z debug workspace/workspace/nacl_files/elements_cache Change type: modify, on 1 elements. The first 1 ids are: zendesk.custom_object_field.instance.stagingtest__dropdown
+2024-08-04T18:20:19.140Z debug core/local-workspace/state/state finished dumping state text [#elements=1730]
+2024-08-04T18:20:19.147Z debug core/local-workspace/state/content_providers/common Calculating hash from hashes 54552cc20f3a2211a3c32f64901bd0d5, got 2df1f7963e022287b54da2c80699fb70
+2024-08-04T18:20:19.147Z debug adapter-utils/list_comparison applyListChanges - zendesk.custom_object_field.instance.stagingtest__dropdown starting
+2024-08-04T18:20:19.148Z debug adapter-utils/list_comparison applyListChanges - zendesk.custom_object_field.instance.stagingtest__dropdown took 1 ms
+2024-08-04T18:20:19.148Z debug workspace/workspace/workspace got 0 init hidden element changes
+2024-08-04T18:20:19.148Z debug workspace/workspace/workspace got 0 state removed element changes
+2024-08-04T18:20:19.148Z debug workspace/workspace/nacl_files/elements_cache Merging components: multi_env_element_sourceenv1, state_element_sourceenv1
+2024-08-04T18:20:19.149Z debug workspace/workspace/nacl_files/elements_cache Setting hash workspaceMergeManagermerge_manager::multi_env_element_sourceenv1_state_element_sourceenv1_merged_hash to b6d84378cefd96b59aa868e41d96bb722df1f7963e022287b54da2c80699fb70
+2024-08-04T18:20:19.149Z debug workspace/merger/index merged 2 elements to 1 elements [errors=1]
+2024-08-04T18:20:19.149Z warn workspace/merger/index All merge errors:
+Error merging zendesk.custom_object_field.instance.stagingtest__dropdown: duplicate key custom_field_options (values - [
+  { id: 22078733696403 },
+  { id: 22078733696531 },
+  { id: 32016155837459 }
+] & [
+  { raw_name: 'value1', value: 'value1' },
+  { raw_name: 'value2', value: 'value2' },
+  { raw_name: 'value3', value: 'value3' }
+])
+2024-08-04T18:20:19.150Z debug workspace/workspace/nacl_files/elements_cache Setting multi_env_element_sourceenv1 source hash in namespace workspaceMergeManagermerge_manager to b6d84378cefd96b59aa868e41d96bb72
+2024-08-04T18:20:19.150Z debug workspace/workspace/nacl_files/elements_cache Setting state_element_sourceenv1 source hash in namespace workspaceMergeManagermerge_manager to 2df1f7963e022287b54da2c80699fb70
+2024-08-04T18:20:19.150Z debug workspace/workspace/nacl_files/elements_cache Applying merged changes to cache.
+2024-08-04T18:20:19.150Z debug workspace/workspace/nacl_files/elements_cache Change type: modify, on 1 elements. The first 1 ids are: zendesk.custom_object_field.instance.stagingtest__dropdown
+2024-08-04T18:20:19.150Z debug workspace/workspace/index_utils updating changed by index starting
+2024-08-04T18:20:19.159Z debug workspace/workspace/index_utils updating changed by index took 9 ms
+2024-08-04T18:20:19.159Z debug workspace/workspace/index_utils updating changed at index starting
+2024-08-04T18:20:19.159Z debug workspace/workspace/index_utils updating changed at index took 0 ms
+2024-08-04T18:20:19.159Z debug workspace/workspace/index_utils updating author information index starting
+2024-08-04T18:20:19.159Z debug workspace/workspace/index_utils updating author information index took 0 ms
+2024-08-04T18:20:19.159Z debug workspace/workspace/index_utils updating alias index starting
+2024-08-04T18:20:19.159Z debug workspace/workspace/index_utils updating alias index took 0 ms
+2024-08-04T18:20:19.159Z debug workspace/workspace/index_utils updating static files index starting
+2024-08-04T18:20:19.159Z debug workspace/workspace/index_utils updating static files index took 0 ms
+2024-08-04T18:20:19.159Z debug workspace/workspace/reference_indexes updating references indexes starting
+2024-08-04T18:20:19.160Z debug workspace/workspace/reference_indexes updating references indexes took 1 ms
+2024-08-04T18:20:19.161Z debug workspace/validator validateElements with 12 elements starting
+2024-08-04T18:20:19.161Z debug workspace/expressions resolve 12 elements starting
+2024-08-04T18:20:19.162Z debug workspace/expressions resolve handled a total of 41 elements
+2024-08-04T18:20:19.162Z debug workspace/expressions resolve 12 elements took 1 ms
+2024-08-04T18:20:19.163Z debug workspace/validator validateElements with 12 elements took 2 ms
+2024-08-04T18:20:19.167Z debug cli/workspace/workspace workspace status Error, errors:
+Error merging zendesk.custom_object_field.instance.stagingtest__dropdown: duplicate key custom_field_options (values - [
+  { id: 22078733696403 },
+  { id: 22078733696531 },
+  { id: 32016155837459 }
+] & [
+  { raw_name: 'value1', value: 'value1' },
+  { raw_name: 'value2', value: 'value2' },
+  { raw_name: 'value3', value: 'value3' }
+])
+zendesk/Records/custom_object_field/stagingtest__dropdown.nacl(line: 1)
+2024-08-04T18:20:19.167Z warn cli/workspace/workspace Error merging zendesk.custom_object_field.instance.stagingtest__dropdown: duplicate key custom_field_options (values - [
+  { id: 22078733696403 },
+  { id: 22078733696531 },
+  { id: 32016155837459 }
+] & [
+  { raw_name: 'value1', value: 'value1' },
+  { raw_name: 'value2', value: 'value2' },
+  { raw_name: 'value3', value: 'value3' }
+])
+zendesk/Records/custom_object_field/stagingtest__dropdown.nacl(line: 1)
+2024-08-04T18:20:19.168Z debug core/local-workspace/remote_map/remote_map closing all remote maps
+2024-08-04T18:20:19.168Z debug core/local-workspace/remote_map/remote_map closing all remote maps of location /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache
+2024-08-04T18:20:19.169Z debug core/local-workspace/remote_map/remote_map closed connection to /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache
+2024-08-04T18:20:19.170Z debug core/local-workspace/remote_map/remote_map closed temporary connection to /Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache/tmp-dbs/2d556114-16b2-46a5-855b-a56bc95108e8
+2024-08-04T18:20:19.171Z debug core/local-workspace/remote_map/counters Remote Map Stats for location '/Users/tamtamir/.salto/4fd15e14-8bd9-4652-a705-ac695c240e37/cache': {
+  LocationCacheCreated: 1,
+  LocationCacheReuse: 1,
+  LocationCacheHit: 9913,
+  LocationCacheMiss: 18402,
+  RemoteMapCreated: 63,
+  RemoteMapHit: 13803,
+  RemoteMapMiss: 3235,
+  PersistentDbConnectionCreated: 1,
+  PersistentDbConnectionReuse: 62,
+  TmpDbConnectionReuse: 62
+}
+2024-08-04T18:20:19.171Z info cli/cli ran "deploy -f" in 3281 ms

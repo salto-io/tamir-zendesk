@@ -1,5 +1,6 @@
 zendesk {
   fetch = {
+    useNewInfra = false
     include = [
       {
         type = ".*"

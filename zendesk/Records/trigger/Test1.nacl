@@ -1,27 +1,3 @@
-zendesk.trigger test1 {
-  title = "test1"
-  active = true
-  default = false
-  actions = [
-    {
-      field = "type"
-      value = "incident"
-    },
-  ]
-  conditions = {
-    all = [
-      {
-        field = "priority"
-        operator = "is_not"
-        value = "normal"
-      },
-    ]
-  }
-  description = "test"
-  raw_title = "test1"
-  category_id = zendesk.trigger_category.instance.Billing
-  _alias = "test1"
-}
 zendesk.trigger Test1 {
   title = "Test1"
   active = true
@@ -45,4 +21,28 @@ zendesk.trigger Test1 {
   raw_title = "Test1"
   category_id = zendesk.trigger_category.instance.Billing
   _alias = "Test1"
+}
+zendesk.trigger test1 {
+  title = "test1"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "type"
+      value = "incident"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "priority"
+        operator = "is_not"
+        value = "normal"
+      },
+    ]
+  }
+  description = "test"
+  raw_title = "test1"
+  category_id = zendesk.trigger_category.instance.Billing
+  _alias = "test1"
 }

@@ -1,7 +1,7 @@
 zendesk.workspace Adam_Test@s {
   title = "Adam Test"
   description = ""
-  layout_uuid = zendesk.layout.instance.Adam_Test_Layout_3@s
+  layout_uuid = "c18f1ffd-dc84-44cb-b6d2-069024df0d4d"
   apps = [
     {
       id = zendesk.app_installation.instance.Knowledge_Capture_support@su

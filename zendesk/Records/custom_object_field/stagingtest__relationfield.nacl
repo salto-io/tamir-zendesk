@@ -2,7 +2,7 @@ zendesk.custom_object_field stagingtest__relationfield {
   type = "lookup"
   key = "relationfield"
   raw_title = "relationField"
-  raw_description = ""
+  raw_description = "desc"
   position = 1
   active = true
   system = false

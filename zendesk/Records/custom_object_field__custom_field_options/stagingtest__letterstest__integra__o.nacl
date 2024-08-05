@@ -1,4 +1,5 @@
 zendesk.custom_object_field__custom_field_options stagingtest__letterstest__integra__o@uuuu_00231_00227 {
+  name = "integração"
   raw_name = "integração"
   value = "integração"
   _parent = [

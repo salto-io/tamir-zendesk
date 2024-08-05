@@ -1,27 +1,3 @@
-zendesk.trigger Test1 {
-  title = "Test1"
-  active = true
-  default = false
-  actions = [
-    {
-      field = zendesk.organization_field.instance.another_drop_down
-      value = zendesk.organization_field__custom_field_options.instance.another_drop_down__option2
-    },
-  ]
-  conditions = {
-    all = [
-      {
-        field = "current_via_id"
-        operator = "is"
-        value = zendesk.channel.instance.Chat
-      },
-    ]
-  }
-  description = "test1 - EDITED"
-  raw_title = "Test1"
-  category_id = zendesk.trigger_category.instance.Billing
-  _alias = "Test1"
-}
 zendesk.trigger test1 {
   title = "test1"
   active = true
@@ -45,4 +21,28 @@ zendesk.trigger test1 {
   raw_title = "test1"
   category_id = zendesk.trigger_category.instance.Billing
   _alias = "test1"
+}
+zendesk.trigger Test1 {
+  title = "Test1"
+  active = true
+  default = false
+  actions = [
+    {
+      field = zendesk.organization_field.instance.another_drop_down
+      value = zendesk.organization_field__custom_field_options.instance.another_drop_down__option2
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "current_via_id"
+        operator = "is"
+        value = zendesk.channel.instance.Chat
+      },
+    ]
+  }
+  description = "test1 - EDITED"
+  raw_title = "Test1"
+  category_id = zendesk.trigger_category.instance.Billing
+  _alias = "Test1"
 }

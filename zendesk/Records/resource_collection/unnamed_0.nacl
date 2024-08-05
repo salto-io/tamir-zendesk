@@ -1,4 +1,4 @@
-zendesk.resource_collection unnamed_0_0 {
+zendesk.resource_collection unnamed_0 {
   resources = [
     {
       identifier = "time_last_update_field"

@@ -1,7 +1,7 @@
 zendesk.workspace workspace_with_layout2@s {
   title = "workspace with layout2"
   description = "hi"
-  layout_uuid = "4cdde68d-82c7-47cf-8fec-0e54dc8c5986"
+  layout_uuid = zendesk.layout.instance.eden_layout@s
   apps = [
     {
       id = zendesk.app_installation.instance.Knowledge_Capture_support@su

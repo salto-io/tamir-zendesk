@@ -1,7 +1,17 @@
-zendesk.support_address Support_helpme_Salto_subdomain_zendesk_com@umvvv {
+zendesk.support_address Support_audit_Salto_subdomain_zendesk_com@umvvv {
   brand_id = zendesk.brand.instance.Salto
   name = "Support"
-  email = "helpme@${ zendesk.brand.instance.Salto.subdomain }.zendesk.com"
+  email = "audit@${ zendesk.brand.instance.Salto.subdomain }.zendesk.com"
+  forwarding_status = "verified"
+  spf_status = "verified"
+  cname_status = "verified"
+  domain_verification_status = "verified"
+  _alias = "Support"
+}
+zendesk.support_address Support_audittest_anotherBrand___Eden_test1_sbss_subdomain_zendesk_com@umuuuumvvv {
+  brand_id = zendesk.brand.instance.anotherBrand___Eden_test1@sbss
+  name = "Support"
+  email = "audittest@${ zendesk.brand.instance.anotherBrand___Eden_test1@sbss.subdomain }.zendesk.com"
   forwarding_status = "verified"
   spf_status = "verified"
   cname_status = "verified"
@@ -19,20 +29,10 @@ zendesk.support_address support_support_support_subdomain_zendesk_com@umvvv {
   domain_verification_status = "verified"
   _alias = "support"
 }
-zendesk.support_address Support_audittest_anotherBrand___Eden_test1_sbss_subdomain_zendesk_com@umuuuumvvv {
-  brand_id = zendesk.brand.instance.anotherBrand___Eden_test1@sbss
-  name = "Support"
-  email = "audittest@${ zendesk.brand.instance.anotherBrand___Eden_test1@sbss.subdomain }.zendesk.com"
-  forwarding_status = "verified"
-  spf_status = "verified"
-  cname_status = "verified"
-  domain_verification_status = "verified"
-  _alias = "Support"
-}
-zendesk.support_address Support_audit_Salto_subdomain_zendesk_com@umvvv {
+zendesk.support_address Support_helpme_Salto_subdomain_zendesk_com@umvvv {
   brand_id = zendesk.brand.instance.Salto
   name = "Support"
-  email = "audit@${ zendesk.brand.instance.Salto.subdomain }.zendesk.com"
+  email = "helpme@${ zendesk.brand.instance.Salto.subdomain }.zendesk.com"
   forwarding_status = "verified"
   spf_status = "verified"
   cname_status = "verified"
